@@ -1173,9 +1173,13 @@
 }
 .bottomVMFooter .welcome a {
 	font-style: italic;
-	text-decoration: underline;
+	text-decoration: underline !important;
 	color: white;
 }
+.bottomVMFooter .welcome a:hover {
+	color: #202630;
+}
+
 
 
 /*------------------------------------------------------------------------------*/
