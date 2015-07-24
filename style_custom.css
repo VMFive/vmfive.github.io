@@ -1188,7 +1188,7 @@
 @media (max-width: 992px) {
 	/* logoWrapper */
 	.logoWrapper {
-		padding-left: 0px;
+		padding-left: 15px;
 	}
 
 	.headerFill {

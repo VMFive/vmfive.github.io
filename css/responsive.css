@@ -2319,7 +2319,7 @@
   }
   /* logo */
   .logoWrapper {
-    float: none;
+    /*float: none;*/
   }
   .logo {
     margin-bottom: 30px;
@@ -2327,9 +2327,9 @@
   /* responsive nav */
   #responsiveMainNavToggler {
     display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: 25%;
+    /*width: 50%;*/
+    /*margin-left: auto;*/
+    /*margin-right: 25%;*/
   }
   #responsiveMainNavToggler .register > a,
   #responsiveMainNavToggler .login > a {
