@@ -293,7 +293,7 @@
 	font-weight: lighter;
 	margin-bottom: 3px;
 	border-bottom: 1px solid white;
-	font-family: 'Avenir Next', 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+	font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
 }
 
 .hiring a {
@@ -617,7 +617,7 @@
 	font-size: 26px;
 	text-align: center;
 	/*margin: 80px auto 60px;*/
-	font-family: 'Montserrat', 'Avenir Next', 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+	font-family: 'Montserrat', 'Open Sans', 'Tahoma', 'Arial', sans-serif;
 	font-weight: bold;
 }
 
@@ -647,7 +647,7 @@
 }
 
 .aboutIntro .desc span {
-	font-family: 'Avenir Next', 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+	font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
 	font-weight: 500;
 	font-size: 17px;
 	color: #202630;
@@ -702,7 +702,7 @@
 
 .aboutHistory .event .date {
 	display: block;
-	font-family: 'Avenir Next', 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+	font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	color: #fe8f00;
@@ -711,7 +711,7 @@
 
 .aboutHistory .event .desc {
 	display: inline-block;
-	font-family: 'Avenir Next', 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+	font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
 	font-size: 16px;
 	line-height: 19px;
 	/*padding: 5px 0 0 20px;*/
@@ -743,7 +743,7 @@
 
 .aboutHistory .event2 .date {
 	display: block;
-	font-family: 'Avenir Next', 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+	font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	color: #fe8f00;
@@ -751,7 +751,7 @@
 
 .aboutHistory .event2 .desc {
 	display: inline-block;
-	font-family: 'Avenir Next', 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+	font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
 	font-size: 16px;
 	line-height: 19px;
 	padding: 5px 0 0 20px;
@@ -806,7 +806,7 @@
 	max-width: 1100px;
 	position: relative;
 	margin: 0 auto;
-	font-family: 'Avenir Next', 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+	font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
 	font-size: 16px;
 	color: #202630;
 	line-height: 28px;
@@ -926,7 +926,7 @@
 	position: relative;
 	/*border: 1px solid #ccc;
 	border-radius: 3px;*/
-	padding: 10px;
+	padding: 9px;
 	text-align: center;
 	/*margin-bottom: 0px;*/
 }
