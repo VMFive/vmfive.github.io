@@ -927,22 +927,22 @@ This file includes all cusomized javascript and all plugins libraries options
     var $frame = jQuery('iframe#vimeoIntro');
     var $frame2 = jQuery('iframe#productVideo');
     var vidsrc = $frame.attr('src');
-    $frame.attr('src','https://player.vimeo.com/video/120444515?title=0&amp;portrait=0&amp;byline=0');
+    // $frame.attr('src','https://player.vimeo.com/video/120444515?title=0&amp;portrait=0&amp;byline=0');
 
-    jQuery(document).on('scroll', function(){
-      if (jQuery(document).scrollTop() + 300 > intro_h) {
+    // jQuery(document).on('scroll', function(){
+      // if (jQuery(document).scrollTop() + 300 > intro_h) {
 
         // sets it back to the correct link so that it reloads immediately on the next window open
 
-        $frame.attr('src', vidsrc+'&amp;autoplay=1;');
+        // $frame.attr('src', vidsrc+'&amp;autoplay=0;');
 
         // $frame.find('.headers').attr('display', 'none');
         // $frame.find('.sidedock').attr('display', 'none');
 
-        jQuery(document).off('scroll');
-      }
+        // jQuery(document).off('scroll');
+      // }
 
-    });
+    // });
 
 
 
