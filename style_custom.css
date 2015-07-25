@@ -369,7 +369,7 @@
 	}
 }
 
-.page .product .product-wrapper {
+.page .product #product-wrapper {
 	position: relative;
 	/*top: -94px;*/
 }
@@ -947,6 +947,16 @@
 	margin-bottom: 30px;
 	width: 280px;
 	height: 180px;
+}
+.news .item .special-cover {
+	position: absolute;
+	top: 9px;
+	width: 280px;
+	height: 180px;
+	background: -webkit-linear-gradient(transparent,transparent,transparent,transparent,rgba(0,0,0,0.3)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(transparent,transparent,transparent,transparent,rgba(0,0,0,0.3)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(transparent,transparent,transparent,transparent,rgba(0,0,0,0.3)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(transparent,transparent,transparent,transparent,rgba(0,0,0,0.3)); /* Standard syntax */
 }
 .news .date {
 	position: absolute;

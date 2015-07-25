@@ -12,7 +12,7 @@
   <html class="no-js IE gt-ie8"></html>
 <![endif]-->
 <!--[if !IE]><!-->
-<html class="no-js" ng-app="myapp">
+<html class="no-js">
 <!--<![endif]-->
 
 <head>
@@ -31,19 +31,18 @@
     <meta name="mobile-web-app-capable" content="yes">
     <!-- fav icon -->
     <link href="images/favicon.ico" rel="shortcut icon">
-    <!-- <link rel="stylesheet" href="css/owl.carousel.css" media="screen" title="no title" charset="utf-8"> -->
     <!-- css => style sheet -->
-    <link href="style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="style.min.css" media="screen" rel="stylesheet" type="text/css">
     <!-- css => custom style sheet-->
-    <link href="style_custom.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="style_custom.min.css" media="screen" rel="stylesheet" type="text/css">
     <!-- css => responsive sheet -->
     <link href="css/responsive.css" media="screen" rel="stylesheet" type="text/css">
     <!-- JQuery => javascript libs -->
-    <script src="js/jquery.js" type="text/javascript"></script>
+    <!-- <script src="js/jquery.js" type="text/javascript"></script> -->
     <!-- online JQuery libs -->
-    <!-- // <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" async></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js" async></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js" async></script>
     <!--[if lt IE 9]><!-->
     <!-- css for ie -->
     <link href="css/ie.css" media="screen" rel="stylesheet" type="text/css">
@@ -52,10 +51,6 @@
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript" async></script>
     <!-- VMFive brand color style -->
     <link rel="stylesheet" href="css/skins/brand-color.css">
-    <!-- Angular 1.4.2 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-resource.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.min.js"></script>
     <script src="js/lang-detect.js"></script>
 
 
@@ -70,7 +65,7 @@
     </script>
 </head>
 
-<body id="top" class="style-1" ng-controller="VMFiveHomeCtrl">
+<body id="top" class="style-1">
     <!--[if lt IE 9]>
       <p class="browsehappy">
         You are using an
@@ -80,16 +75,16 @@
         to improve your experience.
       </p>
     <![endif]-->
-    <!-- <div class="loadingContainer">
+    <div class="loadingContainer">
         <div class="loading">
             <div class="rect1"></div>
             <div class="rect2"></div>
             <div class="rect3"></div>
             <div class="rect4"></div>
             <div class="rect5"></div>
-        </div> -->
+        </div>
     <!-- end of loading -->
-    <!-- </div> -->
+    </div>
     <!-- end of loading container -->
 
 
@@ -98,34 +93,30 @@
 
         <!-- Slider -->
         <section class="slider section mainSection scrollAnchor darkSection" id="slider">
-            <div class="">
-
-                <div class="topMenu navBar">
-                    <div class="grid-940">
-                        <div class="row">
-                            <ul class="topSocial socialNav col-md-6 col-sm-12">
-                                <li><a href="https://www.facebook.com/vmfive" target="_blank"><img src="images/home/footer-sociallink-facebook.png" alt=""></a></li>
-                                <li><a href="https://twitter.com/VMFive" target="_blank"><img src="images/home/footer-sociallink-twitter.png" alt=""></a></li>
-                                <li><a href="https://www.linkedin.com/company/vmfive-international-limited" target="_blank"><img src="images/home/footer-sociallink-linkedin.png" alt=""></a></li>
-                                <li><a href="https://angel.co/vmfive" target="_blank"><img src="images/home/footer-social-angelist.png" alt=""></a></li>
-                                <li><a href="https://www.crunchbase.com/organization/vmfive" target="blank"><img src="images/home/footer-sociallink-crunchbase.png" alt=""></a></li>
-                                <li class="lang">
-                                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
-                                        <option disabled="disabled" value="NoSeclect">Language</option>
-                                        <option value="home.html" selected="selected">English</option>
-                                        <option value="home_japanese.html">日本語</option>
-                                    </select>
-                                    <!-- end of lang form -->
-                                </li>
-                                <!-- end of lang -->
-                            </ul>
-                            <!-- end of top social -->
-                        </div>
-                        <!-- end of row -->
+            <div class="topMenu navBar">
+                <div class="grid-940">
+                    <div class="row">
+                        <ul class="topSocial socialNav col-md-6 col-sm-12">
+                            <li><a href="https://www.facebook.com/vmfive" target="_blank"><img src="images/home/footer-sociallink-facebook.png" alt=""></a></li>
+                            <li><a href="https://twitter.com/VMFive" target="_blank"><img src="images/home/footer-sociallink-twitter.png" alt=""></a></li>
+                            <li><a href="https://www.linkedin.com/company/vmfive-international-limited" target="_blank"><img src="images/home/footer-sociallink-linkedin.png" alt=""></a></li>
+                            <li><a href="https://angel.co/vmfive" target="_blank"><img src="images/home/footer-social-angelist.png" alt=""></a></li>
+                            <li><a href="https://www.crunchbase.com/organization/vmfive" target="blank"><img src="images/home/footer-sociallink-crunchbase.png" alt=""></a></li>
+                            <li class="lang">
+                                <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                                    <option disabled="disabled" value="NoSeclect">Language</option>
+                                    <option value="home.html" selected="selected">English</option>
+                                    <option value="home_japanese.html">日本語</option>
+                                </select>
+                                <!-- end of lang form -->
+                            </li>
+                            <!-- end of lang -->
+                        </ul>
+                        <!-- end of top social -->
                     </div>
-                    <!-- end of container -->
-
+                    <!-- end of row -->
                 </div>
+                <!-- end of container -->
             </div>
             <!-- end of top menu -->
             <div id="mainSlider" class="mainSlider homeSlider_2  owl-carousel sliderStyle1">
@@ -151,7 +142,7 @@
                     <!-- end of cover -->
                     <img src="images/home/kv-bg-2.jpg" style="opacity:0;" title="Slide 2" alt="slide 2">
                     <div class="captions">
-                        <img class="animated kv-title" id="kv-logo-2" src="images/home/kv-logo-2.png"></img>
+                        <img class="animated" id="kv-logo-2" src="images/home/kv-logo-2.png"></img>
                         <p class="animated kv-desc">
                             Our premiere innovative product, Adplay,<br> is
                             a cloud service transforms mobile apps into playable ads
@@ -177,6 +168,7 @@
                     </div>
                     <!-- end of captions -->
                 </div>
+                <!-- end of slide -->
             </div>
             <!-- end of main slider -->
         </section>
@@ -517,7 +509,6 @@
                   <div class="item-wrapper">
                       <div class="item">
                           <div class="date"><img src="images/home/awards-date.png" alt="">Apr 24, 2015</div>
-                          <!-- <img src="images/home/news-img-1.png" alt=""> -->
                           <img class="special" src="images/news/news-3.jpg" alt="Winning of Slush Asia Startup Pitch" />
                           <div class="news-title">[Tech in Asia]<br>Winning of Slush Asia Startup Pitch</div>
                           <div class="news-desc">Though a Taiwan-based firm, it has already started collaborating with D2C, a joint venture with Japanese conglomerates Docomo and Dentsu. AdPlay also has a new partnership with Adways’ popular pre-order platform.</div>
@@ -527,7 +518,6 @@
                   <div class="item-wrapper center">
                       <div class="item">
                           <div class="date"><img src="images/home/awards-date.png" alt="">Jan 16, 2015</div>
-                          <!-- <img src="images/home/news-img-1.png" alt=""> -->
                           <img class="special" src="images/news/news-2.jpg" alt="General introduction of VMFive" />
                           <div class="news-title">[Tech in Asia]<br>General introduction of VMFive (including competitors) </div>
                           <div class="news-desc">VMFive, a Taipei-based startup established in May 2014, is looking to ease the world’s app store woes. It’s flagship product, AdPlay, lets people demo an app before downloading it to their phones.</div>
@@ -537,48 +527,12 @@
                   <div class="item-wrapper">
                       <div class="item">
                           <div class="date"><img src="images/home/awards-date.png" alt="">Aug 12, 2014</div>
-                          <!-- <img src="images/home/news-img-1.png" alt=""> -->
                           <img class="special" src="images/news/news-1.jpg" alt="Winning of Beijing Startup Competition" />
                           <div class="news-title">[Techcrunch]<br>Winning of Beijing Startup Competition</div>
                           <div class="news-desc">More than 200 companies representing a wide array of mobile and hardware technology entered TechCrunch Beijing’s startup competition, and VMFive...</div>
                           <a class="readMore generalLink" href="http://techcrunch.com/2014/08/12/vmfive-wins-techcrunch-beijings-startup-competition-with-app-advertising-platform-adplay" target="_blank">Read More</a>
                       </div>
                   </div>
-
-
-                    <!-- <div class="item-wrapper">
-                        <div class="item">
-                            <div class="date"><img src="images/home/awards-date.png" alt="">Apr 27, 2015</div>
-                            <img class="news-img" src="images/home/news-img-1.png" alt="">
-                            <div class="content-wrapper">
-                                <div class="news-title">[Buzz Orange Global]<br>Taiwanese Startup VMFive Wins First Prize in the Slush Asia Pitching Competition</div>
-                                <div class="news-desc">Taiwanese startup VMFive has take home the US$838,597 (25,675,008 NT) first prize at this year's Slush Asia Pitching Competition.</div>
-                                <a class="readMore generalLink" href="http://goo.gl/kbN1C6" target="_blank">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-wrapper">
-                        <div class="item">
-                            <div class="date"><img src="images/home/awards-date.png" alt="">Apr 24, 2015</div>
-                            <img class="news-img" src="http://thebridge.jp/en/wp/wp-content/uploads/2015/04/IMG_1085-620x414.jpg" alt="">
-                            <div class="content-wrapper">
-                                <div class="news-title">[The Bridge]<br>Taiwan’s VMFive wins Slush Asia’s pitching competition in Tokyo with app ad platform</div>
-                                <div class="news-desc">Taiwan startup VMFive won the first Slush Asia Pitching Competition.</div>
-                                <a class="readMore generalLink" href="http://goo.gl/TBEaa6" target="_blank">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-wrapper">
-                        <div class="item">
-                            <div class="date"><img src="images/home/awards-date.png" alt="">Apr 21, 2015</div>
-                            <img class="news-img" src="images/home/news-img-3.jpg" alt="">
-                            <div class="content-wrapper">
-                                <div class="news-title">[DIGITIMES]<br>Trend Micro forms strategic alliance with GMobi, VMFive</div>
-                                <div class="news-desc">VMFive is engaged in developing cloud-based virtualization and streaming technology.</div>
-                                <a class="readMore generalLink" href="http://www.digitimes.com/news/a20150421PD200.html" target="_blank">Read More</a>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -598,73 +552,71 @@
 
         <!-- Footer -->
         <footer class="vmfooter" id="footer">
-          <div class="grid-940">
-              <div class="topVMFooter">
-                  <div class="location">
-                      <img class="icon" src="images/home/footer-location.png" alt="">
-                      <div style="margin-bottom: 10px;">106 台北市大安區<br>
-                      敦化南路二段 105 號 19 樓 B 室<br>
-                      </div>
-                      <div class="blank"></div>
-                      <div>
-                      B room, 19F., No.105, Sec 2,<br>
-                      Dunhua S. Rd., Da'an Dist.,<br>
-                      Taipei City 106, Taiwan
-                      </div>
-                  </div>
-                  <div class="call">
-                      <img class="icon" src="images/home/footer-call.png" alt="">
-                      <div style="display:inline-block;width:32px;margin-bottom:10px;">
-                          <strong>Tel</strong>
-                      </div>
-                      <div style="display:inline-block;">+886-2-2707-2525</div>
-                      <br>
-                      <div style="display:inline-block;width:32px;">
-                          <strong>Fax</strong>
-                      </div>
-                      <div style="display:inline-block;">+886-2-2707-2526</div>
-                  </div>
-                  <div class="mail">
-                      <img class="icon" src="images/home/footer-mail.png" alt="">
-                      <div style="display:inline-block;width:107px;margin-bottom:10px;">
-                          <strong>Cooperation</strong>
-                      </div>
-                      <div style="display:inline-block;"><a href="mailto:business@vm5.com">business@vm5.com</a></div>
-                      <br>
-                      <div style="display:inline-block;width:107px;">
-                          <strong>Join Us</strong>
-                      </div>
-                      <div style="display:inline-block;"><a href="mailto:job@vm5.com" target="_top">job@vm5.com</a></div>
-                  </div>
-                  <div class="social">
-                      <a href="https://www.facebook.com/vmfive" target="_blank"><img src="images/home/footer-sociallink-facebook.png" alt=""></a>
-                      <a href="https://twitter.com/VMFive" target="_blank"><img src="images/home/footer-sociallink-twitter.png" alt=""></a>
-                      <a href="https://www.linkedin.com/company/vmfive-international-limited" target="_blank"><img src="images/home/footer-sociallink-linkedin.png" alt=""></a>
-                      <a href="https://angel.co/vmfive" target="_blank"><img src="images/home/footer-social-angelist.png" alt=""></a><br>
-                      <a href="https://www.crunchbase.com/organization/vmfive" target="_blank"><img src="images/home/footer-sociallink-crunchbase.png" alt=""></a>
-                  </div>
-              </div>
-              <div class="bottomVMFooter">
-                  <div class="copyright">Copyright © 2015 VMFive. All rights reserved.</div>
-                  <div class="welcome"><strong>VMFive welcome you to <a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank">Join Us.</a></strong></div>
-              </div>
+            <div class="grid-940">
+                <div class="topVMFooter">
+                    <div class="location">
+                        <img class="icon" src="images/home/footer-location.png" alt="">
+                        <div style="margin-bottom: 10px;">106 台北市大安區
+                            <br> 敦化南路二段 105 號 19 樓 B 室
+                            <br>
+                        </div>
+                        <div>
+                            B room, 19F., No.105, Sec 2,
+                            <br> Dunhua S. Rd., Da'an Dist.,
+                            <br> Taipei City 106, Taiwan
+                        </div>
+                    </div>
+                    <div class="call">
+                        <img class="icon" src="images/home/footer-call.png" alt="">
+                        <div style="display:inline-block;width:32px;margin-bottom:10px;">
+                            <strong>Tel</strong>
+                        </div>
+                        <div style="display:inline-block;">+886-2-2707-2525</div>
+                        <br>
+                        <div style="display:inline-block;width:32px;">
+                            <strong>Fax</strong>
+                        </div>
+                        <div style="display:inline-block;">+886-2-2707-2526</div>
+                    </div>
+                    <div class="mail">
+                        <img class="icon" src="images/home/footer-mail.png" alt="">
+                        <div style="display:inline-block;width:107px;margin-bottom:10px;">
+                            <strong>Cooperation</strong>
+                        </div>
+                        <div style="display:inline-block;"><a href="mailto:business@vm5.com">business@vm5.com</a></div>
+                        <br>
+                        <div style="display:inline-block;width:107px;">
+                            <strong>Join Us</strong>
+                        </div>
+                        <div style="display:inline-block;"><a href="mailto:job@vm5.com" target="_top">job@vm5.com</a></div>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/vmfive" target="_blank"><img src="images/home/footer-sociallink-facebook.png" alt=""></a>
+                        <a href="https://twitter.com/VMFive" target="_blank"><img src="images/home/footer-sociallink-twitter.png" alt=""></a>
+                        <a href="https://www.linkedin.com/company/vmfive-international-limited" target="_blank"><img src="images/home/footer-sociallink-linkedin.png" alt=""></a>
+                        <a href="https://angel.co/vmfive" target="_blank"><img src="images/home/footer-social-angelist.png" alt=""></a>
+                        <br>
+                        <a href="https://www.crunchbase.com/organization/vmfive" target="_blank"><img src="images/home/footer-sociallink-crunchbase.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="bottomVMFooter">
+                    <div class="copyright">Copyright © 2015 VMFive. All rights reserved.</div>
+                    <div class="welcome"><strong>VMFive welcome you to <a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank">Join Us.</a></strong></div>
+                </div>
             </div>
         </footer>
-        <!-- end of vmfooter section -->
+        <!-- end of footer section -->
 
         <!-- end of footer -->
     </div>
     <!-- end of all wrapper -->
     <!-- JavaScript Files ================================================== -->
-    <script src="js/compiler.js" type="text/javascript"></script>
+    <script src="js/compiler.min.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
     <!-- BootStrap JavaScript ================================================== -->
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <!-- Fluid Vimeo Hack ================================================== -->
     <script src="js/fluid-video.js" type="text/javascript"></script>
-    <!-- Angular App JavaScript ================================================== -->
-    <script src="js/app.js" type="text/javascript"></script>
-
 
 </body>
 
