@@ -754,54 +754,6 @@ This file includes all cusomized javascript and all plugins libraries options
   });
   //--------------------------------------------------------------------------------------------
 
-
-
-  /* ◄------ Nice Scroll -------------------------------► */
-
-  //-- The whole page --
-  // jQuery("html").niceScroll({
-  //   cursorborder: 0,
-  //   cursorcolor: '#171717',
-  //   autohidemode: true,
-  //   zindex: 9999999,
-  //   scrollspeed: 60,
-  //   mousescrollstep: 36,
-  //   cursorwidth: 6,
-  //   horizrailenabled: false,
-  //   cursorborderradius: 3
-  // });4
-  // //--------------------------------------------------------------------------------------------
-
-  // //-- Modal --
-  // jQuery(".modal").niceScroll({
-  //   cursorborder: 0,
-  //   cursorcolor: '#fff',
-  //   autohidemode: true,
-  //   zindex: 99999999999,
-  //   scrollspeed: 60,
-  //   mousescrollstep: 36,
-  //   cursorwidth: 6,
-  //   horizrailenabled: false,
-  //   cursorborderradius: 3
-  // });
-  // //--------------------------------------------------------------------------------------------
-
-  // //-- Table Wrapper ( JUST IN RESPONSIVE ) --
-  // jQuery(".tableWrapper").niceScroll(".table",{
-  //   cursorborder: 0,
-  //   cursorcolor: '#ccc',
-  //   autohidemode: false,
-  //   zindex: 99999999999,
-  //   scrollspeed: 60,
-  //   mousescrollstep: 36,
-  //   cursorwidth: 6,
-  //   horizrailenabled: true,
-  //   cursorborderradius: 3,
-  //   usetransition: 0
-  // });
-  //--------------------------------------------------------------------------------------------
-
-
   /* ◄------ Responsive Nav -------------------------------► */
 
   jQuery(document).ready(function () {
