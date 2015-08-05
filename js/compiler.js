@@ -317,9 +317,6 @@ all java scritpts compiler
       var rtl = (this.settings.rtl ? 1 : -1),
         width = ($(window).width() / this.settings.items).toFixed(3),
         coordinate = 0, merge, i, n;
-        console.log($(window).width());
-        console.log(this.settings.items);
-        console.log(width);
 
       this._coordinates = [];
       for (i = 0, n = this._clones.length + this._items.length; i < n; i++) {

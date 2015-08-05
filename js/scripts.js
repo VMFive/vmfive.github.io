@@ -886,7 +886,7 @@ This file includes all cusomized javascript and all plugins libraries options
 
   });
 
-  /* ◄------ Eugene Custom 20150606 -------------------------------► */
+  /* ◄------ Custom JS for Homepage Partners -------------------------------► */
 
   jQuery(document).ready(function(){
     jQuery('#partner-1').on('click', function(){

@@ -723,11 +723,6 @@
 	margin-left: 20px;
 }
 
-/**/
-/**/
-/**/
-
-
 .aboutHistory .event2 {
 	display: inline-block;
 	width: 100%;
@@ -793,7 +788,6 @@
 .aboutHistory .rocket {
 	display: block;
 	position: relative;
-	/*margin: 30px auto 120px;*/
 	margin: 0 auto;
 	margin-top: 30px;
 	padding-bottom: 80px;
@@ -813,28 +807,24 @@
 }
 
 .team .section {
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 
 .team .section .title {
 	text-align: left;
-	/*margin: 15px 0;*/
-	margin-bottom: 20px;
-	/*padding-left: 10px;*/
+	margin: 20px auto;
 }
 
 .team .separate {
 	width: 80px;
 	height: 5px;
-	/*margin: 0 0 30px 10px;*/
 	margin-bottom: 30px;
 	background-color: #fe9f00;
 }
 
 .team .card {
-	width: 24.5%;
+	width: 22.5%;
 	display: inline-block;
-	/*padding: 10px;*/
 	margin-right: 20px;
 	text-align: center;
 	margin-bottom: 15px;
@@ -851,8 +841,8 @@
 }
 
 .team .card .desc {
-	/*padding: 15px;*/
 	height: 86px;
+	line-height: 1.5;
 }
 
 
