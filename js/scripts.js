@@ -609,66 +609,12 @@ This file includes all cusomized javascript and all plugins libraries options
   //--------------------------------------------------------------------------------------------
 
 
-
-
   //-- Domain Ex selection --
 
   jQuery(document).ready(function(e) {
     jQuery("#domainEx").msDropdown({visibleRows:4});
   });
   //--------------------------------------------------------------------------------------------
-
-
-  //-- ticker --
-  jQuery(document).ready(function() {
-    var nt_example1 = jQuery('#ticker').newsTicker({
-      row_height: 80,
-      max_rows: 3,
-      duration: 4000,
-      prevButton: jQuery('#ticker-prev'),
-      nextButton: jQuery('#ticker-next')
-    });
-  });
-  //--------------------------------------------------------------------------------------------
-
-
-
-
-  //--Portfolio Mixitup Filter--
-  jQuery(document).ready(function() {
-    // jQuery('#Grid').mixitup('toGrid');
-    jQuery('#grid').mixitup({
-      targetSelector: '.mix',
-      filterSelector: '.filter',
-      sortSelector: '.sort',
-      buttonEvent: 'click',
-      effects: ['fade','scale'/*,'blur'*/],
-      listEffects: null,
-      easing: 'smooth',
-      layoutMode: 'grid',
-      targetDisplayGrid: 'inline-block',
-      targetDisplayList: 'block',
-      gridClass: '.mix',
-      listClass: '',
-      transitionSpeed: 600,
-      showOnLoad: 'all',
-      sortOnLoad: false,
-      multiFilter: false,
-      filterLogic: 'or',
-      resizeContainer: true,
-      minHeight: 0,
-      failClass: 'fail',
-      perspectiveDistance: '3000',
-      perspectiveOrigin: '50% 50%',
-      animateGridList: true,
-      onMixLoad: null,
-      onMixStart: null,
-      onMixEnd: null
-    });
-
-  });
-  //--------------------------------------------------------------------------------------------
-
 
 
 
@@ -679,29 +625,6 @@ This file includes all cusomized javascript and all plugins libraries options
   });
   //--------------------------------------------------------------------------------------------
 
-
-
-  //-- flip clock --
-
-  jQuery(document).ready(function() {
-    var clock;
-
-    // Grab the current date
-    var currentDate = new Date();
-
-    // Set some date in the future. In this case, it's always Jan 1
-    var futureDate  = new Date(currentDate.getFullYear() + 1, 0, 0);
-
-    // Calculate the difference in seconds between the future and current date
-    var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-
-    // Instantiate a coutdown FlipClock
-    clock = jQuery('.clock').FlipClock(diff, {
-      clockFace: 'DailyCounter',
-      countdown: true
-    });
-  });
-  //--------------------------------------------------------------------------------------------
 
 
 
