@@ -464,8 +464,9 @@
     <script>
     document.addEventListener("DOMContentLoaded", function(event) {
 
-        var $sectionProduct = $('section.product');
-        $sectionProduct.css('margin-top', $('.header').height());
+        var $sectionProduct = $('section.product'),
+            headerHeight = $('.header').height();
+        $sectionProduct.css('padding-top', headerHeight);
 
         var wrapper = document.getElementById('product-wrapper');
         var video = document.getElementById('product-video');
@@ -479,7 +480,7 @@
 
             window.onresize = function(event){
                 videoResize(wrapper, video);
-                $sectionProduct.css('margin-top', $('.header').height());
+                $sectionProduct.css('padding-top', $('.header').height());
             }
 
             $(window).scroll(function (event) {
