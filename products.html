@@ -39,16 +39,17 @@
     <!-- favicon -->
     <link href="images/favicon.ico" rel="shortcut icon">
 
-    <!-- CSS 
+    <!-- CSS
     ============== -->
     <!-- libraries -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
-    <link rel="stylesheet" type="text/css" href="css/css3-animations.css"> 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"> 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext"> 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css3-animations.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
     <!-- main stylesheet-->
-    <link href="style.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- <link href="style.min.css" media="screen" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     <!-- responsive -->
     <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><!-->
@@ -133,7 +134,7 @@
         <!-- Header -->
         <header class="header headerStyle1" id="header">
             <div class="sticky scrollHeaderWrapper">
-                <div class="grid-940">
+                <div class="grid-940 flex-vertical-center">
                     <div class="logoWrapper">
                         <h1 class="logo">
                             <a class="clearfix" href="home.html">
@@ -143,7 +144,7 @@
                         <!-- end of logo -->
                     </div>
                     <!-- end of logoWrapper -->
-                    <nav class="mainMenu mainNav" id="mainNav">
+                    <nav class="mainMenu mainNav flex-pull-right" id="mainNav">
                         <ul class="navTabs">
                             <li>
                                 <a href="home.html?lang=true">Home</a>
@@ -203,24 +204,6 @@
 
         <section class="adplay section mainSection scrollAnchor lightSection" id="adplay">
             <div class="grid-940">
-                <div class="section-1">
-                    <div class="title">AdPlay</div>
-                    <div class="item item-1">
-                        <img src="images/products/adplay-1.png" alt="">
-                        <div class="desc">Mobile Game App</div>
-                    </div>
-                    <img class="arrow" src="images/products/adplay-arrow.png" alt="">
-                    <div class="item">
-                        <img src="images/products/adplay-2.png" alt="">
-                        <div class="desc">Upload to<br>VMFive Cloud Server</div>
-                    </div>
-                    <img class="arrow" src="images/products/adplay-arrow.png" alt="">
-                    <div class="item">
-                        <img src="images/products/adplay-3.png" alt="">
-                        <div class="desc">Stream to All Kinds of Device<br> via Web (HTML5) / App (SDK)</div>
-                    </div>
-                </div>
-
                 <div class="section-2">
                     <div class="title">OUR FEATURES</div>
                     <div class="item">
@@ -278,6 +261,24 @@
                 </div>
             </div>
         </section>
+
+        <!-- <div class="section-1">
+            <div class="title">AdPlay</div>
+            <div class="item item-1">
+                <img src="images/products/adplay-1.png" alt="">
+                <div class="desc">Mobile Game App</div>
+            </div>
+            <img class="arrow" src="images/products/adplay-arrow.png" alt="">
+            <div class="item">
+                <img src="images/products/adplay-2.png" alt="">
+                <div class="desc">Upload to<br>VMFive Cloud Server</div>
+            </div>
+            <img class="arrow" src="images/products/adplay-arrow.png" alt="">
+            <div class="item">
+                <img src="images/products/adplay-3.png" alt="">
+                <div class="desc">Stream to All Kinds of Device<br> via Web (HTML5) / App (SDK)</div>
+            </div>
+        </div> -->
 
         <section class="benefit section mainSection scrollAnchor graySection" id="benefit">
             <div class="grid-940">
@@ -458,13 +459,16 @@
     <!-- end of all wrapper -->
 
     <!-- JavaScript Files ================================================== -->
-    <script src="js/compiler.min.js" type="text/javascript"></script>
-    <script src="js/scripts.min.js" type="text/javascript"></script>
     <!-- BootStrap JavaScript ================================================== -->
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- <script src="js/compiler.min.js" type="text/javascript"></script> -->
+    <script type="text/javascript" src="js/compiler.js"></script>
+    <!-- <script src="js/scripts.min.js" type="text/javascript"></script> -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
     <!-- Fluid Video Hack ================================================== -->
     <script>
-    document.addEventListener("DOMContentLoaded", function(event) { 
+    document.addEventListener("DOMContentLoaded", function(event) {
 
         var wrapper = document.getElementById('product-wrapper');
         var video = document.getElementById('product-video');
@@ -472,10 +476,10 @@
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             $(wrapper).hide();
-        } 
+        }
         else {
             videoResize(wrapper, video);
-            
+
             window.onresize = function(event){
                 videoResize(wrapper, video);
             }
@@ -483,7 +487,7 @@
             $(window).scroll(function (event) {
                 var scroll = $(window).scrollTop();
                 var adplayPos = $('#adplay').offset().top;
-                
+
                 if (scroll + 200> adplayPos && videoPlaying) {
 
                     console.log('paused!');

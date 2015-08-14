@@ -50,16 +50,31 @@ This file includes all cusomized javascript and all plugins libraries options
   //--------------------------------------------------------------------------------------------
 
   //-- Making the header fixed --
-  var jQueryheader = jQuery('header#header');
-  var jQueryheaderTop = jQueryheader.offset().top;
+  // var jQueryheader = jQuery('header#header');
+  // var jQueryheaderTop = jQueryheader.offset().top;
+  var $slider = $('section#slider'),
+      $homeHeader,
+      sliderBottom;
 
-  jQuery('.offset').height( jQueryheader.outerHeight() )
+  if($slider !== []){
+    $homeHeader = $('.header#header');
+    $(window).scroll(function () {
+      sliderBottom = $('section#slider').offset().top + $slider.height() - 80;
+      if($(window).scrollTop() > sliderBottom && $homeHeader.hasClass('transparent')) {
+        $('.header').removeClass('transparent');
+      } else if($(window).scrollTop() < sliderBottom && !$homeHeader.hasClass('transparent')) {
+        $('.header').addClass('transparent');
+      }
+    });
+  }
+
+  // jQuery('.offset').height( jQueryheader.outerHeight() )
 
   //-- Window Scroll Functions --
 
-  jQuery(window).scroll(function(){
-    (jQuery(window).scrollTop() > jQueryheaderTop) ? jQuery('.header').addClass('fixedHeader') && jQuery('.headerFill').addClass('show').removeClass('hide') : jQuery('.header').removeClass('fixedHeader') && jQuery('.headerFill').addClass('hide').removeClass('show');
-  });
+  // jQuery(window).scroll(function(){
+  //   (jQuery(window).scrollTop() > jQueryheaderTop) ? jQuery('.header').addClass('fixedHeader') && jQuery('.headerFill').addClass('show').removeClass('hide') : jQuery('.header').removeClass('fixedHeader') && jQuery('.headerFill').addClass('hide').removeClass('show');
+  // });
   //--------------------------------------------------------------------------------------------
 
 
@@ -179,7 +194,7 @@ This file includes all cusomized javascript and all plugins libraries options
   jQuery(document).ready(function() {
 
     var owl = jQuery(".homeSlider_2");
-    
+
     owl.owlCarousel({
       animateOut: 'fadeOut',
       items:1,
