@@ -8332,6 +8332,7 @@ img.fnone {
   height: 80px;
 }
 
+.home.news .content-wrapper .news-title,
 .pressCenter.news .content-wrapper .news-title {
   margin-top: 10px;
   height: 100px;
@@ -8428,17 +8429,17 @@ img.fnone {
   -webkit-align-items: center;
 
   text-align: left;
-  padding: 0px 5px;
+  padding: 0px 8px;
   font-size: 14px;
   margin-bottom: 30px;
   font-weight: 400;
   height: 55px;
 }
-.news .item a {
+.news .item > a {
   border: 2px solid #FE8F00;
   border-radius: 5px;
   color: #FE8F00;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 10px;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
