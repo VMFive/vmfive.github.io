@@ -58,7 +58,7 @@ This file includes all cusomized javascript and all plugins libraries options
       scrollTop,
       sliderBottom;
 
-  if($slider !== []){
+  if($slider.length){
     $(window).scroll(function () {
       sliderBottom = $('section#slider').offset().top + $slider.height() - 80;
       scrollTop = $(window).scrollTop();
