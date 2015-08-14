@@ -2619,6 +2619,7 @@ hr,
   background-color: transparent;
 }
 .header .scrollHeaderWrapper {
+  position: relative;
   /*height: 93px;*/
 }
 .header + .offset {
@@ -2988,11 +2989,29 @@ hr,
   background-color: #21242e;
 }
 .responsiveMainNav {
-  padding: 0 15px;
+  /*position: relative;*/
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  width: 100%;
+  padding: 15px;
   margin-bottom: 30px;
-  position: relative;
+  background-color: #202630;
   display: none;
+
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
+
+.responsiveMainNav.transparent {
+  background-color: transparent;
+}
+
 .responsiveMainNav > ul.navTabs > li a,
 .responsiveMainNav > ul.navTabs > li > button {
   display: block;

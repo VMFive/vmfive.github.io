@@ -53,17 +53,22 @@ This file includes all cusomized javascript and all plugins libraries options
   // var jQueryheader = jQuery('header#header');
   // var jQueryheaderTop = jQueryheader.offset().top;
   var $slider = $('section#slider'),
-      $homeHeader,
+      $homeHeader = $('.header'),
+      $homeHeaderResponsiveNav = $('.header .responsiveMainNav'),
+      scrollTop,
       sliderBottom;
 
   if($slider !== []){
-    $homeHeader = $('.header#header');
     $(window).scroll(function () {
       sliderBottom = $('section#slider').offset().top + $slider.height() - 80;
-      if($(window).scrollTop() > sliderBottom && $homeHeader.hasClass('transparent')) {
-        $('.header').removeClass('transparent');
-      } else if($(window).scrollTop() < sliderBottom && !$homeHeader.hasClass('transparent')) {
-        $('.header').addClass('transparent');
+      scrollTop = $(window).scrollTop();
+      if(scrollTop > sliderBottom && $homeHeader.hasClass('transparent')) {
+        $homeHeader.removeClass('transparent');
+        $homeHeaderResponsiveNav.removeClass('transparent');
+        console.log($('.header .responsiveMainNav'));
+      } else if(scrollTop < sliderBottom && !$homeHeader.hasClass('transparent')) {
+        $homeHeader.addClass('transparent');
+        $homeHeaderResponsiveNav.addClass('transparent');
       }
     });
   }
@@ -697,14 +702,14 @@ This file includes all cusomized javascript and all plugins libraries options
   jQuery(document).ready(function () {
 
     //-- Including the main nav contents in responsive main nav DIV --
+    $('.responsiveMainNav').css('top', $('.header').height());
     jQuery('.mainNav .navTabs').clone().appendTo('.responsiveMainNav');
 
     //-- Show and Hide responsive nav --
     jQuery('#responsiveMainNavToggler').click(function(event){
       event.preventDefault();
       jQuery('#responsiveMainNavToggler').toggleClass('opened');
-      jQuery('.responsiveMainNav').slideToggle(1000);
-
+      jQuery('.responsiveMainNav').slideToggle(300);
 
       if ( jQuery('#responsiveMainNavToggler i').hasClass('fa-bars') )
       {
@@ -732,16 +737,16 @@ This file includes all cusomized javascript and all plugins libraries options
       if(!jQuery(this).hasClass("activeLine")) {
         // hide any open menus and remove all other classes
         jQuery(".responsiveMainNav .navTabs > li > .toggleResponsive").removeClass("activeLine");
-        jQuery(".responsiveMainNav .navTabs > li > .dropDown").slideUp(500);
+        jQuery(".responsiveMainNav .navTabs > li > .dropDown").slideUp(300);
 
         // open our new menu and add the activeLine class
         jQuery(this).addClass("activeLine");
-        jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown").slideDown(500);
+        jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown").slideDown(300);
       }
 
       else if(jQuery(this).hasClass("activeLine")) {
         jQuery(this).removeClass("activeLine");
-        jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown").slideUp(500);
+        jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown").slideUp(300);
       }
     });
 
@@ -761,16 +766,16 @@ This file includes all cusomized javascript and all plugins libraries options
       if(!jQuery(this).hasClass("activeLine")) {
         // hide any open menus and remove all other classes
         jQuery(".responsiveMainNav .navTabs > li > .dropDown > li > .toggleResponsive").removeClass("activeLine");
-        jQuery(".responsiveMainNav .navTabs > li > .dropDown li .dropDown").slideUp(500);
+        jQuery(".responsiveMainNav .navTabs > li > .dropDown li .dropDown").slideUp(300);
 
         // open our new menu and add the activeLine class
         jQuery(this).addClass("activeLine");
-        jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown li .dropDown").slideDown(500);
+        jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown li .dropDown").slideDown(300);
       }
 
       else if(jQuery(this).hasClass("activeLine")) {
         jQuery(this).removeClass("activeLine");
-        jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown li .dropDown").slideUp(500);
+        jQuery(this).next(".responsiveMainNav .navTabs > li > .dropDown li .dropDown").slideUp(300);
       }
     });
 

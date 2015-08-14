@@ -155,10 +155,6 @@
                                 <!-- end of dropdown -->
                             </li>
                             <li>
-                                <a href="partners.html">Partners</a>
-                                <!-- end of dropdown -->
-                            </li>
-                            <li>
                                 <a href="about.html">About</a>
                                 <!-- end of dropdown -->
                             </li>
@@ -174,9 +170,7 @@
                         <!-- end of nav tabs -->
                     </nav>
                     <!-- end of main nav -->
-                    <a href="#" class="generalLink" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
-                    <div class="clearfix"></div>
-                    <!-- end of clearfix -->
+                    <a href="#" class="generalLink flex-pull-right" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
                     <div class="responsiveMainNav"></div>
                     <!-- end of responsive main nav -->
                 </div>
@@ -465,10 +459,12 @@
     <script type="text/javascript" src="js/compiler.js"></script>
     <!-- <script src="js/scripts.min.js" type="text/javascript"></script> -->
     <script type="text/javascript" src="js/scripts.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
     <!-- Fluid Video Hack ================================================== -->
     <script>
     document.addEventListener("DOMContentLoaded", function(event) {
+
+        var $sectionProduct = $('section.product');
+        $sectionProduct.css('margin-top', $('.header').height());
 
         var wrapper = document.getElementById('product-wrapper');
         var video = document.getElementById('product-video');
@@ -482,6 +478,7 @@
 
             window.onresize = function(event){
                 videoResize(wrapper, video);
+                $sectionProduct.css('margin-top', $('.header').height());
             }
 
             $(window).scroll(function (event) {
@@ -502,42 +499,6 @@
 
             });
         };
-
-        // Find all Vimeo & YouTube videos
-        var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']"),
-
-            // The element that is fluid width
-            $fluidEl = $("body");
-
-        // Figure out and save aspect ratio for each video
-        $allVideos.each(function() {
-
-            $(this)
-                .data('aspectRatio', this.height / this.width)
-
-            // and remove the hard coded width/height
-            .removeAttr('height')
-                .removeAttr('width');
-
-        });
-
-        // When the window is resized
-        $(window).resize(function() {
-
-            var newWidth = $fluidEl.width();
-
-            // Resize all videos according to their own aspect ratio
-            $allVideos.each(function() {
-
-                var $el = $(this);
-                $el
-                    .width(newWidth)
-                    .height(newWidth * $el.data('aspectRatio'));
-
-            });
-
-        // Kick off one resize to fix all videos on page load
-        }).resize();
     });
 
     function videoResize(wrapper, video) {
