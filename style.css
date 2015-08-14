@@ -8332,6 +8332,11 @@ img.fnone {
   height: 80px;
 }
 
+.pressCenter.news .content-wrapper .news-title {
+  margin-top: 10px;
+  height: 100px;
+}
+
 .news .content-wrapper .news-desc {
   margin: -30px 0;
 }
@@ -8413,7 +8418,7 @@ img.fnone {
   font-size: 18px;
   margin-bottom: 25px;
   font-weight: bold;
-  height: 80px;
+  height: 60px;
 }
 .news .news-desc {
   display: flex;
@@ -8423,18 +8428,18 @@ img.fnone {
   -webkit-align-items: center;
 
   text-align: left;
-  word-wrap: break-word;
-  padding: 0px 8px;
+  padding: 0px 5px;
   font-size: 14px;
   margin-bottom: 30px;
   font-weight: 400;
-  height: 150px;
+  height: 55px;
 }
 .news .item a {
   border: 2px solid #FE8F00;
   border-radius: 5px;
   color: #FE8F00;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
