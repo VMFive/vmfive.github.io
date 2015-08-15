@@ -8478,6 +8478,10 @@ img.fnone {
   opacity: 0.8;
 }
 
+.vmmedia .title {
+  font-size: 30px;
+}
+
 .vmmedia .wrapper {
   width: 100%;
   position: relative;
