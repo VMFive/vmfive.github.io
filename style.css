@@ -8435,7 +8435,16 @@ img.fnone {
   font-weight: 400;
   height: 55px;
 }
-.news .item > a {
+
+.news .item > a.link {
+  color: inherit;
+}
+
+.news .item > a.link:hover {
+  color: inherit;
+}
+
+.news .item > a.readMore {
   border: 2px solid #FE8F00;
   border-radius: 5px;
   color: #FE8F00;
@@ -8444,11 +8453,17 @@ img.fnone {
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
 }
-.news .item a:hover {
-  opacity: 0.8;
+
+.news .item a.readMore:hover {
   background-color: #FE8F00;
   color: white;
 }
+
+.news .item > a.link:hover,
+.news .item > a.readmore:hover {
+  opacity: 0.8;
+}
+
 .news .moreNews {
   background-color: #FEA800;
   position: relative;
