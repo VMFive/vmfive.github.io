@@ -196,7 +196,7 @@
         <section class="slider section mainSection scrollAnchor darkSection" id="slider">
 
             <!-- end of top menu -->
-            <div id="mainSlider" class="mainSlider homeSlider_2 owl-carousel sliderStyle1">
+            <div id="mainSlider" class="mainSlider homeSlider_2 owl-carousel sliderStyle1 kvSlider">
                 <div id="slide1" class="item slide">
                     <div class="cover" style="z-index:11;"></div>
                     <div class="cover" style="background-image:url('images/home/kv-bg-1.png');background-position: center center;background-size:cover;"></div>
@@ -646,6 +646,7 @@
     <script type="text/javascript" src="js/common/common.js"></script>
     <!-- Fluid Video Hack ================================================== -->
     <script type="text/javascript">
+      // Set Vimeo Volume
       var $vimeoIntro = $('#vimeoIntro'),
           iframe,
           player;
@@ -659,16 +660,13 @@
         });
       }
 
+      // Video Fit Screen
       var $allVideos = $("iframe[src^='https://player.vimeo.com'], iframe[src^='https://www.youtube.com']"),
+          width = $(window).width(),
+          height = $(window).height() - $('.header').height(),
           aspectRatio;
 
-          // The element that is fluid width
-
-      console.log($allVideos);
-
       if ($allVideos.length) {
-        var width = $(window).width(),
-            height = $(window).height() - $('.header').height();
 
         aspectRatio = height / width ;
 
@@ -696,6 +694,12 @@
 
         // Kick off one resize to fix all videos on page load
         });
+      }
+
+      // Awards Fit Screen
+      var $sectionAwards = $('section.awards');
+      if ($sectionAwards.length) {
+        $sectionAwards.height(height);
       }
     </script>
 </body>
