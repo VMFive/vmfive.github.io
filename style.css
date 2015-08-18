@@ -2281,6 +2281,82 @@ hr,
   background-color: #ff6b6b;
 }
 /* --- Slider --------------------- */
+.triangle-down {
+  width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid;
+  border-top-color: #FC981C;
+}
+.slider .triangle-down {
+    position: relative;
+    bottom: 30px;
+    margin: 0 auto;
+
+    -webkit-animation: sliderTriangle 0.5s ease-in infinite;
+    -moz-animation: sliderTriangle 0.5s ease-in infinite;
+    -ms-animation: sliderTriangle 0.5s ease-in infinite;
+    -o-animation: sliderTriangle 0.5s ease-in infinite;
+    animation: sliderTriangle 0.5s ease-in infinite;
+
+    -webkit-transition: border-top-color 0.8s ease-in-out, bottom 0.8s ease-in-out;
+    -moz-transition: border-top-color 0.8s ease-in-out, bottom 0.8s ease-in-out;
+    -ms-transition: border-top-color 0.8s ease-in-out, bottom 0.8s ease-in-out;
+    -o-transition: border-top-color 0.8s ease-in-out, bottom 0.8s ease-in-out;
+    transition: border-top-color 0.8s ease-in-out, bottom 0.8s ease-in-out;
+}
+
+.slider .triangle-down:hover {
+  cursor: pointer;
+  border-top-color: #FEA647;
+}
+
+@-webkit-keyframes sliderTriangle {
+    from {
+      bottom: 35px;
+    }
+    to {
+      bottom: 30px;
+    }
+}
+
+@-moz-keyframes sliderTriangle {
+    from {
+      bottom: 35px;
+    }
+    to {
+      bottom: 30px;
+    }
+}
+
+@-ms-keyframes sliderTriangle {
+    from {
+      bottom: 35px;
+    }
+    to {
+      bottom: 30px;
+    }
+}
+
+@-o-keyframes sliderTriangle {
+    from {
+      bottom: 35px;
+    }
+    to {
+      bottom: 30px;
+    }
+}
+
+@keyframes sliderTriangle {
+    from {
+      bottom: 35px;
+    }
+    to {
+      bottom: 30px;
+    }
+}
+
 .slider {
   border-top: 1px solid #242832;
 }
@@ -2495,7 +2571,7 @@ hr,
 .sliderStyle1 .owl-controls .owl-dots {
   position: absolute;
   /*position: relative;*/
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   left: 0px;
   width: 100%;
   text-align: center;

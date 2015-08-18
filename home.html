@@ -177,6 +177,13 @@
                                 <a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank">Join Us</a>
                                 <!-- end of dropdown -->
                             </li>
+                            <li class="lang">
+                                <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                                    <option disabled="disabled" value="NoSeclect">Language</option>
+                                    <option value="home.html" selected="selected">English</option>
+                                    <option value="home_japanese.html">日本語</option>
+                                </select>
+                            </li>
                         </ul>
                         <!-- end of nav tabs -->
                     </nav>
@@ -204,11 +211,11 @@
                     <img width="1024" height="542" src="images/home/kv-bg-1.png" style="opacity:0;" title="Slide 1" alt="slide 1">
                     <div class="captions">
                         <h2 class="animated kv-title">Welcome to VMFive</h2>
-                        <p class="animated kv-desc">
+                        <!-- <p class="animated kv-desc">
                             VMFive is a cloud-based technology company,
                             <br>targeting global mobile market with its
                             <br>leading virtualization and streaming technologies.
-                        </p>
+                        </p> -->
                     </div>
                     <!-- end of captions -->
                 </div>
@@ -241,13 +248,13 @@
                             <br>
                             <span class="orange">S</span>mart <span class="orange">E</span>xecution -->
                         </p>
-
                     </div>
                     <!-- end of captions -->
                 </div>
                 <!-- end of slide -->
             </div>
             <!-- end of main slider -->
+            <div class="triangle-down"></div>
         </section>
         <!-- end of slider -->
 

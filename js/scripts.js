@@ -60,7 +60,7 @@ This file includes all cusomized javascript and all plugins libraries options
 
   if($slider.length){
     $(window).scroll(function () {
-      sliderBottom = $('section#slider').offset().top + $slider.height() - 80;
+      sliderBottom = $('section#slider').offset().top + $slider.height() - 100;
       scrollTop = $(window).scrollTop();
       if(scrollTop > sliderBottom && $homeHeader.hasClass('transparent')) {
         $homeHeader.removeClass('transparent');
@@ -72,6 +72,23 @@ This file includes all cusomized javascript and all plugins libraries options
       }
     });
   }
+
+  var $sliderTriangle = $('section#slider .triangle-down');
+
+  $sliderTriangle.on('click', function (e) {
+      e.preventDefault();
+
+      var $features = $('section#features'),
+          $navbar = $('.header');
+
+      $('html, body').stop().animate({
+        'scrollTop': $features.offset().top - $navbar.height()
+      }, 800, 'swing', function () {
+        window.location.hash = '#features';
+      });
+
+      $(this).css('display', 'none');
+  })
 
   // jQuery('.offset').height( jQueryheader.outerHeight() )
 
