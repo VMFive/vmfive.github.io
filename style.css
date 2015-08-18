@@ -8155,6 +8155,7 @@ img.fnone {
   display: block;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .aboutIntro > .title,
