@@ -8151,7 +8151,7 @@ img.fnone {
 
 .aboutIntro {
   width: 100%;
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   display: block;
   position: relative;
   margin: 0 auto;
@@ -8164,8 +8164,7 @@ img.fnone {
 }
 
 .aboutIntro img {
-  width: 50%;
-  vertical-align: top;
+  width: 100%;
 }
 
 .aboutIntro .desc {
@@ -8362,6 +8361,14 @@ img.fnone {
 .team .card .desc {
   height: 86px;
   line-height: 1.5;
+}
+
+/* 2015 Summer Intern */
+.intern {
+  margin-bottom: 80px;
+}
+.intern img {
+  width: 100%;
 }
 
 

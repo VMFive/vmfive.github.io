@@ -166,6 +166,13 @@
                                 <a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank">Join Us</a>
                                 <!-- end of dropdown -->
                             </li>
+                            <li class="lang">
+                                <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                                    <option disabled="disabled" value="NoSeclect">Language</option>
+                                    <option value="home.html" selected="selected">English</option>
+                                    <option value="home_japanese.html">日本語</option>
+                                </select>
+                            </li>
                         </ul>
                         <!-- end of nav tabs -->
                     </nav>

@@ -86,8 +86,6 @@ This file includes all cusomized javascript and all plugins libraries options
       }, 800, 'swing', function () {
         window.location.hash = '#features';
       });
-
-      $(this).css('display', 'none');
   })
 
   // jQuery('.offset').height( jQueryheader.outerHeight() )
