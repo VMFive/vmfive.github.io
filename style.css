@@ -1437,6 +1437,13 @@ hr,
   padding: 0 40px 20px;
   border-bottom: 1px solid white;
 }
+
+.slider .kv-desc-2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
 .slider .kv-desc-3 {
   font-size: 39px;
   font-weight: bold;
@@ -8327,6 +8334,7 @@ img.fnone {
 
 .team .section {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .team .section .title {
@@ -8350,7 +8358,7 @@ img.fnone {
   vertical-align: bottom;
 }
 
-.team .card:last-child {
+.team .card:nth-child(4n) {
   margin-right: 0;
 }
 

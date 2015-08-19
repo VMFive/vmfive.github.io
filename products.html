@@ -195,7 +195,7 @@
 
         <section class="product section mainSection scrollAnchor" id="product">
             <div id="product-wrapper">
-                <video id="product-video" preload="auto" loop="loop" autoplay="autoplay" height="auto" muted="true" style="position:relative;top:-25%;">
+                <video id="product-video" preload="auto" loop="loop" autoplay="autoplay" height="auto" muted="true" style="position:relative;">
                     <source src="video/adplay_demo.mp4" type="video/mp4">
                     <source src="video/adplay_demo.mp4" type="video/webm">
                     <source src="video/adplay_demo.mp4" type="video/ogg">
@@ -513,7 +513,7 @@
 
     function videoResize(wrapper, video) {
         var winWidth = $(window).width();
-        $(wrapper).height(winWidth*0.28125);
+        $(wrapper).height(winWidth*0.48125);
         $(video).width(winWidth);
     }
     </script>
