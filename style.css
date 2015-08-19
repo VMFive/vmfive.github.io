@@ -8560,7 +8560,8 @@ img.fnone {
 .news .item > a.readmore:hover {
   opacity: 0.8;
 }
-.news .moreNews {
+.news .moreNews,
+.vmmedia .moreNews {
   background-color: #FEA800;
   position: relative;
   width: 160px;
@@ -8577,7 +8578,8 @@ img.fnone {
 
 }
 
-.news .moreNews > a {
+.news .moreNews > a,
+.vmmedia .moreNews > a {
   font-weight: 500;
   font-size: 18px;
   text-decoration: none;
