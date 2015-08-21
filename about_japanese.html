@@ -71,22 +71,22 @@
     <script>
     (function(i, s, o, g, r, a, m) {
         // Region detect for Language
-        // var lang = window.navigator.userLanguage || window.navigator.language;
-        // var pathname = window.location.pathname.slice(1).split('.')[0].split('_');
-        //
-        // if (!window.location.search) {
-        //     switch (lang.toLowerCase()) {
-        //         case "ja":
-        //         case "ja-jp":
-        //             if (pathname.length < 2 || (pathname.length > 1 && pathname[1] !== "japanese"))
-        //                 window.location.href = "about_japanese.html";
-        //             break;
-        //         default:
-        //             if (pathname.length > 1)
-        //                 window.location.href = "about.html";
-        //             break;
-        //     }
-        // }
+        var lang = window.navigator.userLanguage || window.navigator.language;
+        var pathname = window.location.pathname.slice(1).split('.')[0].split('_');
+
+        if (!window.location.search) {
+            switch (lang.toLowerCase()) {
+                case "ja":
+                case "ja-jp":
+                    if (pathname.length < 2 || (pathname.length > 1 && pathname[1] !== "japanese"))
+                        window.location.href = "about_japanese.html";
+                    break;
+                default:
+                    if (pathname.length > 1)
+                        window.location.href = "about.html";
+                    break;
+            }
+        }
 
         // Google Analytics Init
         i['GoogleAnalyticsObject'] = r;
@@ -151,7 +151,7 @@
                                 <!-- end of dropdown -->
                             </li>
                             <li>
-                                <a href="products_japanese.html">産品</a>
+                                <a href="products_japanese.html?lang=true">産品</a>
                                 <!-- end of dropdown -->
                             </li>
                             <li>
@@ -159,7 +159,7 @@
                                 <!-- end of dropdown -->
                             </li>
                             <li>
-                                <a href="news_japanese.html">ニュース</a>
+                                <a href="news_japanese.html?lang=true">ニュース</a>
                                 <!-- end of dropdown -->
                             </li>
                             <li>
