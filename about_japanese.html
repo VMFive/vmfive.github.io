@@ -39,16 +39,17 @@
     <!-- favicon -->
     <link href="images/favicon.ico" rel="shortcut icon">
 
-    <!-- CSS 
+    <!-- CSS
     ============== -->
     <!-- libraries -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
-    <link rel="stylesheet" type="text/css" href="css/css3-animations.css"> 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"> 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext"> 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css3-animations.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
     <!-- main stylesheet-->
-    <link href="style.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- <link href="style.min.css" media="screen" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     <!-- responsive -->
     <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><!-->
@@ -70,22 +71,22 @@
     <script>
     (function(i, s, o, g, r, a, m) {
         // Region detect for Language
-        var lang = window.navigator.userLanguage || window.navigator.language;
-        var pathname = window.location.pathname.slice(1).split('.')[0].split('_');
-
-        if (!window.location.search) {
-            switch (lang.toLowerCase()) {
-                case "ja":
-                case "ja-jp":
-                    if (pathname.length < 2 || (pathname.length > 1 && pathname[1] !== "japanese"))
-                        window.location.href = "about_japanese.html";
-                    break;
-                default:
-                    if (pathname.length > 1)
-                        window.location.href = "about.html";
-                    break;
-            }
-        }
+        // var lang = window.navigator.userLanguage || window.navigator.language;
+        // var pathname = window.location.pathname.slice(1).split('.')[0].split('_');
+        //
+        // if (!window.location.search) {
+        //     switch (lang.toLowerCase()) {
+        //         case "ja":
+        //         case "ja-jp":
+        //             if (pathname.length < 2 || (pathname.length > 1 && pathname[1] !== "japanese"))
+        //                 window.location.href = "about_japanese.html";
+        //             break;
+        //         default:
+        //             if (pathname.length > 1)
+        //                 window.location.href = "about.html";
+        //             break;
+        //     }
+        // }
 
         // Google Analytics Init
         i['GoogleAnalyticsObject'] = r;
@@ -133,7 +134,7 @@
         <!-- Header -->
         <header class="header headerStyle1" id="header">
             <div class="sticky scrollHeaderWrapper">
-                <div class="grid-940">
+                <div class="grid-940 flex-vertical-center">
                     <div class="logoWrapper">
                         <h1 class="logo">
                           <a class="clearfix" href="home.html">
@@ -143,7 +144,7 @@
                         <!-- end of logo -->
                     </div>
                     <!-- end of logoWrapper -->
-                    <nav class="mainMenu mainNav" id="mainNav">
+                    <nav class="mainMenu mainNav flex-pull-right" id="mainNav">
                         <ul class="navTabs">
                             <li>
                                 <a href="home_japanese.html?lang=true">Home</a>
@@ -151,10 +152,6 @@
                             </li>
                             <li>
                                 <a href="products_japanese.html">産品</a>
-                                <!-- end of dropdown -->
-                            </li>
-                            <li>
-                                <a href="partners_japanese.html">パートナー</a>
                                 <!-- end of dropdown -->
                             </li>
                             <li>
@@ -169,13 +166,18 @@
                                 <a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank">社員応募</a>
                                 <!-- end of dropdown -->
                             </li>
+                            <li class="lang">
+                                <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                                    <option disabled="disabled" value="NoSeclect">Language</option>
+                                    <option value="home.html">English</option>
+                                    <option value="home_japanese.html">日本語</option>
+                                </select>
+                            </li>
                         </ul>
                         <!-- end of nav tabs -->
                     </nav>
                     <!-- end of main nav -->
-                    <a href="#" class="generalLink" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
-                    <div class="clearfix"></div>
-                    <!-- end of clearfix -->
+                    <a href="#" class="generalLink flex-pull-right" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
                     <div class="responsiveMainNav"></div>
                     <!-- end of responsive main nav -->
                 </div>
@@ -191,13 +193,7 @@
         <!-- end of header fill block -->
 
         <section class="aboutIntro section mainSection scrollAnchor lightSection" id="aboutIntro">
-            <div class="grid-940">
-                <div class="title">VMFive</div>
-                <img src="images/about/vmfive-group.png" alt="">
-                <div class="desc">
-                    <span>VMFiveはグローバルモバイル市場をターゲットとした、最先端の仮想環境とストリーミングテクノロジーを持ち合わせたクラウドベースの会社である。我々が提案するイノベーティブな商品「AdPlay」とは、モバイルアプリをプレイアブル広告（Playable Ads）へ変身させ、ダウンロードする前からアプリのトライアルを実現化したクラウドサービス。全社員はエリート校やトップ企業から出身で、技術研究と業務開発に関して豊富な経験を持っている。</span>
-                </div>
-            </div>
+            <img src="images/about/aboutkv.jpg" alt="">
         </section>
 
         <section class="aboutHistory section mainSection scrollAnchor lightSection" id="aboutHistory">
@@ -285,10 +281,10 @@
 
         <section class="team section mainSection scrollAnchor lightSection" id="team">
             <div class="grid-940">
-                <div class="title">チームメンバー</div>
+                <div class="title">TEAM</div>
                 <div class="section">
-                    <div class="title">Founders</div>
-                    <div class="separate"></div>
+                    <!-- <div class="title">Founders</div> -->
+                    <!-- <div class="separate"></div> -->
                     <div class="card">
                         <img src="images/about/team/SamDing.jpg" alt="">
                         <div class="desc"><strong>Sam Ding</strong><br>Co-Founder & Chief Excutive Officer</div>
@@ -301,10 +297,6 @@
                         <img src="images/about/team/ShawnLee.jpg" alt="">
                         <div class="desc"><strong>Shawn Lee</strong><br>Co-Founder & Director of New Business Development</div>
                     </div>
-                </div>
-                <div class="section">
-                    <div class="title">Global Operation Team</div>
-                    <div class="separate"></div>
                     <div class="card">
                         <img src="images/about/team/ClaireLee.jpg" alt="">
                         <div class="desc"><strong>Claire Lee</strong><br>Chief Financial Officer</div>
@@ -325,11 +317,6 @@
                         <img src="images/about/team/GillianYang.jpg" alt="">
                         <div class="desc"><strong>Gillian Yang</strong><br>Executive Secretary</div>
                     </div>
-
-                </div>
-                <div class="section">
-                    <div class="title">Business Team</div>
-                    <div class="separate"></div>
                     <div class="card">
                         <img src="images/about/team/JoniWen.jpg" alt="">
                         <div class="desc"><strong>Joni Wen</strong><br>Japan Business Development Manager</div>
@@ -354,11 +341,6 @@
                         <img src="images/about/team/JosephineYang.jpg" alt="">
                         <div class="desc"><strong>Josephine Yang</strong><br>Campaign Manager</div>
                     </div>
-
-                </div>
-                <div class="section">
-                    <div class="title">Product Team</div>
-                    <div class="separate"></div>
                     <div class="card">
                         <img src="images/about/team/CharlesWu.jpg" alt="">
                         <div class="desc"><strong>Charles Wu</strong><br>Product Designer</div>
@@ -383,10 +365,6 @@
                         <img src="images/about/team/CadesKao.jpg" alt="">
                         <div class="desc"><strong>Cades Kao</strong><br>Quality Assurance Engineer</div>
                     </div>
-                </div>
-                <div class="section">
-                    <div class="title">Technology Team</div>
-                    <div class="separate"></div>
                     <div class="card">
                         <img src="images/about/team/PatrickShih.jpg" alt="">
                         <div class="desc"><strong>Patrick Shih</strong><br>Research and Development Manager</div>
@@ -400,17 +378,13 @@
                         <div class="desc"><strong>Jim Yeh</strong><br>Cloud Software Engineer</div>
                     </div>
                     <div class="card">
-                        <img src="images/about/team/news-logo.png" alt="" style="background-color:#DDD;padding: 40%;">
+                        <img src="images/about/team/news-logo.png" alt="" style="background-color:#DDD; padding: 40%">
                         <div class="desc"><strong>Curtis Guo</strong><br>System Engineer</div>
                     </div>
                     <div class="card">
                         <img src="images/about/team/KobeKo.jpg" alt="">
                         <div class="desc"><strong>Kobe Ko</strong><br>System Engineer</div>
                     </div>
-                </div>
-                <div class="section">
-                    <div class="title">Data Team</div>
-                    <div class="separate"></div>
                     <div class="card">
                         <img src="images/about/team/SimonHsu.jpg" alt="">
                         <div class="desc"><strong>Simon Hsu</strong><br>Big Data Manager</div>
@@ -420,6 +394,26 @@
                         <div class="desc"><strong>Gordon Tai</strong><br>Big Data Engineer</div>
                     </div>
                 </div>
+                <!-- <div class="section">
+                    <div class="title">Global Operation Team</div>
+                    <div class="separate"></div>
+                </div>
+                <div class="section">
+                    <div class="title">Business Team</div>
+                    <div class="separate"></div>
+                </div>
+                <div class="section">
+                    <div class="title">Product Team</div>
+                    <div class="separate"></div>
+                </div>
+                <div class="section">
+                    <div class="title">Technology Team</div>
+                    <div class="separate"></div>
+                </div>
+                <div class="section">
+                    <div class="title">Data Team</div>
+                    <div class="separate"></div>
+                </div> -->
             </div>
         </section>
 
@@ -495,10 +489,22 @@
     <!-- end of all wrapper -->
 
     <!-- JavaScript Files ================================================== -->
-    <script src="js/compiler.min.js" type="text/javascript"></script>
-    <script src="js/scripts.min.js" type="text/javascript"></script>
     <!-- BootStrap JavaScript ================================================== -->
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- <script src="js/compiler.min.js" type="text/javascript"></script> -->
+    <script type="text/javascript" src="js/compiler.js"></script>
+    <!-- <script src="js/scripts.min.js" type="text/javascript"></script> -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+
+    <script type="text/javascript">
+      var pathname = window.location.pathname.slice(1).split('.')[0].split('_');
+      if (pathname.length > 1 && pathname[1] === "japanese") {
+        $('#language option[value="home_japanese.html"]').prop('selected',true);// or .change()
+      }
+      var $aboutIntro = $('section#aboutIntro');
+      $aboutIntro.height( $(window).height() - $('.header').height());
+    </script>
 </body>
 
 </html>
