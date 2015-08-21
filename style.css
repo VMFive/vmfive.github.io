@@ -2384,7 +2384,7 @@ hr,
   position: absolute;
   width: 100%;
   /*height: 50%;*/
-  top: 45%;
+  top: 37%;
   left: 0%;
   margin: -8% 0px 0px 0px;
   z-index: 100;
@@ -7680,7 +7680,7 @@ img.fnone {
 }
 
 .awards .kv-title {
-  font-size: 30px;
+  font-size: 26px;
   line-height: 2.2;
   border-bottom: 1px solid white;
   position: relative;
@@ -7735,18 +7735,41 @@ img.fnone {
   margin-right: 0px;
 }
 
+
+
 .partners .partner {
+  position: relative;
   border: 1px solid #ccc;
   border-radius: 3px;
   text-align: center;
   cursor: pointer;
 }
+
+.partners .partner .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+
+}
 .partners .active {
   border: 2px solid #FE8F00 !important;
-
 }
 .partners .partner:hover {
   border: 1px solid #FE8F00;
+}
+.partners .partner:hover .mask,
+.partners .active .mask {
+  opacity: 0;
 }
 .partners .partner img {
   width: 100%;
