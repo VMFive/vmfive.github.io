@@ -7688,6 +7688,12 @@ img.fnone {
   margin: 0 auto 15px;
 }
 
+.awards .kv-title > div:first-child {
+  line-height: 1.25;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
 .awards .kv-desc {
 
 }
