@@ -77,6 +77,8 @@
         var lang = window.navigator.userLanguage || window.navigator.language;
         var pathname = window.location.pathname.slice(1).split('.')[0].split('_');
 
+
+
         if (!window.location.search) {
             switch (lang.toLowerCase()) {
                 case "ja":
@@ -673,6 +675,10 @@
     <script type="text/javascript" src="js/common/common.js"></script>
     <!-- Fluid Video Hack ================================================== -->
     <script type="text/javascript">
+      var pathname = window.location.pathname.slice(1).split('.')[0].split('_');
+      if (pathname.length > 1 && pathname[1] === "japanese") {
+        $('#language option[value="home_japanese.html"]').prop('selected',true);// or .change()
+      }
       // Set Vimeo Volume
       var $vimeoIntro = $('#vimeoIntro'),
           iframe,
