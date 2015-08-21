@@ -169,8 +169,8 @@
                             <li class="lang">
                                 <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
                                     <option disabled="disabled" value="NoSeclect">Language</option>
-                                    <option value="home.html" selected="selected">English</option>
-                                    <option value="home_japanese.html">日本語</option>
+                                    <option value="products.html" selected="selected">English</option>
+                                    <option value="products_japanese.html">日本語</option>
                                 </select>
                             </li>
                         </ul>
@@ -437,7 +437,7 @@
     <script>
         var pathname = window.location.pathname.slice(1).split('.')[0].split('_');
         if (pathname.length > 1 && pathname[1] === "japanese") {
-          $('#language option[value="home_japanese.html"]').prop('selected',true);// or .change()
+          $('#language option[value="products_japanese.html"]').prop('selected',true);// or .change()
         }
         document.addEventListener("DOMContentLoaded", function(event) {
 
