@@ -1404,13 +1404,15 @@ hr,
 }
 .slider .kv-title {
   font-size: 50px;
-  margin: 25px;
+  margin: 30px auto;
+  padding-bottom: 25px;
   line-height: 1.0;
+  width: 600px;
+  border-bottom: 1px solid white;
 }
 .slider .kv-desc {
   font-weight: bold;
   color: white;
-  line-height:
   line-height: 1.5;
 }
 .slider .item img {
@@ -1424,7 +1426,9 @@ hr,
   width: 300px;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid white;
 }
 .slider #kv-logo-3 {
   max-width: 400px;
@@ -2391,7 +2395,7 @@ hr,
 }
 
 .slider .kvSlider .captions {
-  top: 50%;
+  top: 45%;
 }
 
 @media (min-width: 1900px) {
@@ -7868,19 +7872,18 @@ img.fnone {
   text-align: center;
   font-size: 30px;
   color: white;
-  padding: 67.5px 0;
+  padding: 54px 0;
 }
 .hiring .desc {
   font-size: 18px;
-  font-style: italic;
+  /*font-style: italic;*/
   font-weight: lighter;
-  margin-bottom: 3px;
-  border-bottom: 1px solid white;
   font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
 }
 
 .hiring a {
   text-decoration: none;
+  border-bottom: 1px solid white;
   color: white;
 }
 
@@ -7972,7 +7975,8 @@ img.fnone {
   padding: 0 0 80px;
 }
 
-.adplay .section-1 {
+.adplay .section-1,
+.howitwork .section-1 {
   text-align: center;
   margin-bottom: 160px;
 
@@ -7983,14 +7987,14 @@ img.fnone {
   width: 45px;
 }
 
-.adplay .section-1 .arrow {
+.adplay .section-1 .arrow,
+.howitwork .section-1 .arrow {
   top: 60px;
 }
 
 .section-1 .item {
   display: inline-block;
   vertical-align: top;
-
 }
 
 .section-1 .item img {
@@ -8003,8 +8007,8 @@ img.fnone {
   text-align: center;
   height: 60px;
   width: 220px;
-  border: 2px solid #202630;
-  border-radius: 8px;
+  /*border: 2px solid #202630;*/
+  /*border-radius: 8px;*/
   padding-top: 7px;
 }
 
@@ -8078,25 +8082,30 @@ img.fnone {
   margin: 0 auto;
 }
 
+.howitwork .section-1 .item img {
+  width: 200px;
+  height: 140px;
+}
+
 .howitwork .title {
   margin-top: 80px;
   margin-bottom: 80px;
   /*margin: 80px 0;*/
 }
 
-.howitwork .section-1 .title {
+/*.howitwork .section-1 .title {
   margin-top: 140px;
-}
+}*/
 
 .howitwork .section-2 .title {
   margin-top: 140px;
 }
 
-.howitwork .section-1 img {
+/*.howitwork .section-1 img {
   display: block;
   margin: 0 auto;
   padding-top: 60px;
-}
+}*/
 
 .howitwork .subtitle {
   margin: 20px auto;
@@ -8618,6 +8627,7 @@ img.fnone {
   background-color: #FEA800;
   position: relative;
   width: 160px;
+  text-align: center;
   padding: 12px 30px;
   border-radius: 5px;
   margin: 0 auto;
