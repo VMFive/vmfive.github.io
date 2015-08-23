@@ -1405,10 +1405,7 @@ hr,
 .slider .kv-title {
   font-size: 50px;
   margin: 30px auto;
-  padding-bottom: 25px;
   line-height: 1.0;
-  width: 600px;
-  border-bottom: 1px solid white;
 }
 .slider .kv-desc {
   font-weight: bold;
@@ -1426,20 +1423,16 @@ hr,
   width: 300px;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 30px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid white;
+  margin-bottom: 12px;
 }
 .slider #kv-logo-3 {
-  max-width: 400px;
+  max-width: 300px;
   min-width: 290px;
   width: 100%;
   position: relative;
   top: -10px;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding: 0 40px 20px;
-  border-bottom: 1px solid white;
 }
 
 .slider .kv-desc-2 {
@@ -1449,7 +1442,7 @@ hr,
 }
 
 .slider .kv-desc-3 {
-  font-size: 39px;
+  font-size: 28px;
   font-weight: bold;
   color: white;
 }
@@ -2395,7 +2388,7 @@ hr,
 }
 
 .slider .kvSlider .captions {
-  top: 45%;
+  top: 50%;
 }
 
 @media (min-width: 1900px) {
