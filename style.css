@@ -8222,7 +8222,7 @@ img.fnone {
 
 .aboutIntro .mask > h1 {
   font-size: 40px;
-  letter-spacing: 0.08em;
+  /*letter-spacing: 0.08em;*/
   /*color: white;*/
 }
 
