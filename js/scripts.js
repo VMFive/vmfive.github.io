@@ -55,21 +55,29 @@ This file includes all cusomized javascript and all plugins libraries options
   var $slider = $('section#slider'),
       $homeHeader = $('.header'),
       $homeHeaderResponsiveNav = $('.header .responsiveMainNav'),
+      threshold = 120,
       scrollTop,
       sliderBottom;
 
   if($slider.length){
     $(window).scroll(function () {
-      sliderBottom = $('section#slider').offset().top + $slider.height() - 100;
+      // sliderBottom = $('section#slider').offset().top + $slider.height() - 100;
       scrollTop = $(window).scrollTop();
-      if(scrollTop > sliderBottom && $homeHeader.hasClass('transparent')) {
+      if (scrollTop > threshold && $homeHeader.hasClass('transparent')){
         $homeHeader.removeClass('transparent');
         $homeHeaderResponsiveNav.removeClass('transparent');
-        console.log($('.header .responsiveMainNav'));
-      } else if(scrollTop < sliderBottom && !$homeHeader.hasClass('transparent')) {
+      } else if (scrollTop < threshold && !$homeHeader.hasClass('transparent')) {
         $homeHeader.addClass('transparent');
         $homeHeaderResponsiveNav.addClass('transparent');
       }
+      // if(scrollTop > sliderBottom && $homeHeader.hasClass('transparent')) {
+      //   $homeHeader.removeClass('transparent');
+      //   $homeHeaderResponsiveNav.removeClass('transparent');
+      //   console.log($('.header .responsiveMainNav'));
+      // } else if(scrollTop < sliderBottom && !$homeHeader.hasClass('transparent')) {
+      //   $homeHeader.addClass('transparent');
+      //   $homeHeaderResponsiveNav.addClass('transparent');
+      // }
     });
   }
 

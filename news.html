@@ -137,19 +137,15 @@
                 <div class="grid-940 flex-vertical-center">
                     <div class="logoWrapper">
                         <h1 class="logo">
-                            <a class="clearfix" href="home.html">
+                            <a class="clearfix" href="home.html?lang=true">
                               <img src="images/home/header_logo.png" alt="">
                             </a>
                         </h1>
                         <!-- end of logo -->
                     </div>
                     <!-- end of logoWrapper -->
-                    <nav class="mainMenu mainNav flex-pull-right" id="mainNav">
+                    <nav class="mainMenu mainNav" id="mainNav">
                         <ul class="navTabs">
-                            <li>
-                                <a href="home.html?lang=true">Home</a>
-                                <!-- end of dropdown -->
-                            </li>
                             <li>
                                 <a href="products.html?lang=true">Products</a>
                                 <!-- end of dropdown -->
@@ -159,23 +155,24 @@
                                 <!-- end of dropdown -->
                             </li>
                             <li>
-                                <a class="active" href="#">News</a>
+                                <a href="news.html?lang=true">News</a>
                                 <!-- end of dropdown -->
                             </li>
                             <li>
                                 <a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank">Join Us</a>
                                 <!-- end of dropdown -->
                             </li>
-                            <li class="lang">
-                                <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
-                                    <option disabled="disabled" value="NoSeclect">Language</option>
-                                    <option value="news.html" selected="selected">English</option>
-                                    <option value="news_japanese.html">日本語</option>
-                                </select>
-                            </li>
+                            <!-- <li class="lang">
+
+                            </li> -->
                         </ul>
                         <!-- end of nav tabs -->
                     </nav>
+                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                        <option disabled="disabled" value="NoSeclect">Language</option>
+                        <option value="home.html" selected="selected">English</option>
+                        <option value="home_japanese.html">日本語</option>
+                    </select>
                     <!-- end of main nav -->
                     <a href="#" class="generalLink flex-pull-right" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
                     <div class="clearfix"></div>
@@ -246,6 +243,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="moreNews">
+                    <a href="#">View More</a>
+                </div>
             </div>
         </section>
         <!-- end of news section -->
@@ -298,6 +298,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="moreNews">
+                    <a href="#">View More</a>
+                </div>
             </div>
         </section>
         <!-- end of news section -->
@@ -331,7 +334,7 @@
         <!-- Media -->
         <section class="hiring section mainSection scrollAnchor" id="hiring">
             <div class="grid-940">
-                <div class="bg mediabg title">MEDIA KIT
+                <!-- <div class="bg mediabg title">MEDIA KIT
                     <br>
                     <span class="desc">
                         Press Here to Download
@@ -339,6 +342,9 @@
                     <div class="desc">
                       繁中／簡中／EN／<a href="https://drive.google.com/file/d/0BzKA4TupJrFzb3BWVm9kZEp3YlU/view?usp=sharing" target="_blank">日本語</a>
                     </div>
+                </div> -->
+                <div class="bg hiringbg title">WE'RE HIRING!
+                    <br><a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank"><span class="desc">Welcome to Join Our Mission and Reinvent the Mobile Industry.</span></a>
                 </div>
             </div>
         </section>
