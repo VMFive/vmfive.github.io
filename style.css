@@ -8389,7 +8389,11 @@ img.fnone {
 
 .team .section {
   margin-bottom: 40px;
-  text-align: center;
+  /*text-align: center;*/
+}
+
+.team .section-wrapper {
+  margin: 0 auto
 }
 
 .team .section .title {
@@ -8405,7 +8409,8 @@ img.fnone {
 }
 
 .team .card {
-  width: 22.5%;
+  /*width: 22.5%;*/
+  width: 216.8px;
   display: inline-block;
   margin-right: 20px;
   text-align: center;
@@ -8424,7 +8429,11 @@ img.fnone {
 
 .team .card .desc {
   height: 86px;
-  line-height: 1.5;
+  line-height: 1;
+}
+
+.team .card .desc strong {
+  line-height: 2;
 }
 
 /* 2015 Summer Intern */
