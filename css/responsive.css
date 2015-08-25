@@ -2261,7 +2261,7 @@
     margin-left: 0;
   }
 
-  /* Sliders 320px */
+  /* Sliders 321px - 479px */
   .slider .kv-title {
     font-size: 32px;
   }
@@ -2290,7 +2290,7 @@
     white-space: nowrap;
   }
 
-  /* Feature 320px */
+  /* Feature 321px - 479px */
   .features .wrapper {
     margin-bottom: 20px;
   }
@@ -2298,13 +2298,13 @@
     margin-bottom: 40px;
   }
 
-  /* Intro 320px */
+  /* Intro 321px - 479px */
   .intro #vimeoIntro {
     width: 100% !important;
     height: auto !important;
   }
 
-  /* awards 320px */
+  /* awards 321px - 479px */
   .awards .sliderStyle1 .captions {
     top: 31%;
   }
@@ -2315,7 +2315,7 @@
     padding-bottom: 10px;
   }
 
-  /* Partners 320px */
+  /* Partners 321px - 479px */
   .partners .wrapper-1 {
     text-align: center;
   }
@@ -2341,7 +2341,7 @@
     margin-top: 20px;
   }
 
-  /* Home News 320px */
+  /* Home News 321px - 479px */
   .news .item-wrapper {
     margin-right: 0px;
     margin-bottom: 20px;
@@ -2358,7 +2358,7 @@
     left: 9px;
   }
 
-  /* Hiring 320px */
+  /* Hiring 321px - 479px */
   .hiring {
     background-image: url('../images/home/img_mobile_hire_bg.png');
     background-size: cover;
@@ -2367,7 +2367,7 @@
     background: none;
   }
 
-  /* Footer 320px */
+  /* Footer 321px - 479px */
   .topVMFooter .social {
     padding: 0px;
     border: none;
@@ -2387,7 +2387,7 @@
   }
 
   /***************************/
-  /*     Products 320px      */
+  /* Products 321px - 479px  */
   /***************************/
 
   .product #product-wrapper,
@@ -2399,7 +2399,7 @@
     margin-left: -22.5px;
   }*/
 
-  /* Adplay 320px */
+  /* Adplay 321px - 479px */
 
   .adplay {
     padding-bottom: 40px;
@@ -2411,14 +2411,14 @@
     margin-bottom: 40px;
   }
 
-  /* Benefit 320px */
+  /* Benefit 321px - 479px */
 
   .benefit .title,
   .benefit .subtitle {
     margin-bottom: 30px;
   }
 
-  /* Howitwork 320px */
+  /* Howitwork 321px - 479px */
 
   .howitwork {
     padding-bottom: 20px;
@@ -2459,6 +2459,77 @@
   .howitwork .section-2 td .desc {
     padding-right: 20px;
     width: auto
+  }
+
+  /***************************/
+  /*   About 321px - 479px   */
+  /***************************/
+
+  .aboutIntro > img {
+    width: 100%;
+  }
+
+  .aboutIntro > .mask {
+    height: 45%;
+  }
+
+  .aboutIntro > .mask > h1 {
+    font-size: 24px;
+  }
+
+  /* Abouthistory 321px - 479px */
+  .aboutHistory .event .date,
+  .aboutHistory .event .desc,
+  .aboutHistory .event strong {
+    font-size: 12px;
+  }
+
+  .aboutHistory .timeline-mobile div.events {
+    width: 100%;
+  }
+
+  .aboutHistory .timeline-mobile .event {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .aboutHistory .rocket {
+    margin: 0px;
+    padding-bottom: 0px;
+  }
+
+  /* Team 321px - 479px */
+
+  .team .section {
+    margin-bottom: 0px;
+  }
+  .team .card {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  .team .card:nth-child(2n) {
+    margin-right: 0px;
+  }
+
+  .team .card .desc,
+  .team .card .desc strong {
+    font-size: 12px;
+  }
+
+  /* Intern 321px - 479px */
+  .intern {
+    margin-bottom: 60px;
+  }
+
+  .intern .title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .intern .desc blockquote {
+    font-size: 12px;
   }
 }
 
@@ -3137,9 +3208,9 @@
 
    /* Home Page*/
 
-   .partners .quote {
-     width: 10%;
-   }
+  .partners .quote {
+    width: 10%;
+  }
 
   .hiring .title {
     font-size: 24px;
@@ -3217,10 +3288,6 @@
   .aboutIntro {
     text-align: center;
   }
-  .aboutIntro img {
-    width: 80%;
-    margin-bottom: 20px;
-  }
   .aboutIntro .desc {
     width: 80%;
     margin-left: 0;
@@ -3238,18 +3305,16 @@
   .aboutHistory .timeline-mobile div {
     display: inline-block;
   }
-  .aboutHistory .timeline-mobile div.seperate {
-    float: left;
-  }
-  .aboutHistory .timeline-mobile div.events {
+
+  /*.aboutHistory .timeline-mobile div.events {
     float: right;
     width: 75%;
     margin-right: 0px;
     margin-top: -20px;
-  }
-  .aboutHistory .timeline-mobile .event {
+  }*/
+  /*.aboutHistory .timeline-mobile .event {
     padding: 5px 0px;
-  }
+  }*/
   .aboutHistory .timeline-mobile .event-5 {
     border: none;
   }
@@ -3264,10 +3329,6 @@
   }
   .aboutHistory .rocket {
     width: 100%;
-  }
-
-  .team .card {
-    width: 30%;
   }
 
   /* News */
@@ -3522,6 +3583,74 @@
     width: auto
   }
 
+  /***************************/
+  /*       About 320px       */
+  /***************************/
 
+  .aboutIntro > img {
+    width: 100%;
+  }
 
+  .aboutIntro > .mask {
+    height: 45%;
+  }
+
+  .aboutIntro > .mask > h1 {
+    font-size: 24px;
+  }
+
+  /* Abouthistory 320px */
+  .aboutHistory .event .date,
+  .aboutHistory .event .desc,
+  .aboutHistory .event strong {
+    font-size: 12px;
+  }
+
+  .aboutHistory .timeline-mobile div.events {
+    width: 100%;
+  }
+
+  .aboutHistory .timeline-mobile .event {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .aboutHistory .rocket {
+    margin: 0px;
+    padding-bottom: 0px;
+  }
+
+  /* Team 320px */
+
+  .team .section {
+    margin-bottom: 0px;
+  }
+  .team .card {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  .team .card:nth-child(2n) {
+    margin-right: 0px;
+  }
+
+  .team .card .desc,
+  .team .card .desc strong {
+    font-size: 12px;
+  }
+
+  /* Intern 320px */
+  .intern {
+    margin-bottom: 60px;
+  }
+
+  .intern .title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .intern .desc blockquote {
+    font-size: 12px;
+  }
 }

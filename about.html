@@ -51,7 +51,8 @@
     <!-- <link href="style.min.css" media="screen" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     <!-- responsive -->
-    <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="css/responsive.css" media="screen" charset="utf-8">
     <!--[if lt IE 9]><!-->
     <!-- css for ie -->
     <link href="css/ie.css" media="screen" rel="stylesheet" type="text/css">
@@ -136,11 +137,9 @@
             <div class="sticky scrollHeaderWrapper">
                 <div class="grid-940 flex-vertical-center">
                     <div class="logoWrapper">
-                        <h1 class="logo">
-                            <a class="clearfix" href="home.html?lang=true">
-                              <img src="images/home/header_logo.png" alt="">
-                            </a>
-                        </h1>
+                        <a href="home.html?lang=true">
+                          <img src="images/home/header_logo.png" alt="">
+                        </a>
                         <!-- end of logo -->
                     </div>
                     <!-- end of logoWrapper -->
@@ -272,9 +271,9 @@
                     </div>
                 </div>
                 <div class="timeline-mobile">
-                  <div class="seperate">
+                  <!-- <div class="seperate">
                     <img src="images/about/separate.png" alt="" class="separate">
-                  </div>
+                  </div> -->
                   <div class="events">
                     <div class="event event-1">
                         <div class="left-col">
@@ -584,8 +583,12 @@
     <script type="text/javascript" src="js/common/common.js"></script>
 
     <script type="text/javascript">
-      var $aboutIntro = $('section#aboutIntro');
-      $aboutIntro.height( $(window).height() - $('.header').height());
+      var deviceWidth = window.screen.availWidth;
+      if (deviceWidth > 479) {
+        var $aboutIntro = $('section#aboutIntro');
+        $aboutIntro.height( $(window).height() - $('.header').height());
+      }
+
     </script>
 
 </body>
