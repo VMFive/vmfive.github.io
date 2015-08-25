@@ -139,19 +139,15 @@
                 <div class="grid-940 flex-vertical-center">
                     <div class="logoWrapper">
                         <h1 class="logo">
-                          <a class="clearfix" href="home.html">
+                          <a class="clearfix" href="#">
                               <img src="images/home/header_logo.png" alt="">
                           </a>
                         </h1>
                         <!-- end of logo -->
                     </div>
                     <!-- end of logoWrapper -->
-                    <nav class="mainMenu mainNav flex-pull-right" id="mainNav">
+                    <nav class="mainMenu mainNav" id="mainNav">
                         <ul class="navTabs">
-                            <li>
-                                <a class="active" href="#">ホーム</a>
-                                <!-- end of dropdown -->
-                            </li>
                             <li>
                                 <a href="products_japanese.html?lang=true">製品</a>
                                 <!-- end of dropdown -->
@@ -168,16 +164,17 @@
                                 <a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank">採用情報</a>
                                 <!-- end of dropdown -->
                             </li>
-                            <li class="lang">
-                                <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
-                                    <option disabled="disabled" value="NoSeclect">Language</option>
-                                    <option value="home.html">English</option>
-                                    <option value="home_japanese.html">日本語</option>
-                                </select>
-                            </li>
+                            <!-- <li class="lang">
+
+                            </li> -->
                         </ul>
                         <!-- end of nav tabs -->
                     </nav>
+                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                        <option disabled="disabled" value="NoSeclect">Language</option>
+                        <option value="home.html">English</option>
+                        <option value="home_japanese.html">日本語</option>
+                    </select>
                     <!-- end of main nav -->
                     <a href="#" class="generalLink flex-pull-right" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
                     <div class="responsiveMainNav"></div>
@@ -202,6 +199,10 @@
                     <img width="1024" height="542" src="images/home/kv-bg-1.png" style="opacity:0;" title="Slide 1" alt="slide 1">
                     <div class="captions">
                         <h2 class="animated kv-title">Welcome to VMFive</h2>
+                        <p class="animated kv-desc-1">
+                          Disruptive Innovation, Smart Execution<br><br>
+                          Strong Cooperation, Proactive Globalization
+                        </p>
                         <!-- <p class="animated kv-desc">
                             VMFive is a cloud-based technology company,
                             <br>targeting global mobile market with its

@@ -137,19 +137,15 @@
                 <div class="grid-940 flex-vertical-center">
                     <div class="logoWrapper">
                         <h1 class="logo">
-                          <a class="clearfix" href="home.html">
+                          <a class="clearfix" href="home_japanese.html?lang=true">
                               <img src="images/home/header_logo.png" alt="">
                           </a>
                         </h1>
                         <!-- end of logo -->
                     </div>
                     <!-- end of logoWrapper -->
-                    <nav class="mainMenu mainNav flex-pull-right" id="mainNav">
+                    <nav class="mainMenu mainNav" id="mainNav">
                         <ul class="navTabs">
-                            <li>
-                                <a href="home_japanese.html?lang=true">ホーム</a>
-                                <!-- end of dropdown -->
-                            </li>
                             <li>
                                 <a href="products_japanese.html?lang=true">製品</a>
                                 <!-- end of dropdown -->
@@ -166,16 +162,16 @@
                                 <a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank">採用情報</a>
                                 <!-- end of dropdown -->
                             </li>
-                            <li class="lang">
-                                <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
-                                    <option disabled="disabled" value="NoSeclect">Language</option>
-                                    <option value="about.html">English</option>
-                                    <option value="about_japanese.html">日本語</option>
-                                </select>
-                            </li>
+                            <!-- <li class="lang">
+                            </li> -->
                         </ul>
                         <!-- end of nav tabs -->
                     </nav>
+                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                        <option disabled="disabled" value="NoSeclect">Language</option>
+                        <option value="about.html">English</option>
+                        <option value="about_japanese.html">日本語</option>
+                    </select>
                     <!-- end of main nav -->
                     <a href="#" class="generalLink flex-pull-right" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
                     <div class="responsiveMainNav"></div>
@@ -417,6 +413,16 @@
                     <div class="title">Data Team</div>
                     <div class="separate"></div>
                 </div> -->
+            </div>
+        </section>
+
+        <section class="intern section mainSection scrollAnchor" id="intern">
+            <div class="grid-940">
+              <div class="title">VMFive 2015 Summer Internship Program - Hack Yourself！</div>
+              <div class="desc"><blockquote>VMFive started to recruit summer interns in 2015 summer interns for the first time in 2015. The goal is to provide a stage for all students in Taiwan to challenge themselves, showcasing Taiwan's strength in software programming, jointly creating a new future for apps and mobile advertising industries. VMFive enables talents to shine worldwide!</blockquote></div>
+              <div class="wrapper">
+                <img src="images/about/2015summerintern.jpg" alt="2015summerintern" />
+              </div>
             </div>
         </section>
 

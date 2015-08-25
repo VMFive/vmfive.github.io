@@ -137,19 +137,15 @@
                 <div class="grid-940 flex-vertical-center">
                     <div class="logoWrapper">
                         <h1 class="logo">
-                            <a class="clearfix" href="home.html">
+                            <a class="clearfix" href="home_japanese.html?lang=true">
                                 <img src="images/home/header_logo.png" alt="">
                             </a>
                         </h1>
                         <!-- end of logo -->
                     </div>
                     <!-- end of logoWrapper -->
-                    <nav class="mainMenu mainNav flex-pull-right" id="mainNav">
+                    <nav class="mainMenu mainNav" id="mainNav">
                         <ul class="navTabs">
-                            <li>
-                                <a href="home_japanese.html?lang=true">ホーム</a>
-                                <!-- end of dropdown -->
-                            </li>
                             <li>
                                 <a class="active" href="#">製品</a>
                                 <!-- end of dropdown -->
@@ -166,16 +162,16 @@
                                 <a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank">採用情報</a>
                                 <!-- end of dropdown -->
                             </li>
-                            <li class="lang">
-                                <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
-                                    <option disabled="disabled" value="NoSeclect">Language</option>
-                                    <option value="products.html" selected="selected">English</option>
-                                    <option value="products_japanese.html">日本語</option>
-                                </select>
-                            </li>
+                            <!-- <li class="lang">
+                            </li> -->
                         </ul>
                         <!-- end of nav tabs -->
                     </nav>
+                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                        <option disabled="disabled" value="NoSeclect">Language</option>
+                        <option value="products.html">English</option>
+                        <option value="products_japanese.html">日本語</option>
+                    </select>
                     <!-- end of main nav -->
                     <a href="#" class="generalLink flex-pull-right" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
                     <div class="responsiveMainNav"></div>
@@ -251,13 +247,13 @@
             <div class="grid-940">
                 <div class="title">THE BENEFITS OF AdPlay</div>
                 <div><strong>Brand New Advertising Format</strong></div>
-                <img src="images/products/benefits.png" alt="">
+                <img src="images/products/img_product_benefit.svg" alt="">
             </div>
         </section>
 
         <section class="howitwork section mainSection scrollAnchor" id="howitwork">
             <div class="grid-940">
-                <div class="section-1">
+                <!-- <div class="section-1">
                     <div class="title">HOW AdPlay WORKS</div>
                     <img src="images/products/howitwork-1.png" alt="">
                     <div class="subtitle"><strong>Game Publisher</strong></div>
@@ -267,6 +263,38 @@
                     <img class="arrow" src="images/products/howitwork-arrow.png" alt="">
                     <img src="images/products/howitwork-3.png" alt="">
                     <div class="subtitle"><strong>Playable Ad Unit</strong></div>
+                </div> -->
+                <div class="section-1">
+                    <div class="title">HOW AdPlay WORKS</div>
+                    <div class="item">
+                        <div class="desc">
+                          <strong>Game Publisher</strong>
+                        </div>
+                        <img src="images/products/img_product_adplayflow_one.svg" alt="">
+                        <div class="desc">
+                          Provides Game App & App Material
+                        </div>
+                    </div>
+                    <img class="arrow" src="images/products/adplay-arrow.png" alt="">
+                    <div class="item">
+                        <div class="desc">
+                          <strong>AdPlay Studio</strong>
+                        </div>
+                        <img src="images/products/adplay-2.png" alt="">
+                        <div class="desc">
+                          Upload to VMFive Cloud Server
+                        </div>
+                    </div>
+                    <img class="arrow" src="images/products/adplay-arrow.png" alt="">
+                    <div class="item">
+                        <div class="desc">
+                          <strong>Payable Ad Unit</strong>
+                        </div>
+                        <img src="images/products/adplay-3.png" alt="">
+                        <div class="desc">
+                          Stream to all Kinds of Device via Web (HTML5) / App (SDK)
+                        </div>
+                    </div>
                 </div>
 
                 <div class="section-2">
@@ -363,6 +391,16 @@
                 </div>
             </div>
         </section>
+
+        <!-- Hiring -->
+        <section class="hiring section mainSection scrollAnchor" id="hiring">
+            <div class="grid-940">
+                <div class="bg hiringbg title">社員募集中！！！
+                    <br><a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank"><span class="desc">一緒にモバイル産業を革新しよう。</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- end of hiring section -->
 
         <!-- Footer -->
         <footer class="vmfooter" id="footer">
