@@ -255,9 +255,6 @@
     margin-bottom: 135px;
   }
   /* slider */
-  .style-1 .captions {
-    top: 43% !important;
-  }
   .captions h2 {
     font-size: 32px;
   }
@@ -323,12 +320,6 @@
     height: auto !important;
   }
   /* header */
-  .header {
-    height: auto;
-  }
-  .header .scrollHeaderWrapper {
-    height: auto;
-  }
   .header.fixedHeader {
     position: relative;
   }
@@ -683,9 +674,6 @@
     margin-bottom: 135px;
   }
   /* slider */
-  .style-1 .captions {
-    top: 43% !important;
-  }
   .captions h2 {
     font-size: 28px;
     line-height: 40px;
@@ -755,12 +743,6 @@
     height: auto !important;
   }
   /* header */
-  .header {
-    height: auto;
-  }
-  .header .scrollHeaderWrapper {
-    height: auto;
-  }
   .header.fixedHeader {
     position: relative;
   }
@@ -1359,9 +1341,6 @@
     margin-bottom: 135px;
   }
   /* slider */
-  .style-1 .captions {
-    top: 39% !important;
-  }
   .captions h2 {
     font-size: 25px;
     line-height: 40px;
@@ -1446,12 +1425,6 @@
     height: auto !important;
   }
   /* header */
-  .header {
-    height: auto;
-  }
-  .header .scrollHeaderWrapper {
-    height: auto;
-  }
   .header.fixedHeader {
     position: relative;
   }
@@ -2109,14 +2082,166 @@
   .vmmedia a .item img {
     width: 100%;
   }
+
+  /***************************/
+  /*    Home 321px - 479px   */
+  /***************************/
+
+  .grid-940 {
+    max-width: 315px;
+  }
+
+  .header {
+    height: 75px;
+  }
+
+  .header .logoWrapper {
+    padding-right: 0px;
+    width: 160px;
+  }
+  /* logo */
+  .logoWrapper {
+    /*float: none;*/
+  }
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  #responsiveMainNavToggler {
+    display: block;
+    margin-left: 0;
+  }
+
+  /* Sliders 320px */
+  .slider .kv-title {
+    font-size: 32px;
+  }
+  .slider #kv-logo-2,
+  .slider #kv-logo-3 {
+    max-width: 200px;
+    min-width: 0px;
+    width: 250px;
+  }
+  .slider #kv-logo-3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .slider .kvSlider #slide1 .captions {
+    top: 40%;
+  }
+
+  .slider .kvSlider .captions {
+    top: 45%;
+  }
+  .slider .captions p {
+    font-size: 14px;
+    word-break: keep-all;
+    line-height: 0.8;
+    white-space: nowrap;
+  }
+
+  /* Feature 320px */
+  .features .wrapper {
+    margin-bottom: 20px;
+  }
+  .features .item {
+    margin-bottom: 40px;
+  }
+
+  /* Intro 320px */
+  .intro #vimeoIntro {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* awards 320px */
+  .awards .sliderStyle1 .captions {
+    top: 31%;
+  }
+
+  .awards .sliderStyle1 .captions .kv-title:nth-child(2) {
+    line-height: 1.2;
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  /* Partners 320px */
+  .partners .wrapper-1 {
+    text-align: center;
+  }
+  .partners .partner-wrapper {
+    display: inline-block;
+    width: 46%;
+  }
+  .partners .partner-wrapper:nth-child(2n) {
+    margin-right: 0px;
+  }
+
+  .partners .wrapper-2 .desc {
+    font-size: 12px;
+    height: auto;
+    width: 80%;
+  }
+
+  .partners .wrapper-2 .quote {
+    width: 6%;
+  }
+
+  .partners .wrapper-2 .readMore {
+    margin-top: 20px;
+  }
+
+  /* Home News 320px */
+  .news .item-wrapper {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+
+  .news .item img.special {
+    width: 100%;
+  }
+
+  .news .item .special-cover {
+    width: 295px;
+    top: 9px;
+    left: 9px;
+  }
+
+  /* Hiring 320px */
+  .hiring {
+    background-image: url('../images/home/img_mobile_hire_bg.png');
+    background-size: cover;
+  }
+  .hiring .hiringbg {
+    background: none;
+  }
+
+  /* Footer 320px */
+  .topVMFooter .social {
+    padding: 0px;
+    border: none;
+    height: auto;
+    margin-left: 0px;
+  }
+
+  .bottomVMFooter {
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  .bottomVMFooter,
+  .bottomVMFooter .copyright,
+  .bottomVMFooter .welcome {
+    font-size: 12px;
+  }
 }
 /*------------------------------------------------------------------------------*/
 /*                    Any width smaller than 320px
 /*------------------------------------------------------------------------------*/
 @media only screen and (min-width: 0) and (max-width: 320px) {
-  .grid-940 {
-    max-width: 280px;
-  }
+
   .switcher {
     display: none;
   }
@@ -2267,12 +2392,6 @@
     height: auto !important;
   }
   /* header */
-  .header {
-    height: 50px;
-  }
-
-  .header .scrollHeaderWrapper {
-  }
 
   .header.fixedHeader {
     position: relative;
@@ -2300,25 +2419,9 @@
     z-index: 1000;
   }
 
-  .header .logoWrapper {
-    padding-right: 0px;
-    width: 130px;
-  }
-  /* logo */
-  .logoWrapper {
-    /*float: none;*/
-  }
-  .logo {
-    margin-bottom: 30px;
-  }
+
   /* responsive nav */
-  #responsiveMainNavToggler {
-    display: block;
-    margin-left: 0;
-    /*width: 50%;*/
-    /*margin-left: auto;*/
-    /*margin-right: 25%;*/
-  }
+
   #responsiveMainNavToggler .register > a,
   #responsiveMainNavToggler .login > a {
     display: block;
@@ -2962,6 +3065,31 @@
   /*        Home 320px       */
   /***************************/
 
+  .grid-940 {
+    max-width: 280px;
+  }
+
+  .header {
+    height: 50px;
+  }
+
+  .header .logoWrapper {
+    padding-right: 0px;
+    width: 130px;
+  }
+  /* logo */
+  .logoWrapper {
+    /*float: none;*/
+  }
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  #responsiveMainNavToggler {
+    display: block;
+    margin-left: 0;
+  }
+
   /* Sliders 320px */
   .slider .kv-title {
     font-size: 28px;
@@ -2978,11 +3106,11 @@
   }
 
   .slider .kvSlider #slide1 .captions {
-    top: 35%;
+    top: 40%;
   }
 
   .slider .kvSlider .captions {
-    top: 40%;
+    top: 45%;
   }
   .slider .captions p {
     font-size: 12px;
