@@ -51,7 +51,8 @@
     <!-- <link href="style.min.css" media="screen" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     <!-- responsive -->
-    <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="css/responsive.css" media="screen" charset="utf-8">
     <!--[if lt IE 9]><!-->
     <!-- css for ie -->
     <link href="css/ie.css" media="screen" rel="stylesheet" type="text/css">
@@ -281,7 +282,7 @@
         <section class="benefit section mainSection scrollAnchor graySection" id="benefit">
             <div class="grid-940">
                 <div class="title">THE BENEFITS OF AdPlay</div>
-                <div><strong>Brand New Advertising Format</strong></div>
+                <div class="subtitle"><strong>Brand New Advertising Format</strong></div>
                 <img src="images/products/img_product_benefit.svg" alt="">
             </div>
         </section>
@@ -507,10 +508,18 @@
         var video = document.getElementById('product-video');
         var videoPlaying = true;
 
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            $(wrapper).hide();
+        var deviceWidth = window.screen.availWidth;
+
+        console.log(window.screen.availWidth);
+
+        // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        //     $(wrapper).hide();
+        // }
+        // else {
+        if (deviceWidth < 420) {
+          $(".product #product-wrapper #product-video").css('margin-left', (deviceWidth - 420) / 2);
         }
-        else {
+        if (deviceWidth > 479) {
             videoResize(wrapper, video);
 
             window.onresize = function(event){
@@ -535,7 +544,7 @@
                 }
 
             });
-        };
+        }
     });
 
     function videoResize(wrapper, video) {

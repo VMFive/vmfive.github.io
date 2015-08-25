@@ -2138,11 +2138,6 @@
     margin: 0 auto;
   }
 
-  .adplay .section-2 .item {
-    width: 45% !important;
-    margin: 20px 0;
-  }
-
   .benefit img{
     width: 100%;
     margin: 20px auto;
@@ -2390,7 +2385,83 @@
   .bottomVMFooter .welcome {
     font-size: 12px;
   }
+
+  /***************************/
+  /*     Products 320px      */
+  /***************************/
+
+  .product #product-wrapper,
+  .product #product-wrapper #product-video {
+    height: 240px !important;
+  }
+
+  /*.product #product-wrapper #product-video {
+    margin-left: -22.5px;
+  }*/
+
+  /* Adplay 320px */
+
+  .adplay {
+    padding-bottom: 40px;
+  }
+
+  .adplay .section-2 .item {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+
+  /* Benefit 320px */
+
+  .benefit .title,
+  .benefit .subtitle {
+    margin-bottom: 30px;
+  }
+
+  /* Howitwork 320px */
+
+  .howitwork {
+    padding-bottom: 20px;
+  }
+
+  .howitwork .title {
+    margin-bottom: 60px;
+  }
+
+  .howitwork .section-1 .arrow {
+    display: none;
+  }
+
+  .howitwork .section-2 .title {
+    margin-top: 80px;
+  }
+
+  .howitwork .section-2 table {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .howitwork .section-2 .item {
+    width: 100%;
+  }
+
+  .howitwork .section-2 th {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .howitwork .section-2 th .desc {
+    text-align: left;
+    margin-left: 70px;
+  }
+
+  .howitwork .section-2 td .desc {
+    padding-right: 20px;
+    width: auto
+  }
 }
+
 /*------------------------------------------------------------------------------*/
 /*                    Any width smaller than 320px
 /*------------------------------------------------------------------------------*/
@@ -3116,11 +3187,6 @@
     margin: 0 auto;
   }
 
-  .adplay .section-2 .item {
-    width: 45% !important;
-    margin: 20px 0;
-  }
-
   .benefit img {
     width: 100%;
     margin: 20px auto;
@@ -3244,6 +3310,10 @@
     margin-left: 0;
   }
 
+  .title {
+    font-size: 24px;
+  }
+
   /* Sliders 320px */
   .slider .kv-title {
     font-size: 28px;
@@ -3274,6 +3344,10 @@
   }
 
   /* Feature 320px */
+  .features .title {
+    font-size: 24px;
+  }
+
   .features .wrapper {
     margin-bottom: 20px;
   }
@@ -3325,6 +3399,10 @@
   }
 
   /* Home News 320px */
+  .news .title {
+    font-size: 24px;
+  }
+
   .news .item-wrapper {
     margin-right: 0px;
     margin-bottom: 20px;
@@ -3368,4 +3446,82 @@
   .bottomVMFooter .welcome {
     font-size: 12px;
   }
+
+  /***************************/
+  /*     Products 320px      */
+  /***************************/
+
+  .product #product-wrapper,
+  .product #product-wrapper #product-video {
+    height: 240px !important;
+  }
+
+  /*.product #product-wrapper #product-video {
+    margin-left: -50px;
+  }*/
+
+  /* Adplay 320px */
+
+  .adplay {
+    padding-bottom: 40px;
+  }
+
+  .adplay .section-2 .item {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+
+  /* Benefit 320px */
+
+  .benefit .title,
+  .benefit .subtitle {
+    margin-bottom: 30px;
+  }
+
+  /* Howitwork 320px */
+
+  .howitwork {
+    padding-bottom: 20px;
+  }
+
+  .howitwork .title {
+    margin-bottom: 60px;
+  }
+
+  .howitwork .section-1 .arrow {
+    display: none;
+  }
+
+  .howitwork .section-2 .title {
+    margin-top: 80px;
+  }
+
+  .howitwork .section-2 table {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .howitwork .section-2 .item {
+    width: 100%;
+  }
+
+  .howitwork .section-2 th {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .howitwork .section-2 th .desc {
+    text-align: left;
+    margin-left: 70px;
+  }
+
+  .howitwork .section-2 td .desc {
+    padding-right: 20px;
+    width: auto
+  }
+
+
+
 }

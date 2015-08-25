@@ -7618,7 +7618,8 @@ img.fnone {
 .section-1 > .title,
 .section-2 > .title {
   margin-top: 80px;
-  margin-bottom: 80px;
+  /*margin-bottom: 80px;*/
+  margin-bottom: 60px;
 
 }
 
