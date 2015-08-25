@@ -1283,7 +1283,8 @@
   /***************************/
 
   .grid-940 {
-    max-width: 440px;
+    /*max-width: 440px;*/
+    padding: 0px 20px;
   }
 
   .header {
@@ -1399,7 +1400,6 @@
   }
 
   .news .item .special-cover {
-    width: 295px;
     top: 9px;
     left: 9px;
   }
@@ -2237,7 +2237,8 @@
   /***************************/
 
   .grid-940 {
-    max-width: 315px;
+    /*max-width: 315px;*/
+    padding: 0px 20px;
   }
 
   .header {
@@ -2353,7 +2354,6 @@
   }
 
   .news .item .special-cover {
-    width: 295px;
     top: 9px;
     left: 9px;
   }
@@ -2530,6 +2530,42 @@
 
   .intern .desc blockquote {
     font-size: 12px;
+  }
+
+  /***************************/
+  /*    News 321px - 479px   */
+  /***************************/
+
+  .news .title {
+    margin-bottom: 60px;
+  }
+
+  .news .wrapper,
+  .news .moreNews {
+    margin-bottom: 30px;
+  }
+
+  .news .item .special-cover,
+  .news .item img.special {
+    height: auto;
+  }
+
+  /* Vmmedia 321px - 479px */
+  .vmmedia .title {
+    font-size: 24px;
+  }
+
+  .vmmedia a .item {
+    height: 100px;
+  }
+
+  .vmmedia .wrapper {
+    padding-bottom: 0px;
+  }
+
+  .vmmedia .moreNews {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -3347,7 +3383,8 @@
   /***************************/
 
   .grid-940 {
-    max-width: 280px;
+    /*max-width: 280px;*/
+    padding: 0px 20px;
   }
 
   .header {
@@ -3475,7 +3512,6 @@
   }
 
   .news .item .special-cover {
-    width: 260px;
     top: 9px;
     left: 9px;
   }
@@ -3652,5 +3688,41 @@
 
   .intern .desc blockquote {
     font-size: 12px;
+  }
+
+  /***************************/
+  /*        News 320px       */
+  /***************************/
+
+  .news .title {
+    margin-bottom: 60px;
+  }
+
+  .news .wrapper,
+  .news .moreNews {
+    margin-bottom: 30px;
+  }
+
+  .news .item .special-cover,
+  .news .item img.special {
+    height: auto;
+  }
+
+  /* Vmmedia 320px */
+  .vmmedia .title {
+    font-size: 24px;
+  }
+
+  .vmmedia a .item {
+    height: 100px;
+  }
+
+  .vmmedia .wrapper {
+    padding-bottom: 0px;
+  }
+
+  .vmmedia .moreNews {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
