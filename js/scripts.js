@@ -28,9 +28,8 @@ This file includes all cusomized javascript and all plugins libraries options
 
   // jQuerywindow.resize(function(){
   //   //-- fixed heights for some slider elements --
-  //   var kvHeight = $(window).height();
-  //
-  //   jQuery('#slider ,  .slider .item > img , #banner , #banner .item').css({ 'height' : kvHeight });
+    var kvHeight = $(window).height();
+    jQuery('#slider ,  .slider .item > img , #banner , #banner .item').css({ 'height' : kvHeight });
   // });
 
   // jQuerywindow.trigger('resize');
