@@ -24,15 +24,25 @@ This file includes all cusomized javascript and all plugins libraries options
 
 
   //-- Customizing some elements css according to windows size --
-  // var jQuerywindow = jQuery(window);
+  var jQuerywindow = jQuery(window),
+      kvHeight = $(window).height(),
+      navbarHeight = $('.header').height(),
+      deviceWidth = window.screen.availWidth;
 
-  // jQuerywindow.resize(function(){
-  //   //-- fixed heights for some slider elements --
-    var kvHeight = $(window).height();
-    jQuery('#slider ,  .slider .item > img , #banner , #banner .item').css({ 'height' : kvHeight });
-  // });
+  if (deviceWidth < 768) {
+    jQuery('#slider , .slider .item > img , #banner , #banner .item').css({ 'height' : kvHeight });
+    jQuery('#awards').css({ 'height': kvHeight - navbarHeight });
+  } else {
+    jQuerywindow.resize(function(){
+      //-- fixed heights for some slider elements --
+      kvHeight = $(window).height();
+      navbarHeight = $('.header').height();
+      jQuery('#slider , .slider .item > img , #banner , #banner .item').css({ 'height' : kvHeight });
+      jQuery('#awards').css({ 'height': kvHeight - navbarHeight });
+    });
 
-  // jQuerywindow.trigger('resize');
+    jQuerywindow.trigger('resize');
+  }
   //--------------------------------------------------------------------------------------------
 
   //-- customizing position of loading container --
