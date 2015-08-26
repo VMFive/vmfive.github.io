@@ -2302,6 +2302,10 @@
     white-space: nowrap;
   }
 
+  .owl-controls .owl-nav {
+    display: none;
+  }
+
   /* Feature 321px - 479px */
   .features .wrapper {
     margin-bottom: 20px;
