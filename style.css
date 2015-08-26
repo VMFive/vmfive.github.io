@@ -3071,9 +3071,10 @@ hr,
 }
 /* --- responsiveMainNav --------------------- */
 #responsiveMainNavToggler {
-  padding: 0;
-  height: 33px;
-  width: 33px;
+  /*padding: 0 10px;*/
+  /*height: 100%;*/
+  /*height: 33px;*/
+  /*width: 33px;*/
   text-align: center;
   /*line-height: 33px;*/
   /*margin-top: 30px;*/
@@ -3084,9 +3085,10 @@ hr,
   /*float: right;*/
 }
 #responsiveMainNavToggler.opened {
-  background-color: #ff6b6b;
+  background-color: #FC981C;
   color: #ffffff;
 }
+
 .style-5 #responsiveMainNavToggler {
   background-color: #ff6b6b;
   color: #ffffff;
@@ -7514,7 +7516,7 @@ img.fnone {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  background: #ff6b6b;
+  background: #FC981C;
   color: #ffffff;
   -webkit-border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
