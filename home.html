@@ -51,12 +51,12 @@
     <!-- css for ie -->
     <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen">
     <!--<![endif]-->
-
+    <!-- brand color -->
+    <link rel="stylesheet" type="text/css" href="css/skins/brand-color.css">
     <!-- main stylesheet-->
     <!-- <link rel="stylesheet" type="text/css" href="style.min.css" media="screen"> -->
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <!-- brand color -->
-    <link rel="stylesheet" type="text/css" href="css/skins/brand-color.css">
+
     <!-- responsive -->
     <!-- <link rel="stylesheet" type="text/css" href="css/responsive.min.css" media="screen"> -->
     <link rel="stylesheet" href="css/responsive.css" media="screen" charset="utf-8">
@@ -743,7 +743,7 @@
       var $sectionAwards = $('section.awards');
       if ($sectionAwards.length) {
         // $sectionAwards.height(height);
-        $sectionAwards.style('height', height, 'important');
+        $sectionAwards.attr('style', 'height:' + height + 'px !important;');
       }
     </script>
 </body>
