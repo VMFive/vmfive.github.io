@@ -2732,10 +2732,6 @@ hr,
   display: block;
 }
 
-.header .fancy-select {
-  margin-left: auto;
-}
-
 /* --- logo --------------------- */
 .logoWrapper {
   /*padding-left: 35px;*/
@@ -3069,6 +3065,91 @@ hr,
 .mainNav .navTabs li:first-child {
   margin-left: 0px;
 }
+
+/* --- Sub Nav --------------------- */
+
+/* Media Kit */
+.subNav > .mediaNav {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.subNav > .mediaNav > span {
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.subNav > .mediaNav > span:hover {
+  cursor: pointer;
+  color: rgba(252, 152, 28, 1);
+}
+
+.subNav > .mediaNav > .mediaSubNav {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.subNav > .mediaNav > .mediaSubNav.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subNav > .mediaNav > .mediaSubNav ul {
+  border-radius: 2px;
+  background-color: white;
+}
+
+.subNav > .mediaNav > .mediaSubNav li {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.subNav > .mediaNav > .mediaSubNav li:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.subNav > .mediaNav > .mediaSubNav li:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.subNav > .mediaNav > .mediaSubNav li > a {
+  display: block;
+  color: black;
+  width: 100%;
+  padding: 5px;
+}
+
+.subNav > .mediaNav > .mediaSubNav li:hover > a {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(252, 152, 28, 1);
+}
+
 /* --- responsiveMainNav --------------------- */
 #responsiveMainNavToggler {
   /*padding: 0 10px;*/
@@ -7604,7 +7685,7 @@ img.fnone {
 }
 
 .flex-pull-left {
-  margin-right: sauto;
+  margin-right: auto;
 }
 
 /**

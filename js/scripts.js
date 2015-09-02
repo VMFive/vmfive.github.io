@@ -729,6 +729,16 @@ This file includes all cusomized javascript and all plugins libraries options
   });
   //--------------------------------------------------------------------------------------------
 
+  /* ◄------ Media Nav -------------------------------► */
+  jQuery(document).ready(function () {
+    $('.mediaNav').click(function (event) {
+      event.preventDefault();
+      console.log($(this).find('.mediaSubNav'));
+      $(this).find('.mediaSubNav').toggleClass('active');
+    })
+  });
+
+
   /* ◄------ Responsive Nav -------------------------------► */
 
   jQuery(document).ready(function () {
