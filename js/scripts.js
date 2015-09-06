@@ -731,8 +731,7 @@ This file includes all cusomized javascript and all plugins libraries options
 
   /* ◄------ Media Nav -------------------------------► */
   jQuery(document).ready(function () {
-    $('.mediaNav').click(function (event) {
-      event.preventDefault();
+    $('.mediaNav').hover(function (event) {
       console.log($(this).find('.mediaSubNav'));
       $(this).find('.mediaSubNav').toggleClass('active');
     })

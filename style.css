@@ -2735,6 +2735,7 @@ hr,
 /* --- logo --------------------- */
 .logoWrapper {
   /*padding-left: 35px;*/
+  width: 200px;
   padding-right: 35px;
   float: left;
 }
@@ -7953,7 +7954,7 @@ img.fnone {
   margin: 0 auto;
 }
 .hiring .hiringbg {
-  background-image: url('images/home/hiring-bg.png');
+  background-image: url('images/home/hiring-bg2.png');
   background-size: 940px 220px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -8910,11 +8911,11 @@ img.fnone {
     display: none !important;
   }
   .features .wrapper {
-    max-width: 600px;
+    /*max-width: 600px;*/
     width: 100%;
   }
   .features .item {
-    width: 49.5%;
+    /*width: 49.5%;*/
   }
   .features .item img,
   .adplay .item img{
@@ -8931,25 +8932,5 @@ img.fnone {
   .partners .partner-wrapper {
     max-width: 360px;
     width: 49.5%;
-  }
-}
-/*------------------------------------------------------------------------------*/
-/*                    width : 600px
-/*------------------------------------------------------------------------------*/
-@media (max-width: 600px) {
-  .features .wrapper {
-    max-width: 480px;
-    width: 100%;
-  }
-  .features .item {
-    width: 99.5%;
-  }
-  .features .item img{
-    width: 220px;
-    margin: 10px auto;
-  }
-  .partners .partner-wrapper {
-    max-width: 320px;
-    width: 99.5%;
   }
 }
