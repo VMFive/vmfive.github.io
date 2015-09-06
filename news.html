@@ -338,9 +338,17 @@
                         <a href="http://www.inside.com.tw/2014/07/25/2014-ideas-show-day-2" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-8.png" alt=""></div></a>
                         <a href="http://dentsu-ho.com/articles/1971" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-9.png" alt=""></div></a>
                     </div>
+                    <div class="row" style="display: none">
+                        <a href="" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-10.png" alt=""></div></a>
+                        <a href="" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-11.png" alt=""></div></a>
+                        <a href="" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-12.jpg" alt=""></div></a>
+                    </div>
+                    <div class="row" style="display: none">
+                        <a href="" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-13.jpg" alt=""></div></a>
+                    </div>
                 </div>
                 <div class="moreNews">
-                    <a href="#">View More</a>
+                    <a href="">View More</a>
                 </div>
             </div>
         </section>
@@ -434,6 +442,16 @@
     <!-- <script src="js/scripts.min.js" type="text/javascript"></script> -->
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript">
+      $('.vmmedia .moreNews > a').on('click', function (e) {
+        e.preventDefault();
+        $('.vmmedia .row').map(function () {
+          if ($(this).css('display') === "none") {
+            $(this).css('display', 'block');
+          }
+        })
+      })
+    </script>
 </body>
 
 </html>
