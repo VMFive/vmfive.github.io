@@ -204,10 +204,7 @@
         <!-- end of header fill block -->
 
         <section class="aboutIntro section mainSection scrollAnchor lightSection" id="aboutIntro">
-            <div class="mask">
-              <h1>We are VMFiver！</h1>
-            </div>
-            <img src="images/about/aboutkv.jpg" alt="">
+            <img src="images/about/vmfive-group-4.jpg" alt="">
         </section>
 
         <section class="aboutHistory section mainSection scrollAnchor lightSection" id="aboutHistory">
@@ -600,8 +597,12 @@
       if (pathname.length > 1 && pathname[1] === "japanese") {
         $('#language option[value="about_japanese.html"]').prop('selected', true);// or .change()
       }
-      var $aboutIntro = $('section#aboutIntro');
-      $aboutIntro.height( $(window).height() - $('.header').height());
+      var $aboutIntro = $('section#aboutIntro'),
+          $header = $('.header');
+      $aboutIntro.height( $(window).height() - $header.height());
+      window.onresize = function () {
+        $aboutIntro.css('padding-top', $header.height());
+      }
     </script>
 </body>
 

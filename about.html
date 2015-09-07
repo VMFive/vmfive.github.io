@@ -204,10 +204,7 @@
         <!-- end of header fill block -->
 
         <section class="aboutIntro section mainSection scrollAnchor lightSection" id="aboutIntro">
-            <div class="mask">
-              <h1>We are VMFiver！</h1>
-            </div>
-            <img src="images/about/aboutkv.jpg" alt="">
+            <img src="images/about/vmfive-group-4.jpg" alt="">
         </section>
 
         <section class="aboutHistory section mainSection scrollAnchor lightSection" id="aboutHistory">
@@ -598,6 +595,11 @@
     <script type="text/javascript" src="js/common/common.js"></script>
 
     <script type="text/javascript">
+      var $aboutIntro = $('section#aboutIntro'),
+          $header = $('.header');
+      window.onresize = function () {
+        $aboutIntro.css('padding-top', $header.height());
+      }
       // var deviceWidth = window.screen.availWidth;
       // if (deviceWidth > 479) {
       //   var $aboutIntro = $('section#aboutIntro');
