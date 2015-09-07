@@ -8620,7 +8620,7 @@ img.fnone {
 }
 .news .item img {
   width: 100%;
-  margin-bottom: 25px;
+  /*margin-bottom: 25px;*/
   border-radius: 4px;
 }
 
@@ -8677,14 +8677,18 @@ img.fnone {
   top: -2px;
 }
 .news .item .news-logo {
+  position: relative;
+  z-index: 50;
   background-color: #FE8F00;
   width: 80px;
-  border-radius: 40px;
-  padding: 15px;
+  border-radius: 50%;
+  padding: 20px;
   margin: 0 auto;
-  margin-top: -90px;
+  margin-top: -70px;
   border: 5px solid white;
 }
+
+/*height="312.9px"*/
 
 .news .news-title {
   font-size: 18px;
