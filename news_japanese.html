@@ -50,14 +50,15 @@
     <!-- main stylesheet-->
     <!-- <link href="style.min.css" media="screen" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="style.css" media="screen">
+    <!-- brand color -->
+    <link rel="stylesheet" href="css/skins/brand-color.css">
     <!-- responsive -->
-    <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="css/responsive.css" media="screen" charset="utf-8">
     <!--[if lt IE 9]><!-->
     <!-- css for ie -->
     <link href="css/ie.css" media="screen" rel="stylesheet" type="text/css">
     <!--<![endif]-->
-    <!-- brand color -->
-    <link rel="stylesheet" href="css/skins/brand-color.css">
 
     <!-- JaveScripts
     ======================= -->
@@ -168,11 +169,25 @@
                         <!-- end of nav tabs -->
                     </nav>
                     <!-- end of main nav -->
-                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
-                        <option disabled="disabled" value="NoSeclect">Language</option>
-                        <option value="news.html">English</option>
-                        <option value="news_japanese.html">日本語</option>
-                    </select>
+                    <div class="subNav flex-pull-right" id="subNav">
+                      <div class="mediaNav">
+                        <span>Media Kit</span>
+                        <div class="mediaSubNav">
+                          <ul>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzSk1FQUEzdGtBN3M&export=download">English</a></li>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzWEtJVEJrN3lKalU&export=download">日本語</a></li>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzdFliSlJjOTVEMHc&export=download">簡中</a></li>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzem9hZ1ptbHlzR3c&export=download">繁中</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                          <option disabled="disabled" value="NoSeclect">Language</option>
+                          <option value="news.html" selected="selected">English</option>
+                          <option value="news_japanese.html">日本語</option>
+                      </select>
+                    </div>
                     <a href="#" class="generalLink flex-pull-right" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
                     <div class="responsiveMainNav"></div>
                     <!-- end of responsive main nav -->
@@ -323,6 +338,14 @@
                         <a href="http://www.inside.com.tw/2014/07/25/2014-ideas-show-day-2" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-8.png" alt=""></div></a>
                         <a href="http://dentsu-ho.com/articles/1971" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-9.png" alt=""></div></a>
                     </div>
+                    <div class="row" style="display: none">
+                        <a href="" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-10.png" alt=""></div></a>
+                        <a href="" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-11.png" alt=""></div></a>
+                        <a href="" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-12.jpg" alt=""></div></a>
+                    </div>
+                    <div class="row" style="display: none">
+                        <a href="" target="_blank"><div class="item"><span class="helper"></span><img src="images/news/media-13.jpg" alt=""></div></a>
+                    </div>
                 </div>
                 <div class="moreNews">
                     <a href="#">View More</a>
@@ -415,6 +438,14 @@
       if (pathname.length > 1 && pathname[1] === "japanese") {
         $('#language option[value="news_japanese.html"]').prop('selected',true);// or .change()
       }
+      $('.vmmedia .moreNews > a').on('click', function (e) {
+        e.preventDefault();
+        $('.vmmedia .row').map(function () {
+          if ($(this).css('display') === "none") {
+            $(this).css('display', 'block');
+          }
+        })
+      });
     </script>
 </body>
 

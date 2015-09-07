@@ -50,14 +50,15 @@
     <!-- main stylesheet-->
     <!-- <link href="style.min.css" media="screen" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <!-- brand color -->
+    <link rel="stylesheet" href="css/skins/brand-color.css">
     <!-- responsive -->
-    <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="css/responsive.css" media="screen" charset="utf-8">
     <!--[if lt IE 9]><!-->
     <!-- css for ie -->
     <link href="css/ie.css" media="screen" rel="stylesheet" type="text/css">
     <!--<![endif]-->
-    <!-- brand color -->
-    <link rel="stylesheet" href="css/skins/brand-color.css">
 
     <!-- JaveScripts
     ======================= -->
@@ -167,11 +168,25 @@
                         </ul>
                         <!-- end of nav tabs -->
                     </nav>
-                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
-                        <option disabled="disabled" value="NoSeclect">Language</option>
-                        <option value="about.html">English</option>
-                        <option value="about_japanese.html">日本語</option>
-                    </select>
+                    <div class="subNav flex-pull-right" id="subNav">
+                      <div class="mediaNav">
+                        <span>Media Kit</span>
+                        <div class="mediaSubNav">
+                          <ul>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzSk1FQUEzdGtBN3M&export=download">English</a></li>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzWEtJVEJrN3lKalU&export=download">日本語</a></li>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzdFliSlJjOTVEMHc&export=download">簡中</a></li>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzem9hZ1ptbHlzR3c&export=download">繁中</a></li>
+                          </ul>
+                        </div>
+                      </div> ㄎ
+
+                      <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                          <option disabled="disabled" value="NoSeclect">Language</option>
+                          <option value="about.html" selected="selected">English</option>
+                          <option value="about_japanese.html">日本語</option>
+                      </select>
+                    </div>
                     <!-- end of main nav -->
                     <a href="#" class="generalLink flex-pull-right" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
                     <div class="responsiveMainNav"></div>
@@ -242,7 +257,7 @@
 
                     </div>
                 </div>
-                <img src="images/about/separate.png" alt="" class="separate">
+                <img src="images/about/separate.png" alt="" class="seperate">
                 <div class="timeline">
                     <div class="event event-2">
                         <div class="left-col">
@@ -270,6 +285,80 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="timeline-mobile">
+                  <!-- <div class="seperate">
+                    <img src="images/about/separate.png" alt="" class="separate">
+                  </div> -->
+                  <div class="events">
+                    <div class="event event-1">
+                        <div class="left-col">
+                            <img src="images/about/flag2.svg" alt="">
+                        </div>
+                        <div class="right-col">
+                            <div class="date">April, 2015</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>新製品やTrend MircoとGMobiからの戦略投資を発表</li>
+                                    <li>Slush Asia グランプリ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event event-2">
+                        <div class="left-col">
+                            <img src="images/about/flag2.svg" alt="">
+                        </div>
+                        <div class="right-col">
+                            <div class="date">March, 2015</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>MWC 2015にてTrend MicroとGMobiのパートナーシップを発表</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event event-3">
+                        <div class="left-col">
+                            <img src="images/about/flag2.svg" alt="">
+                        </div>
+                        <div class="right-col">
+                            <div class="date">December, 2014</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>グローバル・ブレイン・アライアンス・フォーラム　オーディエンス賞</li>
+                                    <li>D2CRとADWAYSのパートナーシップを発表</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event event-4">
+                        <div class="left-col">
+                            <img src="images/about/flag2.svg" alt="">
+                        </div>
+                        <div class="right-col">
+                            <div class="date">August, 2014</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>TechCrunch北京 最優秀賞</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event event-5">
+                        <div class="left-col">
+                            <img src="images/about/flag2.svg" alt="">
+                        </div>
+                        <div class="right-col">
+                            <div class="date">May, 2014</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>台湾本社設立</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- <div class="arrow">
                     <img src="images/about/arrow.png" alt="">
@@ -509,7 +598,7 @@
     <script type="text/javascript">
       var pathname = window.location.pathname.slice(1).split('.')[0].split('_');
       if (pathname.length > 1 && pathname[1] === "japanese") {
-        $('#language option[value="about_japanese.html"]').prop('selected',true);// or .change()
+        $('#language option[value="about_japanese.html"]').prop('selected', true);// or .change()
       }
       var $aboutIntro = $('section#aboutIntro');
       $aboutIntro.height( $(window).height() - $('.header').height());

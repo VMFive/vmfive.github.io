@@ -50,14 +50,15 @@
     <!-- main stylesheet-->
     <!-- <link href="style.min.css" media="screen" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <!-- brand color -->
+    <link rel="stylesheet" href="css/skins/brand-color.css">
     <!-- responsive -->
-    <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="css/responsive.css" media="screen" charset="utf-8">
     <!--[if lt IE 9]><!-->
     <!-- css for ie -->
     <link href="css/ie.css" media="screen" rel="stylesheet" type="text/css">
     <!--<![endif]-->
-    <!-- brand color -->
-    <link rel="stylesheet" href="css/skins/brand-color.css">
 
     <!-- JaveScripts
     ======================= -->
@@ -167,11 +168,25 @@
                         </ul>
                         <!-- end of nav tabs -->
                     </nav>
-                    <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
-                        <option disabled="disabled" value="NoSeclect">Language</option>
-                        <option value="products.html">English</option>
-                        <option value="products_japanese.html">日本語</option>
-                    </select>
+                    <div class="subNav flex-pull-right" id="subNav">
+                      <div class="mediaNav">
+                        <span>Media Kit</span>
+                        <div class="mediaSubNav">
+                          <ul>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzSk1FQUEzdGtBN3M&export=download">English</a></li>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzWEtJVEJrN3lKalU&export=download">日本語</a></li>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzdFliSlJjOTVEMHc&export=download">簡中</a></li>
+                            <li><a href="https://docs.google.com/uc?id=0BzKA4TupJrFzem9hZ1ptbHlzR3c&export=download">繁中</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
+                          <option disabled="disabled" value="NoSeclect">Language</option>
+                          <option value="products.html" selected="selected">English</option>
+                          <option value="products_japanese.html">日本語</option>
+                      </select>
+                    </div>
                     <!-- end of main nav -->
                     <a href="#" class="generalLink flex-pull-right" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
                     <div class="responsiveMainNav"></div>
