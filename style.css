@@ -2743,12 +2743,12 @@ hr,
   width: 100%;
 }
 .logo {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   margin-bottom: 0px;
 }
 .logo a {
   float: left;
-  height: 63px;
+  /*height: 63px;*/
   display: block;
   overflow: hidden;
 }
@@ -7618,7 +7618,7 @@ img.fnone {
 }
 .back-to-top.fadeInup {
   opacity: 1;
-  bottom: 20px;
+  bottom: 50px;
 }
 /* slide down */
 .slideDown {
