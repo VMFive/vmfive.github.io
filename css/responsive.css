@@ -2947,12 +2947,13 @@
     margin-bottom: 20px;
   }
   .features .item {
+    width: 100%;
     margin-bottom: 40px;
   }
 
   /* Intro 321px - 479px */
   .intro #vimeoIntro {
-    width: 100% !important;
+    /*width: 100% !important;*/
     height: auto !important;
   }
 
@@ -4121,12 +4122,13 @@
     margin-bottom: 20px;
   }
   .features .item {
+    width: 100%;
     margin-bottom: 40px;
   }
 
   /* Intro 320px */
   .intro #vimeoIntro {
-    width: 100% !important;
+    /*width: 100% !important;*/
     height: 100% !important;
   }
 
