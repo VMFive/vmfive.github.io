@@ -8873,6 +8873,8 @@ img.fnone {
 .topVMFooter .icon {
   display: block;
   margin: 20px 0;
+  width: 30px;
+  height: 30px;
 }
 
 
