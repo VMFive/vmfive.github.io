@@ -5,7 +5,7 @@
 
   if ($newsDescription.length) {
     $newsDescription.each(function () {
-      console.log($(this));
+      // console.log($(this));
       $(this).dotdotdot();
     });
   }
