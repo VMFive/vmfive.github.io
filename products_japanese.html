@@ -508,7 +508,9 @@
                 $(wrapper).hide();
             }
             else {
-                videoResize(wrapper, video);
+                $("#product-video").bind("loadedmetadata", function () {
+                    videoResize(wrapper, video);
+                });
 
                 window.onresize = function(event){
                     videoResize(wrapper, video);
@@ -519,14 +521,13 @@
                     var scroll = $(window).scrollTop();
                     var adplayPos = $('#adplay').offset().top;
 
-                    if (scroll + 200> adplayPos && videoPlaying) {
-
-                        console.log('paused!');
+                    if (scroll + 200 > adplayPos && videoPlaying) {
+                        // console.log('paused!');
                         video.pause();
                         videoPlaying = !videoPlaying;
 
                     } else if (scroll + 200 < adplayPos && !videoPlaying) {
-                        console.log('played!');
+                        // console.log('played!');
                         video.play();
                         videoPlaying = !videoPlaying;
                     }
@@ -536,8 +537,12 @@
         });
 
         function videoResize(wrapper, video) {
-            var winWidth = $(window).width();
-            $(wrapper).height(winWidth*0.48125);
+            var winWidth = $(window).width(),
+                videoHeight1 = $(window).height() - $('.header').height(),
+                videoHeight2 = $('#product-video').height();
+
+            // console.log("videoHeight1: ", videoHeight1, "videoHeight2: ", videoHeight2);
+            $(wrapper).height((videoHeight1 < videoHeight2 ? videoHeight1 : videoHeight2));
             $(video).width(winWidth);
         }
     </script>

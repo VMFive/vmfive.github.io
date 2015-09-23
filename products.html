@@ -208,9 +208,9 @@
             <!-- <iframe src="https://player.vimeo.com/video/139914163?title=0&amp;portrait=0&amp;byline=0;autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
             <div id="product-wrapper">
                 <video id="product-video" preload="auto" loop="loop" autoplay="autoplay" height="auto" muted="true" style="position:relative;">
-                    <source src="video/adplay_demo.mp4" type="video/mp4">
-                    <source src="video/adplay_demo.mp4" type="video/webm">
-                    <source src="video/adplay_demo.mp4" type="video/ogg">
+                    <source src="video/demo-9.mp4" type="video/mp4">
+                    <source src="video/demo-9.mp4" type="video/webm">
+                    <source src="video/demo-9.mp4" type="video/ogg">
                 </video>
                 <div class="unclickable"></div>
             </div>
@@ -514,60 +514,65 @@
     <!-- <script type="text/javascript" src="js/common/common.js"></script> -->
     <!-- Fluid Video Hack ================================================== -->
     <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
+        document.addEventListener("DOMContentLoaded", function(event) {
 
-        var $sectionProduct = $('section.product'),
-            headerHeight = $('.header').height();
-        $sectionProduct.css('padding-top', headerHeight);
+            var $sectionProduct = $('section.product'),
+                headerHeight = $('.header').height();
+            $sectionProduct.css('padding-top', headerHeight);
 
-        var wrapper = document.getElementById('product-wrapper');
-        var video = document.getElementById('product-video');
-        var videoPlaying = true;
+            var wrapper = document.getElementById('product-wrapper');
+            var video = document.getElementById('product-video');
+            var videoPlaying = true;
 
-        var deviceWidth = window.screen.availWidth;
+            var deviceWidth = window.screen.availWidth;
 
-        // console.log(window.screen.availWidth);
+            // console.log(window.screen.availWidth);
 
-        // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        //     $(wrapper).hide();
-        // }
-        // else {
-        if (deviceWidth < 420) {
-          $(".product #product-wrapper #product-video").css('margin-left', (deviceWidth - 420) / 2);
-        }
-        if (deviceWidth > 479) {
-            videoResize(wrapper, video);
-
-            window.onresize = function(event){
-                videoResize(wrapper, video);
-                $sectionProduct.css('padding-top', $('.header').height());
+            // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            //     $(wrapper).hide();
+            // }
+            // else {
+            if (deviceWidth < 420) {
+              $(".product #product-wrapper #product-video").css('margin-left', (deviceWidth - 420) / 2);
             }
+            if (deviceWidth > 479) {
+                $("#product-video").bind("loadedmetadata", function () {
+                    videoResize(wrapper, video);
+                });
 
-            $(window).scroll(function (event) {
-                var scroll = $(window).scrollTop();
-                var adplayPos = $('#adplay').offset().top;
-
-                if (scroll + 200> adplayPos && videoPlaying) {
-
-                    console.log('paused!');
-                    video.pause();
-                    videoPlaying = !videoPlaying;
-
-                } else if (scroll + 200 < adplayPos && !videoPlaying) {
-                    console.log('played!');
-                    video.play();
-                    videoPlaying = !videoPlaying;
+                window.onresize = function(event){
+                    videoResize(wrapper, video);
+                    $sectionProduct.css('padding-top', $('.header').height());
                 }
 
-            });
-        }
-    });
+                $(window).scroll(function (event) {
+                    var scroll = $(window).scrollTop();
+                    var adplayPos = $('#adplay').offset().top;
 
-    function videoResize(wrapper, video) {
-        var winWidth = $(window).width();
-        $(wrapper).height(winWidth*0.48125);
-        $(video).width(winWidth);
-    }
+                    if (scroll + 200 > adplayPos && videoPlaying) {
+                        // console.log('paused!');
+                        video.pause();
+                        videoPlaying = !videoPlaying;
+
+                    } else if (scroll + 200 < adplayPos && !videoPlaying) {
+                        // console.log('played!');
+                        video.play();
+                        videoPlaying = !videoPlaying;
+                    }
+
+                });
+            }
+        });
+
+        function videoResize(wrapper, video) {
+            var winWidth = $(window).width(),
+                videoHeight1 = $(window).height() - $('.header').height(),
+                videoHeight2 = $('#product-video').height();
+
+            // console.log("videoHeight1: ", videoHeight1, "videoHeight2: ", videoHeight2);
+            $(wrapper).height((videoHeight1 < videoHeight2 ? videoHeight1 : videoHeight2));
+            $(video).width(winWidth);
+        }
     </script>
 </body>
 
