@@ -504,10 +504,18 @@
             var video = document.getElementById('product-video');
             var videoPlaying = true;
 
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                $(wrapper).hide();
+            var deviceWidth = window.screen.availWidth;
+
+            // console.log(window.screen.availWidth);
+
+            // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            //     $(wrapper).hide();
+            // }
+            // else {
+            if (deviceWidth < 420) {
+              $(".product #product-wrapper #product-video").css('margin-left', (deviceWidth - 420) / 2);
             }
-            else {
+            if (deviceWidth > 479) {
                 $("#product-video").bind("loadedmetadata", function () {
                     videoResize(wrapper, video);
                 });
@@ -533,7 +541,7 @@
                     }
 
                 });
-            };
+            }
         });
 
         function videoResize(wrapper, video) {
