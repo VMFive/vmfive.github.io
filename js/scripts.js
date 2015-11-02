@@ -857,6 +857,14 @@ This file includes all cusomized javascript and all plugins libraries options
       jQuery('#partner-4-desc').removeClass('hide');
     });
 
+    jQuery('#partner-5').on('click', function(){
+      jQuery('.partner').removeClass('active');
+      jQuery('#partner-5').addClass('active');
+
+      jQuery('.wrapper-2').addClass('hide');
+      jQuery('#partner-5-desc').removeClass('hide');
+    });
+
   });
 
 })();//end of use strict
