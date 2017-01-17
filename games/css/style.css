@@ -227,7 +227,7 @@ p {
   padding-top: 20%;
 }
 #home-container img{
-  width: 30%;
+  width: 40%;
 }
 #home-container h2{
   color: #fff;
@@ -241,7 +241,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   #home-container img{
-    width: 50%;
+    width: 80%;
     margin-top: 40%;
   }
 }
@@ -261,7 +261,7 @@ p {
 }
 
 #nav-logo{
-  width: 15%;
+  width: 20%;
   margin-right: 20%;
 }
 .fh5co-main-nav {
