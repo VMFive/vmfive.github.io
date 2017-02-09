@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script id="vm5ad-js-sdk" src="https://vawpro.vm5apis.com/man.js" data-mode="other"></script>
+        <script type="text/javascript">
+            var queryString = window.location.search || '';
+            queryString = queryString.substr(1);
+            var redirectURL;
+            if (queryString.length === 0) {
+                redirectURL = `https://pt.cymmetrics.com.tw/ckmp/vm5_ckmp.php?vm5_ck=${window.VM5AD_BROWSER_ID}`
+            }
+            else {
+                redirectURL = `https://pt.cymmetrics.com.tw/ckmp/vm5_ckmp.php?${queryString}&vm5_ck=${window.VM5AD_BROWSER_ID}`
+            }
+            window.location = redirectURL;
+        </script>
+    </head>
+</html>
