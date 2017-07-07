@@ -108,12 +108,12 @@
           <div class="pmp_premium_media_title_box">
             <h2 class="partners__title partners__title--orange partners__title--smaller-margin pmp_premium_media_title">
               <div class="pmp_premium_media_underline">Premium Media</div>
-            </h2><span class="partners__description pmp_premium_media_description">Total Adverting solution</span>
+            </h2><span class="partners__description pmp_premium_media_description">Total adverting solution</span>
           </div>
         </div>
         <div class="container">
-          <div filter class="pmp_premium_media_button_row works__filter_tags">
-            <div class="pmp_premium_media_button_box works__filter_tags__item"><a type="button" data-filter="5" class="button button--border-white button--orange pmp_premium_media_button_text js-filtering-button">News</a></div>
+          <div class="pmp_premium_media_button_row works__filter_tags">
+            <div class="pmp_premium_media_button_box works__filter_tags__item"><a type="button" data-filter="5" class="button button--border-white button--orange pmp_premium_media_button_text js-filtering-button intiButton">News</a></div>
             <div class="pmp_premium_media_button_box works__filter_tags__item"><a type="button" data-filter="1" class="button button--border-white button--orange pmp_premium_media_button_text js-filtering-button">Business</a></div>
             <div class="pmp_premium_media_button_box works__filter_tags__item"><a type="button" data-filter="2" class="button button--border-white button--orange pmp_premium_media_button_text js-filtering-button">Sport/3C</a></div>
             <div class="pmp_premium_media_button_box works__filter_tags__item"><a type="button" data-filter="3" class="button button--border-white button--orange pmp_premium_media_button_text js-filtering-button">Social</a></div>
@@ -225,7 +225,14 @@
         .pmp_premium_media_title_box{
         	margin-bottom: 10px;
         }
+        
       </style>
+      <script>
+        window.onload = ()=> {
+        	var intiButton = document.querySelector('.intiButton');
+        	intiButton.click();
+        }
+      </script>
       <!-- core features-->
       <div class="features features--02 pmp_core_features_root">
         <div style="position: relative; width: 100%">
