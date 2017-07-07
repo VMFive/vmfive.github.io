@@ -52,8 +52,10 @@
             </div>
           </div>
         </nav>
-        <div class="pmp_cover_overlayer"></div>
         <div class="container">
+          <video playsinline="" autoplay="" muted="" loop="" class="bgvid pmp_cover_video">
+            <source src="video/Home_Video.mp4" type="video/mp4">
+          </video>
           <div class="cover__content_box--12">
             <h2 class="cover__title--09 pmp_cover_underline"><span class="cover__title_text--09 pmp_cover_title">VMFive PMP</span></h2><span class="cover__description_text--12 pmp_cover_intro_text">Light Up Your Brand with Innovation in a Programmatic Way</span>
           </div>
@@ -61,29 +63,25 @@
       </div>
       <style>
         .pmp_cover_root {
-        	background-image: url(img/new-asset/Bg_PMP.png);
-        	background-position: center -435px;
         	height: 400px;
         }
-        .pmp_cover_overlayer {
-        	position: absolute;
-        	background-color: rgba(0,0,0,0.8);
-        	width: 100%;
-        	height: 100%;
-        	top: 0px;
-        	left: 0px;
+        .pmp_cover_video {
+        	 background: url('img/new-asset/Bg_PMP.png') no-repeat;
         }
         .pmp_cover_underline {
         	border-bottom: 2px solid white;
         	padding-bottom: 20px;
-        	margin-left: 10%;
-        	margin-right: 10%;
+        	margin-left: 15%;
+        	margin-right: 15%;
+        	margin-bottom: 20px;
         }
         .pmp_cover_title {
         	font-size: 50px;
+        	font-weight: 500;
         }
         .pmp_cover_intro_text {
         	color: white;
+        	font-weight: 100;
         }
       </style>
       <!-- introduction-->
@@ -199,16 +197,16 @@
         </div>
         <div class="container">
           <div class="row features__row">
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/new-asset/Icon_PMP_Features_DesignForMobile.png" class="PMP-icon">
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02 pmp_core_features_item"><img src="img/new-asset/Icon_PMP_Features_DesignForMobile.png" class="PMP-icon">
               <h3 class="features__item_title">Design for Mobile</h3><span class="features__item_text">Be a trendsetter in mobile advertising with us. Our brand-new, innovative, state-of-the-art formats and solutions designed for mobile devices will help you lead the trend.</span>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/new-asset/Icon_PMP_Features_BestUserExp.png" class="PMP-icon">
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02 pmp_core_features_item"><img src="img/new-asset/Icon_PMP_Features_BestUserExp.png" class="PMP-icon">
               <h3 class="features__item_title">Best User Experience</h3><span class="features__item_text">Communicate effectively with your customers in viewer-friendly, non-intrusive, but more interactive ways. Ads can be content for media. Our premium formats can help.</span>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/new-asset/Icon_PMP_Features_TrustAndTrans.png" class="PMP-icon">
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02 pmp_core_features_item"><img src="img/new-asset/Icon_PMP_Features_TrustAndTrans.png" class="PMP-icon">
               <h3 class="features__item_title">Trust and Transparency</h3><span class="features__item_text">We value your trust in our service most. Our data tracking technology, the core of our ad solution, is designed for transparency and trust. Some of the best third-party tracking services work with us as well.</span>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/new-asset/Icon_PMP_Features_BestProgWay.png" class="PMP-icon">
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02 pmp_core_features_item"><img src="img/new-asset/Icon_PMP_Features_BestProgWay.png" class="PMP-icon">
               <h3 class="features__item_title">Best Programmatic Way</h3><span class="features__item_text">Through our programmatic buying, you can reach the right and best audiences in this complex and fragmented media environment.</span>
             </div>
           </div>
@@ -239,6 +237,9 @@
         	background-size: contain;
         	background-repeat: no-repeat;
         	background-position: center center;
+        }
+        .pmp_core_features_item {
+        	margin-bottom: 100px;
         }
       </style>
       <!-- ad format-->
