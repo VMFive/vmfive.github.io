@@ -25,7 +25,7 @@
   </head>
   <body>
     <main class="page_wrapper">
-      <!-- hamburger menu (broken. need fix)-->
+      <!-- hamburger menu-->
       <nav data-menu-index="05" class="menu menu--05 js-menu">
         <div class="menu__container">
           <button type="button" class="menu__closer js-close-menu">close</button>
@@ -48,6 +48,7 @@
                 <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
                 <li class="header__menu_item"><a href="pmp.html" class="header__menu_link header__menu_link--white">PMP</a></li>
               </ul>
+              <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
             </div>
           </div>
         </nav>
@@ -251,8 +252,9 @@
         .home_contact_map {
         	background-image: url(img/new-asset/Btn_Footer_Map.png);
         	background-repeat: no-repeat;
-        	width: 300px;
-        	height: 170px;
+        	background-size: contain;
+        	width: 530px;
+        	height: 310px;
         }
         .home_back_to_top {
         	position: absolute;

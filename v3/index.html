@@ -25,7 +25,7 @@
   </head>
   <body>
     <main class="page_wrapper">
-      <!-- hamburger menu (broken. need fix)-->
+      <!-- hamburger menu-->
       <nav data-menu-index="05" class="menu menu--05 js-menu">
         <div class="menu__container">
           <button type="button" class="menu__closer js-close-menu">close</button>
@@ -48,6 +48,7 @@
                 <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
                 <li class="header__menu_item"><a href="pmp.html" class="header__menu_link header__menu_link--white">PMP</a></li>
               </ul>
+              <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
             </div>
           </div>
         </nav>
@@ -56,8 +57,8 @@
             <source src="video/Home_Video.mp4" type="video/mp4">
           </video>
           <div class="cover__content_box--12">
-            <h2 class="cover__title--09"><span class="cover__title_text--09 vm5_underline">Reach Your Audience</span></h2>
-            <div class="cover__description_box--12"><span class="cover__description_text--12 intro-text">More Introduction</span></div><a href="#core-features" class="rectangle-button button--border-white scroll">Explore VMFive</a>
+            <h2 class="cover__title--09"><span class="cover__title_text--09 home_title_text">Leading Playable and Video<br>Advertising Marketplace</span></h2>
+            <div class="cover__description_box--12 home_intro_box home_cover_upperline"><span class="cover__description_text--12 intro-text">VMFive provides you a total advertising solution<br>through its premium market place and innovative technology.</span></div><a href="#core-features" class="rectangle-button button--border-white scroll">Explore VMFive</a>
           </div>
         </div>
       </div>
@@ -66,20 +67,39 @@
         	border-bottom: 1px solid white;
         	padding-bottom: 20px;
         }
+        .home_cover_upperline {
+        	border-top: 1px solid white;
+        	margin-top: 20px;
+        	padding-top: 20px;
+        	min-width: 600px;
+        }
+        .home_title_text {
+        	font-size: 64px;
+        }
+        .home_intro_box {
+        	max-width: 465px;
+        }
         .intro-text {
         	color: white;
+        	font-weight: 300;
         }
         .rectangle-button, .rectangle-button:hover {
         	font-size: 12px;
         	padding: 10px;
         	text-decoration: none;
         }
+        //fixing rwd bug
+        @media screen and (max-width: 350px){
+        	.home_title_text {
+        		font-size: 40px;
+        	}
+        }
       </style>
       <!--VMFive Ads Core Features-->
       <div id="core-features" class="features features--02">
         <div class="container">
           <div class="features__title_box features__title_box--02">
-            <h2 class="features__title--02">VMFive Ads Core Features</h2><span class="features__description features__description--02">Advanced Technology solution for advertising</span>
+            <h2 class="features__title--02">Next Generation Mobile Ads</h2><span class="features__description features__description--02 home_cf_description">Pioneering new generation of mobile advertising though innovative technologies.  Our playable and video ad solutions improve advertising experience and maximize their impact.</span>
           </div>
         </div>
         <div class="container">
@@ -94,11 +114,17 @@
               <h3 class="features__item_title">Programmatic Buying</h3><span class="features__item_text">Through our programmatic buying, you can reach the right and best audiences in this complex and fragmented media environment.</span>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/pictures/Home_Feature_Trust_and_Transparency.png" class="PMP-icon">
-              <h3 class="features__item_title">Trust and Transparency</h3><span class="features__item_text">Our data tracking technology is designed for transparency and trust and also incorporated with the best third-party tracking services.</span>
+              <h3 class="features__item_title">Trust and Transparency</h3><span class="features__item_text">We value your trust in our service most. The core of our ad solution, data tracking technology, is designed for transparency and trust. Some of the best third-party tracking services work with us as well.</span>
             </div>
           </div>
         </div>
       </div>
+      <style>
+        .home_cf_description {
+        	font-size: 14px;
+        	max-width: 580px;
+        }
+      </style>
       <!--AdPlay-->
       <div class="contents contents--05 adplay home_adplay_bg">
         <div class="home_adplay_overlayer"></div>
@@ -124,13 +150,14 @@
         }
         .home_adplay_title {
         	font-size: 30px;
+        	color: white;
         }
         .home_adplay_content_text {
         	color: white;
         }
         .home_adplay_button {
-        	border: solid #fb971b 1px;
-        	color: #fb971b;
+        	border: solid white 1px;
+        	color: white;
         	border-radius: 0;
         }
       </style>
@@ -156,42 +183,7 @@
         }
       </style>
       <!--DSP-->
-      <div style="background-color: #fb971b" class="contents contents--05">
-        <div class="container">
-          <h2 class="contents__title--05 dsp home_dsp_title">VMFive DSP</h2>
-          <div class="row">
-            <div class="col-xs-12 col-lg-4"><span class="contents__text--05 home_dsp_contents_text">Improve your ROI through our vast global inventory with data-driven targetting in real time.</span><a href="dsp.html" class="button contents__button--05 home_dsp_button">Explore DSP</a></div>
-            <div class="col-xs-12 col-lg-4">
-              <h2 class="contents__title--05 dsp home_dsp_contents_title">1,000,000,000 +</h2><span class="contents__text--05 home_dsp_contents_text">1 Billion Behaviroal DataB</span>
-            </div>
-            <div class="col-xs-12 col-lg-4">
-              <h2 class="contents__title--05 dsp home_dsp_contents_title">28,000,000,000 +</h2><span class="contents__text--05 home_dsp_contents_text">28 Billion PC, Mobile, Video Traffic</span>
-            </div>
-            <div class="col-xs-12 col-lg-4">
-              <h2 class="contents__title--05 dsp home_dsp_contents_title">8,000,000,000 +</h2><span class="contents__text--05 home_dsp_contents_text">Native Ad Resources</span>
-            </div>
-            <div class="col-xs-12 col-lg-4">
-              <h2 class="contents__title--05 dsp home_dsp_contents_title">500,000 +</h2><span class="contents__text--05 home_dsp_contents_text">Major Apps</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <style>
-        .home_dsp_title {
-        	font-size: 30px;
-        }
-        .home_dsp_button {
-        	border: solid white 1px;
-        	color: white;
-        	border-radius: 0;
-        }
-        .home_dsp_contents_title {
-        	font-size: 25px;
-        }
-        .home_dsp_contents_text {
-        	color: white;
-        }
-      </style>
+      <!--include components/vmfive-v4/home/dsp-->
       <!--Media Report-->
       <div class="partners partners--01 testimonials home_media_report_root home_media_report_top-curve home_media_report_bottom_curve">
         <div class="container">
@@ -205,12 +197,12 @@
               <button type="button" class="testimonials__arrow testimonials__arrow--left testimonials__arrow--01 testimonials__arrow--01--left js-testimonials-prev-arrow--01 home_media_report_prev_arrow"></button>
               <button type="button" class="testimonials__arrow testimonials__arrow--right testimonials__arrow--01 testimonials__arrow--01--right js-testimonials-next-arrow--01 home_media_report_next_arrow"></button>
             </div>
-            <div data-slick="{&quot;slidesToShow&quot;: 4, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--01&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--01&quot;, &quot;cssEase&quot;: &quot;linear&quot;}" class="testimonials__box js-slider">
+            <div data-slick="{&quot;slidesToShow&quot;: 4, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--01&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--01&quot;, &quot;cssEase&quot;: &quot;linear&quot;}" class="testimonials__box hiddenoverflow js-slider">
               <div class="testimonials__item">
-                <div class="partners__item"><a href="https://techcrunch.com/2014/08/12/vmfive-wins-techcrunch-beijings-startup-competition-with-app-advertising-platform-adplay/" target="_blank"><img src="img/report/media-1.png" class="partners__img"></a></div>
+                <div class="partners__item"><a href="https://techcrunch.com/2014/08/12/vmfive-wins-techcrunch-beijings-startup-competition-with-app-advertising-platform-adplay/" target="_blank"><img src="img/report/media-1.png" class="partners__img home_media_img_container"></a></div>
               </div>
               <div class="testimonials__item">
-                <div class="partners__item"><a href="http://technode.com/2014/08/12/announcing-winner-startup-competition/" target="_blank"><img src="img/report/media-2.png" class="partners__img"></a></div>
+                <div class="partners__item"><a href="http://technode.com/2014/08/12/announcing-winner-startup-competition/" target="_blank"><img src="img/report/media-2.png" class="partners__img home_media_img_container"></a></div>
               </div>
               <div class="testimonials__item">
                 <div class="partners__item"><a href="https://www.techinasia.com/startup-lets-demo-app-downloading-installing-wins-gold-techcrunch-beijing" target="_blank"><img src="img/report/media-3.png" class="partners__img"></a></div>
@@ -292,25 +284,81 @@
         	border-bottom-left-radius: 50% 80%;
         	border-bottom-right-radius: 50% 80%;
         }
+        .hiddenoverflow{/*this slide is not needed to fit margin*/
+        	overflow: hidden;
+        }
       </style>
       <!--News-->
-      <div class="testimonials testimonials--05 home_news_root">
-        <div class="container">
-          <div>
-            <div class="home_news_underline">
-              <h2 class="testimonials__title testimonials__title--05 home_news_title">News</h2>
+      <div class="testimonials testimonials--04 home_news_root">
+        <div class="container home_news_photo-container">
+          <div></div>
+          <div class="home_news_underline">
+            <h2 class="testimonials__title testimonials__title--05 home_news_title">News</h2>
+          </div>
+          <div class="testimonials__arrows_box testimonials__arrows_box--04">
+            <button type="button" class="testimonials__arrow testimonials__arrow--left testimonials__arrow--04 testimonials__arrow--04--left js-testimonials-prev-arrow--04 home_media_report_prev_arrow"></button>
+            <button type="button" class="testimonials__arrow testimonials__arrow--right testimonials__arrow--04 testimonials__arrow--04--right js-testimonials-next-arrow--04 home_media_report_next_arrow"></button>
+          </div>
+          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: false, &quot;asNavFor&quot;: &quot;.js-testimonials-text-slider&quot;, &quot;centerMode&quot;: true, &quot;centerPadding&quot; : &quot;0px&quot;, &quot;focusOnSelect&quot;: true, &quot;infinite&quot;: true, &quot;variableWidth&quot;: true, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 970, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1, &quot;centerMode&quot;: false}}]}" class="testimonials__photos_box--04 js-slider home_news_overflow js-testimonials-photo-slider">
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event1.jpg)" cssBase="url(img/news/Img_Home_News_Event1.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event2.jpg)" cssBase="url(img/news/Img_Home_News_Event2.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event3.jpg)" cssBase="url(img/news/Img_Home_News_Event3.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event1.jpg)" cssBase="url(img/news/Img_Home_News_Event1.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event2.jpg)" cssBase="url(img/news/Img_Home_News_Event2.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event3.jpg)" cssBase="url(img/news/Img_Home_News_Event3.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
             </div>
           </div>
-        </div>
-        <div class="testimonials__container--05">
-          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--05&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--05&quot;, &quot;centerMode&quot;: true, &quot;infinite&quot;: true, &quot;focusOnSelect&quot;: true, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 900, &quot;settings&quot;: {&quot;slidesToShow&quot;: 2}}, {&quot;breakpoint&quot;: 650, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1}}]}" class="home_news_box testimonials__box testimonials__box--05 js-slider">
-            <div style="background-image: url(img/news/Img_Home_News_Event1.jpg)" class="testimonials__item testimonials__item--05"><span class="testimonials__item_text testimonials__item_text--05">Event 1</span><span class="testimonials__item_name">Read more</span></div>
-            <div style="background-image: url(img/news/Img_Home_News_Event2.jpg)" class="testimonials__item testimonials__item--05"><span class="testimonials__item_text testimonials__item_text--05">Event 1</span><span class="testimonials__item_name">Read more</span></div>
-            <div style="background-image: url(img/news/Img_Home_News_Event3.jpg)" class="testimonials__item testimonials__item--05"><span class="testimonials__item_text testimonials__item_text--05">Event 1</span><span class="testimonials__item_name">Read more</span></div>
+          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: true, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--04&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--04&quot;, &quot;infinite&quot;: true, &quot;asNavFor&quot;: &quot;.js-testimonials-photo-slider&quot;, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 970, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1,&quot;centerMode&quot;: false}}]}" class="testimonials__box testimonials__box--04 home_news_overflow js-slider js-testimonials-text-slider">
+            <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Event 1</span></div>
+            <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Event 2</span></div>
+            <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Event 3</span></div>
+            <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Event 1</span></div>
+            <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Event 2</span></div>
+            <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Event 3</span></div>
           </div>
         </div>
       </div>
       <style>
+        .home_news_photo-container{
+        	max-width: 100%;
+        	padding-left: 0;
+        	padding-right: 0;
+        }
         .home_news_root {
         	background-color: white;
         }
@@ -327,6 +375,36 @@
         }
         .home_news_box:before, .home_news_box:after {
         	background: white;
+        }
+        
+        .testimonials__item--05:hover .home_news_readmore{
+        	opacity: 1;
+        }
+        .home_media_report_prev_arrow:after {
+        	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzFfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQuNDE0MXB4IiBoZWlnaHQ9IjcuMDAxcHgiIHZpZXdCb3g9IjAgMCA0LjQxNDEgNy4wMDEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQuNDE0MSA3LjAwMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBpZD0iaS0tc21hbGwtYXJyb3ctLWJsYWNrLS1sZWZ0IiBmaWxsPSIjZmI5NzFiIiBkPSJNMC4yNjc2LDIuODUzNUMwLjA4ODksMy4wMzIyLDAsMy4yNjY2LDAsMy41MDENCgljMCwwLjE3NTgsMC4wNTA4LDAuMzUwNiwwLjE1MDQsMC41MDI5YzAuMDMzMiwwLjA0OTgsMC4wNzIzLDAuMDk4NiwwLjExNzIsMC4xNDI2bDIuNTg1OSwyLjU4NTkNCgljMC4zNTc0LDAuMzU3NCwwLjkzNjUsMC4zNTc0LDEuMjkzLDBjMC4zNTc0LTAuMzU2NCwwLjM1NzQtMC45MzU1LDAtMS4yOTNMMi4yMDcsMy41MDFsMS45Mzk1LTEuOTM5NQ0KCWMwLjM1NzQtMC4zNTc0LDAuMzU3NC0wLjkzNzUsMC0xLjI5MzljLTAuMzU2NC0wLjM1NjQtMC45MzU1LTAuMzU2NC0xLjI5MywwTDAuMjY3NiwyLjg1MzV6Ii8+DQo8L3N2Zz4NCg==) no-repeat center/100% auto;
+        }
+        .home_media_report_next_arrow:after {
+        	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzJfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iNC40MTQxcHgiIGhlaWdodD0iNy4wMDFweCIgdmlld0JveD0iMCAwIDQuNDE0MSA3LjAwMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNC40MTQxIDcuMDAxIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggaWQ9ImktLXNtYWxsLWFycm93LS1ibGFjay0tcmlnaHQiIGZpbGw9IiNmYjk3MWIiIGQ9Ik0xLjU2MDUsMC4yNjc2Yy0wLjM1NzQtMC4zNTY0LTAuOTM2NS0wLjM1NjQtMS4yOTMsMAoJYy0wLjM1NzQsMC4zNTY0LTAuMzU3NCwwLjkzNjUsMCwxLjI5MzlMMi4yMDcsMy41MDFMMC4yNjc2LDUuNDM5NWMtMC4zNTc0LDAuMzU3NC0wLjM1NzQsMC45MzY1LDAsMS4yOTMKCWMwLjM1NjQsMC4zNTc0LDAuOTM1NSwwLjM1NzQsMS4yOTMsMGwyLjU4NTktMi41ODU5YzAuMDQ0OS0wLjA0MzksMC4wODQtMC4wOTI4LDAuMTE3Mi0wLjE0MjYKCUM0LjM2MzMsMy44NTE2LDQuNDE0MSwzLjY3NjgsNC40MTQxLDMuNTAxYzAtMC4yMzQ0LTAuMDg4OS0wLjQ2ODgtMC4yNjc2LTAuNjQ3NUwxLjU2MDUsMC4yNjc2eiIvPgo8L3N2Zz4K) no-repeat center/100% auto;
+        }
+        .home_news_overflow{
+        	max-width: 100%;
+        	overflow: hidden;
+        }
+        @media screen and (max-width: 970px){
+        	.home_news_photo-container{
+        		max-width: 65%;
+        	}
+        }
+        @media screen and (max-width: 600px){
+        	.home_news_photo-container{
+        		max-width: 95%;
+        	}
+        }
+        .home_news_readmore{
+        	opacity: 0;
+        	position: relative;
+        	top: 50%;
+        	transition: .5s ease;
         }
       </style>
       <!--Contact-->
@@ -360,8 +438,9 @@
         .home_contact_map {
         	background-image: url(img/new-asset/Btn_Footer_Map.png);
         	background-repeat: no-repeat;
-        	width: 300px;
-        	height: 170px;
+        	background-size: contain;
+        	width: 530px;
+        	height: 310px;
         }
         .home_back_to_top {
         	position: absolute;

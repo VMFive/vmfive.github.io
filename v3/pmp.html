@@ -25,7 +25,7 @@
   </head>
   <body>
     <main class="page_wrapper">
-      <!-- hamburger menu (broken. need fix)-->
+      <!-- hamburger menu-->
       <nav data-menu-index="05" class="menu menu--05 js-menu">
         <div class="menu__container">
           <button type="button" class="menu__closer js-close-menu">close</button>
@@ -48,13 +48,14 @@
                 <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
                 <li class="header__menu_item"><a href="pmp.html" class="header__menu_link header__menu_link--white">PMP</a></li>
               </ul>
+              <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
             </div>
           </div>
         </nav>
         <div class="pmp_cover_overlayer"></div>
         <div class="container">
           <div class="cover__content_box--12">
-            <h2 class="cover__title--09 pmp_cover_underline"><span class="cover__title_text--09 pmp_cover_title">VMFive PMP</span></h2><span class="cover__description_text--12 pmp_cover_intro_text">Mobile Programmatic Ad Solution</span>
+            <h2 class="cover__title--09 pmp_cover_underline"><span class="cover__title_text--09 pmp_cover_title">VMFive PMP</span></h2><span class="cover__description_text--12 pmp_cover_intro_text">Light Up Your Brand with Innovation in a Programmatic Way</span>
           </div>
         </div>
       </div>
@@ -88,9 +89,14 @@
       <!-- introduction-->
       <div class="features features--02">
         <div class="container">
-          <div class="features__title_box features__title_box--02"><span style="max-width: 100%" class="features__description features__description--02">Light up your brand with innovation in a programmatic way<br><br>With a large collection of premium media inventory in various ad formats and accurate targetting tools,<br>VMFive PMP makes your brand marketing more powerful and effective in a simpler and easier way.</span></div>
+          <div class="features__title_box features__title_box--02 pmp_title_box"><span style="max-width: 100%" class="features__description features__description--02">With a large collection of premium media inventory in various ad formats and accurate targetting tools,<br>VMFive PMP makes your brand marketing more powerful and effective in a simpler and easier way.</span></div>
         </div>
       </div>
+      <style>
+        .pmp_title_box {
+        	margin-bottom: 100px;
+        }
+      </style>
       <!-- premium media-->
       <div class="features features--02 pmp_premium_media_root pmp_premium_media_top-curve">
         <div style="position: relative; width: 100%">
@@ -188,7 +194,7 @@
           <div class="features__title_box features__title_box--02">
             <h2 class="partners__title partners__title--orange partners__title--smaller-margin pmp_core_features_title">
               <div class="pmp_core_features_underline">Core Features</div>
-            </h2><span class="partners__description">More Introduction</span>
+            </h2>
           </div>
         </div>
         <div class="container">
@@ -244,7 +250,7 @@
           <div class="features__title_box features__title_box--02">
             <h2 class="partners__title partners__title--orange partners__title--smaller-margin pmp_ad_format_title">
               <div class="pmp_ad_format_underline">Ad Format</div>
-            </h2><span class="partners__description pmp_ad_format_description">More Introduction</span>
+            </h2>
           </div>
         </div>
         <div class="container">
@@ -279,7 +285,8 @@
         }
         .pmp_ad_format_underline {
         	display: inline-block;
-        	border-bottom: 1px solid #C2C2C2;
+        	padding: 0 15px 15px;
+        	border-bottom: 1px solid white;
         }
         .pmp_ad_format_description {
         	color: white;
@@ -333,16 +340,16 @@
         }
       </style>
       <!-- best case-->
-      <div class="testimonials testimonials--05 pmp_best_case_root">
+      <div class="testimonials testimonials--04 pmp_best_case_root">
         <div style="position: relative; width: 100%">
-          <div class="pmp_best_case_top_icon"></div>
+          <div class="pmp_best_case_top_icon photo-container"></div>
         </div>
         <div class="container">
           <div>
             <div class="pmp_best_case_underline">
               <h2 class="testimonials__title testimonials__title--05 pmp_best_case_title">Best Case</h2>
             </div>
-          </div><span class="testimonials__description">More Introduction</span>
+          </div>
         </div>
         <div class="testimonials__container--05">
           <div class="testimonials__arrows_box testimonials__arrows_box--01">
@@ -424,8 +431,9 @@
         .home_contact_map {
         	background-image: url(img/new-asset/Btn_Footer_Map.png);
         	background-repeat: no-repeat;
-        	width: 300px;
-        	height: 170px;
+        	background-size: contain;
+        	width: 530px;
+        	height: 310px;
         }
         .home_back_to_top {
         	position: absolute;
