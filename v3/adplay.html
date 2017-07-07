@@ -55,7 +55,7 @@
         <div class="adplay_cover_overlayer"></div>
         <div class="container">
           <div class="cover__content_box--12">
-            <h2 class="cover__title--09 adplay_cover_underline"><span class="cover__title_text--09">AdPlay</span></h2><span class="cover__description_text--12 adplay_cover_intro_text">Playable Ad Solution</span>
+            <h2 class="cover__title--09 adplay_cover_underline"><span class="cover__title_text--09 adplay_cover_intro_title">AdPlay</span></h2><span class="cover__description_text--12 adplay_cover_intro_text">Playable Ad Solution</span>
           </div>
         </div>
       </div>
@@ -63,11 +63,11 @@
         .adplay_cover_root {
         	background-image: url(img/new-asset/Bg_Adplay.png);
         	background-position: center -75px;
-        	height: 400px;
+        	height: 50vh;
         }
         .adplay_cover_overlayer {
         	position: absolute;
-        	background-color: rgba(0,0,0,0.8);
+        	background-color: rgba(0,0,0,0.7);
         	width: 100%;
         	height: 100%;
         	top: 0px;
@@ -79,16 +79,25 @@
         	margin-left: 10%;
         	margin-right: 10%;
         }
+        .adplay_cover_intro_title {
+        	font-size: 56px;
+        }
         .adplay_cover_intro_text {
         	color: white;
+        	font-weight: 100;
         }
       </style>
       <!-- introduction-->
       <div class="features features--02">
         <div class="container">
-          <div class="features__title_box features__title_box--02"><span style="max-width: 100%" class="features__description features__description--02">Let users expeirence, Get higher retention.<br><br>AdPlay is a playble ad solution<br>with VMFive's patented technology which allows users to try applications before download.<br>AdPlay can be provided as embedded or a link</span></div>
+          <div class="features__title_box features__title_box--02 adplay_intro_title_box"><span style="max-width: 100%" class="features__description features__description--02">Let users expeirence. Get higher retention.<br><br>AdPlay is a playble ad solution<br>with VMFive's patented technology which allows users to try applications before download.<br>AdPlay can be provided as embedded or a link</span></div>
         </div>
       </div>
+      <style>
+        .adplay_intro_title_box{
+        	margin-bottom: 80px;
+        }
+      </style>
       <!-- how it works-->
       <div style="background-color: #fb971b" class="contents contents--05">
         <div style="position: relative; width: 100%">
@@ -111,6 +120,7 @@
               <div class="adplay_how_it_works_stage">Download</div>
             </div>
           </div>
+          <div class="adplay_video_box"><img src="img/new-asset/Img_AdPlay_instantlyPlay.png" style="width: 300px; margin-top: 50px;"></div>
         </div>
       </div>
       <style>
@@ -172,15 +182,19 @@
         	left: 0;
         	top: 202px;
         }
+        .adplay_video_box {
+        	text-align: center;
+        	margin-top: 50px;
+        }
       </style>
       <!-- app streaming technology-->
       <div class="contents contents--05">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-lg-6 contents__right-box--05">
+            <div class="col-xs-12 col-lg-6">
               <h2 class="contents__title--05 adplay_app_streaming_tech_title adplay_app_streaming_tech_underline">App Streaming Technology</h2><span class="contents__text--05 adplay_app_streaming_tech_description">VMFive's cutting-edge mobile virtualization technology,<br>coupled with its advanced streaming technology,<br>allows users to experience Apps without downloading<br>them, across devices.<br><br>No extra work for App developers, no modification to<br>the original Apps. It only requires the original APK file to<br>attract potential users by letting them try the App via<br>our solution. </span>
             </div>
-            <div class="col-xs-12 col-lg-6 dt-img">
+            <div class="col-xs-12 col-lg-6 dt-img contents__right-box--05">
               <div class="adplay_app_streaming_tech_demo_container">
                 <div class="adplay_app_streaming_tech_demo"></div>
               </div>
@@ -214,6 +228,7 @@
         	background-image: url(img/new-asset/Img_AdPlay_AppStreaming.png);
         	background-size: contain;
         	background-repeat: no-repeat;
+        	background-position: center;
         }
         @media (max-width: 992px) {
         	.adplay_app_streaming_tech_demo {
