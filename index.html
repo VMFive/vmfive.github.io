@@ -19,271 +19,467 @@
     <meta name="mobile-web-app-capable" content="yes">
     <!--the must have assets-->
     <link rel="stylesheet" href="css/main.css">
-    <!--place your Google Maps API key here:-->
-    <!--script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfh_GTuZk_GKM0YwY-RQ7OBs6sAMcBGUg", defer)-->
     <script src="js/main.js" defer></script>
     <!--page title-->
     <title>VMFive | Mobile Ads</title>
   </head>
   <body>
     <main class="page_wrapper">
-      <!--menu-->
-      <!-- == START OF MENU 05 (large desktop header--05 is hidden on mobiles (iPhone, iPad, etc) and this one is to be opened on burger tap) ==-->
+      <!-- hamburger menu-->
       <nav data-menu-index="05" class="menu menu--05 js-menu">
         <div class="menu__container">
           <button type="button" class="menu__closer js-close-menu">close</button>
           <div class="menu__box">
             <ul class="menu__list">
-              <li class="menu__item"><a href="index.html#home" class="menu__link">Home</a></li>
-              <li class="menu__item"><a href="index.html#adview" class="menu__link">AdView</a></li>
-              <li class="menu__item"><a href="index.html#adplay" class="menu__link">AdPlay</a></li>
-              <li class="menu__item"><a href="index.html#report" class="menu__link">Media Report</a></li>
-              <li class="menu__item"><a href="index.html#contact" class="menu__link">Contact</a></li>
+              <li class="menu__item"><a href="adplay.html" class="menu__link">AdPlay</a></li>
+              <li class="menu__item"><a href="pmp.html" class="menu__link">PMP</a></li>
+              <li class="menu__item"><a href="dsp.html" class="menu__link">DSP</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- == END OF MENU 05 (large desktop header--05 is hidden on mobiles (iPhone, iPad, etc) and this one is to be opened on burger tap) ==-->
-      <!--Home Cover-->
-      <!-- == START OF COVER 06 ==-->
-      <div id="home" class="cover__slider js-cover">
-        <!-- == START OF HEADER 05 ==-->
+      <!--Reach Your Audience-->
+      <div class="cover cover--09 js-cover">
         <nav class="header header--05">
           <div class="container header__container">
-            <div class="header__left_box"><a href="#" title="Home" class="header__logo_box"><img src="img/etc/vmfive--logo.svg" alt="VMFive logo" class="header__logo_img"></a></div>
-            <div class="header__center_box">
-              <ul class="header__menu_list header__item--desktop">
-                <li class="header__menu_item"><a href="index.html#home" class="header__menu_link header__menu_link--white">Home</a></li>
-                <li class="header__menu_item"><a href="index.html#adview" class="header__menu_link header__menu_link--white">AdView</a></li>
-                <li class="header__menu_item"><a href="index.html#adplay" class="header__menu_link header__menu_link--white">AdPlay</a></li>
-                <li class="header__menu_item"><a href="index.html#report" class="header__menu_link header__menu_link--white">Media Report</a></li>
-                <li class="header__menu_item"><a href="index.html#contact" class="header__menu_link header__menu_link--white">Contact</a></li>
-              </ul>
-            </div>
+            <div class="header__left_box"><a href="index.html" title="Home" class="header__logo_box"><img src="img/etc/vmfive--logo.svg" alt="VMFive logo" class="header__logo_img"></a></div>
             <div class="header__right_box">
-              <!--button.header__location_dropdown_opener.js-dropdown-opener(data-dropdown-target="location_1", type="button")| EN
-              -->
-              <!--.header__location_dropdown.dropdown.js-dropdown(data-dropdown-name="location_1")
-              ul.header__location_list.dropdown__list
-              	li.dropdown__item.header__location_item
-              		a.dropdown__btn.header__location_btn(href="#")
-              			span.dropdown__item_text.header__location_item_text
-              				| EN
-              	li.dropdown__item
-              		a.dropdown__btn(href="#")
-              			span.dropdown__item_text.header__location_item_text
-              				| JP
-              	li.dropdown__item
-              		a.dropdown__btn(href="#")
-              			span.dropdown__item_text.header__location_item_text
-              				| CN
-              -->
+              <ul class="header__menu_list header__item--desktop">
+                <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
+                <li class="header__menu_item"><a href="pmp.html" class="header__menu_link header__menu_link--white">PMP</a></li>
+              </ul>
               <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
             </div>
           </div>
         </nav>
-        <!-- == END OF HEADER 05 ==-->
-        <div data-slick="{&quot;slidesToShow&quot;: 1, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: true, &quot;arrows&quot;: false, &quot;dots&quot;: true, &quot;dotsClass&quot;: &quot;cover__slider__dots&quot;}" class="cover__slider__content_box js-slider">
-          <div style="background-image: url(img/bg/bg_light-brand.jpg)" class="cover cover--06">
-            <div class="container cover__container--06">
-              <div class="cover__pic_box--06"><img src="img/pictures/Mobile-Ads.png" class="cover__img--06"></div>
-              <div class="cover__text_box--06">
-                <h2 class="cover__title--06"><span class="cover__title_text--06">Light Up Your Brand<br>with Innovation</span></h2>
-                <div class="cover__description_box--06"><span class="cover__description_text--06">VMFive provides premium video and playable advertising marketplace with innovative solutions for your online branding.</span></div>
-              </div>
-            </div>
-            <!--.cover__footer.cover__footer--06
-            .cover__footer_right_box
-            	ul.social.cover__footer_social
-            		li.social__item.social__item--left_margin
-            			a.social__link.social__link--twitter(href="#", title="Say hello in Twitter!")
-            		li.social__item.social__item--left_margin
-            			a.social__link.social__link--facebook(href="#", title="Say hello in Facebook!")
-            		li.social__item.social__item--left_margin
-            			a.social__link.social__link--g_plus(href="#", title="Say hello in G+!")
-            -->
-          </div>
-          <div style="background-image: url(img/bg/bg_reach-audience.jpg)" class="cover cover--06">
-            <div class="container cover__container--06">
-              <div class="cover__pic_box--06"><img src="img/pictures/Mobile-Ads.png" class="cover__img--06"></div>
-              <div class="cover__text_box--06">
-                <h2 class="cover__title--06"><span class="cover__title_text--06">Reach Audience</span></h2>
-                <div class="cover__description_box--06"><span class="cover__description_text--06">VMFive help you use intelligent and programmatic way to effectively interact with your audiences.</span></div>
-              </div>
-            </div>
-            <!--.cover__footer.cover__footer--06
-            .cover__footer_right_box
-            	ul.social.cover__footer_social
-            		li.social__item.social__item--left_margin
-            			a.social__link.social__link--twitter(href="#", title="Say hello in Twitter!")
-            		li.social__item.social__item--left_margin
-            			a.social__link.social__link--facebook(href="#", title="Say hello in Facebook!")
-            		li.social__item.social__item--left_margin
-            			a.social__link.social__link--g_plus(href="#", title="Say hello in G+!")
-            -->
-          </div>
-        </div>
-      </div>
-      <!-- == END OF COVER 06 ==-->
-      <!--Modern Mobile Ads Cover-->
-      <!-- == START OF COVER 09 ==-->
-      <div class="cover cover--09 js-cover">
         <div class="container">
-          <video id="bgvid" playsinline="" autoplay="" muted="" loop="">
-            <source src="video/vmfive_video.mp4" type="video/mp4">
+          <video playsinline="" autoplay="" muted="" loop="" class="bgvid home_cover_bgvid">
+            <source src="video/Home_Video.mp4" type="video/mp4">
           </video>
-          <div class="cover__video_overlay"></div>
-          <div class="cover__content_box cover__content_box--09">
-            <h2 class="cover__title cover__title--09"><span class="cover__title_text cover__title_text--09">Modern Mobile Ads</span></h2>
-            <div class="cover__description_box--09"><span class="cover__description_text--09">Make your mobile ads beautiful and interactive to catch attention of target audiences from online fragmented medias.</span></div>
+          <div class="cover__content_box--12">
+            <h2 class="cover__title--09"><span class="cover__title_text--09 home_title_text">Leading Playable and Video<br>Advertising Marketplace</span></h2>
+            <div class="cover__description_box--12 home_intro_box home_cover_upperline"><span class="cover__description_text--12 intro-text">VMFive provides you a total advertising solution<br>through its premium market place and innovative technology.</span></div><a href="#core-features" class="rectangle-button button--border-white scroll">Explore VMFive</a>
           </div>
         </div>
       </div>
-      <!-- == END OF COVER 09 ==-->
-      <!--programmatic Marketplace-->
-      <!-- == START OF FEATURES 02 ==-->
-      <div class="features features--02">
+      <style>
+        .home_cover_bgvid {
+        	top: 50%;
+        }
+        .vm5_underline {
+        	border-bottom: 1px solid white;
+        	padding-bottom: 20px;
+        }
+        .home_cover_upperline {
+        	border-top: 1px solid white;
+        	margin-top: 20px;
+        	padding-top: 20px;
+        	min-width: 600px;
+        }
+        .home_title_text {
+        	font-size: 64px;
+        }
+        .home_intro_box {
+        	max-width: 465px;
+        }
+        .intro-text {
+        	color: white;
+        	font-weight: 300;
+        }
+        .rectangle-button, .rectangle-button:hover {
+        	font-size: 12px;
+        	padding: 10px;
+        	text-decoration: none;
+        }
+        //fixing rwd bug
+        @media screen and (max-width: 350px){
+        	.home_title_text {
+        		font-size: 40px;
+        	}
+        }
+      </style>
+      <!--VMFive Ads Core Features-->
+      <div id="core-features" class="features features--02">
         <div class="container">
           <div class="features__title_box features__title_box--02">
-            <h2 class="features__title--02">Programmatic Marketplace, AdView and AdPlay</h2><span class="features__description features__description--02">Buy viewable video and playable ads in our private marketplace</span>
+            <h2 class="features__title--02">Next Generation Mobile Ads</h2><span class="features__description features__description--02 home_cf_description">Pioneering new generation of mobile advertising though innovative technologies.  Our playable and video ad solutions improve advertising experience and maximize their impact.</span>
           </div>
         </div>
         <div class="container">
           <div class="row features__row">
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-              <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--play-icon--vmfive"></div>
-              <h3 class="features__item_title">Mobile UX</h3><span class="features__item_text">The best user experience for your mobile video and playable ads. Catch your target audience's attention by our high quality ad formats.</span>
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/pictures/Home_Feature_Design_for_Mobile.png" class="PMP-icon">
+              <h3 class="features__item_title">Innovative Technology</h3><span class="features__item_text">VMFive's industry-leading technology maximizes the efficiency and effectiveness of your ads.</span>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-              <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--speedometer-icon--vmfive"></div>
-              <h3 class="features__item_title">Data Insight</h3><span class="features__item_text">Our data tracking and analytics system is the power of driving Programmatic engine.</span>
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/pictures/Home_Feature_Best_User_Experience.png" class="PMP-icon">
+              <h3 class="features__item_title">Data Driven Targeting</h3><span class="features__item_text">Our data analytics technology connects the right content to the right audiences at the right moment.</span>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-              <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--code-icon--vmfive"></div>
-              <h3 class="features__item_title">Programmatic Serving</h3><span class="features__item_text">Target your audiences by programmatic ad serving in cross-media.</span>
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/pictures/Home_Feature_Programmatic_Buying.png" class="PMP-icon">
+              <h3 class="features__item_title">Programmatic Buying</h3><span class="features__item_text">Through our programmatic buying, you can reach the right and best audiences in this complex and fragmented media environment.</span>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-              <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--heart-icon--vmfive"></div>
-              <h3 class="features__item_title">Trust-First</h3><span class="features__item_text">100% Transparency and third-party monitoring.</span>
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/pictures/Home_Feature_Trust_and_Transparency.png" class="PMP-icon">
+              <h3 class="features__item_title">Trust and Transparency</h3><span class="features__item_text">Our data tracking technology is designed for transparency and trust and also incorporated with the best third-party tracking services.</span>
             </div>
           </div>
         </div>
       </div>
-      <!-- == END OF FEATURES 02 ==-->
-      <!--AdView-->
-      <!-- == START OF WORKS 01 ==-->
-      <div id="adview" class="works works--01">
-        <div class="container">
-          <div class="works__title_box">
-            <div class="works__title">AdView</div>
-            <div class="works__text">High quality video ads solution</div>
-          </div>
-        </div>
-        <div class="works__row works__row--01"><span class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/work-topview.gif)" class="works__item_img works__item_img--01"></div>
-            <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">Top View</h3><span class="works__item_tags--01">Top of the page</span>
-            </div></span><span class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/work-intersitial.gif)" class="works__item_img works__item_img--01"></div>
-            <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">Full View</h3><span class="works__item_tags--01">Fullscreen before reading</span>
-            </div></span><span class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/work-inread.gif)" class="works__item_img works__item_img--01"></div>
-            <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">In View - Landscape</h3><span class="works__item_tags--01">Native view within content, non-intrusive</span>
-            </div></span><span class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/work-impressive.gif)" class="works__item_img works__item_img--01"></div>
-            <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">In View - Impressive</h3><span class="works__item_tags--01">Native view within content, with scroller format for attention</span>
-            </div></span><span class="works__item works__item--01">
-            <div style="background-image: url(img/pictures/work-vertical.gif)" class="works__item_img works__item_img--01"></div>
-            <div class="works__item_text_box--01">
-              <h3 class="works__item_title--01">InView - Vertical</h3><span class="works__item_tags--01">Full screen within content</span>
-            </div></span></div>
-      </div>
-      <!-- == END OF WORKS 01 ==-->
+      <style>
+        .home_cf_description {
+        	font-size: 14px;
+        	max-width: 580px;
+        }
+      </style>
       <!--AdPlay-->
-      <!-- == START OF CONTENTS 01 ==-->
-      <div id="adplay" style="background-image: url(img/bg/bg_adplay.jpg)" class="contents contents--01">
-        <div class="container contents__container--01">
-          <div style="background-image: url(img/pictures/AdPlay-Impressive.gif)" class="contents__image_box--01"><img src="img/pictures/Phone-AdPlay.png" class="contents__image--01"></div>
-          <div class="contents__content_box--01">
-            <h3 class="contents__title--01">AdPlay</h3><span class="contents__text--01">High engagement playable ads solution<br><br><b>Novelty</b><br>Play games before download<br><br><b>Fun</b><br>Experience the game quickly<br><br><b>More</b><br>Excite about user’s next action</span>
-            <iframe src="https://player.vimeo.com/video/120444515?title=0&amp;portrait=0" frameborder="0" allowfullscreen class="contents__video_frame"></iframe>
+      <div class="contents contents--05 adplay home_adplay_bg">
+        <div class="home_adplay_overlayer"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-6">
+              <h2 class="contents__title--05 home_adplay_title">VMFive AdPlay</h2><span class="contents__text--05 home_adplay_content_text">VMFive's cutting-edge mobile virtualization technology, coupled with its advanced streaming technology, allows users to experience Apps without downloading them, across devices.</span><a href="adplay.html" class="button contents__button--05 home_adplay_button">Explore AdPlay</a>
+            </div>
           </div>
         </div>
       </div>
-      <!-- == END OF CONTENTS 01 ==-->
-      <!--Media List-->
-      <!-- == START OF WORKS 02 ==-->
-      <div id="report" class="works works--02">
-        <div class="works__title_box">
-          <div class="works__title">Media Report</div>
-          <ul class="works__filter_tags">
-            <!-- For filtering controls add-->
-            <li class="works__filter_tags__item">
-              <button type="button" data-filter="all" class="button button--black button--extra-small js-filtering-button">Show all</button>
-            </li>
-            <li class="works__filter_tags__item">
-              <button type="button" data-filter="1" class="button button--gray button--extra-small js-filtering-button">Asia</button>
-            </li>
-            <li class="works__filter_tags__item">
-              <button type="button" data-filter="2" class="button button--gray button--extra-small js-filtering-button">USA</button>
-            </li>
-          </ul>
-          <div class="works__row">
-            <div class="filtr-container works__container--02"><a data-category="2" href="https://techcrunch.com/2014/08/12/vmfive-wins-techcrunch-beijings-startup-competition-with-app-advertising-platform-adplay/" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-1.png)" class="works__item_img works__item_img--02"></div></a><a data-category="2" href="http://technode.com/2014/08/12/announcing-winner-startup-competition/" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-2.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="https://www.techinasia.com/startup-lets-demo-app-downloading-installing-wins-gold-techcrunch-beijing" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-3.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="http://thebridge.jp/2014/08/startup-match-winner-vmfive" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-4.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="https://www.bnext.com.tw/article/33390/BN-ARTICLE-33390" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-5.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="https://yowureport.com/13714/" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-6.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="http://news.mt.co.kr/mtview.php?no=2014072714402191391" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-7.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="http://www.inside.com.tw/2014/07/25/2014-ideas-show-day-2" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-8.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="http://dentsu-ho.com/articles/1971" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-9.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="http://technews.tw/2015/04/17/silicon-valley-taiwan-business/" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-10.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="http://ascii.jp/elem/000/001/029/1029457/" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-11.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="http://www.digitimes.com.tw/tw/cloud/shwnws.asp?cnlid=16&amp;cat=20&amp;cat1=25&amp;id=0000414823_L9B7SPLQ3SCZOM2X5RWQX" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-12.png)" class="works__item_img works__item_img--02"></div></a><a data-category="1" href="http://www.wealth.com.tw/article_in.aspx?nid=5320" target="_blank" class="filtr-item works__item works__item--02">
-                <div style="background-image: url(img/report/media-13.png)" class="works__item_img works__item_img--02"></div></a></div>
+      <style>
+        .home_adplay_bg {
+        	background-image: url(img/new-asset/Bg_AdPlay.jpg);
+        }
+        .home_adplay_overlayer {
+        	position: absolute;
+        	background-color: rgba(0,0,0,0.8);
+        	width: 100%;
+        	height: 100%;
+        	top: 0px;
+        	left: 0px;
+        }
+        .home_adplay_title {
+        	font-size: 30px;
+        	color: white;
+        }
+        .home_adplay_content_text {
+        	color: white;
+        }
+        .home_adplay_button {
+        	border: solid white 1px;
+        	color: white;
+        	border-radius: 0;
+        }
+      </style>
+      <!--PMP-->
+      <div class="contents contents--05 pmp">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-6 contents__right-box--05">
+              <h2 class="contents__title--05 home_pmp_title">VMFive PMP</h2><img src="img/pictures/pmp-channels.png" alt="VMFive PMP"><span class="contents__text--05">Light Up Your Brand with Innovation in a Programmatic Way.<br>With a large collection of premium media inventory in various ad formats and accurate targetting tools, VMFive PMP makes your brand marketing more powerful and effective in a simpler and easier way.</span><a href="pmp.html" class="button contents__button--05 home_pmp_button">Explore PMP</a>
+            </div>
+            <div class="col-xs-12 col-lg-6 dt-img"><img src="img/pictures/pmp-channels.png" alt="VMFive PMP"></div>
           </div>
         </div>
       </div>
-      <!-- == END OF WORKS 02 ==-->
-      <!-- == START OF FOOTER 04 ==-->
-      <footer id="contact" class="footer footer--04">
-        <div class="footer__main_box--04">
-          <div class="container footer__container"><a href="#" class="footer__logo_box footer__logo_box--04"><img src="img/etc/vmfive--logo.svg" class="footer__logo"></a>
-            <ul class="footer__nav footer__nav--04">
-              <li class="footer__nav__item footer__nav__item--04"><a href="index.html#home" class="footer__nav__link footer__nav__link--04">Home</a></li>
-              <li class="footer__nav__item footer__nav__item--04"><a href="index.html#adview" class="footer__nav__link footer__nav__link--04">AdView</a></li>
-              <li class="footer__nav__item footer__nav__item--04"><a href="index.html#adplay" class="footer__nav__link footer__nav__link--04">AdPlay</a></li>
-              <li class="footer__nav__item footer__nav__item--04"><a href="index.html#report" class="footer__nav__link footer__nav__link--04">Media Report</a></li>
-              <li class="footer__nav__item footer__nav__item--04"><a href="index.html#contact" class="footer__nav__link footer__nav__link--04">Contact</a></li>
-            </ul>
-            <ul class="social footer__social--04 footer__social_box">
-              <li class="social__item social__item--left_margin"><a href="https://www.facebook.com/vmfive/" title="Say hello in Facebook!" target="_blank" class="social__link social__link--facebook"></a></li>
-              <li class="social__item social__item--left_margin"><a href="https://twitter.com/vmfive" title="Say hello in Twitter!" target="_blank" class="social__link social__link--twitter"></a></li>
-              <!--li.social__item.social__item--left_margina.social__link.social__link--g_plus(href="#", title="Say hello in G+!")
+      <style>
+        .home_pmp_title {
+        	font-size: 30px;
+        }
+        .home_pmp_button {
+        	border: solid #fb971b 1px;
+        	color: #fb971b;
+        	border-radius: 0;
+        }
+      </style>
+      <!--DSP-->
+      <!--include components/vmfive-v4/home/dsp-->
+      <!--Media Report-->
+      <div class="partners partners--01 testimonials home_media_report_root home_media_report_top-curve home_media_report_bottom_curve">
+        <div class="container">
+          <h2 class="partners__title partners__title--orange partners__title--smaller-margin home_media_report_title">
+            <div class="home_media_report_underline">Media Report</div>
+          </h2>
+        </div>
+        <div style="position: relative">
+          <div class="container">
+            <div class="testimonials__arrows_box testimonials__arrows_box--01">
+              <button type="button" class="testimonials__arrow testimonials__arrow--left testimonials__arrow--01 testimonials__arrow--01--left js-testimonials-prev-arrow--01 home_media_report_prev_arrow"></button>
+              <button type="button" class="testimonials__arrow testimonials__arrow--right testimonials__arrow--01 testimonials__arrow--01--right js-testimonials-next-arrow--01 home_media_report_next_arrow"></button>
+            </div>
+            <div data-slick="{&quot;slidesToShow&quot;: 4, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--01&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--01&quot;, &quot;cssEase&quot;: &quot;linear&quot;}" class="testimonials__box hiddenoverflow js-slider">
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="https://techcrunch.com/2014/08/12/vmfive-wins-techcrunch-beijings-startup-competition-with-app-advertising-platform-adplay/" target="_blank"><img src="img/report/media-1.png" class="partners__img home_media_img_container"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://technode.com/2014/08/12/announcing-winner-startup-competition/" target="_blank"><img src="img/report/media-2.png" class="partners__img home_media_img_container"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="https://www.techinasia.com/startup-lets-demo-app-downloading-installing-wins-gold-techcrunch-beijing" target="_blank"><img src="img/report/media-3.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://thebridge.jp/2014/08/startup-match-winner-vmfive" target="_blank"><img src="img/report/media-4.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="https://www.bnext.com.tw/article/33390/BN-ARTICLE-33390" target="_blank"><img src="img/report/media-5.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="https://yowureport.com/13714/" target="_blank"><img src="img/report/media-6.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://news.mt.co.kr/mtview.php?no=2014072714402191391" target="_blank"><img src="img/report/media-7.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://www.inside.com.tw/2014/07/25/2014-ideas-show-day-2" target="_blank"><img src="img/report/media-8.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://dentsu-ho.com/articles/1971" target="_blank"><img src="img/report/media-9.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://technews.tw/2015/04/17/silicon-valley-taiwan-business/" target="_blank"><img src="img/report/media-10.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://ascii.jp/elem/000/001/029/1029457/" target="_blank"><img src="img/report/media-11.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://www.digitimes.com.tw/tw/cloud/shwnws.asp?cnlid=16&amp;cat=20&amp;cat1=25&amp;id=0000414823_L9B7SPLQ3SCZOM2X5RWQX" target="_blank"><img src="img/report/media-12.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://www.wealth.com.tw/article_in.aspx?nid=5320" target="_blank"><img src="img/report/media-13.png" class="partners__img"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .home_media_report_root {
+        	padding: 10px;
+        	background-color: #F2F2F2;
+        }
+        .home_media_report_underline {
+        	display: inline-block;
+        	border-bottom: 1px solid #C2C2C2;
+        	padding-bottom: 20px;
+        }
+        .home_media_report_title {
+        	color: black;
+        	font-size: 30px;
+        }
+        .home_media_report_prev_arrow:after {
+        	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzFfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQuNDE0MXB4IiBoZWlnaHQ9IjcuMDAxcHgiIHZpZXdCb3g9IjAgMCA0LjQxNDEgNy4wMDEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQuNDE0MSA3LjAwMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBpZD0iaS0tc21hbGwtYXJyb3ctLWJsYWNrLS1sZWZ0IiBmaWxsPSIjZmI5NzFiIiBkPSJNMC4yNjc2LDIuODUzNUMwLjA4ODksMy4wMzIyLDAsMy4yNjY2LDAsMy41MDENCgljMCwwLjE3NTgsMC4wNTA4LDAuMzUwNiwwLjE1MDQsMC41MDI5YzAuMDMzMiwwLjA0OTgsMC4wNzIzLDAuMDk4NiwwLjExNzIsMC4xNDI2bDIuNTg1OSwyLjU4NTkNCgljMC4zNTc0LDAuMzU3NCwwLjkzNjUsMC4zNTc0LDEuMjkzLDBjMC4zNTc0LTAuMzU2NCwwLjM1NzQtMC45MzU1LDAtMS4yOTNMMi4yMDcsMy41MDFsMS45Mzk1LTEuOTM5NQ0KCWMwLjM1NzQtMC4zNTc0LDAuMzU3NC0wLjkzNzUsMC0xLjI5MzljLTAuMzU2NC0wLjM1NjQtMC45MzU1LTAuMzU2NC0xLjI5MywwTDAuMjY3NiwyLjg1MzV6Ii8+DQo8L3N2Zz4NCg==) no-repeat center/100% auto;
+        }
+        .home_media_report_next_arrow:after {
+        	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzJfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iNC40MTQxcHgiIGhlaWdodD0iNy4wMDFweCIgdmlld0JveD0iMCAwIDQuNDE0MSA3LjAwMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNC40MTQxIDcuMDAxIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggaWQ9ImktLXNtYWxsLWFycm93LS1ibGFjay0tcmlnaHQiIGZpbGw9IiNmYjk3MWIiIGQ9Ik0xLjU2MDUsMC4yNjc2Yy0wLjM1NzQtMC4zNTY0LTAuOTM2NS0wLjM1NjQtMS4yOTMsMAoJYy0wLjM1NzQsMC4zNTY0LTAuMzU3NCwwLjkzNjUsMCwxLjI5MzlMMi4yMDcsMy41MDFMMC4yNjc2LDUuNDM5NWMtMC4zNTc0LDAuMzU3NC0wLjM1NzQsMC45MzY1LDAsMS4yOTMKCWMwLjM1NjQsMC4zNTc0LDAuOTM1NSwwLjM1NzQsMS4yOTMsMGwyLjU4NTktMi41ODU5YzAuMDQ0OS0wLjA0MzksMC4wODQtMC4wOTI4LDAuMTE3Mi0wLjE0MjYKCUM0LjM2MzMsMy44NTE2LDQuNDE0MSwzLjY3NjgsNC40MTQxLDMuNTAxYzAtMC4yMzQ0LTAuMDg4OS0wLjQ2ODgtMC4yNjc2LTAuNjQ3NUwxLjU2MDUsMC4yNjc2eiIvPgo8L3N2Zz4K) no-repeat center/100% auto;
+        }
+        .home_media_report_top-curve:before {
+        	content: '';
+        	position: absolute;
+        	transform: translate(-50%);
+        	width: 100%;
+        	height: 30px;
+        	top: -30px;
+        	background-image: linear-gradient(to bottom, #F2F2F2, #F2F2F2);
+        	border-top-left-radius: 50% 80%;
+        	border-top-right-radius: 50% 80%;
+        }
+        .home_media_report_bottom_curve:after {
+        	content: '';
+        	position: absolute;
+        	z-index: 10;
+        	transform: translate(-50%);
+        	width: 100%;
+        	height: 30px;
+        	bottom: -30px;
+        	background-image: linear-gradient(to bottom, #F2F2F2, #F2F2F2);
+        	border-bottom-left-radius: 50% 80%;
+        	border-bottom-right-radius: 50% 80%;
+        }
+        .hiddenoverflow{/*this slide is not needed to fit margin*/
+        	overflow: hidden;
+        }
+      </style>
+      <!--News-->
+      <div class="testimonials testimonials--04 home_news_root">
+        <div class="container home_news_photo-container">
+          <div></div>
+          <div class="home_news_underline">
+            <h2 class="testimonials__title testimonials__title--05 home_news_title">News</h2>
+          </div>
+          <div class="testimonials__arrows_box testimonials__arrows_box--04">
+            <button type="button" class="testimonials__arrow testimonials__arrow--left testimonials__arrow--04 testimonials__arrow--04--left js-testimonials-prev-arrow--04 home_media_report_prev_arrow"></button>
+            <button type="button" class="testimonials__arrow testimonials__arrow--right testimonials__arrow--04 testimonials__arrow--04--right js-testimonials-next-arrow--04 home_media_report_next_arrow"></button>
+          </div>
+          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: false, &quot;asNavFor&quot;: &quot;.js-testimonials-text-slider&quot;, &quot;centerMode&quot;: true, &quot;centerPadding&quot; : &quot;0px&quot;, &quot;focusOnSelect&quot;: true, &quot;infinite&quot;: true, &quot;variableWidth&quot;: true, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 970, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1, &quot;centerMode&quot;: false}}]}" class="testimonials__photos_box--04 js-slider home_news_overflow js-testimonials-photo-slider">
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event1.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event2.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event3.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event1.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event2.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <figure class="filter">
+                <div style="background-image:url(img/news/Img_Home_News_Event3.jpg)" cssBase="url(img/news/Img_Home_News_Event3.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                  <p class="home_news_readmore">Read More</p>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;centerMode&quot;: true, &quot;arrows&quot;: true, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--04&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--04&quot;, &quot;infinite&quot;: true, &quot;asNavFor&quot;: &quot;.js-testimonials-photo-slider&quot;, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 1500, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1}},{&quot;breakpoint&quot;: 970, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1,&quot;centerMode&quot;: false}}]}" class="testimonials__box testimonials__box--04 home_news_overflow js-slider js-testimonials-text-slider">
+            <div class="testimonials__item testimonials__item--04">
+              <!--span.testimonials__item_text.testimonials__item_text--04| Event 1
               -->
-            </ul>
+            </div>
+            <div class="testimonials__item testimonials__item--04">
+              <!--span.testimonials__item_text.testimonials__item_text--04| Event 2
+              -->
+            </div>
+            <div class="testimonials__item testimonials__item--04">
+              <!--span.testimonials__item_text.testimonials__item_text--04| Event 3
+              -->
+            </div>
+            <div class="testimonials__item testimonials__item--04">
+              <!--span.testimonials__item_text.testimonials__item_text--04| Event 1
+              -->
+            </div>
+            <div class="testimonials__item testimonials__item--04">
+              <!--span.testimonials__item_text.testimonials__item_text--04| Event 2
+              -->
+            </div>
+            <div class="testimonials__item testimonials__item--04">
+              <!--span.testimonials__item_text.testimonials__item_text--04
+              | Event 3
+              
+              
+              -->
+            </div>
           </div>
         </div>
-        <div class="footer__description_box--04">
-          <div class="container footer__container"><span class="footer__description footer__description--04">Cooperation : business@vm5.com<br>Join Us : job@vm5.com<br><br>9F., No.89, Sec. 5, Nanjing E. Rd., Songshan Dist., Taipei City 105, Taiwan)<br>105 台北市松山區南京東路 5 段 89 號 9 樓<br>
-              <hr>VMFive Japan<br><br>Cooperation : jp@vm5.com<br><br>Yamauchi Building 3F, 3-24-8 Nishi Shinbashi, Minato-ku, Tokyo 105-0003</span><span class="footer__copyright footer__copyright--04">&copy; VMFive.com, 2017</span></div>
+      </div>
+      <style>
+        .home_news_photo-container{
+        	max-width: 100%;
+        	padding-left: 0;
+        	padding-right: 0;
+        }
+        .home_news_root {
+        	background-color: white;
+        }
+        .home_news_title {
+        	color: black;
+        	font-size: 30px;
+        }
+        .home_news_underline {
+        	padding-left: 50px;
+        	padding-right: 50px;
+        	display: inline-block;
+        	border-bottom: 1px solid #BBBBBB;
+        	margin-bottom: 30px;
+        }
+        .home_news_box:before, .home_news_box:after {
+        	background: white;
+        }
+        
+        .testimonials__item--05:hover .home_news_readmore{
+        	opacity: 1;
+        }
+        .home_media_report_prev_arrow:after {
+        	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzFfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQuNDE0MXB4IiBoZWlnaHQ9IjcuMDAxcHgiIHZpZXdCb3g9IjAgMCA0LjQxNDEgNy4wMDEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQuNDE0MSA3LjAwMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBpZD0iaS0tc21hbGwtYXJyb3ctLWJsYWNrLS1sZWZ0IiBmaWxsPSIjZmI5NzFiIiBkPSJNMC4yNjc2LDIuODUzNUMwLjA4ODksMy4wMzIyLDAsMy4yNjY2LDAsMy41MDENCgljMCwwLjE3NTgsMC4wNTA4LDAuMzUwNiwwLjE1MDQsMC41MDI5YzAuMDMzMiwwLjA0OTgsMC4wNzIzLDAuMDk4NiwwLjExNzIsMC4xNDI2bDIuNTg1OSwyLjU4NTkNCgljMC4zNTc0LDAuMzU3NCwwLjkzNjUsMC4zNTc0LDEuMjkzLDBjMC4zNTc0LTAuMzU2NCwwLjM1NzQtMC45MzU1LDAtMS4yOTNMMi4yMDcsMy41MDFsMS45Mzk1LTEuOTM5NQ0KCWMwLjM1NzQtMC4zNTc0LDAuMzU3NC0wLjkzNzUsMC0xLjI5MzljLTAuMzU2NC0wLjM1NjQtMC45MzU1LTAuMzU2NC0xLjI5MywwTDAuMjY3NiwyLjg1MzV6Ii8+DQo8L3N2Zz4NCg==) no-repeat center/100% auto;
+        }
+        .home_media_report_next_arrow:after {
+        	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzJfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iNC40MTQxcHgiIGhlaWdodD0iNy4wMDFweCIgdmlld0JveD0iMCAwIDQuNDE0MSA3LjAwMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNC40MTQxIDcuMDAxIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggaWQ9ImktLXNtYWxsLWFycm93LS1ibGFjay0tcmlnaHQiIGZpbGw9IiNmYjk3MWIiIGQ9Ik0xLjU2MDUsMC4yNjc2Yy0wLjM1NzQtMC4zNTY0LTAuOTM2NS0wLjM1NjQtMS4yOTMsMAoJYy0wLjM1NzQsMC4zNTY0LTAuMzU3NCwwLjkzNjUsMCwxLjI5MzlMMi4yMDcsMy41MDFMMC4yNjc2LDUuNDM5NWMtMC4zNTc0LDAuMzU3NC0wLjM1NzQsMC45MzY1LDAsMS4yOTMKCWMwLjM1NjQsMC4zNTc0LDAuOTM1NSwwLjM1NzQsMS4yOTMsMGwyLjU4NTktMi41ODU5YzAuMDQ0OS0wLjA0MzksMC4wODQtMC4wOTI4LDAuMTE3Mi0wLjE0MjYKCUM0LjM2MzMsMy44NTE2LDQuNDE0MSwzLjY3NjgsNC40MTQxLDMuNTAxYzAtMC4yMzQ0LTAuMDg4OS0wLjQ2ODgtMC4yNjc2LTAuNjQ3NUwxLjU2MDUsMC4yNjc2eiIvPgo8L3N2Zz4K) no-repeat center/100% auto;
+        }
+        .home_news_overflow{
+        	max-width: 100%;
+        	overflow: hidden;
+        }
+        @media screen and (max-width: 970px){
+        	.home_news_photo-container{
+        		max-width: 65%;
+        	}
+        }
+        @media screen and (max-width: 600px){
+        	.home_news_photo-container{
+        		max-width: 95%;
+        	}
+        }
+        .home_news_readmore{
+        	opacity: 0;
+        	position: relative;
+        	top: 50%;
+        	transition: .5s ease;
+        }
+      </style>
+      <!--Contact-->
+      <footer class="footer footer--06 home_contact_root">
+        <div style="position: relative; width: 100%"><a href="#">
+            <div class="home_back_to_top"></div></a></div>
+        <div class="footer__main_box--06">
+          <div class="container footer__container">
+            <div class="footer__left_box--06"><a href="#" class="footer__logo_box footer__logo_box--06"><img src="img/etc/vmfive--logo-standard.svg" class="footer__logo footer__logo--06"></a>
+              <div class="footer__subtitle--06"><strong>VMFive Headquarter</strong></div><span class="footer__description footer__description--06">Cooperation: business@vm5.com<br>9F., No.89, Sec. 5, Nanjing E. Rd., Songshan Dist., Taipei City 105, Taiwan<br>105 台北市松山區南京東路 5 段 89 號 9 樓<br></span>
+              <div class="footer__subtitle--06"><strong>VMFive Japan</strong></div><span class="footer__description footer__description--06">Cooperation: jp@vm5.com<br>Yamauchi Building 3F, 3-24-8 Nishi Shinbashi, Minato-ku, Tokyo 105-0003</span>
+              <div class="button--store footer__button--06"><span><img src="img/new-asset/Btn_Footer_Email.png" width="31" height="19" class="home_contact_icon"><img src="img/new-asset/Btn_Footer_Facebook.png" width="18" height="19" class="home_contact_icon"></span></div>
+            </div>
+            <div class="footer__right_box--06 home_contact_map_box">
+              <div class="home_contact_map"></div>
+            </div>
+          </div>
         </div>
       </footer>
-      <!-- == END OF FOOTER 04 ==-->
-      <!-- == START OF VIDEO POPUP COMPONENT ==-->
-      <!-- == START OF VIDEO POPUP ==-->
-      <div data-popup-name="video" class="popup popup--video js-popup">
-        <button title="close" class="popup__close_btn js-close-all-popups"></button>
-        <iframe src="https://vimeo.com/156653825" frameborder="0" allowfullscreen class="popup__video_frame"></iframe>
-      </div>
-      <!-- == END OF VIDEO POPUP ==-->
-      <!-- == END OF VIDEO POPUP COMPONENT ==-->
+      <style>
+        .home_contact_root {
+        	background-color: white;
+        	border-top: solid 2px #F5F5F5;
+        }
+        .home_contact_icon {
+        	margin-right: 15px;
+        }
+        .home_contact_map_box {
+        	margin-right: 0;
+        }
+        .home_contact_map {
+        	background-image: url(img/new-asset/Btn_Footer_Map.png);
+        	background-repeat: no-repeat;
+        	background-size: contain;
+        	width: 530px;
+        	height: 310px;
+        }
+        .home_back_to_top {
+        	position: absolute;
+        	left: 50%;
+        	transform: translate(-50%);
+        	background-image: url(img/new-asset/Btn_Footer_BackToTop.png), linear-gradient(to bottom, white, white);
+        	background-repeat: no-repeat;
+        	background-position: center center;
+        	width: 60px;
+        	height: 60px;
+        	border: solid 1px #ECECED;
+        	top: -30px;
+        }
+      </style>
     </main>
+    <div class="js-overlay js-close-navigation js-close-menu overlay"></div>
   </body>
-  <div class="js-overlay js-close-navigation js-close-menu overlay"></div>
 </html>
