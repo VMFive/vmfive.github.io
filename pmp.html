@@ -33,7 +33,10 @@
             <ul class="menu__list">
               <li class="menu__item"><a href="adplay.html" class="menu__link">AdPlay</a></li>
               <li class="menu__item"><a href="pmp.html" class="menu__link">PMP</a></li>
-              <li class="menu__item"><a href="dsp.html" class="menu__link">DSP</a></li>
+              <!--li.menu__item
+              a.menu__link(href="dsp.html")
+              	| DSP
+              -->
             </ul>
           </div>
         </div>
@@ -76,7 +79,7 @@
         	margin-bottom: 20px;
         }
         .pmp_cover_title {
-        	font-size: 50px;
+        	font-size: 46px;
         	font-weight: 500;
         }
         .pmp_cover_intro_text {
@@ -304,7 +307,7 @@
             </h2>
           </div>
         </div>
-        <div class="container">
+        <div class="container pmp_ad_format_container">
           <div class="pmp_ad_format_button_row">
             <div class="pmp_ad_format_item"><img src="img/new-asset/PMP_Format/APP_Native.gif" class="ad_format_img">
               <div class="pmp_ad_format_button_text">In-App<br>Native Video</div>
@@ -331,8 +334,8 @@
       <style>
         .pmp_ad_format_root {
         	padding-top: 10px;
+        	padding-bottom: 80px;
         	background-color: #fb971b;
-        	height: 700px;
         }
         .pmp_ad_format_underline {
         	display: inline-block;
@@ -348,7 +351,6 @@
         	padding-top: 70px
         }
         .pmp_ad_format_button_row {
-        	width: 80%;
         	margin-left: auto;
         	margin-right: auto;
         	text-align: justify;
@@ -357,18 +359,15 @@
         .pmp_ad_format_item {
         	display: inline-block;
         	vertical-align: top;
+        	margin-bottom: 50px;
         	zoom: 1;
         }
         .ad_format_img {
         	display: block;
-        	height: 200px;
+        	height: 350px;
         }
         .pmp_ad_format_button_text {
         	display: block;
-        	font-size: 12px;
-        	min-width: 100px;
-        	height: 30px;
-        	line-height: 20px;
         	color: white;
         	text-align: center;
         }
@@ -388,6 +387,11 @@
         	background-size: contain;
         	background-repeat: no-repeat;
         	background-position: center center;
+        }
+        @media (max-width: 1200px) {
+        	.pmp_ad_format_container {
+        		max-width: 720px;
+        	}	
         }
       </style>
       <!-- best case-->
@@ -523,51 +527,32 @@
         }
       </style>
       <!--Contact-->
-      <footer class="footer footer--06 home_contact_root">
+      <footer class="about about--07 home_contact_div">
         <div style="position: relative; width: 100%"><a href="#">
             <div class="home_back_to_top"></div></a></div>
-        <div class="footer__main_box--06">
-          <div class="container footer__container">
-            <div class="footer__left_box--06"><a href="#" class="footer__logo_box footer__logo_box--06"><img src="img/etc/vmfive--logo-standard.svg" class="footer__logo footer__logo--06"></a>
+        <div class="container">
+          <div class="about__container--07 home_contact_bg">
+            <div class="about__content--07 home_contact_content_div"><a href="#" class="footer__logo_box footer__logo_box--06"><img src="img/etc/vmfive--logo-standard.svg" class="footer__logo footer__logo--06"></a>
               <div class="footer__subtitle--06"><strong>VMFive Headquarter</strong></div><span class="footer__description footer__description--06">Cooperation: business@vm5.com<br>9F., No.89, Sec. 5, Nanjing E. Rd., Songshan Dist., Taipei City 105, Taiwan<br>105 台北市松山區南京東路 5 段 89 號 9 樓<br></span>
               <div class="footer__subtitle--06"><strong>VMFive Japan</strong></div><span class="footer__description footer__description--06">Cooperation: jp@vm5.com<br>Yamauchi Building 3F, 3-24-8 Nishi Shinbashi, Minato-ku, Tokyo 105-0003</span>
               <div class="button--store footer__button--06"><span><img src="img/new-asset/Btn_Footer_Email.png" width="31" height="19" class="home_contact_icon"><img src="img/new-asset/Btn_Footer_Facebook.png" width="18" height="19" class="home_contact_icon"></span></div>
-            </div>
-            <div class="footer__right_box--06 home_contact_map_box">
-              <div class="home_contact_map"></div>
             </div>
           </div>
         </div>
       </footer>
       <style>
-        .home_contact_root {
+        .home_contact_div {
         	background-color: white;
         	border-top: solid 2px #F5F5F5;
         }
-        .home_contact_icon {
-        	margin-right: 15px;
-        }
-        .home_contact_map_box {
-        	margin-right: 0;
-        }
-        .home_contact_map {
+        .home_contact_bg {
         	background-image: url(img/new-asset/Btn_Footer_Map.png);
         	background-repeat: no-repeat;
         	background-size: contain;
-        	width: 530px;
-        	height: 310px;
+        	background-position: 100% center;
         }
-        .home_back_to_top {
-        	position: absolute;
-        	left: 50%;
-        	transform: translate(-50%);
-        	background-image: url(img/new-asset/Btn_Footer_BackToTop.png), linear-gradient(to bottom, white, white);
-        	background-repeat: no-repeat;
-        	background-position: center center;
-        	width: 60px;
-        	height: 60px;
-        	border: solid 1px #ECECED;
-        	top: -30px;
+        .home_contact_content_div {
+        	float: left;
         }
       </style>
     </main>
