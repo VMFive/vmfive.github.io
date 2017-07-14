@@ -32,7 +32,7 @@
           <div class="menu__box">
             <ul class="menu__list">
               <li class="menu__item"><a href="adplay.html" class="menu__link">AdPlay</a></li>
-              <li class="menu__item"><a href="pmp.html" class="menu__link">PMP</a></li>
+              <li class="menu__item"><a href="pmp.html" class="menu__link">VMFive PMP</a></li>
               <!--li.menu__item
               a.menu__link(href="dsp.html")
               	| DSP
@@ -43,7 +43,7 @@
       </nav>
       <!--Reach Your Audience-->
       <div class="cover cover--09 js-cover">
-        <nav class="header header--05">
+        <nav id="nav" class="header header--05">
           <div class="container header__container">
             <div class="header__left_box"><a href="index.html" title="Home" class="header__logo_box"><img src="img/etc/vmfive--logo.svg" alt="VMFive logo" class="header__logo_img"></a></div>
             <div class="header__right_box">
@@ -55,13 +55,60 @@
             </div>
           </div>
         </nav>
+        <style>
+          #nav {
+          	background: transparent;
+          	position: fixed;
+          	width: 100%;
+          	z-index: 20;
+          	
+          	-webkit-transition: .5s ease;
+          	-moz-transition: .5s ease;
+          	-ms-transition: .5s ease;
+          	-o-transition: .5s ease;
+          	transition: .5s ease;
+          	top: 15px;
+          }
+          
+          #nav.shrink {
+          	height: 50px;
+          	top: 0px;
+          	-webkit-transition: .5s ease;
+          	-moz-transition: .5s ease;
+          	-ms-transition: .5s ease;
+          	-o-transition: .5s ease;
+          	transition: .5s ease;
+          	background: #f7f7f7; // Change background to white on scroll
+          }
+          
+          @media (max-width: 500px){
+          	#nav{
+          		top: 10px;
+          	}
+          }
+          
+          
+        </style>
+        <script>
+          window.onscroll = () => {
+          	if(document.body.scrollTop + document.documentElement.scrollTop > 20){
+          		document.querySelector('#nav').classList.add("shrink");
+          		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo-standard.svg";
+          		document.querySelector('.js-open-menu').classList.add('header__burger_button--black');
+          	}else{
+          		document.querySelector('#nav').classList.remove("shrink");
+          		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo.svg";
+          		document.querySelector('.js-open-menu').classList.remove('header__burger_button--black');
+          	}
+          }
+        </script>
         <div class="container">
           <video playsinline="" autoplay="" muted="" loop="" class="bgvid home_cover_bgvid">
             <source src="video/Home_Video.mp4" type="video/mp4">
           </video>
           <div class="cover__content_box--12">
-            <h2 class="cover__title--09"><span class="cover__title_text--09">Leading Playable and Video<br>Advertising Marketplace</span></h2>
-            <div class="cover__description_box--12 home_intro_box home_cover_upperline"><span class="cover__description_text--12 intro-text">VMFive provides you a total advertising solution<br>through its premium market place and innovative technology.</span></div><a href="#core-features" class="rectangle-button button--border-white scroll">Explore VMFive</a>
+            <h2 class="cover__title--09 home_cover_left_textalign"><span class="cover__title_text--09">Leading Playable and <br>Video Advertising Marketplace</span></h2>
+            <div class="cover__description_box--12 home_intro_box home_cover_upperline home_cover_left_textalign"><span class="cover__description_text--12 intro-text">VMFive provides you a total advertising solution<br>through its premium market place and innovative technology.</span></div><a href="#core-features" class="rectangle-button button--border-white scroll home_cover_button">Explore VMFive</a>
           </div>
         </div>
       </div>
@@ -84,6 +131,7 @@
         .intro-text {
         	color: white;
         	font-weight: 300;
+        	font-size: 14px;
         }
         .rectangle-button, .rectangle-button:hover {
         	font-size: 12px;
@@ -96,27 +144,41 @@
         		font-size: 40px;
         	}
         }
+        @media (max-width: 992px) {
+        	.home_cover_left_textalign {
+        		text-align: left;
+        		display: block;
+        		max-width: 100%;
+        		padding-left: 10%;
+        	}
+        	.home_cover_button{
+        		text-align: left;
+        		display: block;
+        		margin-left: 10%;
+        		width: 110px;
+        	}
+        }
       </style>
       <!--VMFive Ads Core Features-->
-      <div id="core-features" class="features features--02">
+      <div id="core-features" class="features features--02 home_cd_backgroud">
         <div class="container">
           <div class="features__title_box features__title_box--02">
-            <h2 class="features__title--02">Next Generation Mobile Ads</h2><span class="features__description features__description--02 home_cf_description">Pioneering new generation of mobile advertising though innovative technologies.  Our playable and video ad solutions improve advertising experience and maximize their impact.</span>
+            <h2 class="features__title--02 home_cf_white_title home_cf_underline">Next Generation Mobile Ads</h2><span class="features__description features__description--02 home_cf_description home_cf_white_title">Pioneering new generation of mobile advertising though innovative technologies.  Our playable and video ad solutions improve advertising experience and maximize their impact.</span>
           </div>
         </div>
         <div class="container">
           <div class="row features__row">
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/pictures/Home_Feature_Design_for_Mobile.png" class="PMP-icon">
-              <h3 class="features__item_title">Innovative Technology</h3><span class="features__item_text">VMFive's industry-leading technology maximizes the efficiency and effectiveness of your ads.</span>
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/new-asset/Icon_Home_Features_InnovativeTech.png" class="PMP-icon">
+              <h3 class="features__item_title home_core_feature_title">Innovative Technology</h3><span class="features__item_text home_cf_black_span">VMFive's industry-leading technology maximizes the efficiency and effectiveness of your ads.</span>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/pictures/Home_Feature_Best_User_Experience.png" class="PMP-icon">
-              <h3 class="features__item_title">Data Driven Targeting</h3><span class="features__item_text">Our data analytics technology connects the right content to the right audiences at the right moment.</span>
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/new-asset/Icon_Home_Features_DataDriven.png" class="PMP-icon">
+              <h3 class="features__item_title home_core_feature_title">Data Driven Targeting</h3><span class="features__item_text home_cf_black_span">Our data analytics technology connects the right content to the right audiences at the right moment.</span>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/pictures/Home_Feature_Programmatic_Buying.png" class="PMP-icon">
-              <h3 class="features__item_title">Programmatic Buying</h3><span class="features__item_text">Through our programmatic buying, you can reach the right and best audiences in this complex and fragmented media environment.</span>
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/new-asset/Icon_Home_Features_ProBuying.png" class="PMP-icon">
+              <h3 class="features__item_title home_core_feature_title">Programmatic Buying</h3><span class="features__item_text home_cf_black_span">Through our programmatic buying, you can reach the right and best audiences in this complex and fragmented media environment.</span>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/pictures/Home_Feature_Trust_and_Transparency.png" class="PMP-icon">
-              <h3 class="features__item_title">Trust and Transparency</h3><span class="features__item_text">Our data tracking technology is designed for transparency and trust and also incorporated with the best third-party tracking services.</span>
+            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02"><img src="img/new-asset/Icon_Home_Features_TrustandTrans.png" class="PMP-icon">
+              <h3 class="features__item_title home_core_feature_title">Trust and Transparency</h3><span class="features__item_text home_cf_black_span">Our data tracking technology is designed for transparency and trust and also incorporated with the best third-party tracking services.</span>
             </div>
           </div>
         </div>
@@ -126,6 +188,23 @@
         	font-size: 14px;
         	max-width: 580px;
         }
+        .home_cf_white_title{
+        	color: white;
+        }
+        .home_cd_backgroud{
+        	background-color: #fb971b;
+        }
+        .home_cf_black_span{
+        	color: black;
+        }
+        .home_cf_underline {
+        	display: inline-block;
+        	border-bottom: 1px solid white;
+        	padding-bottom: 10px;
+        }
+        .features__item_title.home_core_feature_title{
+        	font-size: 20px;
+        }
       </style>
       <!--AdPlay-->
       <div class="contents contents--05 adplay home_adplay_bg">
@@ -133,7 +212,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-lg-6">
-              <h2 class="contents__title--05 home_adplay_title">VMFive AdPlay</h2><span class="contents__text--05 home_adplay_content_text">VMFive's cutting-edge mobile virtualization technology, coupled with its advanced streaming technology, allows users to experience Apps without downloading them, across devices.</span><a href="adplay.html" class="button contents__button--05 home_adplay_button">Explore AdPlay</a>
+              <h2 class="contents__title--05 home_adplay_title home_adplay_left_textalign">VMFive AdPlay</h2><span class="contents__text--05 home_adplay_content_text home_adplay_left_textalign">VMFive's cutting-edge mobile virtualization technology, coupled with its advanced streaming technology, allows users to experience Apps without downloading them, across devices.</span><a href="adplay.html" class="button contents__button--05 home_adplay_button button--border-white">Explore AdPlay</a>
             </div>
           </div>
         </div>
@@ -162,15 +241,49 @@
         	color: white;
         	border-radius: 0;
         }
+        @media (max-width: 992px) {
+        	.home_adplay_left_textalign {
+        		text-align: left;
+        		display: block;
+        		max-width: 100%;
+        	}
+        	.home_adplay_bg {
+        		height: 105vh;
+        		padding: 33vh 8%;
+        	}
+        	.home_adplay_content_text {
+        		font-size: 16px;
+        	}
+        	.home_adplay_button{
+        		display: block;
+        		width: 10vw;
+        	}
+        }
       </style>
       <!--PMP-->
       <div class="contents contents--05 pmp">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-lg-6 contents__right-box--05">
-              <h2 class="contents__title--05 home_pmp_title">VMFive PMP</h2><img src="img/pictures/pmp-channels.png" alt="VMFive PMP"><span class="contents__text--05">Light Up Your Brand with Innovation in a Programmatic Way.<br>With a large collection of premium media inventory in various ad formats and accurate targetting tools, VMFive PMP makes your brand marketing more powerful and effective in a simpler and easier way.</span><a href="pmp.html" class="button contents__button--05 home_pmp_button">Explore PMP</a>
+        <div class="container home_pmp_container">
+          <div class="col-xs-12 col-lg-6 works__filter_tags home_pmp_works__filter_tags">
+            <div class="works__row home_pmp_works_row">
+              <div class="works__container--02 home_pmp_img_container">
+                <h2 style="padding: 10px; font-size: 26px; margin-bottom:0;" class="contents__title--05 home_pmp_title home_pmp_mobile">VMFive PMP</h2>
+              </div>
             </div>
-            <div class="col-xs-12 col-lg-6 dt-img"><img src="img/pictures/pmp-channels.png" alt="VMFive PMP"></div>
+            <div class="works__row home_pmp_works_row home_pmp_button_row">
+              <div style="margin-right: 0" class="works__container--02 home_pmp_img_container">
+                <div class="home_pmp_button_box works__filter_tags__item home_pmp_works__filter_tags__item"><a type="button" data-filter="1" class="button button--white button--orange home_pmp_button_text js-filtering-button">Media</a></div>
+                <div class="home_pmp_button_box works__filter_tags__item"><a type="button" data-filter="2" class="button button--white home_pmp_button_text js-filtering-button">Advertiser</a></div>
+              </div>
+            </div>
+            <div class="works__row home_pmp_works_row">
+              <div style="height: 300px" class="filtr-container works__container--02 home_pmp_img_container"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Adidas.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Samsung.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_FoxMovie.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_MasterCard.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Nestle.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Puma.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Disney.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_LibertyTimes.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_SETN.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_Udn.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_ChocoTV.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_MAPP.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_TrainApp.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_Dcard.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_TheNewsLens.png" style="width: 175px; height:42px" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_FoodAPP.png" class="filtr-item home_pmp_imgs"></div>
+            </div>
+            <div class="works__row home_pmp_works_row">
+              <div class="home_pmp_img_container works__container--02 home_pmp_more_media"><a href="pmp.html#premium-media"> More Media</a></div>
+            </div><br><br>
+          </div>
+          <div class="col-xs-12 col-lg-6 contents__right-box--05">
+            <h2 class="contents__title--05 home_pmp_title home_pmp_desk">VMFive PMP</h2><span class="contents__text--05 home_pmp_text">Light Up Your Brand with Innovation in a Programmatic Way.<br>With a large collection of premium media inventory in various ad formats and accurate targetting tools, VMFive PMP makes your brand marketing more powerful and effective in a simpler and easier way.</span><br><a href="pmp.html" class="button contents__button--05 home_pmp_button">Explore PMP</a>
           </div>
         </div>
       </div>
@@ -178,10 +291,102 @@
         .home_pmp_title {
         	font-size: 30px;
         }
+        .home_pmp_mobile{
+        	display: none;
+        }
         .home_pmp_button {
         	border: solid #fb971b 1px;
         	color: #fb971b;
         	border-radius: 0;
+        }
+        .home_pmp_button:hover{
+        	color: white;
+        	background-color: #fb971b;
+        }
+        .home_pmp_button_box {
+        	display: inline-block;
+        	vertical-align: top;
+        	zoom: 1;
+        }
+        .home_pmp_button_text {
+        	font-size: 12px;
+        	min-width: 100px;
+        	height: 30px;
+        	line-height: 30px;
+        }
+        .home_pmp_works_row{
+        	padding-top: 0;
+        	padding-left: 0;
+        	padding-right: 0;
+        	margin-bottom: 10px;
+        }
+        home_pmp_works__filter_tags.{
+        	margin-left: 20%;
+        }
+        .home_pmp_works__filter_tags__item{
+        	margin: 0px 20px 10px;
+        }
+        .home_pmp_container{
+        	max-width: 1800px;
+        }
+        .home_pmp_button_row{
+        	padding-left: 0;
+        	padding-right: 0;
+        	padding-top: 0;
+        }
+        .home_pmp_imgs{
+        	height: 3rem;
+        	padding: 6px;
+        }
+        @media screen and (max-width: 400px){
+        	.home_pmp_text{
+        		font-size: 14px;
+        	}
+        }
+        .home_pmp_img_container{
+        	text-align: left;
+        	margin: 0 18% 0;
+        }
+        .home_pmp_more_media{
+        	font-size: 1.1rem;
+        	color: grey;
+        	margin: 0 19% 0;
+        	text-decoration: underline;
+        }
+        @media (max-width: 600px){
+        	.home_pmp_button_box {
+        		display: inline-block;
+        		vertical-align: top;
+        		zoom: 1;
+        		margin: 0 10px;
+        	}
+        }
+        @media screen and (max-width: 480px){
+        	.home_pmp_button_row{
+        		padding-left: 0;
+        		padding-right: 0;
+        		position: absolute;
+        		top: 89%;
+        		width: 100%;
+        	}
+        	.home_pmp_button_box{
+        		margin-left: 0;
+        		margin-right: 0;
+        	}
+        	.home_pmp_more_media{
+        		padding-left: 0;
+        	}
+        }
+        @media screen and (max-width: 992px){
+        	.home_pmp_mobile{
+        		display: block;
+        	}
+        	.home_pmp_desk{
+        		display: none;
+        	}
+        	.contents__right-box--05 {
+        		margin-top: 30px;
+        	}
         }
       </style>
       <!--DSP-->
@@ -199,7 +404,7 @@
               <button type="button" class="testimonials__arrow testimonials__arrow--left testimonials__arrow--01 testimonials__arrow--01--left js-testimonials-prev-arrow--01 home_media_report_prev_arrow"></button>
               <button type="button" class="testimonials__arrow testimonials__arrow--right testimonials__arrow--01 testimonials__arrow--01--right js-testimonials-next-arrow--01 home_media_report_next_arrow"></button>
             </div>
-            <div data-slick="{&quot;slidesToShow&quot;: 4, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--01&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--01&quot;, &quot;cssEase&quot;: &quot;linear&quot;}" class="testimonials__box hiddenoverflow js-slider">
+            <div data-slick="{&quot;slidesToShow&quot;: 4, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--01&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--01&quot;, &quot;cssEase&quot;: &quot;linear&quot;,&quot;responsive&quot;: [{&quot;breakpoint&quot;: 500, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1,&quot;slidesPerRow&quot;: 1, &quot;rows&quot;: 4}}]}" class="testimonials__box hiddenoverflow js-slider">
               <div class="testimonials__item">
                 <div class="partners__item"><a href="https://techcrunch.com/2014/08/12/vmfive-wins-techcrunch-beijings-startup-competition-with-app-advertising-platform-adplay/" target="_blank"><img src="img/report/media-1.png" class="partners__img home_media_img_container"></a></div>
               </div>
@@ -301,7 +506,7 @@
             <button type="button" class="testimonials__arrow testimonials__arrow--left testimonials__arrow--04 testimonials__arrow--04--left js-testimonials-prev-arrow--04 home_media_report_prev_arrow"></button>
             <button type="button" class="testimonials__arrow testimonials__arrow--right testimonials__arrow--04 testimonials__arrow--04--right js-testimonials-next-arrow--04 home_media_report_next_arrow"></button>
           </div>
-          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: false, &quot;asNavFor&quot;: &quot;.js-testimonials-text-slider&quot;, &quot;centerMode&quot;: true, &quot;centerPadding&quot; : &quot;0px&quot;, &quot;focusOnSelect&quot;: true, &quot;infinite&quot;: true, &quot;variableWidth&quot;: true, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 970, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1, &quot;centerMode&quot;: false}}]}" class="testimonials__photos_box--04 js-slider home_news_overflow js-testimonials-photo-slider">
+          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: false, &quot;asNavFor&quot;: &quot;.js-testimonials-text-slider&quot;, &quot;centerMode&quot;: true, &quot;centerPadding&quot; : &quot;0px&quot;, &quot;focusOnSelect&quot;: true, &quot;infinite&quot;: true, &quot;variableWidth&quot;: true, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 970, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1, &quot;centerMode&quot;: false, &quot;rows&quot;: 1, &quot;dots&quot;: true}},{&quot;breakpoint&quot;: 500, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1,&quot;centerMode&quot;: false, &quot;dots&quot;: true}}]}" class="testimonials__photos_box--04 js-slider home_news_overflow js-testimonials-photo-slider">
             <div class="testimonials__item_photo_box--04">
               <figure class="filter">
                 <div style="background-image:url(img/news/Img_Home_News_Event1.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
@@ -339,13 +544,13 @@
             </div>
             <div class="testimonials__item_photo_box--04">
               <figure class="filter">
-                <div style="background-image:url(img/news/Img_Home_News_Event3.jpg)" cssBase="url(img/news/Img_Home_News_Event3.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
+                <div style="background-image:url(img/news/Img_Home_News_Event3.jpg)" class="testimonials__item_photo testimonials__item_photo--04">
                   <p class="home_news_readmore">Read More</p>
                 </div>
               </figure>
             </div>
           </div>
-          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;centerMode&quot;: true, &quot;arrows&quot;: true, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--04&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--04&quot;, &quot;infinite&quot;: true, &quot;asNavFor&quot;: &quot;.js-testimonials-photo-slider&quot;, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 1500, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1}},{&quot;breakpoint&quot;: 970, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1,&quot;centerMode&quot;: false}}]}" class="testimonials__box testimonials__box--04 home_news_overflow js-slider js-testimonials-text-slider">
+          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;centerMode&quot;: true, &quot;arrows&quot;: true, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--04&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--04&quot;, &quot;infinite&quot;: true, &quot;asNavFor&quot;: &quot;.js-testimonials-photo-slider&quot;, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 1500, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1}},{&quot;breakpoint&quot;: 970, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1,&quot;centerMode&quot;: false}},{&quot;breakpoint&quot;: 500, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1,&quot;slidesPerRow&quot;: 1,&quot;centerMode&quot;: true, &quot;rows&quot;: 3}}]}" class="testimonials__box testimonials__box--04 home_news_overflow js-slider js-testimonials-text-slider">
             <div class="testimonials__item testimonials__item--04">
               <!--span.testimonials__item_text.testimonials__item_text--04| Event 1
               -->
@@ -413,14 +618,9 @@
         	max-width: 100%;
         	overflow: hidden;
         }
-        @media screen and (max-width: 970px){
+        @media screen and (max-width: 970px) and (min-width: 500px){
         	.home_news_photo-container{
         		max-width: 65%;
-        	}
-        }
-        @media screen and (max-width: 600px){
-        	.home_news_photo-container{
-        		max-width: 95%;
         	}
         }
         .home_news_readmore{
@@ -429,10 +629,15 @@
         	top: 50%;
         	transition: .5s ease;
         }
+        .home_news_readmore::after{
+        	display: block;
+        	width: 1.7rem;
+        	height: 1.7rem;
+        }
       </style>
       <!--Contact-->
       <footer class="about about--07 home_contact_div">
-        <div style="position: relative; width: 100%"><a href="#">
+        <div style="position: relative; width: 100%"><a href="#" class="scroll">
             <div class="home_back_to_top"></div></a></div>
         <div class="container">
           <div class="about__container--07 home_contact_bg">

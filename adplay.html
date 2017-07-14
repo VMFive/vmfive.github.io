@@ -32,7 +32,7 @@
           <div class="menu__box">
             <ul class="menu__list">
               <li class="menu__item"><a href="adplay.html" class="menu__link">AdPlay</a></li>
-              <li class="menu__item"><a href="pmp.html" class="menu__link">PMP</a></li>
+              <li class="menu__item"><a href="pmp.html" class="menu__link">VMFive PMP</a></li>
               <!--li.menu__item
               a.menu__link(href="dsp.html")
               	| DSP
@@ -43,7 +43,7 @@
       </nav>
       <!-- cover-->
       <div class="cover cover--09 adplay_cover_root">
-        <nav class="header header--05">
+        <nav id="nav" class="header header--05">
           <div class="container header__container">
             <div class="header__left_box"><a href="index.html" title="Home" class="header__logo_box"><img src="img/etc/vmfive--logo.svg" alt="VMFive logo" class="header__logo_img"></a></div>
             <div class="header__right_box">
@@ -55,10 +55,57 @@
             </div>
           </div>
         </nav>
+        <style>
+          #nav {
+          	background: transparent;
+          	position: fixed;
+          	width: 100%;
+          	z-index: 20;
+          	
+          	-webkit-transition: .5s ease;
+          	-moz-transition: .5s ease;
+          	-ms-transition: .5s ease;
+          	-o-transition: .5s ease;
+          	transition: .5s ease;
+          	top: 15px;
+          }
+          
+          #nav.shrink {
+          	height: 50px;
+          	top: 0px;
+          	-webkit-transition: .5s ease;
+          	-moz-transition: .5s ease;
+          	-ms-transition: .5s ease;
+          	-o-transition: .5s ease;
+          	transition: .5s ease;
+          	background: #f7f7f7; // Change background to white on scroll
+          }
+          
+          @media (max-width: 500px){
+          	#nav{
+          		top: 10px;
+          	}
+          }
+          
+          
+        </style>
+        <script>
+          window.onscroll = () => {
+          	if(document.body.scrollTop + document.documentElement.scrollTop > 20){
+          		document.querySelector('#nav').classList.add("shrink");
+          		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo-standard.svg";
+          		document.querySelector('.js-open-menu').classList.add('header__burger_button--black');
+          	}else{
+          		document.querySelector('#nav').classList.remove("shrink");
+          		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo.svg";
+          		document.querySelector('.js-open-menu').classList.remove('header__burger_button--black');
+          	}
+          }
+        </script>
         <div class="adplay_cover_overlayer"></div>
         <div class="container">
-          <div class="cover__content_box--12">
-            <h2 class="cover__title--09 adplay_cover_underline"><span class="cover__title_text--09 adplay_cover_intro_title">AdPlay</span></h2><span class="cover__description_text--12 adplay_cover_intro_text">Playable Ad Solution</span>
+          <div class="cover__content_box--12 adplay_cover_textalign">
+            <h2 class="cover__title--09 adplay_cover_underline"><span class="cover__title_text--09 adplay_cover_intro_title">AdPlay</span></h2><span class="cover__description_text--12 adplay_cover_intro_text">Playable Ad Solution</span><br><a href="#introduction" class="scroll"><span class="cover__description_text--12 adplay_cover_intro_text adplay_cover_arrow"></span></a>
           </div>
         </div>
       </div>
@@ -84,20 +131,69 @@
         	color: white;
         	font-weight: 100;
         }
+        .adplay_cover_arrow{
+        	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAw0lEQVRIS+3VwRHCIBQE0N0OLMESLCGdqB3YkXaiLdhJOlgHBpwYA3wSJic45QC8ZPn8EDsM7mCgI1Up97h6XFUJVE321SVpIPmqWmmYLOkA4EhJDwBnAFeS7rnJCMAzIhcA97BzE2gCnAC8Y1zNoDkAYPjeeEmboUWAHH/ayhYoBbhj+Otda6AcsIiEkjZHVwKSiBWyAFmkBFmBIpKCagATsgDdALgz8xfN3wNyzLUJ859xVnVuTxNg/pL4lhPIDLi1HzyZhA2vO84qAAAAAElFTkSuQmCC)no-repeat center/100% auto;
+        	height: 25px;
+        	width: 25px;
+        }
+        @media (max-width: 900px) {
+        	.adplay_cover_textalign {
+        		text-align: left;
+        	}
+        	.adplay_cover_intro_text {
+        		display: block;
+        		margin: 0 10%;
+        	}
+        }
       </style>
       <!-- introduction-->
-      <div class="features features--02">
+      <div id="introduction" class="features features--02">
         <div class="container">
-          <div class="features__title_box features__title_box--02 adplay_intro_title_box"><span style="max-width: 100%" class="features__description features__description--02">Let users expeirence. Get higher retention.<br><br>AdPlay is a playble ad solution<br>with VMFive's patented technology which allows users to try applications before download.<br>AdPlay can be provided as embedded or a link</span></div>
+          <h2 class="features__title_box features__title_box--02 adplay_intro_title_box">
+            <div class="adplay_intro_underline">Playable Ad Solution</div>
+          </h2><span style="width: 75%; display: block" class="features__description features__description--02 adplay_intro_textalign">Let users expeirence. Get higher retention.<br><br>AdPlay is a playable ad solution<br>with VMFive's patented technology which allows users to try applications before download.<br>AdPlay can be provided as embedded or a link.<br><br><br><a href="#how-it-works" class="scroll">
+              <div class="adplay_intro_arrow"></div></a></span>
         </div>
       </div>
       <style>
         .adplay_intro_title_box{
-        	margin-bottom: 80px;
+        	display: none;
+        }
+        .adplay_intro_underline {
+        	border-bottom: 1px solid #747474;
+        	padding-bottom: 20px;
+        	margin-left: 10%;
+        	margin-right: 10%;
+        	font-size: 1.5rem;
+        }
+        .adplay_intro_textalign {
+        	margin: 0 auto;
+        	text-align: center;
+        }
+        @media (max-width: 900px) {
+        	.adplay_intro_textalign {
+        		text-align: left;
+        		margin: 0 10%;
+        	}
+        	.adplay_intro_underline {
+        		text-align: left;
+        	}
+        	.adplay_intro_arrow{
+        		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAzUlEQVRIS+3VwQ3CMAwFUFvKnY7CBjAKTEAOyQDckx1gg24Ak8XIkYIqSBoHop7SWyW7r/3qbxE2OHADAwbSlPKIa8TVlEDTMGqtJ6XUxTl3bdoUDFtr9zyGxpgnAByI6Oa9Pwt2RSMMhBAeEeETImJo1wtKACJORHSPZewJfQLe+9O78T2gHBDjWgb8D1QCvpBfo1sDskgrVAOKiBSSAKtIDZICVaQEtQAiJAPNAHBMReMe1D4B4j/j8vXmi3KTJYD4SdKdJoiIZinAuy84b/vqKQp+XwAAAABJRU5ErkJggg==) no-repeat center/100% auto;
+        		height: 25px;
+        		width: 25px;
+        	}
+        	#introduction{
+        		padding: 75px 0;
+        	}
+        	.adplay_intro_title_box{
+        		display: block;
+        		margin-bottom: 6vh;
+        	}
         }
       </style>
       <!-- how it works-->
-      <div style="background-color: #fb971b" class="contents contents--05">
+      <div id="how-it-works" style="background-color: #fb971b" class="contents contents--05 adplay_how_it_works_root">
         <div style="position: relative; width: 100%">
           <div class="adplay_how_it_works_top_icon"></div>
         </div>
@@ -106,22 +202,29 @@
             <h2 class="adplay_how_it_works_title">So... How It Works?</h2>
             <div class="adplay_how_it_works_stage_line"></div>
             <div class="adplay_how_it_works_stage_box">
-              <div class="adplay_how_it_works_stage">One Click</div>
+              <div id="stage_1" class="adplay_how_it_works_stage">One Click</div>
             </div>
             <div class="adplay_how_it_works_stage_box">
-              <div class="adplay_how_it_works_stage">Tutorial</div>
+              <div id="stage_2" class="adplay_how_it_works_stage">Tutorial</div>
             </div>
             <div class="adplay_how_it_works_stage_box">
-              <div class="adplay_how_it_works_stage">Trial</div>
+              <div id="stage_3" class="adplay_how_it_works_stage">Trial</div>
             </div>
             <div class="adplay_how_it_works_stage_box">
-              <div class="adplay_how_it_works_stage">Download</div>
+              <div id="stage_4" class="adplay_how_it_works_stage">Download</div>
             </div>
           </div>
-          <div class="adplay_video_box"><img src="img/new-asset/Img_AdPlay_instantlyPlay.png" style="width: 300px; margin-top: 50px;"></div>
+          <div class="adplay_video_box"><img src="img/howitwork/Img_AdPlay_HowItWorks_Mockup.png" style="width: 270px; margin-top: 10px;" class="adplay_how_it_works_img">
+            <video playsinline="" autoplay="" muted="" loop="" width="235" class="adplay_video">
+              <source src="video/Video_AdPlay_LowAll.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
       <style>
+        .adplay_how_it_works_root{
+        	padding-bottom: 0;
+        }
         .adplay_how_it_works_title {
         	font-size: 30px;
         	color: white;
@@ -160,6 +263,11 @@
         		width: 70px;
         	}	
         }
+        @media (max-width: 350px) {
+        	.adplay_how_it_works_stage {
+        		width: 65px;
+        	}	
+        }
         .adplay_how_it_works_stage:after {
         	position: absolute;
         	content: '';
@@ -182,7 +290,130 @@
         }
         .adplay_video_box {
         	text-align: center;
-        	margin-top: 50px;
+        	margin-top: -20px;
+        	overflow: hidden;
+        	position: relative;
+        }
+        .adplay_how_it_works_img{
+        	width: 270px;
+        	height: 520px;
+        	margin-top: 10px;
+        	position: relative;
+        	top: 70px;
+        	overflow: hidden;
+        }
+        .adplay_video{
+        	position: absolute;
+        	right: calc(50% - 117px);
+        	top: 28.5%;
+        	overflow: hidden;
+        }
+        .adplay_how_it_works_stage_completed:after{
+        	background-image: linear-gradient(to bottom, #fff, #fff);
+        }
+        
+      </style>
+      <script>
+        var adplayVideo = document.querySelector('.adplay_video');
+        adplayVideo.ontimeupdate = (vedio) => {
+        	var time = adplayVideo.currentTime;
+        	//console.log(time);
+        	if (time > 0.2) {
+        		document.querySelector('#stage_1').classList.add('adplay_how_it_works_stage_completed');
+        	}  if (time > 2) {
+        		document.querySelector('#stage_2').classList.add('adplay_how_it_works_stage_completed');
+        	}  if (time > 9) {
+        		document.querySelector('#stage_3').classList.add('adplay_how_it_works_stage_completed');
+        	}  if (time > 15.5) {
+        		document.querySelector('#stage_4').classList.add('adplay_how_it_works_stage_completed');
+        	} if(time < 0.5) {
+        		document.querySelector('#stage_1').classList.remove('adplay_how_it_works_stage_completed');
+        		document.querySelector('#stage_2').classList.remove('adplay_how_it_works_stage_completed');
+        		document.querySelector('#stage_3').classList.remove('adplay_how_it_works_stage_completed');
+        		document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
+        	}
+        }
+      </script>
+      <!-- core features-->
+      <div class="features features--02 adplay_core_features_root">
+        <div style="position: relative; width: 100%">
+          <div class="adplay_core_features_top_icon"></div>
+        </div>
+        <div class="container">
+          <div class="features__title_box features__title_box--02">
+            <h2 class="partners__title partners__title--orange partners__title--smaller-margin adplay_core_features_title">
+              <div class="adplay_core_features_underline">Core Features</div>
+            </h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row features__row">
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_CrossPlatform.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Cross Platform</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_RealtimeStreaming.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Realtime Streaming</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_MobileVirtualization.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Mobile Virtualization</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_InstantPlay.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Instant Play</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_Engagement.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Engagement</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_Differentiation.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Differentiation</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .adplay_core_features_root {
+        	padding: 10px;
+        }
+        .adplay_core_features_underline {
+        	display: inline-block;
+        	border-bottom: 1px solid #C2C2C2;
+        	padding-bottom: 20px;
+        }
+        .adplay_core_features_title {
+        	color: black;
+        	font-size: 30px;
+        	padding-top: 70px;
+        }
+        .adplay_core_features_top_icon {
+        	position: absolute;
+        	transform: translate(-50%, -50%);
+        	width: 120px;
+        	height: 120px;
+        	left: 50%;
+        	background-image: url(img/new-asset/Icon_DSP_CoreFeatues_White.png);
+        	background-size: contain;
+        	background-repeat: no-repeat;
+        	background-position: center center;
+        }
+        .adplay_core_features_item {
+        	margin-bottom: 100px;
+        }
+        .adplay_core_features_item .features__item_title {
+        	margin-top: 20px;
+        }
+        @media screen and (max-width: 800px){
+        	.adplay-icon{
+        		width: 150px;
+        		height: 150px;
+        	}
+        }
+        @media screen and (max-width: 480px){
+        	.adplay_core_features_item{
+        		width: 50%;
+        	}
+        	.adplay-icon{
+        		width: 130px;
+        		height: 130px;
+        	}
         }
       </style>
       <!-- app streaming technology-->
@@ -190,7 +421,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-lg-6">
-              <h2 class="contents__title--05 adplay_app_streaming_tech_title adplay_app_streaming_tech_underline">App Streaming Technology</h2><span class="contents__text--05 adplay_app_streaming_tech_description">
+              <h2 class="contents__title--05 adplay_app_streaming_tech_title adplay_app_streaming_tech_underline adplay_app_streaming_left_textalign">App Streaming Technology</h2><span class="contents__text--05 adplay_app_streaming_tech_description adplay_app_streaming_left_textalign">
                 VMFive's cutting-edge mobile virtualization technology,
                 coupled with its advanced streaming technology,
                 allows users to experience Apps without downloading
@@ -208,6 +439,10 @@
         </div>
       </div>
       <style>
+        .adplay_app_streaming_container{
+        	padding-left: 1.9375rem;
+        	padding-right: 1.9375rem;
+        }
         .adplay_app_streaming_tech_title {
         	font-size: 30px;
         	color: black;
@@ -240,10 +475,99 @@
         		top: 0px;
         	}	
         }
+        @media (max-width: 900px) {
+        	.adplay_app_streaming_left_textalign {
+        		text-align: left;
+        	}	
+        }
+      </style>
+      <!-- scenarios-->
+      <div class="features features--02 adplay_scenarios_root">
+        <div style="position: relative; width: 100%">
+          <div class="adplay_scenarios_top_icon"></div>
+        </div>
+        <div class="container">
+          <div class="features__title_box features__title_box--02">
+            <h2 class="partners__title partners__title--orange partners__title--smaller-margin adplay_scenarios_title">
+              <div class="adplay_scenarios_underline">Scenarios</div>
+            </h2><span class="features__description features__description--02 adplay_scenarios_description">Adplay is flexible for different scenarios</span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row features__row">
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_AdNetWork.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">Ad Network</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_AppStore.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">App Store</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_GamePage.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">Game Page</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_InstantMessage.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">Instant Message</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_QRCode.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">QRCode</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_SocialMedia.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">Social Media</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .adplay_scenarios_root {
+        	padding: 10px;
+        }
+        .adplay_scenarios_underline {
+        	display: inline-block;
+        	border-bottom: 1px solid #C2C2C2;
+        	padding-bottom: 20px;
+        }
+        .adplay_scenarios_title {
+        	color: black;
+        	font-size: 30px;
+        	padding-top: 70px;
+        }
+        .adplay_scenarios_top_icon {
+        	position: absolute;
+        	transform: translate(-50%, -50%);
+        	width: 120px;
+        	height: 120px;
+        	left: 50%;
+        	background-image: url(img/scenarios/Icon_AdPlay_Scenarios.png);
+        	background-size: contain;
+        	background-repeat: no-repeat;
+        	background-position: center center;
+        }
+        .adplay_scenarios_item {
+        	margin-bottom: 100px;
+        }
+        .adplay_scenarios_item .features__item_title {
+        	margin-top: 20px;
+        }
+        .adplay_scenarios_description{
+        	max-width: 580px;
+        	font-size: 16px;
+        }
+        @media screen and (max-width: 1000px){
+        	.adplay-scenarios-icon{
+        		width: 150px;
+        	}
+        }
+        @media screen and (max-width: 480px){
+        	.adplay_scenarios_item{
+        		width: 50%;
+        	}
+        	.adplay-scenarios-icon{
+        		width: 130px;
+        	}
+        }
       </style>
       <!--Contact-->
       <footer class="about about--07 home_contact_div">
-        <div style="position: relative; width: 100%"><a href="#">
+        <div style="position: relative; width: 100%"><a href="#" class="scroll">
             <div class="home_back_to_top"></div></a></div>
         <div class="container">
           <div class="about__container--07 home_contact_bg">
