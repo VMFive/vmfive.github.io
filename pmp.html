@@ -31,8 +31,8 @@
           <button type="button" class="menu__closer js-close-menu">close</button>
           <div class="menu__box">
             <ul class="menu__list">
+              <li class="menu__item"><a href="pmp.html" class="menu__link">PMP</a></li>
               <li class="menu__item"><a href="adplay.html" class="menu__link">AdPlay</a></li>
-              <li class="menu__item"><a href="pmp.html" class="menu__link">VMFive PMP</a></li>
               <!--li.menu__item
               a.menu__link(href="dsp.html")
               	| DSP
@@ -48,8 +48,8 @@
             <div class="header__left_box"><a href="index.html" title="Home" class="header__logo_box"><img src="img/etc/vmfive--logo.svg" alt="VMFive logo" class="header__logo_img"></a></div>
             <div class="header__right_box">
               <ul class="header__menu_list header__item--desktop">
-                <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
                 <li class="header__menu_item"><a href="pmp.html" class="header__menu_link header__menu_link--white">PMP</a></li>
+                <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
               </ul>
               <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
             </div>
@@ -61,7 +61,7 @@
           	position: fixed;
           	width: 100%;
           	z-index: 20;
-          	
+          	font-family: 'Roboto', sans-serif;
           	-webkit-transition: .5s ease;
           	-moz-transition: .5s ease;
           	-ms-transition: .5s ease;
@@ -90,7 +90,7 @@
           
         </style>
         <script>
-          window.onscroll = () => {
+          window.onscroll = function() {
           	if(document.body.scrollTop + document.documentElement.scrollTop > 20){
           		document.querySelector('#nav').classList.add("shrink");
           		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo-standard.svg";

@@ -31,8 +31,8 @@
           <button type="button" class="menu__closer js-close-menu">close</button>
           <div class="menu__box">
             <ul class="menu__list">
+              <li class="menu__item"><a href="pmp.html" class="menu__link">PMP</a></li>
               <li class="menu__item"><a href="adplay.html" class="menu__link">AdPlay</a></li>
-              <li class="menu__item"><a href="pmp.html" class="menu__link">VMFive PMP</a></li>
               <!--li.menu__item
               a.menu__link(href="dsp.html")
               	| DSP
@@ -48,8 +48,8 @@
             <div class="header__left_box"><a href="index.html" title="Home" class="header__logo_box"><img src="img/etc/vmfive--logo.svg" alt="VMFive logo" class="header__logo_img"></a></div>
             <div class="header__right_box">
               <ul class="header__menu_list header__item--desktop">
-                <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
                 <li class="header__menu_item"><a href="pmp.html" class="header__menu_link header__menu_link--white">PMP</a></li>
+                <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
               </ul>
               <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
             </div>
@@ -61,7 +61,7 @@
           	position: fixed;
           	width: 100%;
           	z-index: 20;
-          	
+          	font-family: 'Roboto', sans-serif;
           	-webkit-transition: .5s ease;
           	-moz-transition: .5s ease;
           	-ms-transition: .5s ease;
@@ -90,7 +90,7 @@
           
         </style>
         <script>
-          window.onscroll = () => {
+          window.onscroll = function() {
           	if(document.body.scrollTop + document.documentElement.scrollTop > 20){
           		document.querySelector('#nav').classList.add("shrink");
           		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo-standard.svg";
@@ -121,11 +121,13 @@
         .adplay_cover_underline {
         	border-bottom: 2px solid white;
         	padding-bottom: 20px;
-        	margin-left: 10%;
-        	margin-right: 10%;
+        	margin-bottom: 20px;
+        	margin-left: 15%;
+        	margin-right: 15%;
         }
         .adplay_cover_intro_title {
-        	font-size: 56px;
+        	font-size: 46px;
+        	font-weight: 500;
         }
         .adplay_cover_intro_text {
         	color: white;
@@ -139,6 +141,10 @@
         @media (max-width: 900px) {
         	.adplay_cover_textalign {
         		text-align: left;
+        	}
+        	.adplay_cover_underline {
+        		margin-left: 10%;
+        		margin-right: 10%;
         	}
         	.adplay_cover_intro_text {
         		display: block;
@@ -193,7 +199,7 @@
         }
       </style>
       <!-- how it works-->
-      <div id="how-it-works" style="background-color: #fb971b" class="contents contents--05 adplay_how_it_works_root">
+      <div id="how-it-works" style="background-color: #fb971b" class="contents contents--05 adplay_how_it_works_root adplay_how_it_works_top_curve">
         <div style="position: relative; width: 100%">
           <div class="adplay_how_it_works_top_icon"></div>
         </div>
@@ -225,6 +231,21 @@
         .adplay_how_it_works_root{
         	padding-bottom: 0;
         }
+        .adplay_how_it_works_top_curve:before {
+        	content: '';
+        	position: absolute;
+        	transform: translate(0%,-120px);
+        	width: 100%;
+        	height: 30px;
+        	background-image: linear-gradient(to bottom, #fb971b, #fb971b);
+        	border-top-left-radius: 55% 80%;
+        	border-top-right-radius: 55% 80%;
+        }
+        @media screen and (max-width: 992px){
+        	.adplay_how_it_works_top_curve:before{
+        		transform: translate(0%,-20px);			
+        	}
+        }
         .adplay_how_it_works_title {
         	font-size: 30px;
         	color: white;
@@ -247,10 +268,13 @@
         	width: 100px;
         	height: 100px;
         	top: -148px;
+        	z-index: 2;
         }
         .adplay_how_it_works_stage_box {
+        	cursor: pointer;
         	position: relative;
         	display: inline-block;
+        	z-index: 2;
         }
         .adplay_how_it_works_stage {
         	display: inline-block;
@@ -315,7 +339,7 @@
       </style>
       <script>
         var adplayVideo = document.querySelector('.adplay_video');
-        adplayVideo.ontimeupdate = (vedio) => {
+        adplayVideo.ontimeupdate = function(video){
         	var time = adplayVideo.currentTime;
         	//console.log(time);
         	if (time > 0.2) {
@@ -332,10 +356,49 @@
         		document.querySelector('#stage_3').classList.remove('adplay_how_it_works_stage_completed');
         		document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
         	}
+        var stageButtons = document.querySelectorAll(".adplay_how_it_works_stage_box");
+        for (let i = 0; i < stageButtons.length; i++){
+        		stageButtons[i].addEventListener("click",function(){
+        			switch (i){
+        				case 0:
+        					adplayVideo.currentTime = 0;
+        					break;
+        				case 1:
+        					adplayVideo.currentTime = 2;
+        					break;
+        				case 2:
+        					adplayVideo.currentTime = 9;
+        					break;
+        				case 3:
+        					adplayVideo.currentTime = 15.5;
+        					break;
+        			}
+        			if (adplayVideo.currentTime > 0.2) {
+        				document.querySelector('#stage_1').classList.add('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_2').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_3').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
+        			}  if (adplayVideo.currentTime > 2) {
+        				document.querySelector('#stage_2').classList.add('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_3').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
+        			}  if (adplayVideo.currentTime > 9) {
+        				document.querySelector('#stage_3').classList.add('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
+        			}  if (adplayVideo.currentTime > 15.5) {
+        				document.querySelector('#stage_4').classList.add('adplay_how_it_works_stage_completed');
+        			} if(adplayVideo.currentTime < 0.5) {
+        				document.querySelector('#stage_1').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_2').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_3').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
+        			}
+        		});
+        	}
         }
       </script>
       <!-- core features-->
-      <div class="features features--02 adplay_core_features_root">
+      <div class="features features--02 adplay_core_features_root adplay_core_features_top_curve">
         <div style="position: relative; width: 100%">
           <div class="adplay_core_features_top_icon"></div>
         </div>
@@ -372,6 +435,18 @@
       <style>
         .adplay_core_features_root {
         	padding: 10px;
+        }
+        .adplay_core_features_top_curve:before {
+        	content: '';
+        	position: absolute;
+        	left:0;
+        	right: 0;
+        	transform: translate(0%,-30px);
+        	width: 100%;
+        	height: 30px;
+        	background-image: linear-gradient(to bottom, #fff, #fff);
+        	border-top-left-radius: 55% 80%;
+        	border-top-right-radius: 55% 80%;
         }
         .adplay_core_features_underline {
         	display: inline-block;

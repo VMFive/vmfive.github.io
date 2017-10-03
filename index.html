@@ -31,8 +31,8 @@
           <button type="button" class="menu__closer js-close-menu">close</button>
           <div class="menu__box">
             <ul class="menu__list">
+              <li class="menu__item"><a href="pmp.html" class="menu__link">PMP</a></li>
               <li class="menu__item"><a href="adplay.html" class="menu__link">AdPlay</a></li>
-              <li class="menu__item"><a href="pmp.html" class="menu__link">VMFive PMP</a></li>
               <!--li.menu__item
               a.menu__link(href="dsp.html")
               	| DSP
@@ -48,8 +48,8 @@
             <div class="header__left_box"><a href="index.html" title="Home" class="header__logo_box"><img src="img/etc/vmfive--logo.svg" alt="VMFive logo" class="header__logo_img"></a></div>
             <div class="header__right_box">
               <ul class="header__menu_list header__item--desktop">
-                <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
                 <li class="header__menu_item"><a href="pmp.html" class="header__menu_link header__menu_link--white">PMP</a></li>
+                <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
               </ul>
               <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
             </div>
@@ -61,7 +61,7 @@
           	position: fixed;
           	width: 100%;
           	z-index: 20;
-          	
+          	font-family: 'Roboto', sans-serif;
           	-webkit-transition: .5s ease;
           	-moz-transition: .5s ease;
           	-ms-transition: .5s ease;
@@ -90,7 +90,7 @@
           
         </style>
         <script>
-          window.onscroll = () => {
+          window.onscroll = function() {
           	if(document.body.scrollTop + document.documentElement.scrollTop > 20){
           		document.querySelector('#nav').classList.add("shrink");
           		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo-standard.svg";
@@ -107,7 +107,7 @@
             <source src="video/Home_Video.mp4" type="video/mp4">
           </video>
           <div class="cover__content_box--12">
-            <h2 class="cover__title--09 home_cover_left_textalign"><span class="cover__title_text--09">Leading Playable and <br>Video Advertising Marketplace</span></h2>
+            <h2 class="cover__title--09 home_cover_left_textalign"><span class="cover__title_text--09">Leading Video and <br>Playable Advertising Marketplace</span></h2>
             <div class="cover__description_box--12 home_intro_box home_cover_upperline home_cover_left_textalign"><span class="cover__description_text--12 intro-text">VMFive provides you a total advertising solution<br>through its premium market place and innovative technology.</span></div><a href="#core-features" class="rectangle-button button--border-white scroll home_cover_button">Explore VMFive</a>
           </div>
         </div>
@@ -160,7 +160,7 @@
         }
       </style>
       <!--VMFive Ads Core Features-->
-      <div id="core-features" class="features features--02 home_cd_backgroud">
+      <div id="core-features" class="features features--02 home_cd_backgroud home_core_feature_top_curve home_core_feature_bottom_curve">
         <div class="container">
           <div class="features__title_box features__title_box--02">
             <h2 class="features__title--02 home_cf_white_title home_cf_underline">Next Generation Mobile Ads</h2><span class="features__description features__description--02 home_cf_description home_cf_white_title">Pioneering new generation of mobile advertising though innovative technologies.  Our playable and video ad solutions improve advertising experience and maximize their impact.</span>
@@ -205,58 +205,34 @@
         .features__item_title.home_core_feature_title{
         	font-size: 20px;
         }
-      </style>
-      <!--AdPlay-->
-      <div class="contents contents--05 adplay home_adplay_bg">
-        <div class="home_adplay_overlayer"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-lg-6">
-              <h2 class="contents__title--05 home_adplay_title home_adplay_left_textalign">VMFive AdPlay</h2><span class="contents__text--05 home_adplay_content_text home_adplay_left_textalign">VMFive's cutting-edge mobile virtualization technology, coupled with its advanced streaming technology, allows users to experience Apps without downloading them, across devices.</span><a href="adplay.html" class="button contents__button--05 home_adplay_button button--border-white">Explore AdPlay</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <style>
-        .home_adplay_bg {
-        	background-image: url(img/new-asset/Bg_AdPlay.jpg);
-        }
-        .home_adplay_overlayer {
+        .home_core_feature_top_curve:before {
+        	content: '';
         	position: absolute;
-        	background-color: rgba(0,0,0,0.8);
+        	z-index: 10;
+        	transform: translate(0%,-110px);
         	width: 100%;
-        	height: 100%;
-        	top: 0px;
-        	left: 0px;
+        	height: 32px;
+        	background-image: linear-gradient(to bottom, #fb971b, #fb971b);
+        	border-top-left-radius: 55% 80%;
+        	border-top-right-radius: 55% 80%;
         }
-        .home_adplay_title {
-        	font-size: 30px;
-        	color: white;
+        .home_core_feature_bottom_curve:after {
+        	content: '';
+        	position: absolute;
+        	z-index: 10;
+        	transform: translate(0%,99%);
+        	width: 100%;
+        	height: 30px;
+        	background-image: linear-gradient(to bottom, #fb971b, #fb971b);
+        	border-bottom-left-radius: 55% 80%;
+        	border-bottom-right-radius: 55% 80%;
         }
-        .home_adplay_content_text {
-        	color: white;
-        }
-        .home_adplay_button {
-        	border: solid white 1px;
-        	color: white;
-        	border-radius: 0;
-        }
-        @media (max-width: 992px) {
-        	.home_adplay_left_textalign {
-        		text-align: left;
-        		display: block;
-        		max-width: 100%;
+        @media screen and (max-width: 500px){
+        	.home_core_feature_top_curve:before{
+        		transform: translate(0%,-80px);			
         	}
-        	.home_adplay_bg {
-        		height: 105vh;
-        		padding: 33vh 8%;
-        	}
-        	.home_adplay_content_text {
-        		font-size: 16px;
-        	}
-        	.home_adplay_button{
-        		display: block;
-        		width: 10vw;
+        	.home_core_feature_bottom_curve:after{
+        		transform: translate(0%,99%);
         	}
         }
       </style>
@@ -276,7 +252,7 @@
               </div>
             </div>
             <div class="works__row home_pmp_works_row">
-              <div style="height: 300px" class="filtr-container works__container--02 home_pmp_img_container"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Adidas.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Samsung.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_FoxMovie.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_MasterCard.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Nestle.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Puma.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Disney.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_LibertyTimes.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_SETN.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_Udn.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_ChocoTV.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_MAPP.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_TrainApp.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_Dcard.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_TheNewsLens.png" style="width: 175px; height:42px" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_FoodAPP.png" class="filtr-item home_pmp_imgs"></div>
+              <div style="height: 300px" class="filtr-container2 works__container--02 home_pmp_img_container"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Adidas.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Samsung.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_FoxMovie.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_MasterCard.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Nestle.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Puma.png" class="filtr-item home_pmp_imgs"><img data-category="2" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Advertiser_Disney.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_LibertyTimes.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_SETN.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_Udn.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_ChocoTV.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_MAPP.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_TrainApp.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_Dcard.png" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_TheNewsLens.png" style="width: 175px; height:42px" class="filtr-item home_pmp_imgs"><img data-category="1" href="#" src="img/Home_PMP_Logo/Logo_Home_PMP_Media_FoodAPP.png" class="filtr-item home_pmp_imgs"></div>
             </div>
             <div class="works__row home_pmp_works_row">
               <div class="home_pmp_img_container works__container--02 home_pmp_more_media"><a href="pmp.html#premium-media"> More Media</a></div>
@@ -351,7 +327,6 @@
         	font-size: 1.1rem;
         	color: grey;
         	margin: 0 19% 0;
-        	text-decoration: underline;
         }
         @media (max-width: 600px){
         	.home_pmp_button_box {
@@ -386,6 +361,60 @@
         	}
         	.contents__right-box--05 {
         		margin-top: 30px;
+        	}
+        }
+      </style>
+      <!--AdPlay-->
+      <div class="contents contents--05 adplay home_adplay_bg">
+        <div class="home_adplay_overlayer"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-6">
+              <h2 class="contents__title--05 home_adplay_title home_adplay_left_textalign">VMFive AdPlay</h2><span class="contents__text--05 home_adplay_content_text home_adplay_left_textalign">VMFive's cutting-edge mobile virtualization technology, coupled with its advanced streaming technology, allows users to experience Apps without downloading them, across devices.</span><a href="adplay.html" class="button contents__button--05 home_adplay_button button--border-white">Explore AdPlay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .home_adplay_bg {
+        	background-image: url(img/new-asset/Bg_AdPlay.jpg);
+        }
+        .home_adplay_overlayer {
+        	position: absolute;
+        	background-color: rgba(0,0,0,0.8);
+        	width: 100%;
+        	height: 100%;
+        	top: 0px;
+        	left: 0px;
+        }
+        .home_adplay_title {
+        	color: white;
+        	font-size: 30px;
+        }
+        .home_adplay_content_text {
+        	color: white;
+        }
+        .home_adplay_button {
+        	border: solid white 1px;
+        	color: white;
+        	border-radius: 0;
+        }
+        @media (max-width: 992px) {
+        	.home_adplay_left_textalign {
+        		text-align: left;
+        		display: block;
+        		max-width: 100%;
+        	}
+        	.home_adplay_bg {
+        		height: 105vh;
+        		padding: 33vh 8%;
+        	}
+        	.home_adplay_content_text {
+        		font-size: 16px;
+        	}
+        	.home_adplay_button{
+        		display: block;
+        		width: 10vw;
         	}
         }
       </style>
@@ -450,49 +479,49 @@
       </div>
       <style>
         .home_media_report_root {
-        	padding: 10px;
-        	background-color: #F2F2F2;
+          padding: 10px;
+          background-color: #F2F2F2;
         }
         .home_media_report_underline {
-        	display: inline-block;
-        	border-bottom: 1px solid #C2C2C2;
-        	padding-bottom: 20px;
+          display: inline-block;
+          border-bottom: 1px solid #C2C2C2;
+          padding-bottom: 20px;
         }
         .home_media_report_title {
-        	color: black;
-        	font-size: 30px;
+          color: black;
+          font-size: 30px;
         }
         .home_media_report_prev_arrow:after {
-        	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzFfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQuNDE0MXB4IiBoZWlnaHQ9IjcuMDAxcHgiIHZpZXdCb3g9IjAgMCA0LjQxNDEgNy4wMDEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQuNDE0MSA3LjAwMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBpZD0iaS0tc21hbGwtYXJyb3ctLWJsYWNrLS1sZWZ0IiBmaWxsPSIjZmI5NzFiIiBkPSJNMC4yNjc2LDIuODUzNUMwLjA4ODksMy4wMzIyLDAsMy4yNjY2LDAsMy41MDENCgljMCwwLjE3NTgsMC4wNTA4LDAuMzUwNiwwLjE1MDQsMC41MDI5YzAuMDMzMiwwLjA0OTgsMC4wNzIzLDAuMDk4NiwwLjExNzIsMC4xNDI2bDIuNTg1OSwyLjU4NTkNCgljMC4zNTc0LDAuMzU3NCwwLjkzNjUsMC4zNTc0LDEuMjkzLDBjMC4zNTc0LTAuMzU2NCwwLjM1NzQtMC45MzU1LDAtMS4yOTNMMi4yMDcsMy41MDFsMS45Mzk1LTEuOTM5NQ0KCWMwLjM1NzQtMC4zNTc0LDAuMzU3NC0wLjkzNzUsMC0xLjI5MzljLTAuMzU2NC0wLjM1NjQtMC45MzU1LTAuMzU2NC0xLjI5MywwTDAuMjY3NiwyLjg1MzV6Ii8+DQo8L3N2Zz4NCg==) no-repeat center/100% auto;
+          background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzFfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQuNDE0MXB4IiBoZWlnaHQ9IjcuMDAxcHgiIHZpZXdCb3g9IjAgMCA0LjQxNDEgNy4wMDEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQuNDE0MSA3LjAwMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBpZD0iaS0tc21hbGwtYXJyb3ctLWJsYWNrLS1sZWZ0IiBmaWxsPSIjZmI5NzFiIiBkPSJNMC4yNjc2LDIuODUzNUMwLjA4ODksMy4wMzIyLDAsMy4yNjY2LDAsMy41MDENCgljMCwwLjE3NTgsMC4wNTA4LDAuMzUwNiwwLjE1MDQsMC41MDI5YzAuMDMzMiwwLjA0OTgsMC4wNzIzLDAuMDk4NiwwLjExNzIsMC4xNDI2bDIuNTg1OSwyLjU4NTkNCgljMC4zNTc0LDAuMzU3NCwwLjkzNjUsMC4zNTc0LDEuMjkzLDBjMC4zNTc0LTAuMzU2NCwwLjM1NzQtMC45MzU1LDAtMS4yOTNMMi4yMDcsMy41MDFsMS45Mzk1LTEuOTM5NQ0KCWMwLjM1NzQtMC4zNTc0LDAuMzU3NC0wLjkzNzUsMC0xLjI5MzljLTAuMzU2NC0wLjM1NjQtMC45MzU1LTAuMzU2NC0xLjI5MywwTDAuMjY3NiwyLjg1MzV6Ii8+DQo8L3N2Zz4NCg==) no-repeat center/100% auto;
         }
         .home_media_report_next_arrow:after {
-        	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzJfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iNC40MTQxcHgiIGhlaWdodD0iNy4wMDFweCIgdmlld0JveD0iMCAwIDQuNDE0MSA3LjAwMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNC40MTQxIDcuMDAxIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggaWQ9ImktLXNtYWxsLWFycm93LS1ibGFjay0tcmlnaHQiIGZpbGw9IiNmYjk3MWIiIGQ9Ik0xLjU2MDUsMC4yNjc2Yy0wLjM1NzQtMC4zNTY0LTAuOTM2NS0wLjM1NjQtMS4yOTMsMAoJYy0wLjM1NzQsMC4zNTY0LTAuMzU3NCwwLjkzNjUsMCwxLjI5MzlMMi4yMDcsMy41MDFMMC4yNjc2LDUuNDM5NWMtMC4zNTc0LDAuMzU3NC0wLjM1NzQsMC45MzY1LDAsMS4yOTMKCWMwLjM1NjQsMC4zNTc0LDAuOTM1NSwwLjM1NzQsMS4yOTMsMGwyLjU4NTktMi41ODU5YzAuMDQ0OS0wLjA0MzksMC4wODQtMC4wOTI4LDAuMTE3Mi0wLjE0MjYKCUM0LjM2MzMsMy44NTE2LDQuNDE0MSwzLjY3NjgsNC40MTQxLDMuNTAxYzAtMC4yMzQ0LTAuMDg4OS0wLjQ2ODgtMC4yNjc2LTAuNjQ3NUwxLjU2MDUsMC4yNjc2eiIvPgo8L3N2Zz4K) no-repeat center/100% auto;
+          background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzJfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iNC40MTQxcHgiIGhlaWdodD0iNy4wMDFweCIgdmlld0JveD0iMCAwIDQuNDE0MSA3LjAwMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNC40MTQxIDcuMDAxIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggaWQ9ImktLXNtYWxsLWFycm93LS1ibGFjay0tcmlnaHQiIGZpbGw9IiNmYjk3MWIiIGQ9Ik0xLjU2MDUsMC4yNjc2Yy0wLjM1NzQtMC4zNTY0LTAuOTM2NS0wLjM1NjQtMS4yOTMsMAoJYy0wLjM1NzQsMC4zNTY0LTAuMzU3NCwwLjkzNjUsMCwxLjI5MzlMMi4yMDcsMy41MDFMMC4yNjc2LDUuNDM5NWMtMC4zNTc0LDAuMzU3NC0wLjM1NzQsMC45MzY1LDAsMS4yOTMKCWMwLjM1NjQsMC4zNTc0LDAuOTM1NSwwLjM1NzQsMS4yOTMsMGwyLjU4NTktMi41ODU5YzAuMDQ0OS0wLjA0MzksMC4wODQtMC4wOTI4LDAuMTE3Mi0wLjE0MjYKCUM0LjM2MzMsMy44NTE2LDQuNDE0MSwzLjY3NjgsNC40MTQxLDMuNTAxYzAtMC4yMzQ0LTAuMDg4OS0wLjQ2ODgtMC4yNjc2LTAuNjQ3NUwxLjU2MDUsMC4yNjc2eiIvPgo8L3N2Zz4K) no-repeat center/100% auto;
         }
         .home_media_report_top-curve:before {
-        	content: '';
-        	position: absolute;
-        	transform: translate(-50%);
-        	width: 100%;
-        	height: 30px;
-        	top: -30px;
-        	background-image: linear-gradient(to bottom, #F2F2F2, #F2F2F2);
-        	border-top-left-radius: 50% 80%;
-        	border-top-right-radius: 50% 80%;
+          content: '';
+          position: absolute;
+          transform: translate(-50%);
+          width: 100%;
+          height: 30px;
+          top: -30px;
+          background-image: linear-gradient(to bottom, #F2F2F2, #F2F2F2);
+          border-top-left-radius: 50% 80%;
+          border-top-right-radius: 50% 80%;
         }
         .home_media_report_bottom_curve:after {
-        	content: '';
-        	position: absolute;
-        	z-index: 10;
-        	transform: translate(-50%);
-        	width: 100%;
-        	height: 30px;
-        	bottom: -30px;
-        	background-image: linear-gradient(to bottom, #F2F2F2, #F2F2F2);
-        	border-bottom-left-radius: 50% 80%;
-        	border-bottom-right-radius: 50% 80%;
+          content: '';
+          position: absolute;
+          z-index: 10;
+          transform: translate(-50%);
+          width: 100%;
+          height: 30px;
+          bottom: -30px;
+          background-image: linear-gradient(to bottom, #F2F2F2, #F2F2F2);
+          border-bottom-left-radius: 50% 80%;
+          border-bottom-right-radius: 50% 80%;
         }
         .hiddenoverflow{/*this slide is not needed to fit margin*/
-        	overflow: hidden;
+          overflow: hidden;
         }
       </style>
       <!--News-->

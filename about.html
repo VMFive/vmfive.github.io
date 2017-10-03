@@ -1,571 +1,989 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-  <html class="no-js IE lt-ie9 lt-ie8 lt-ie7"></html>
-<![endif]-->
-<!--[if IE 7]>
-  <html class="no-js IE lt-ie9 lt-ie8"></html>
-<![endif]-->
-<!--[if IE 8]>
-  <html class="no-js IE lt-ie9"></html>
-<![endif]-->
-<!--[if gt IE 8]>
-  <html class="no-js IE gt-ie8"></html>
-<![endif]-->
-<!--[if !IE]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
-<head>
-    <!-- title -->
-    <title>VMFive | Playable Advertising Technology</title>
-
-    <!-- Redirect to new page -->
-    <meta http-equiv="refresh" content="0; url=http://vmfive.com" />
-    <script type="text/javascript">
-        window.location.href = "http://vmfive.com"
-    </script>
-
-    <!-- meta tags -->
+<html>
+  <head>
+    <!--the must have tags-->
     <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
-    <meta name="description" content="VMFive is building the largest cloud based virtual mobile platform with its leading virtualization technologies. The premiere product, AdPlay, is a cloud service that transforms game apps into playable ad units, which allows users to try apps before downloading. ">
-    <!-- meta for Facebook -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="VMFive provides you premium video and playable advertising marketplace for your online branding.">
+    <!-- meta for Facebook-->
     <meta property="og:site_name" content="VMFive">
-    <meta property="og:title" content="VMFive | Playable Advertising Technology">
-    <meta property="og:description" content="VMFive is building the largest cloud based virtual mobile platform with its leading virtualization technologies. The premiere product, AdPlay, is a cloud service that transforms game apps into playable ad units, which allows users to try apps before downloading. ">
+    <meta property="og:title" content="VMFive | Mobile Ads">
+    <meta property="og:description" content="VMFive provides you premium video and playable advertising marketplace for your online branding.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://vmfive.com">
-    <meta property="og:image" content="http://i.imgur.com/fFaY46a.png" />
-    <meta property="og:image:secure_url" content="https://i.imgur.com/fFaY46a.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="http://vmfive.com/">
+    <meta property="og:image" content="http://i.imgur.com/fFaY46a.png">
+    <meta property="og:image:secure_url" content="https://i.imgur.com/fFaY46a.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- favicon -->
-    <link href="images/favicon.ico" rel="shortcut icon">
-
-    <!-- CSS
-    ============== -->
-    <!-- libraries -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/css3-animations.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,latin-ext">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <!-- main stylesheet-->
-    <link href="style.min.css" media="screen" rel="stylesheet" type="text/css">
-    <!-- <link rel="stylesheet" type="text/css" href="style.css" media="screen"> -->
-    <!-- brand color -->
-    <link rel="stylesheet" href="css/skins/brand-color.min.css">
-    <!-- <link rel="stylesheet" href="css/skins/brand-color.css"> -->
-    <!-- responsive -->
-    <link href="css/responsive.min.css" media="screen" rel="stylesheet" type="text/css">
-    <!-- <link rel="stylesheet" href="css/responsive.css" media="screen" charset="utf-8"> -->
-    <!--[if lt IE 9]><!-->
-    <!-- css for ie -->
-    <!-- <link href="css/ie.css" media="screen" rel="stylesheet" type="text/css"> -->
-    <!--<![endif]-->
-
-
-    <!-- JaveScripts
-    ======================= -->
-    <!-- online JQuery libs -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" async></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js" async></script>
-    <!-- google maps -->
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript" async></script>
-    <!-- inline scripts -->
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        // Region detect for Language
-        var lang = window.navigator.userLanguage || window.navigator.language;
-        var pathname = window.location.pathname.slice(1).split('.')[0].split('_');
-
-        if (!window.location.search) {
-            switch (lang.toLowerCase()) {
-                case "ja":
-                case "ja-jp":
-                    if (pathname.length < 2 || (pathname.length > 1 && pathname[1] !== "japanese"))
-                        window.location.href = "about_japanese.html";
-                    break;
-                default:
-                    if (pathname.length > 1)
-                        window.location.href = "about.html";
-                    break;
-            }
-        }
-
-        // Google Analytics Init
-               i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-88956497-1', 'auto');
-          ga('send', 'pageview');
-    </script>
-</head>
-
-<body id="top" class="page">
-    <!--[if lt IE 9]>
-      <p class="browsehappy">
-        You are using an
-        <strong>outdated</strong>
-        browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a>
-        to improve your experience.
-      </p>
-    <![endif]-->
-
-    <div class="loadingContainer">
-        <div class="loading">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <div class="rect3"></div>
-            <div class="rect4"></div>
-            <div class="rect5"></div>
+    <!--the must have assets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <!--page title-->
+    <title>VMFive | Mobile Ads</title>
+  </head>
+  <body>
+    <main class="page_wrapper">
+      <!-- hamburger menu-->
+      <nav data-menu-index="05" class="menu menu--05 js-menu">
+        <div class="menu__container">
+          <button type="button" class="menu__closer js-close-menu">close</button>
+          <div class="menu__box">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="pmp.html" class="menu__link">PMP</a></li>
+              <li class="menu__item"><a href="adplay.html" class="menu__link">AdPlay</a></li>
+              <!--li.menu__item
+              a.menu__link(href="dsp.html")
+              	| DSP
+              -->
+            </ul>
+          </div>
         </div>
-        <!-- end of loading -->
-    </div>
-    <!-- end of loading container -->
-
-    <div class="allWrapper">
-
-        <!-- Header -->
-        <header class="header headerStyle1" id="header">
-            <div class="sticky scrollHeaderWrapper">
-                <div class="grid-940 flex-vertical-center">
-                    <div class="logoWrapper">
-                        <a href="home.html?lang=true">
-                          <img src="images/home/header_logo2.svg" alt="">
-                        </a>
-                        <!-- end of logo -->
-                    </div>
-                    <!-- end of logoWrapper -->
-                    <nav class="mainMenu mainNav" id="mainNav">
-                        <ul class="navTabs">
-                            <li>
-                                <a href="products.html?lang=true">Products</a>
-                                <!-- end of dropdown -->
-                            </li>
-                            <li>
-                                <a class="active" href="about.html?lang=true">About</a>
-                                <!-- end of dropdown -->
-                            </li>
-                            <li>
-                                <a href="news.html?lang=true">News</a>
-                                <!-- end of dropdown -->
-                            </li>
-                            <li>
-                                <a href="http://join-vm5.weebly.com/" target="_blank">Join Us</a>
-                                <!-- end of dropdown -->
-                            </li>
-                            <li>
-                                <a href="http://horidashi.com/" target="_blank">Horidashi</a>
-                                <!-- end of dropdown -->
-                            </li>
-                            <!-- <li class="lang">
-
-                            </li> -->
-                        </ul>
-                        <!-- end of nav tabs -->
-                    </nav>
-                    <div class="subNav flex-pull-right" id="subNav">
-                      <div class="mediaNav">
-                        <span>Media Kit</span>
-                        <div class="mediaSubNav">
-                          <ul>
-                            <li><a href="https://drive.google.com/uc?id=0ByNt7gK1hArbNkVYMk9MTWtHTGs&export=download">English</a></li>
-                            <li><a href="https://drive.google.com/uc?id=0ByNt7gK1hArbQ0NPYmJzSVF4Tkk&export=download">日本語</a></li>
-                            <li><a href="https://drive.google.com/uc?id=0ByNt7gK1hArbSVI2QUl6cnJZTkk&export=download">簡中</a></li>
-                            <li><a href="https://drive.google.com/uc?id=0ByNt7gK1hArbSGUtMHRVWW8xX3c&export=download">繁中</a></li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <select name="language" id="language" onchange="window.location.href = this.options[this.selectedIndex].value + '?lang=true';">
-                          <option disabled="disabled" value="NoSeclect">Language</option>
-                          <option value="about.html" selected="selected">English</option>
-                          <option value="about_japanese.html">日本語</option>
-                      </select>
-                    </div>
-                    <!-- end of main nav -->
-                    <a href="#" class="generalLink flex-pull-right" id="responsiveMainNavToggler"><i class="fa fa-bars"></i></a>
-                    <div class="responsiveMainNav"></div>
-                    <!-- end of responsive main nav -->
-                </div>
-                    <!-- end of row -->
-                <!-- end of container -->
+      </nav>
+      <!-- cover-->
+      <div class="cover cover--09 about_cover_root">
+        <nav id="nav" class="header header--05">
+          <div class="container header__container">
+            <div class="header__left_box"><a href="index.html" title="Home" class="header__logo_box"><img src="img/etc/vmfive--logo.svg" alt="VMFive logo" class="header__logo_img"></a></div>
+            <div class="header__right_box">
+              <ul class="header__menu_list header__item--desktop">
+                <li class="header__menu_item"><a href="pmp.html" class="header__menu_link header__menu_link--white">PMP</a></li>
+                <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
+              </ul>
+              <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
             </div>
-            <!-- end of sticky -->
-        </header>
-        <!-- end of header -->
-
-        <!-- Header Fill Block (prevent sudden fall of header while scroll down) -->
-        <section class="headerFill hide"></section>
-        <!-- end of header fill block -->
-
-        <section class="aboutIntro section mainSection scrollAnchor lightSection" id="aboutIntro">
-            <img src="images/about/vmfive-group-4.jpg" alt="">
-        </section>
-
-        <section class="aboutHistory section mainSection scrollAnchor lightSection" id="aboutHistory">
-            <div class="grid-940">
-                <div class="title">VMFive HISTORY</div>
-                <div class="timeline">
-                    <div class="event event-1">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">April, 2015</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>Announced New Product Launching and Strategic Investment by Trend Micro and GMobi in Taiwan Press Conference</li>
-                                    <li>Slush Asia Pitching Contest, Tokyo, <strong>1st Prize</strong></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event event-3">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">December, 2014</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>Global Brain Alliance Forum, Tokyo, <strong>Audience Award</strong></li>
-                                    <li>Announced Partnership with <strong>D2CR</strong> and <strong>ADWAYS</strong> in Japan Market</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event event-5">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">May, 2014</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>Taiwan HQ Established</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img class="seperate" src="images/about/separate.png" alt="" class="separate">
-                <div class="timeline">
-                    <div class="event event-1">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">Aug, 2016</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>Japan Office Grand Opening</li>
-                                    <li>Horidashi Games Launched in Japan</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event event-2">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">March, 2015</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>Announced Partnership with <strong>Trend Micro</strong> and <strong>GMobi</strong> in MWC 2015</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event event-4">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">August, 2014</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>TechCrunch Beijing, <strong>1st Prize</strong>,  <strong>Startup Nations Award & Global Brain Award</strong></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-mobile">
-                  <!-- <div class="seperate">
-                    <img src="images/about/separate.png" alt="" class="separate">
-                  </div> -->
-                  <div class="events">
-                    <div class="event event-1">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">Aug, 2016</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>Japan Office Grand Opening</li>
-                                    <li>Horidashi Games Launched in Japan</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                  <div class="events">
-                    <div class="event event-2">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">April, 2015</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>Announced New Product Launching and Strategic Investment by Trend Micro and GMobi in Taiwan Press Conference</li>
-                                    <li>Slush Asia Pitching Contest, Tokyo, <strong>1st Prize</strong></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event event-3">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">March, 2015</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>Announced Partnership with <strong>Trend Micro</strong> and <strong>GMobi</strong> in MWC 2015</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event event-4">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">December, 2014</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>Global Brain Alliance Forum, Tokyo, <strong>Audience Award</strong></li>
-                                    <li>Announced Partnership with <strong>D2CR</strong> and <strong>ADWAYS</strong> in Japan Market</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event event-5">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">August, 2014</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>TechCrunch Beijing, <strong>1st Prize</strong>,  <strong>Startup Nations Award & Global Brain Award</strong></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event event-6">
-                        <div class="left-col">
-                            <img src="images/about/flag2.svg" alt="">
-                        </div>
-                        <div class="right-col">
-                            <div class="date">May, 2014</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>Taiwan HQ Established</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="arrow">
-                    <img src="images/about/arrow.png" alt="">
-                </div> -->
-                <img class="rocket" src="images/about/rocket2.png" alt="" class="rocket">
+          </div>
+        </nav>
+        <style>
+          #nav {
+          	background: transparent;
+          	position: fixed;
+          	width: 100%;
+          	z-index: 20;
+          	font-family: 'Roboto', sans-serif;
+          	-webkit-transition: .5s ease;
+          	-moz-transition: .5s ease;
+          	-ms-transition: .5s ease;
+          	-o-transition: .5s ease;
+          	transition: .5s ease;
+          	top: 15px;
+          }
+          
+          #nav.shrink {
+          	height: 50px;
+          	top: 0px;
+          	-webkit-transition: .5s ease;
+          	-moz-transition: .5s ease;
+          	-ms-transition: .5s ease;
+          	-o-transition: .5s ease;
+          	transition: .5s ease;
+          	background: #f7f7f7; // Change background to white on scroll
+          }
+          
+          @media (max-width: 500px){
+          	#nav{
+          		top: 10px;
+          	}
+          }
+          
+          
+        </style>
+        <script>
+          window.onscroll = function() {
+          	if(document.body.scrollTop + document.documentElement.scrollTop > 20){
+          		document.querySelector('#nav').classList.add("shrink");
+          		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo-standard.svg";
+          		document.querySelector('.js-open-menu').classList.add('header__burger_button--black');
+          	}else{
+          		document.querySelector('#nav').classList.remove("shrink");
+          		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo.svg";
+          		document.querySelector('.js-open-menu').classList.remove('header__burger_button--black');
+          	}
+          }
+        </script>
+        <div class="about_cover_overlayer"></div>
+        <div class="container">
+          <div class="cover__content_box--12 about_cover_textalign about_cover_text_position">
+            <h2 class="cover__title--09 about_cover_underline"><span class="cover__title_text--09 about_cover_intro_title">VMFive</span></h2><span class="cover__description_text--12 about_cover_intro_text">We provide the best experience.</span><br><a href="#introduction" class="scroll"><span class="cover__description_text--12 about_cover_intro_text about_cover_arrow"></span></a>
+          </div>
+        </div>
+      </div>
+      <style>
+        .about_cover_overlayer {
+        	position: absolute;
+        	background-color: rgba(0,0,0,0.7);
+        	width: 100%;
+        	height: 100%;
+        	top: 0px;
+        	left: 0px;
+        }
+        .about_cover_underline {
+        	border-bottom: 2px solid white;
+        	padding-bottom: 20px;
+        	margin-bottom: 20px;
+        	margin-left: 15%;
+        	margin-right: 15%;
+        }
+        .about_cover_intro_title {
+        	font-size: 46px;
+        	font-weight: 500;
+        }
+        .about_cover_intro_text {
+        	color: white;
+        	font-weight: 100;
+        }
+        .about_cover_arrow{
+        	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAw0lEQVRIS+3VwRHCIBQE0N0OLMESLCGdqB3YkXaiLdhJOlgHBpwYA3wSJic45QC8ZPn8EDsM7mCgI1Up97h6XFUJVE321SVpIPmqWmmYLOkA4EhJDwBnAFeS7rnJCMAzIhcA97BzE2gCnAC8Y1zNoDkAYPjeeEmboUWAHH/ayhYoBbhj+Otda6AcsIiEkjZHVwKSiBWyAFmkBFmBIpKCagATsgDdALgz8xfN3wNyzLUJ859xVnVuTxNg/pL4lhPIDLi1HzyZhA2vO84qAAAAAElFTkSuQmCC)no-repeat center/100% auto;
+        	height: 25px;
+        	width: 25px;
+        }
+        @media (max-width: 900px) {
+        	.about_cover_textalign {
+        		text-align: left;
+        	}
+        	.about_cover_underline {
+        		margin-left: 10%;
+        		margin-right: 10%;
+        	}
+        	.about_cover_intro_text {
+        		display: block;
+        		margin: 0 10%;
+        	}
+        	.about_cover_text_position{
+        		top: 60%;
+        	}
+        	.about_cover_intro_title{
+        		font-size: 28px;
+        	}
+        	
+        }
+      </style>
+      <!-- introduction-->
+      <div id="introduction" class="features features--02">
+        <div class="container">
+          <h2 class="features__title_box features__title_box--02 about_intro_title_box">Who We Are</h2><span style="width: 75%; display: block;" class="features__description features__description--02 about_intro_textalign">
+            VMFive is a programmatic brand and performance marketing technology company. We
+            	believe our solutions will help you reach the target audiences to acheive your goals in this
+            	fragmented online media environment. <br><br><br><a href="#what-we-do" class="scroll">
+              <div class="about_intro_arrow"></div></a></span>
+        </div>
+      </div>
+      <style>
+        .about_intro_title_box{
+        	display: block;
+        	margin-bottom: 6vh;
+        	font-size: 40px;
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 500;
+        }
+        .about_intro_underline {
+        	border-bottom: 1px solid #747474;
+        	padding-bottom: 20px;
+        	margin-left: 10%;
+        	margin-right: 10%;
+        	font-size: 1.5rem;
+        }
+        .about_intro_textalign {
+        	margin: 0 auto;
+        	text-align: center;
+        	max-width: 630px;
+        	font-family: 'Roboto', sans-serif;
+        }
+        .about_intro_arrow{
+        	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAEjklEQVRYR82ZTXLaSBTH/w8kipBJjbOYKgotjKtmH2cuYHyC4M1sjWcnZmHnBMEnCLMISmVjcoIoJzA+QZhZpypkgcY7Owt/DAK9qRZqIWFAEggS77C6X//69ev31YQV/vhsa2v0X2GPGbsAVRhcJlA5KJKZuwT0QOiCnY5av7xYYUnQMpOHb0sv2EENRFV/PuOCwT0i9KZk7jKoTMAz9/+MayY2Cc57Vb/sJF0/EfCwpR06xA2hRWb+SkQmMDLjLjxslaoOUKXxRn8G0AFGp3Hni83FAuY32u4wg9cAKmBcgEaNJIvM0uLQ0GoOc4OIthncVvO3L+no+jpK45HAQjAzXoNAxFxT6pYZJTTJd9soNQB6JcxJdeiA/ux3F81fCDwwSmcEqgH8Ucnf1uJoIAmsHCtO0M6gLeycgCNF77fnyZkLPIHFX6reP1kGJMkc4XGGd49NEPYWQc8ElrBRu00CFHfsoFVqE9HhvLUfALs2C5wBm9HsrI3YLU24u2cKY3/apkPArjcgnIP4QtWtiY+Nq56UxgnzsO8K4vJdqY9u94N3JwRsG9o5gOdK/qa8rgsWd0+eK/0E8KmqWw05zweWpkDMB2m7rriQ0+NsQ2sCOFYw2iH90o2gPvDAKH0hpq9qvV9ZdoG057me4/5xj5nNXN2q+cCTizbaXzWCpQ0tA4vUsqth2yiZIuPK1a1QppX24svIY6NYHiL7hdl5mav/2yRP7Vff041FbWRgaF0wc65uPSeRQTHRB+DHMwe5Ed8snMETkj9UvR+ZCEVpYl3fbaNYAbLnCvg38qIKknoHcTICMKkLHJtg4VjVrdMkG7QNjYn5DxLuTOS40m3EFSJ9ZJJ8w4tg50S0kzQ4DVqlHoHfkSCfjiZxoaMSlaCcEKyDSlTe+yCItLQOgf9ZCVgIjQO9KqzretMCjoJOAzZ14HnQacGGgIVTJlFPpZBOBs0jm78x7bvC+IItYbMzbPiKyXkl/LAIy9siisS9bIvGSWi3RwF6mgasjMbE+H0tgcODrqYBO851goHD+/Ej5cHz8mIRjb1sTbsO5pxpmEaaMtxcHfhb3DMX2D1C0Au13n+a5kJpyJKlkoyonobHNpIkzKYBE0eGfx+8OtPP0EQkYeLtnG7txBG0iTEyeQ+mDhNg7/Itm1esYwOzqvhQDixteVYDYx1Ai2T6VfxUry3cSFnQwNgk8KKGzoMqw29gMJtq3TrYJKhYy80/7guf3Cg5o6EzsyySxyEazTndOtoUdJxkaW4dF2gKdpT8zcG6W1fjHjF/iMo/FhaeHnSTwVdxuuPLnkSwyx+Vf0RWysHuOBhN5dHNaVra9vysaO1W4nb5I4HlRRjeF07EW4R4tgJxU4HzXjbokmrWO/7j8XMEvhFwsuiZICg/FrCcIDRic0a8/By6G2HuIsNtcrgb9WBot4p7QLbKxFXv8fEbwE0lf9tMcmKJgMPgVAVlav6Doftm6Cbt4YdF8UpK2JpoiT8SyBQVSRJQOX8p4OAR8ZtffgJyv44y2GVwEaBi6Dv4c4acy+wo+zlpaT/L1P4HbMHOBalACJEAAAAASUVORK5CYII=) no-repeat center/100% auto;
+        	height: 40px;
+        	width: 40px;
+        	margin: 0 auto;
+        }
+        @media (max-width: 900px) {
+        	.about_intro_textalign {
+        		text-align: left;
+        		margin: 0 10%;
+        	}
+        	.about_intro_underline {
+        		text-align: left;
+        	}
+        	#introduction{
+        		padding: 75px 0;
+        	}
+        }
+      </style>
+      <!-- what we do-->
+      <div id="what-we-do" class="features features--11">
+        <div class="features__container--11">
+          <div class="container about_what_we_do_container_first">
+            <div class="features__box--11 about_what_we_do_border_left about_what_we_do_orange_bg">
+              <h3 class="features__item_title--11 about_what_we_do_item_title about_what_we_do_item_text_right">What We Do</h3><span class="features__item_text features__item_text--11 about_what_we_do_item_text about_what_we_do_item_text_right">
+                Our PMP provides premium video advertising marketplace for your online brand marketing.
+                We also bring the whole new generation ad format, AdPlay - the playable ad, letting user try before download.</span>
             </div>
-        </section>
-
-        <section class="team section mainSection scrollAnchor lightSection" id="team">
-            <div class="grid-940">
-                <div class="title">TEAM</div>
-                <div class="section">
-                    <!-- <div class="title">Founders</div> -->
-                    <!-- <div class="separate"></div> -->
-                    <div class="section-wrapper">
-                      <div class="card">
-                          <img src="images/about/team/SamDing.jpg" alt="">
-                          <div class="desc"><strong>Sam Ding</strong><br>Co-Founder & CEO</div>
-                      </div>
-                      <div class="card">
-                          <img src="images/about/team/OwenLo.jpg" alt="">
-                          <div class="desc"><strong>Owen Lo</strong><br>Co-Founder &<br>Marketing Manager</div>
-                      </div>
-                      <div class="card">
-                          <img src="images/about/team/claire_pr2.jpg" alt="">
-                          <div class="desc"><strong>Claire Lee</strong><br>Chief Financial Officer</div>
-                      </div>
-                      <div class="card">
-                          <img src="images/about/team/Tico.jpg" alt="">
-                          <div class="desc"><strong>Tico Wu</strong><br>BD Manager</div>
-                      </div>
-                    </div>
-                </div>
-                <!-- <div class="section">
-                    <div class="title">Global Operation Team</div>
-                    <div class="separate"></div>
-                </div>
-                <div class="section">
-                    <div class="title">Business Team</div>
-                    <div class="separate"></div>
-                </div>
-                <div class="section">
-                    <div class="title">Product Team</div>
-                    <div class="separate"></div>
-                </div>
-                <div class="section">
-                    <div class="title">Technology Team</div>
-                    <div class="separate"></div>
-                </div>
-                <div class="section">
-                    <div class="title">Data Team</div>
-                    <div class="separate"></div>
-                </div> -->
+            <div class="features__box--11 features__box--image--11 features__box--image--right--11 about_what_we_do_picture_container"><img src="img/new-asset/Img_AboutUs_1.png" alt="" class="about_what_we_do_picture_right"></div>
+            <div class="features__box--11">
+              <h3 class="features__item_title--11 about_what_we_do_item_mobile_title">What We Do</h3>
             </div>
-        </section>
-
-        <section class="intern section mainSection scrollAnchor" id="intern">
-            <div class="grid-940">
-              <div class="title">VMFive 2015 Summer Internship Program - Hack Yourself！</div>
-              <div class="desc"><blockquote>VMFive started to recruit summer interns in 2015 summer interns for the first time in 2015. The goal is to provide a stage for all students in Taiwan to challenge themselves, showcasing Taiwan's strength in software programming, jointly creating a new future for apps and mobile advertising industries. VMFive enables talents to shine worldwide!</blockquote></div>
-              <div class="wrapper">
-                <img src="images/about/2015summerintern-2.jpg" alt="2015summerintern" />
-              </div>
+          </div>
+        </div>
+        <div class="container about_what_we_do_middle"></div>
+        <div class="features__container--11">
+          <div class="container">
+            <div class="features__box--11">
+              <h3 class="features__item_title--11 about_what_we_do_item_mobile_title">What We Do</h3>
             </div>
-        </section>
-
-
-        <!-- Hiring -->
-        <section class="hiring section mainSection scrollAnchor" id="hiring">
-            <div class="grid-940">
-                <div class="bg hiringbg title">WE'RE HIRING!
-                    <br><a href="http://join-vm5.weebly.com/" target="_blank"><span class="desc">Welcome to Join Our Mission and Reinvent the Mobile Industry.</span></a>
-                </div>
+            <div class="features__box--11 features__box--image--11 features__box--image--left--11 about_what_we_do_picture_container"><img src="img/new-asset/Img_AbouUs_2.png" alt="" class="about_what_we_do_picture_left"></div>
+            <div class="features__box--11 features__box--left-margin--11 about_what_we_do_border_right about_what_we_do_orange_bg">
+              <h3 class="features__item_title--11 about_what_we_do_item_title">What We Do</h3><span class="features__item_text features__item_text--11 about_what_we_do_item_text">
+                Lately, VM5 has been working on data aquisition and omni-channel marketing, which includes O2O advertising 
+                	and social media marketing, holping to optimize our performance.</span>
             </div>
-        </section>
-        <!-- end of hiring section -->
-
-        <!-- Footer -->
-        <footer class="vmfooter" id="footer">
-            <div class="grid-940">
-                <div class="topVMFooter">
-                    <div class="location">
-                        <img class="icon" src="images/home/img_footer_icon_add.svg" alt="">
-                        <div style="margin-bottom: 10px;"><strong>VMFive Inc.</strong>
-                            <br>105 台北市松山區
-                            <br> 南京東路 5 段 89 號 9 樓
-                            <br>
-                        </div>
-                        <div>
-                            9F., No.89, Sec. 5,
-                            <br> Nanjing E. Rd., Songshan Dist.,
-                            <br> Taipei City 105, Taiwan
-                        </div>
-                        <div style="margin-bottom: 10px;">
-                            <br><strong>VMFive Japan Ltd.</strong>
-                            <br> 〒101-0051 東京都千代田区神田神保町１－５２レオマックビルII　2F
-                        </div>
-                        <div>
-                            Leo Mac Building 2F,
-                            <br>1-52 Jimbocho, Kanda, Chiyoda-ku,
-                            <br>Tokyo, Japan 101-0051
-                        </div>
-                    </div>
-                    <div class="call">
-                        <img class="icon" src="images/home/img_footer_icon_phone.svg" alt="">
-                        <div> <strong>VMFive Inc.</strong></div>
-                        <div style="display:inline-block;width:32px;margin-bottom:10px;">
-                            <strong>Tel</strong>
-                        </div>
-                        <div style="display:inline-block;">+886-2-2528-5829</div>
-                        <br>
-                        <div style="display:inline-block;width:32px;">
-                            <strong>Fax</strong>
-                        </div>
-                        <div style="display:inline-block;">+886-2-2528-5830</div>
-
-                        <div style="margin-top:20px;"> <strong>VMFive Japan Ltd.</strong></div>
-                        <div style="display:inline-block;width:32px;">
-                            <strong>Tel</strong>
-                        </div>
-                        <div style="display:inline-block;">+81-3-5244-5375</div>
-                    </div>
-                    <div class="mail">
-                        <img class="icon" src="images/home/img_footer_icon_mail.svg" alt="">
-                        <div style="display:inline-block;width:107px;margin-bottom:10px;">
-                            <strong>Cooperation</strong>
-                        </div>
-                        <div style="display:inline-block;"><a href="mailto:business@vm5.com">business@vm5.com</a></div>
-                        <br>
-                        <div style="display:inline-block;width:107px;">
-                            <strong>Join Us</strong>
-                        </div>
-                        <div style="display:inline-block;"><a href="mailto:job@vm5.com" target="_top">job@vm5.com</a></div>
-                    </div>
-                    <div class="social">
-                        <a href="https://www.facebook.com/vmfive" target="_blank"><img src="images/home/footer-sociallink-facebook.png" alt=""></a>
-                        <a href="https://twitter.com/VMFive" target="_blank"><img src="images/home/footer-sociallink-twitter.png" alt=""></a>
-                        <a href="https://www.linkedin.com/company/vmfive-international-limited" target="_blank"><img src="images/home/footer-sociallink-linkedin.png" alt=""></a>
-                        <a href="https://angel.co/vmfive" target="_blank"><img src="images/home/footer-social-angelist.png" alt=""></a>
-                        <br>
-                        <a href="https://www.wantedly.com/companies/vmfive/projects" target="_blank"><img src="images/home/footer-sociallink-wantedly.png" alt=""></a>
-                        <a href="https://www.crunchbase.com/organization/vmfive" target="_blank"><img src="images/home/footer-sociallink-crunchbase.png" alt=""></a>
-                    </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        #what-we-do{
+        	background-color: #F2F2F2;
+        	overflow: hidden;
+        	padding-top: 5.5em;
+        }
+        .about_what_we_do_container_first{
+        	overflow: hidden;
+        }
+        .about_what_we_do_picture_container{
+        	padding-top: 0;
+        	z-index: 10;
+        }
+        .about_what_we_do_picture_right{
+        width: 25rem;
+        margin-right: 15vw;
+        transform: rotate(-4deg) translateY(-7%);
+        }
+        .about_what_we_do_picture_left{
+        	width: 29rem;
+        	position: absolute;
+        	right: 4.5rem;
+        	transform: translateY(-24%);
+        }
+        .about_what_we_do_item_title{
+        	color: white;
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 400;
+        	margin-bottom: 2rem;
+        }
+        .about_what_we_do_item_mobile_title{
+        	display: none;
+        }
+        .about_what_we_do_item_text{
+        	width: 90%;
+        	color: black;
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 300;
+        }
+        .about_what_we_do_item_text_right{
+        	margin-left: -20px;
+        }
+        .about_what_we_do_orange_bg{
+        	background-color: #fb971b;
+        	position: relative;
+        	z-index: 10;
+        }
+        .about_what_we_do_border_left{
+        	padding-left: 75px;
+        }
+        .about_what_we_do_border_right{
+        	padding-left: 150px;
+        	transform: translateY(-30%);
+        }
+        .about_what_we_do_border_left:after{
+        	content: '';
+        	position: absolute;
+        	border-top: 24rem solid transparent;
+        	border-right: 115px solid #f2f2f2;
+        	right: 0px;
+        	top: 0;
+        }
+        .about_what_we_do_border_right:before{
+        	content: '';
+        	position: absolute;
+        	border-bottom: 24rem solid transparent;
+        	border-left: 115px solid #f2f2f2;
+        	left: 0px;
+        	top: 0;
+        }
+        .about_what_we_do_middle{
+        	height: 70px;
+        }
+        @media screen and (max-width:1200px){
+        	.about_what_we_do_middle{
+        		display: none;
+        	}
+        	.about_what_we_do_container_first{
+        		display: flex;
+        		flex-direction: column-reverse;
+        	}
+        	.about_what_we_do_picture_container{
+        		z-index: 15;
+        		overflow: hidden;
+        		opacity: 1;
+        		position: initial;
+        		padding: 0;
+        	}
+        	.about_what_we_do_orange_bg{
+        		padding: 2rem 5px 2rem 5px;
+        		background-color: #fb971b;
+        	}
+        	.about_what_we_do_item_title, .about_what_we_do_item_text{
+        		margin: 0 auto;
+        		margin-bottom: 2rem;
+        		color: white;
+        	}
+        	.about_what_we_do_item_title{
+        		display: none;
+        	}
+        	.about_what_we_do_item_mobile_title{
+        		display: initial;
+        		color: black;
+        		font-family: 'Roboto', sans-serif;
+        		font-weight: 400;
+        	}
+        	.about_what_we_do_item_text_right{
+        		margin-left: auto;
+        	}
+        	.about_what_we_do_border_left:after, .about_what_we_do_border_right:before{
+        		display: none;
+        	}
+        	.about_what_we_do_picture_right, .about_what_we_do_picture_left{
+        		width: 18rem;
+        		transform: none;
+        		position: initial;
+        		margin: 0;
+        	}
+        	.about_what_we_do_picture_left{
+        		margin-bottom: 25px;
+        	}
+        }
+      </style>
+      <!-- acheivement-->
+      <div id="acheivement" class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="about_acheivement_title">Acheivement</h2>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+            <ul class="timeline timeline-centered">
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content"><span class="timeline-time">2014/5</span>
+                  <h3 class="timeline-title">Founded in Taipei</h3>
                 </div>
-                <div class="bottomVMFooter">
-                    <div class="copyright">Copyright © 2015 VMFive. All rights reserved.</div>
-                    <div class="welcome"><strong>VMFive welcome you to <a href="http://join-vm5.weebly.com/" target="_blank">Join Us.</a></strong></div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content"><span class="timeline-time">2014/7</span>
+                  <h3 class="timeline-title">Won first place in FITI</h3>
                 </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content"><span class="timeline-time">2014/7</span>
+                  <h3 class="timeline-title">Won first prize in IDEAS Show </h3>
+                  <p class="timeline-detail">which is held by III.org</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content"><span class="timeline-time">2014/8</span>
+                  <h3 class="timeline-title">Won first place in TechCrunch</h3>
+                  <p class="timeline-detail">TechCrunch Beijing</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content"><span class="timeline-time">2014/12</span>
+                  <h3 class="timeline-title">Won popular prize in GBAF</h3>
+                  <p class="timeline-detail">Global Brain Alliance Forum</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content"><span class="timeline-time">2015/5</span>
+                  <h3 class="timeline-title">Won first place in Slush Asia</h3>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content"><span class="timeline-time">2016/3</span>
+                  <h3 class="timeline-title">Top 12 in Asia Beat Aisan Beat</h3>
+                  <p class="timeline-detail">Aisan Entrepreneurship Award</p>
+                </div>
+              </li>
+              <li id="timeline-item-last" class="timeline-item">
+                <div class="timeline-marker"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <style>
+        #acheivement {
+          background-color: #f2f2f2;
+        }
+        
+        div.row{
+          padding-bottom: 0;
+        }
+        
+        h2, h3 {
+          margin-top: 0;
+        }
+        
+        h3 {
+          color: #fb971b;
+        }
+        
+        a {
+          color: #FF6B6B;
+        }
+        a:hover {
+          color: #ff9a9a;
+          text-decoration: none;
+        }
+        
+        .container-fluid .row:nth-child(even) {
+          background: #F1F4F5;
+        }
+        
+        .about_acheivement_title {
+          text-align: center;
+          margin-bottom: 60px;
+          padding: 2em 0 1em 0;
+          color: black;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 40px;
+        }
+        
+        /*==================================
+            TIMELINE
+        ==================================*/
+        /*-- GENERAL STYLES
+        ------------------------------*/
+        .timeline {
+          line-height: 1.4em;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+        }
+        .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+          line-height: inherit;
+        }
+        .timeline-title{
+          font-size: 1.3rem;
+        }
+        @media (max-width: 992px){
+          .timeline-title{
+            font-size: 1.1rem;
+          }
+        }
+        @media (max-width: 768px){
+          .timeline-title{
+            font-size: 0.9rem;
+          }
+          .timeline-detail{
+            display: none;
+          }
+        }
+        /*----- TIMELINE ITEM -----*/
+        .timeline-item {
+          padding-left: 40px;
+          position: relative;
+        }
+        .timeline-item:last-child {
+          padding-bottom: 0;
+        }
+        #timeline-item-last{
+          margin-bottom: 10px;
+        }
+        
+        /*----- TIMELINE TIME -----*/
+        .timeline-time {
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 3px;
+          margin: 0 0 .5em 0;
+          text-transform: uppercase;
+          white-space: nowrap;
+          font-family: initial;
+        }
+        
+        /*----- TIMELINE MARKER -----*/
+        .timeline-marker {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 15px;
+        }
+        .timeline-marker:before {
+          background: #fb971b;
+          border: 3px solid transparent;
+          border-radius: 100%;
+          content: "";
+          display: block;
+          height: 15px;
+          position: absolute;
+          top: 4px;
+          left: 0;
+          width: 15px;
+          transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+        }
+        .timeline-marker:after {
+          content: "";
+          width: 3px;
+          background: #fb971b;
+          display: block;
+          position: absolute;
+          top: 24px;
+          bottom: 0;
+          left: 6px;
+        }
+        .timeline-item:last-child .timeline-marker:after {
+          content: none;
+        }
+        
+        .timeline-item:not(.period):hover .timeline-marker:before {
+          background-color: #fb971b;
+          border: 6px solid rgba(251, 151, 27, 0.6);
+          -webkit-background-clip: padding-box; /* for Safari */
+          background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+          transform: scale(1.2,1.2);
+          z-index: 10;
+        }
+        
+        /*----- TIMELINE CONTENT -----*/
+        .timeline-content {
+          font-family: 'Roboto', sans-serif;
+          margin-bottom: 1rem;
+        }
+        .timeline-content p:last-child {
+          margin-bottom: 0;
+        }
+        
+        /*----- TIMELINE PERIOD -----*/
+        .period {
+          padding: 0;
+        }
+        .period .timeline-info {
+          display: none;
+        }
+        .period .timeline-marker:before {
+          background: transparent;
+          content: "";
+          width: 15px;
+          height: auto;
+          border: none;
+          border-radius: 0;
+          top: 0;
+          bottom: 30px;
+          position: absolute;
+          border-top: 3px solid #fb971b;
+          border-bottom: 3px solid #fb971b;
+        }
+        .period .timeline-marker:after {
+          content: "";
+          height: 32px;
+          top: auto;
+        }
+        .period .timeline-content {
+          padding: 40px 0 70px;
+        }
+        .period .timeline-title {
+          margin: 0;
+        }
+        /*----------------------------------------------
+            MOD: TIMELINE CENTERED
+        ----------------------------------------------*/
+          .timeline-centered,
+          .timeline-centered .timeline-item,
+          .timeline-centered .timeline-info,
+          .timeline-centered .timeline-marker {
+            display: block;
+            margin: 0;
+            padding: 0;
+          }
+          .timeline-centered .timeline-item {
+            padding-bottom: 20px;
+            overflow: hidden;
+          }
+          .timeline-centered .timeline-marker {
+            position: absolute;
+            left: 50%;
+            margin-left: -7.5px;
+          }
+          .timeline-centered .timeline-info,
+          .timeline-centered .timeline-content {
+            width: 50%;
+          }
+          .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+            float: left;
+            text-align: right;
+            padding-right: 30px;
+          }
+          .timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+            float: right;
+            text-align: left;
+            padding-left: 30px;
+          }
+          .timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+            float: right;
+            text-align: left;
+            padding-left: 30px;
+          }
+          .timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+            float: left;
+            text-align: right;
+            padding-right: 30px;
+          }
+          .timeline-centered > .timeline-item.period .timeline-content {
+            float: none;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+          }
+          .timeline-centered .timeline-item.period {
+            padding: 50px 0 90px;
+          }
+          .timeline-centered .period .timeline-marker:after {
+            height: 30px;
+            bottom: 0;
+            top: auto;
+          }
+          .timeline-centered .period .timeline-title {
+            left: auto;
+          }
+        
+        /*----------------------------------------------
+            MOD: MARKER OUTLINE
+        ----------------------------------------------*/
+        .marker-outline .timeline-marker:before {
+          background: transparent;
+          border-color: #fb971b;
+        }
+        .marker-outline .timeline-item:hover .timeline-marker:before {
+          background: #fb971b;
+        }
+      </style>
+      <!-- our vision-->
+      <div id="our_vision" onmousemove="spotLightFunction(event)" onmousedown="spotLightFunction(event)" class="call_to_action call_to_action--01">
+        <div class="about_our_vision_spotlight">
+          <div class="container about_our_vision_container">
+            <h2 class="call_to_action__title call_to_action__title--01 about_our_vision_title">Our Vision</h2><span class="call_to_action__text call_to_action__text--01 about_our_vision_text">
+              VM5 is aimed to propose the best experience toward everyone we serve. 
+              In the near future, we plan to provide a more comprehensive service through our DMP and PMP product.</span>
+            <div class="ring"></div>
+          </div>
+        </div>
+      </div>
+      <style>
+        #our_vision{
+          background-color: #f2f2f2;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .about_our_vision_title{
+          padding-top: 2rem;
+          margin-bottom: 20px;
+          font-size: 40px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+        }
+        .about_our_vision_text{
+          font-family: 'Roboto', sans-serif;
+          max-width: 60%;
+          color: black;
+        }
+        .about_our_vision_spotlight{
+          position: relative;
+        }
+        .about_our_vision_container{
+          position: relative;
+          padding-top: 2em;
+          padding-bottom: 2em;
+          z-index: 2;
+        }
+        .about_our_vision_spotlight:before{
+          content: "";
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+          position: absolute;
+          background-color: #fb971b;
+          //- -webkit-clip-path: polygon(49% 0%, 51% 0%, 55% 100%, 45% 100%);
+          //- clip-path: polygon(49% 0%, 51% 0%, 55% 100%, 45% 100%);
+        }
+        @media screen and (max-width: 576px){
+          #our_vision{
+            height: calc(100vw + 100px);
+            position: relative;
+          }
+          .about_our_vision_spotlight{
+            position: absolute;
+          }
+          .about_our_vision_spotlight:before{
+            display: none;
+          }
+          .about_our_vision_container{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            flex-direction: column;
+          }
+          .about_our_vision_title{
+            padding-top: 0rem;
+            margin-bottom: 20px;
+            font-size: 40px;
+            color: white;
+          }
+          .about_our_vision_text {
+            font-family: 'Roboto', sans-serif;
+            max-width: 80%;
+            color: white;
+          }
+          .ring {
+            position: absolute;
+            z-index: -1;
+            top: 29%;
+            left: calc(50% - 5em);
+            background-color: rgba(251, 151, 27, 0.9);
+            width: 10em;
+            height: 10em;
+            border-radius: 50%;
+            -webkit-animation: ripple 3s linear infinite;
+            animation: ripple 3s linear infinite;
+          }
+        
+          @-webkit-keyframes ripple {
+              0% {
+                  box-shadow: 0 0 0 0em rgba(251, 151, 27, 0.9), 0 0 0 7em rgba(251, 151, 27, 0.7);
+              }
+              100% {
+                box-shadow: 0 0 0 7em rgba(251, 151, 27, 0.7), 0 0 0 11em rgba(251, 151, 27, 0);
+              }
+          }
+          @keyframes ripple {
+              0% {
+                  box-shadow: 0 0 0 0em rgba(251, 151, 27, 0.9), 0 0 0 7em rgba(251, 151, 27, 0.7);
+              }
+              100% {
+                box-shadow: 0 0 0 7em rgba(251, 151, 27, 0.7), 0 0 0 11em rgba(251, 151, 27, 0);
+              }
+          }
+        }
+      </style>
+      <script>
+        //- Start of pseudoStyle Modules
+        var addRule = (function(style){
+          var sheet = document.head.appendChild(style).sheet;
+          return function(selector, css){
+              var propText = Object.keys(css).map(function(p){
+                  return p+":"+css[p]
+              }).join(";");
+              sheet.insertRule(selector + "{" + propText + "}", sheet.cssRules.length);
+          }
+        })(document.createElement("style"));
+        //- End of pseudoStyle Modules
+        var spotLightRegionWidth = document.querySelector(".about_our_vision_spotlight").clientWidth;
+        function spotLightFunction(e) {
+          var x = e.clientX;
+          var y = e.clientY;
+          spotLightRegionWidth = document.querySelector(".about_our_vision_spotlight").clientWidth;
+          addRule(".about_our_vision_spotlight:before",{
+            "-webkit-clip-path": "polygon(49% 0%, 51% 0%, "+(100*x/spotLightRegionWidth+8)+"% 100%, "+(100*x/spotLightRegionWidth-8)+"% 100%)",
+            "clip-path": "polygon(49% 0%, 51% 0%, "+(100*x/spotLightRegionWidth+8)+"% 100%, "+(100*x/spotLightRegionWidth-8)+"% 100%)"
+          });
+        }
+      </script>
+      <!--	corporate-cultures-->
+      <div class="features features--03">
+        <div class="container">
+          <div class="features__title_box features__title_box--03">
+            <h2 class="features__title--03 about_corporate_culture_title">Our Cultures</h2>
+          </div>
+        </div>
+        <div class="container about_corporate_culture_container">
+          <div class="row features__row">
+            <div class="col-xs-12 col-lg-4 features__item features__item--03">
+              <div style="background:url(img/new-asset/Proactive.jpg) no-repeat center/100% auto" class="about_corporate_culture_pic">
+                <h2 class="about_corporate_culture_pic_text">Proactive</h2>
+              </div><span class="features__item_text about_corporate_culture_text">
+                It's our nature to take preemptive actions 
+                and get what we expected.</span>
             </div>
-        </footer>
-        <!-- end of footer section -->
-
-    </div>
-    <!-- end of all wrapper -->
-
-    <!-- JavaScript Files ================================================== -->
-    <!-- BootStrap JavaScript ================================================== -->
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/compiler.min.js" type="text/javascript"></script>
-    <!-- <script type="text/javascript" src="js/compiler.js"></script> -->
-    <script src="js/scripts.min.js" type="text/javascript"></script>
-    <!-- <script type="text/javascript" src="js/scripts.js"></script> -->
-    <script type="text/javascript" src="js/common/common.min.js"></script>
-    <!-- <script type="text/javascript" src="js/common/common.js"></script> -->
-
-    <script type="text/javascript">
-      var $aboutIntro = $('section#aboutIntro'),
-          $header = $('.header');
-      window.onresize = function () {
-        $aboutIntro.css('padding-top', $header.height());
-      }
-      // var deviceWidth = window.screen.availWidth;
-      // if (deviceWidth > 479) {
-      //   var $aboutIntro = $('section#aboutIntro');
-      //   $aboutIntro.height( $(window).height() - $('.header').height());
-      // }
-    </script>
-
-</body>
-
+            <div class="col-xs-12 col-lg-4 features__item features__item--03">
+              <div style="background:url(img/new-asset/Open-minded.jpg) no-repeat center/100% auto" class="about_corporate_culture_pic">
+                <h2 class="about_corporate_culture_pic_text">Open-minded</h2>
+              </div><span class="features__item_text about_corporate_culture_text">
+                Advices make us grow stronger! 
+                In VM5, people exchange their opinions freely.</span>
+            </div>
+            <div class="col-xs-12 col-lg-4 features__item features__item--03">
+              <div style="background:url(img/new-asset/Innovative.jpg) no-repeat center 62%/100% auto" class="about_corporate_culture_pic">
+                <h2 class="about_corporate_culture_pic_text">Innovative</h2>
+              </div><span class="features__item_text about_corporate_culture_text">
+                With our proactivity and open mind, 
+                we are here to innovate and create true values.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .about_corporate_culture_pic{
+          margin: 0 auto;
+          margin-bottom: 1em;
+          width: 28vw;
+          height: 15.75vw;
+          opacity: 0.7;
+        }
+        .about_corporate_culture_title{
+          color: #fb971b;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          letter-spacing: 2px;
+        }
+        .about_corporate_culture_container{
+          max-width: 90%;
+        }
+        .about_corporate_culture_text{
+          width: 80%;
+          color: black;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          text-align: left;
+        }
+        .about_corporate_culture_pic_text{
+          color: #f2f2f2;
+          font-size: 36px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          text-shadow: black 2px 2px 10px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 30%;
+        }
+        @media (max-width: 992px){
+          .about_corporate_culture_pic{
+            width: 80vw;
+            height: 45vw;
+          }
+          .about_corporate_culture_title{
+            color: black;
+          }
+        }
+      </style>
+      <!-- join us-->
+      <div class="cover cover--09 about_join_us_root">
+        <div class="about_join_us_overlayer"></div>
+        <div class="container about_join_us_container cover__content_box--12 about_join_us_position">
+          <h2 class="cover__title--09 about_join_us_title"><span class="about_join_us_text">Welcome to Join Us!</span></h2><a href="recruit.html" class="button about_join_us_button">Join Us</a>
+        </div>
+      </div>
+      <style>
+        .about_join_us_root{
+          text-align: center;
+          position: relative;
+          margin-bottom: 100px;
+        }
+        .about_join_us_overlayer {
+          position: absolute;
+          background-color: rgba(0,0,0,0.7);
+          width: 100%;
+          height: 100%;
+          top: 0px;
+          left: 0px;
+        }
+        .about_join_us_text{
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+        }
+        .about_join_us_position{
+          left: 0;
+          right: 0;
+        }
+        .about_join_us_title{
+          margin-bottom: 2rem;
+          font-size: 44px;
+          color: white;
+        }
+        .about_join_us_button{
+          border: solid white 1px;
+          color: white;
+          border-radius: 0;
+          font-size: 14px;
+          font-family: 'Roboto', sans-serif;
+        }
+        .about_join_us_container{
+          position: relative;
+          z-index: 2;
+        }  
+        .about_join_us_button:hover{
+          color: #fb971b;
+          background-color: white;
+        }
+        @media(max-width: 768px){
+          .about_join_us_title{
+            font-size: 32px;
+          }
+        }
+      </style>
+      <!-- Contact-->
+      <footer class="about about--07 home_contact_div">
+        <div style="position: relative; width: 100%"><a href="#" class="scroll">
+            <div class="home_back_to_top"></div></a></div>
+        <div class="container">
+          <div class="about__container--07 home_contact_bg">
+            <div class="about__content--07 home_contact_content_div"><a href="#" class="footer__logo_box footer__logo_box--06"><img src="img/etc/vmfive--logo-standard.svg" class="footer__logo footer__logo--06"></a>
+              <div class="footer__subtitle--06"><strong>VMFive Headquarter</strong></div><span class="footer__description footer__description--06">Cooperation: business@vm5.com<br>8F.-3, No.234, Sec. 5, Nanjing E. Rd., Songshan Dist., Taipei City 105, Taiwan<br>105 台北市松山區南京東路 5 段 234 號 8 樓之 3<br></span>
+              <div class="footer__subtitle--06"><strong>VMFive Japan</strong></div><span class="footer__description footer__description--06">Cooperation: jp@vm5.com<br>Yamauchi Building 3F, 3-24-8 Nishi Shinbashi, Minato-ku, Tokyo 105-0003</span>
+              <div class="button--store footer__button--06"><span><img src="img/new-asset/Btn_Footer_Email.png" width="31" height="19" class="home_contact_icon"><img src="img/new-asset/Btn_Footer_Facebook.png" width="18" height="19" class="home_contact_icon"></span></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <style>
+        .home_contact_div {
+        	background-color: white;
+        	border-top: solid 2px #F5F5F5;
+        }
+        .home_contact_bg {
+        	background-image: url(img/new-asset/Btn_Footer_Map.png);
+        	background-repeat: no-repeat;
+        	background-size: contain;
+        	background-position: 100% center;
+        }
+        .home_contact_content_div {
+        	float: left;
+        }
+      </style>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-105683329-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+    </main>
+    <div class="js-overlay js-close-navigation js-close-menu overlay"></div>
+  </body>
 </html>
