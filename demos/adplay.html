@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--the must have tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="VMFive provides you premium video and playable advertising marketplace for your online branding.">
+    <!-- meta for Facebook-->
+    <meta property="og:site_name" content="VMFive">
+    <meta property="og:title" content="VMFive | Mobile Ads">
+    <meta property="og:description" content="VMFive provides you premium video and playable advertising marketplace for your online branding.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://vmfive.com/">
+    <meta property="og:image" content="http://i.imgur.com/fFaY46a.png">
+    <meta property="og:image:secure_url" content="https://i.imgur.com/fFaY46a.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--the must have assets-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <!--page title-->
+    <title>VMFive | Mobile Ads</title>
+  </head>
+  <body>
+    <main class="page_wrapper">
+      <!-- hamburger menu-->
+      <nav data-menu-index="05" class="menu menu--05 js-menu">
+        <div class="menu__container">
+          <button type="button" class="menu__closer js-close-menu">close</button>
+          <div class="menu__box">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="pmp.html" class="menu__link">PMP</a></li>
+              <li class="menu__item"><a href="adplay.html" class="menu__link">AdPlay</a></li>
+              <!--li.menu__item
+              a.menu__link(href="dsp.html")
+              	| DSP
+              -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- cover-->
+      <div class="cover cover--09 adplay_cover_root">
+        <nav id="nav" class="header header--05">
+          <div class="container header__container">
+            <div class="header__left_box"><a href="index.html" title="Home" class="header__logo_box"><img src="img/etc/vmfive--logo.svg" alt="VMFive logo" class="header__logo_img"></a></div>
+            <div class="header__right_box">
+              <ul class="header__menu_list header__item--desktop">
+                <li class="header__menu_item"><a href="pmp.html" class="header__menu_link header__menu_link--white">PMP</a></li>
+                <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
+              </ul>
+              <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
+            </div>
+          </div>
+        </nav>
+        <style>
+          #nav {
+          	background: transparent;
+          	position: fixed;
+          	width: 100%;
+          	z-index: 20;
+          	font-family: 'Roboto', sans-serif;
+          	-webkit-transition: .5s ease;
+          	-moz-transition: .5s ease;
+          	-ms-transition: .5s ease;
+          	-o-transition: .5s ease;
+          	transition: .5s ease;
+          	top: 15px;
+          }
+          
+          #nav.shrink {
+          	height: 50px;
+          	top: 0px;
+          	-webkit-transition: .5s ease;
+          	-moz-transition: .5s ease;
+          	-ms-transition: .5s ease;
+          	-o-transition: .5s ease;
+          	transition: .5s ease;
+          	background: #f7f7f7; // Change background to white on scroll
+          }
+          
+          @media (max-width: 500px){
+          	#nav{
+          		top: 10px;
+          	}
+          }
+          
+          
+        </style>
+        <script>
+          window.onscroll = function() {
+          	if(document.body.scrollTop + document.documentElement.scrollTop > 20){
+          		document.querySelector('#nav').classList.add("shrink");
+          		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo-standard.svg";
+          		document.querySelector('.js-open-menu').classList.add('header__burger_button--black');
+          	}else{
+          		document.querySelector('#nav').classList.remove("shrink");
+          		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo.svg";
+          		document.querySelector('.js-open-menu').classList.remove('header__burger_button--black');
+          	}
+          }
+        </script>
+        <div class="adplay_cover_overlayer"></div>
+        <div class="container">
+          <div class="cover__content_box--12 adplay_cover_textalign">
+            <h2 class="cover__title--09 adplay_cover_underline"><span class="cover__title_text--09 adplay_cover_intro_title">AdPlay</span></h2><span class="cover__description_text--12 adplay_cover_intro_text">Playable Ad Solution</span><br><a href="#introduction" class="scroll"><span class="cover__description_text--12 adplay_cover_intro_text adplay_cover_arrow"></span></a>
+          </div>
+        </div>
+      </div>
+      <style>
+        .adplay_cover_overlayer {
+        	position: absolute;
+        	background-color: rgba(0,0,0,0.7);
+        	width: 100%;
+        	height: 100%;
+        	top: 0px;
+        	left: 0px;
+        }
+        .adplay_cover_underline {
+        	border-bottom: 2px solid white;
+        	padding-bottom: 20px;
+        	margin-bottom: 20px;
+        	margin-left: 15%;
+        	margin-right: 15%;
+        }
+        .adplay_cover_intro_title {
+        	font-size: 46px;
+        	font-weight: 500;
+        }
+        .adplay_cover_intro_text {
+        	color: white;
+        	font-weight: 100;
+        }
+        .adplay_cover_arrow{
+        	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAw0lEQVRIS+3VwRHCIBQE0N0OLMESLCGdqB3YkXaiLdhJOlgHBpwYA3wSJic45QC8ZPn8EDsM7mCgI1Up97h6XFUJVE321SVpIPmqWmmYLOkA4EhJDwBnAFeS7rnJCMAzIhcA97BzE2gCnAC8Y1zNoDkAYPjeeEmboUWAHH/ayhYoBbhj+Otda6AcsIiEkjZHVwKSiBWyAFmkBFmBIpKCagATsgDdALgz8xfN3wNyzLUJ859xVnVuTxNg/pL4lhPIDLi1HzyZhA2vO84qAAAAAElFTkSuQmCC)no-repeat center/100% auto;
+        	height: 25px;
+        	width: 25px;
+        }
+        @media (max-width: 900px) {
+        	.adplay_cover_textalign {
+        		text-align: left;
+        	}
+        	.adplay_cover_underline {
+        		margin-left: 10%;
+        		margin-right: 10%;
+        	}
+        	.adplay_cover_intro_text {
+        		display: block;
+        		margin: 0 10%;
+        	}
+        }
+      </style>
+      <!-- introduction-->
+      <div id="introduction" class="features features--02">
+        <div class="container">
+          <h2 class="features__title_box features__title_box--02 adplay_intro_title_box">
+            <div class="adplay_intro_underline">Playable Ad Solution</div>
+          </h2><span style="width: 75%; display: block" class="features__description features__description--02 adplay_intro_textalign">Let users expeirence. Get higher retention.<br><br>AdPlay is a playable ad solution<br>with VMFive's patented technology which allows users to try applications before download.<br>AdPlay can be provided as embedded or a link.<br><br><br><a href="#how-it-works" class="scroll">
+              <div class="adplay_intro_arrow"></div></a></span>
+        </div>
+      </div>
+      <style>
+        .adplay_intro_title_box{
+        	display: none;
+        }
+        .adplay_intro_underline {
+        	border-bottom: 1px solid #747474;
+        	padding-bottom: 20px;
+        	margin-left: 10%;
+        	margin-right: 10%;
+        	font-size: 1.5rem;
+        }
+        .adplay_intro_textalign {
+        	margin: 0 auto;
+        	text-align: center;
+        }
+        @media (max-width: 900px) {
+        	.adplay_intro_textalign {
+        		text-align: left;
+        		margin: 0 10%;
+        	}
+        	.adplay_intro_underline {
+        		text-align: left;
+        	}
+        	.adplay_intro_arrow{
+        		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAzUlEQVRIS+3VwQ3CMAwFUFvKnY7CBjAKTEAOyQDckx1gg24Ak8XIkYIqSBoHop7SWyW7r/3qbxE2OHADAwbSlPKIa8TVlEDTMGqtJ6XUxTl3bdoUDFtr9zyGxpgnAByI6Oa9Pwt2RSMMhBAeEeETImJo1wtKACJORHSPZewJfQLe+9O78T2gHBDjWgb8D1QCvpBfo1sDskgrVAOKiBSSAKtIDZICVaQEtQAiJAPNAHBMReMe1D4B4j/j8vXmi3KTJYD4SdKdJoiIZinAuy84b/vqKQp+XwAAAABJRU5ErkJggg==) no-repeat center/100% auto;
+        		height: 25px;
+        		width: 25px;
+        	}
+        	#introduction{
+        		padding: 75px 0;
+        	}
+        	.adplay_intro_title_box{
+        		display: block;
+        		margin-bottom: 6vh;
+        	}
+        }
+      </style>
+      <!-- how it works-->
+      <div id="how-it-works" style="background-color: #fb971b" class="contents contents--05 adplay_how_it_works_root adplay_how_it_works_top_curve">
+        <div style="position: relative; width: 100%">
+          <div class="adplay_how_it_works_top_icon"></div>
+        </div>
+        <div class="container">
+          <div style="width: 100%; text-align: center">
+            <h2 class="adplay_how_it_works_title">So... How It Works?</h2>
+            <div class="adplay_how_it_works_stage_line"></div>
+            <div class="adplay_how_it_works_stage_box">
+              <div id="stage_1" class="adplay_how_it_works_stage">One Click</div>
+            </div>
+            <div class="adplay_how_it_works_stage_box">
+              <div id="stage_2" class="adplay_how_it_works_stage">Tutorial</div>
+            </div>
+            <div class="adplay_how_it_works_stage_box">
+              <div id="stage_3" class="adplay_how_it_works_stage">Trial</div>
+            </div>
+            <div class="adplay_how_it_works_stage_box">
+              <div id="stage_4" class="adplay_how_it_works_stage">Download</div>
+            </div>
+          </div>
+          <div class="adplay_video_box"><img src="img/howitwork/Img_AdPlay_HowItWorks_Mockup.png" style="width: 270px; margin-top: 10px;" class="adplay_how_it_works_img">
+            <video playsinline="" autoplay="" muted="" loop="" width="235" class="adplay_video">
+              <source src="video/Video_AdPlay_LowAll.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <style>
+        .adplay_how_it_works_root{
+        	padding-bottom: 0;
+        }
+        .adplay_how_it_works_top_curve:before {
+        	content: '';
+        	position: absolute;
+        	transform: translate(0%,-120px);
+        	width: 100%;
+        	height: 30px;
+        	background-image: linear-gradient(to bottom, #fb971b, #fb971b);
+        	border-top-left-radius: 55% 80%;
+        	border-top-right-radius: 55% 80%;
+        }
+        @media screen and (max-width: 992px){
+        	.adplay_how_it_works_top_curve:before{
+        		transform: translate(0%,-20px);			
+        	}
+        }
+        .adplay_how_it_works_title {
+        	font-size: 30px;
+        	color: white;
+        	margin-bottom: 30px;
+        }
+        .adplay_how_it_works_contents_title {
+        	font-size: 25px;
+        }
+        .adplay_how_it_works_contents_text {
+        	color: white;
+        }
+        .adplay_how_it_works_top_icon {
+        	position: absolute;
+        	left: 50%;
+        	transform: translate(-50%);
+        	background-image: url(img/new-asset/Icon_AdPlay_HowItWorks.png);
+        	background-repeat: no-repeat;
+        	background-size: contain;
+        	background-position: center center;
+        	width: 100px;
+        	height: 100px;
+        	top: -148px;
+        	z-index: 2;
+        }
+        .adplay_how_it_works_stage_box {
+        	cursor: pointer;
+        	position: relative;
+        	display: inline-block;
+        	z-index: 2;
+        }
+        .adplay_how_it_works_stage {
+        	display: inline-block;
+        	color: white;
+        	width: 120px;
+        	font-size: 14px;
+        }
+        @media (max-width: 600px) {
+        	.adplay_how_it_works_stage {
+        		width: 70px;
+        	}	
+        }
+        @media (max-width: 350px) {
+        	.adplay_how_it_works_stage {
+        		width: 65px;
+        	}	
+        }
+        .adplay_how_it_works_stage:after {
+        	position: absolute;
+        	content: '';
+        	width: 10px;
+        	height: 10px;
+        	background-image: linear-gradient(to bottom, #fb971b, #fb971b);
+        	border: solid 1px white;
+        	border-radius: 5px;
+        	top: 140%;
+        	left: 50%;
+        	transform: translate(-5px);
+        }
+        .adplay_how_it_works_stage_line {
+        	position: absolute;
+        	background-color: white;
+        	width: 100%;
+        	height: 1px;
+        	left: 0;
+        	top: 202px;
+        }
+        .adplay_video_box {
+        	text-align: center;
+        	margin-top: -20px;
+        	overflow: hidden;
+        	position: relative;
+        }
+        .adplay_how_it_works_img{
+        	width: 270px;
+        	height: 520px;
+        	margin-top: 10px;
+        	position: relative;
+        	top: 70px;
+        	overflow: hidden;
+        }
+        .adplay_video{
+        	position: absolute;
+        	right: calc(50% - 117px);
+        	top: 28.5%;
+        	overflow: hidden;
+        }
+        .adplay_how_it_works_stage_completed:after{
+        	background-image: linear-gradient(to bottom, #fff, #fff);
+        }
+        
+      </style>
+      <script>
+        var adplayVideo = document.querySelector('.adplay_video');
+        adplayVideo.ontimeupdate = function(video){
+        	var time = adplayVideo.currentTime;
+        	//console.log(time);
+        	if (time > 0.2) {
+        		document.querySelector('#stage_1').classList.add('adplay_how_it_works_stage_completed');
+        	}  if (time > 2) {
+        		document.querySelector('#stage_2').classList.add('adplay_how_it_works_stage_completed');
+        	}  if (time > 9) {
+        		document.querySelector('#stage_3').classList.add('adplay_how_it_works_stage_completed');
+        	}  if (time > 15.5) {
+        		document.querySelector('#stage_4').classList.add('adplay_how_it_works_stage_completed');
+        	} if(time < 0.5) {
+        		document.querySelector('#stage_1').classList.remove('adplay_how_it_works_stage_completed');
+        		document.querySelector('#stage_2').classList.remove('adplay_how_it_works_stage_completed');
+        		document.querySelector('#stage_3').classList.remove('adplay_how_it_works_stage_completed');
+        		document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
+        	}
+        var stageButtons = document.querySelectorAll(".adplay_how_it_works_stage_box");
+        for (let i = 0; i < stageButtons.length; i++){
+        		stageButtons[i].addEventListener("click",function(){
+        			switch (i){
+        				case 0:
+        					adplayVideo.currentTime = 0;
+        					break;
+        				case 1:
+        					adplayVideo.currentTime = 2;
+        					break;
+        				case 2:
+        					adplayVideo.currentTime = 9;
+        					break;
+        				case 3:
+        					adplayVideo.currentTime = 15.5;
+        					break;
+        			}
+        			if (adplayVideo.currentTime > 0.2) {
+        				document.querySelector('#stage_1').classList.add('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_2').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_3').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
+        			}  if (adplayVideo.currentTime > 2) {
+        				document.querySelector('#stage_2').classList.add('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_3').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
+        			}  if (adplayVideo.currentTime > 9) {
+        				document.querySelector('#stage_3').classList.add('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
+        			}  if (adplayVideo.currentTime > 15.5) {
+        				document.querySelector('#stage_4').classList.add('adplay_how_it_works_stage_completed');
+        			} if(adplayVideo.currentTime < 0.5) {
+        				document.querySelector('#stage_1').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_2').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_3').classList.remove('adplay_how_it_works_stage_completed');
+        				document.querySelector('#stage_4').classList.remove('adplay_how_it_works_stage_completed');
+        			}
+        		});
+        	}
+        }
+      </script>
+      <!-- core features-->
+      <div class="features features--02 adplay_core_features_root adplay_core_features_top_curve">
+        <div style="position: relative; width: 100%">
+          <div class="adplay_core_features_top_icon"></div>
+        </div>
+        <div class="container">
+          <div class="features__title_box features__title_box--02">
+            <h2 class="partners__title partners__title--orange partners__title--smaller-margin adplay_core_features_title">
+              <div class="adplay_core_features_underline">Core Features</div>
+            </h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row features__row">
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_CrossPlatform.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Cross Platform</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_RealtimeStreaming.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Realtime Streaming</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_MobileVirtualization.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Mobile Virtualization</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_InstantPlay.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Instant Play</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_Engagement.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Engagement</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_core_features_item"><img src="img/new-asset/Icon_AdPlay_Features_Differentiation.png" class="adplay-icon">
+              <h3 class="features__item_title adplay_icon_title">Differentiation</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .adplay_core_features_root {
+        	padding: 10px;
+        }
+        .adplay_core_features_top_curve:before {
+        	content: '';
+        	position: absolute;
+        	left:0;
+        	right: 0;
+        	transform: translate(0%,-30px);
+        	width: 100%;
+        	height: 30px;
+        	background-image: linear-gradient(to bottom, #fff, #fff);
+        	border-top-left-radius: 55% 80%;
+        	border-top-right-radius: 55% 80%;
+        }
+        .adplay_core_features_underline {
+        	display: inline-block;
+        	border-bottom: 1px solid #C2C2C2;
+        	padding-bottom: 20px;
+        }
+        .adplay_core_features_title {
+        	color: black;
+        	font-size: 30px;
+        	padding-top: 70px;
+        }
+        .adplay_core_features_top_icon {
+        	position: absolute;
+        	transform: translate(-50%, -50%);
+        	width: 120px;
+        	height: 120px;
+        	left: 50%;
+        	background-image: url(img/new-asset/Icon_DSP_CoreFeatues_White.png);
+        	background-size: contain;
+        	background-repeat: no-repeat;
+        	background-position: center center;
+        }
+        .adplay_core_features_item {
+        	margin-bottom: 100px;
+        }
+        .adplay_core_features_item .features__item_title {
+        	margin-top: 20px;
+        }
+        @media screen and (max-width: 800px){
+        	.adplay-icon{
+        		width: 150px;
+        		height: 150px;
+        	}
+        }
+        @media screen and (max-width: 480px){
+        	.adplay_core_features_item{
+        		width: 50%;
+        	}
+        	.adplay-icon{
+        		width: 130px;
+        		height: 130px;
+        	}
+        }
+      </style>
+      <!-- app streaming technology-->
+      <div class="contents contents--05 adplay_app_streaming_container">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-6">
+              <h2 class="contents__title--05 adplay_app_streaming_tech_title adplay_app_streaming_tech_underline adplay_app_streaming_left_textalign">App Streaming Technology</h2><span class="contents__text--05 adplay_app_streaming_tech_description adplay_app_streaming_left_textalign">
+                VMFive's cutting-edge mobile virtualization technology,
+                coupled with its advanced streaming technology,
+                allows users to experience Apps without downloading
+                them, across devices.<br><br>No extra work for App developers, no modification to
+                the original Apps. It only requires the original APK file to
+                attract potential users by letting them try the App via
+                our solution. </span>
+            </div>
+            <div class="col-xs-12 col-lg-6 dt-img contents__right-box--05">
+              <div class="adplay_app_streaming_tech_demo_container">
+                <div class="adplay_app_streaming_tech_demo"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .adplay_app_streaming_container{
+        	padding-left: 1.9375rem;
+        	padding-right: 1.9375rem;
+        }
+        .adplay_app_streaming_tech_title {
+        	font-size: 30px;
+        	color: black;
+        	display: inline-block;
+        }
+        .adplay_app_streaming_tech_underline {
+        	border-bottom: 1px solid #D3D3D3;
+        	padding-bottom: 20px;
+        }
+        .adplay_app_streaming_tech_description {
+        	color: #818181;
+        }
+        .adplay_app_streaming_tech_demo_container {
+        	position: relative;
+        	height: 330px;
+        }
+        .adplay_app_streaming_tech_demo {
+        	position: absolute;
+        	top: -50px;
+        	bottom: 0;
+        	left: 0;
+        	right: 0;
+        	background-image: url(img/new-asset/Img_AdPlay_AppStreaming.png);
+        	background-size: contain;
+        	background-repeat: no-repeat;
+        	background-position: center;
+        }
+        @media (max-width: 992px) {
+        	.adplay_app_streaming_tech_demo {
+        		top: 0px;
+        	}	
+        }
+        @media (max-width: 900px) {
+        	.adplay_app_streaming_left_textalign {
+        		text-align: left;
+        	}	
+        }
+      </style>
+      <!-- scenarios-->
+      <div class="features features--02 adplay_scenarios_root">
+        <div style="position: relative; width: 100%">
+          <div class="adplay_scenarios_top_icon"></div>
+        </div>
+        <div class="container">
+          <div class="features__title_box features__title_box--02">
+            <h2 class="partners__title partners__title--orange partners__title--smaller-margin adplay_scenarios_title">
+              <div class="adplay_scenarios_underline">Scenarios</div>
+            </h2><span class="features__description features__description--02 adplay_scenarios_description">Adplay is flexible for different scenarios</span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row features__row">
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_AdNetWork.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">Ad Network</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_AppStore.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">App Store</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_GamePage.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">Game Page</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_InstantMessage.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">Instant Message</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_QRCode.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">QRCode</h3>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 features__item features__item--02 adplay_scenarios_item"><img src="img/scenarios/Icon_AdPlay_Scenarios_SocialMedia.png" class="adplay-scenarios-icon">
+              <h3 class="features__item_title">Social Media</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .adplay_scenarios_root {
+        	padding: 10px;
+        }
+        .adplay_scenarios_underline {
+        	display: inline-block;
+        	border-bottom: 1px solid #C2C2C2;
+        	padding-bottom: 20px;
+        }
+        .adplay_scenarios_title {
+        	color: black;
+        	font-size: 30px;
+        	padding-top: 70px;
+        }
+        .adplay_scenarios_top_icon {
+        	position: absolute;
+        	transform: translate(-50%, -50%);
+        	width: 120px;
+        	height: 120px;
+        	left: 50%;
+        	background-image: url(img/scenarios/Icon_AdPlay_Scenarios.png);
+        	background-size: contain;
+        	background-repeat: no-repeat;
+        	background-position: center center;
+        }
+        .adplay_scenarios_item {
+        	margin-bottom: 100px;
+        }
+        .adplay_scenarios_item .features__item_title {
+        	margin-top: 20px;
+        }
+        .adplay_scenarios_description{
+        	max-width: 580px;
+        	font-size: 16px;
+        }
+        @media screen and (max-width: 1000px){
+        	.adplay-scenarios-icon{
+        		width: 150px;
+        	}
+        }
+        @media screen and (max-width: 480px){
+        	.adplay_scenarios_item{
+        		width: 50%;
+        	}
+        	.adplay-scenarios-icon{
+        		width: 130px;
+        	}
+        }
+      </style>
+      <!--Contact-->
+      <footer class="about about--07 home_contact_div">
+        <div style="position: relative; width: 100%"><a href="#" class="scroll">
+            <div class="home_back_to_top"></div></a></div>
+        <div class="container">
+          <div class="about__container--07 home_contact_bg">
+            <div class="about__content--07 home_contact_content_div"><a href="#" class="footer__logo_box footer__logo_box--06"><img src="img/etc/vmfive--logo-standard.svg" class="footer__logo footer__logo--06"></a>
+              <div class="footer__subtitle--06"><strong>VMFive Headquarter</strong></div><span class="footer__description footer__description--06">Cooperation: business@vm5.com<br>8F.-3, No.234, Sec. 5, Nanjing E. Rd., Songshan Dist., Taipei City 105, Taiwan<br>105 台北市松山區南京東路 5 段 234 號 8 樓之 3<br></span>
+              <div class="footer__subtitle--06"><strong>VMFive Japan</strong></div><span class="footer__description footer__description--06">Cooperation: jp@vm5.com<br>Yamauchi Building 3F, 3-24-8 Nishi Shinbashi, Minato-ku, Tokyo 105-0003</span>
+              <div class="button--store footer__button--06"><span><img src="img/new-asset/Btn_Footer_Email.png" width="31" height="19" class="home_contact_icon"><img src="img/new-asset/Btn_Footer_Facebook.png" width="18" height="19" class="home_contact_icon"></span></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <style>
+        .home_contact_div {
+        	background-color: white;
+        	border-top: solid 2px #F5F5F5;
+        }
+        .home_contact_bg {
+        	background-image: url(img/new-asset/Btn_Footer_Map.png);
+        	background-repeat: no-repeat;
+        	background-size: contain;
+        	background-position: 100% center;
+        }
+        .home_contact_content_div {
+        	float: left;
+        }
+      </style>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-105683329-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+    </main>
+    <div class="js-overlay js-close-navigation js-close-menu overlay"></div>
+  </body>
+</html>

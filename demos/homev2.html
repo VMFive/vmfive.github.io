@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--the must have tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="VMFive provides you premium video and playable advertising marketplace for your online branding.">
+    <!-- meta for Facebook-->
+    <meta property="og:site_name" content="VMFive">
+    <meta property="og:title" content="VMFive | Mobile Ads">
+    <meta property="og:description" content="VMFive provides you premium video and playable advertising marketplace for your online branding.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://vmfive.com/">
+    <meta property="og:image" content="http://i.imgur.com/fFaY46a.png">
+    <meta property="og:image:secure_url" content="https://i.imgur.com/fFaY46a.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--the must have assets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet" defer>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/animation.gsap.js"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.js"></script>
+    <!--page title-->
+    <title>VMFive | Mobile Ads</title>
+  </head>
+  <body>
+    <main class="page_wrapper">
+      <script>
+        var controller = new ScrollMagic.Controller();
+        
+      </script>
+      <!-- hamburger menu-->
+      <nav data-menu-index="05" class="menu menu--05 js-menu">
+        <div class="menu__container">
+          <button type="button" class="menu__closer js-close-menu">close</button>
+          <div class="menu__box">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="pmp.html" class="menu__link">PMP</a></li>
+              <li class="menu__item"><a href="adplay.html" class="menu__link">AdPlay</a></li>
+              <!--li.menu__item
+              a.menu__link(href="dsp.html")
+              	| DSP
+              -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Reach Your Audience-->
+      <div class="cover cover--09 js-cover">
+        <nav id="nav" class="header header--05">
+          <div class="container header__container">
+            <div class="header__left_box"><a href="index.html" title="Home" class="header__logo_box"><img src="img/etc/vmfive--logo.svg" alt="VMFive logo" class="header__logo_img"></a></div>
+            <div class="header__right_box">
+              <ul class="header__menu_list header__item--desktop">
+                <li class="header__menu_item"><a href="pmp.html" class="header__menu_link header__menu_link--white">PMP</a></li>
+                <li class="header__menu_item"><a href="adplay.html" class="header__menu_link header__menu_link--white">AdPlay</a></li>
+              </ul>
+              <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
+            </div>
+          </div>
+        </nav>
+        <style>
+          #nav {
+          	background: transparent;
+          	position: fixed;
+          	width: 100%;
+          	z-index: 20;
+          	font-family: 'Roboto', sans-serif;
+          	-webkit-transition: .5s ease;
+          	-moz-transition: .5s ease;
+          	-ms-transition: .5s ease;
+          	-o-transition: .5s ease;
+          	transition: .5s ease;
+          	top: 15px;
+          }
+          
+          #nav.shrink {
+          	height: 50px;
+          	top: 0px;
+          	-webkit-transition: .5s ease;
+          	-moz-transition: .5s ease;
+          	-ms-transition: .5s ease;
+          	-o-transition: .5s ease;
+          	transition: .5s ease;
+          	background: #f7f7f7; // Change background to white on scroll
+          }
+          
+          @media (max-width: 500px){
+          	#nav{
+          		top: 10px;
+          	}
+          }
+          
+          
+        </style>
+        <script>
+          window.onscroll = function() {
+          	if(document.body.scrollTop + document.documentElement.scrollTop > 20){
+          		document.querySelector('#nav').classList.add("shrink");
+          		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo-standard.svg";
+          		document.querySelector('.js-open-menu').classList.add('header__burger_button--black');
+          	}else{
+          		document.querySelector('#nav').classList.remove("shrink");
+          		document.querySelector('.header__logo_img').src = "img/etc/vmfive--logo.svg";
+          		document.querySelector('.js-open-menu').classList.remove('header__burger_button--black');
+          	}
+          }
+        </script>
+        <div class="container">
+          <video playsinline="" autoplay="" muted="" loop="" class="bgvid home_cover_bgvid">
+            <source src="video/Home_Video.mp4" type="video/mp4">
+          </video>
+          <div class="cover__content_box--12">
+            <h2 class="cover__title--09 home_cover_left_textalign"><span class="cover__title_text--09">Leading Video and <br>Playable Advertising Marketplace</span></h2>
+            <div class="cover__description_box--12 home_intro_box home_cover_left_textalign"><span class="cover__description_text--12 intro-text">VMFive provides you a total advertising solution<br>through its premium market place and innovative technology.</span></div><a href="#core-features" class="rectangle-button button--border-white scroll home_cover_button">Explore VMFive</a>
+          </div>
+        </div>
+      </div>
+      <style>
+        .home_cover_bgvid {
+        	top: 50%;
+        }
+        .home_intro_box {
+        	max-width: 465px;
+        	margin: 0 auto;
+        	margin-top: 30px;
+        	margin-bottom: 70px;
+        }
+        .intro-text {
+        	color: white;
+        	font-weight: 300;
+        	font-size: 24px;
+        }
+        .rectangle-button, .rectangle-button:hover {
+        	font-size: 18px;
+        	text-decoration: none;
+        }
+        .home_cover_left_textalign {
+        	text-align: left;
+        	display: block;
+        	max-width: 100%;
+        	padding-left: 10%;
+        }
+        .home_cover_button{
+        	font-style: italic;		
+        	display: block;
+        	height: 60px;
+        	margin-left: 10%;
+        	padding: 15px 43px;
+        	width: 218px;
+        	text-align: left;
+        }
+        //fixing rwd bug
+        @media screen and (max-width: 350px){
+        	.home_title_text {
+        		font-size: 40px;
+        	}
+        }
+      </style>
+      <!--VMFive Ads Core Features-->
+      <div id="core-features" class="features features--02 home_cd_backgroud">
+        <div class="container">
+          <div class="row features__row">
+            <div class="features__title_box--02 col-xs-12">
+              <h2 class="features__title--02 home_cf_title">VMFive Mobile Ads</h2><span class="features__description features__description--02 home_cf_description">Pioneering new generation of <strong> mobile advertising </strong>though innovative technologies. Our <strong> playable and video ad </strong>solutions improve advertising experience and maximize their impact.</span>
+            </div>
+            <div class="col-xs-12 col-md-6 features__item--02"><img src="img/new-asset/Icon_Home_Features_InnovativeTech.png" class="PMP-icon">
+              <h3 class="features__item_title home_core_feature_title">Innovative Technology</h3><span class="features__item_text home_cf_black_span">VMFive's industry-leading technology maximizes the efficiency and effectiveness of your ads.</span>
+            </div>
+            <div class="col-xs-12 col-md-6 features__item--02"><img src="img/new-asset/Icon_Home_Features_DataDriven.png" class="PMP-icon">
+              <h3 class="features__item_title home_core_feature_title">Data Driven Targeting</h3><span class="features__item_text home_cf_black_span">Our data analytics technology connects the right content to the right audiences at the right moment.</span>
+            </div>
+            <div class="col-xs-12 col-md-6 features__item--02"><img src="img/new-asset/Icon_Home_Features_ProBuying.png" class="PMP-icon">
+              <h3 class="features__item_title home_core_feature_title">Programmatic Buying</h3><span class="features__item_text home_cf_black_span">Through our programmatic buying, you can reach the right and best audiences in this complex and fragmented media environment.</span>
+            </div>
+            <div class="col-xs-12 col-md-6 features__item--02"><img src="img/new-asset/Icon_Home_Features_TrustandTrans.png" class="PMP-icon">
+              <h3 class="features__item_title home_core_feature_title">Trust and Transparency</h3><span class="features__item_text home_cf_black_span">Our data tracking technology is designed for transparency and trust and also incorporated with the best third-party tracking services.</span>
+            </div>
+          </div>
+        </div>
+        <div class="home_cf_gradient_image"></div>
+      </div>
+      <style>
+        #core-features{
+        	position: relative;
+        	padding: 110px 0;
+        }
+        .home_cf_description {
+        	color: #424753;
+        	font-size: 24px;
+        	max-width: 670px;
+        }
+        .home_cf_title{
+        	color: #424753;
+        	font-size: 48px;
+        	text-align: left;
+        }
+        .home_cd_backgroud{
+        	background-color: white;
+        }
+        .home_cf_black_span{
+        	color: #424753;
+        	font-size: 20px;
+        	margin-left: 0;
+        	text-align: left;
+        	width: 60%;
+        }
+        .features__item_title.home_core_feature_title{
+        	font-size: 20px;
+        	font-style: bold;
+        	text-align: :left;
+        	
+        }
+        #core-features .container{
+        	position: relative;
+        	z-index: 2;
+        }
+        .home_cf_gradient_image{
+        	height: 100%;
+        	width: 50%;
+        	position: absolute;
+        	top: 0;
+        	right: 0;
+        	background: linear-gradient(105deg,#fff,#fff,transparent, transparent), url(img/new-asset/home_bg_1.jpg) no-repeat;
+        	background-size: cover;
+        	background-position: 30%;
+        	z-index: 1;
+        }
+      </style>
+      <!--PMP-->
+      <div class="contents contents--05 home_pmp_bg">
+        <div class="container home_pmp_container">
+          <div class="row">
+            <div id="pmp_text" class="col-xs-12 col-lg-6">
+              <h2 class="contents__title--05 home_pmp_title home_pmp_left_textalign">VMFive PMP</h2><span class="contents__text--05 home_pmp_content_text home_pmp_left_textalign">
+                Light Up Your Brand with Innovation in a Programmatic Way.
+                With a large collection of <strong> premium media </strong>inventory in <strong>various ad formats </strong>and <strong>accurate targetting tools </strong>VMFive PMP makes your brand marketing more powerful and effective in a simpler and easier way.</span><br><a href="pmp.html" class="button contents__button--05 home_pmp_button button--border-white">Explore PMP</a>
+            </div>
+            <div class="col-xs-12 col-lg-6"><img src="img/new-asset/home_pmp2.png" alt="" class="home_pmp_pic"></div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .home_pmp_bg {
+        	background-image: url(img/new-asset/home_bg_3-04.png);
+        	overflow: hidden;
+        }
+        .home_pmp_container{
+        	padding: 100px 0;
+        }
+        .home_pmp_title {
+        	font-size: 48px;
+        	color: white;
+        }
+        .home_pmp_pic{
+        	width: 100%;
+        	transform: scale(2) translate(25%,5%);
+        }
+        #pmp_text{
+        	transform: translateY(60%);
+        }
+        .home_pmp_content_text {
+        	color: white;
+        	font-size: 24px;
+        	line-height: 30px;
+        	margin-bottom: 50px;
+        }
+        .home_pmp_button {
+        	border: 1px white solid;
+        	color: white;
+        	border-radius: 0;
+        	font-size: 18px;
+        	height: 60px;
+        	width: 218px;
+        	padding: 10px 22px;
+        }
+        @media (max-width: 992px) {
+        	.home_pmp_left_textalign {
+        		text-align: left;
+        		display: block;
+        		max-width: 100%;
+        	}
+        	.home_pmp_right{
+        		transform: none;
+        	}
+        	.home_pmp_bg {
+        		height: 105vh;
+        		padding: 33vh 8%;
+        	}
+        	.home_pmp_content_text {
+        		font-size: 16px;
+        	}
+        	.home_pmp_button{
+        		display: block;
+        		width: 10vw;
+        	}
+        }
+        
+      </style>
+      <script>
+        var scene = new ScrollMagic.Scene({
+        			triggerElement: ".home_pmp_container",
+        			duration: 600
+        		})
+        		.setTween("#pmp_text", 2, {yPercent: -70})
+        		.addIndicators({name: "1 (duration: 0)"})
+        		.addTo(controller); // assign the scene to the controller
+      </script>
+      <!--AdPlay-->
+      <div class="contents contents--05 adplay home_adplay_bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-6"><img src="img/new-asset/home_phone_1.png" alt="" class="home_adplay_pic"></div>
+            <div id="adplay_text" class="col-xs-12 col-lg-6 home_adplay_right">
+              <h2 class="contents__title--05 home_adplay_title home_adplay_left_textalign">Playable Video Adveritsing </h2><span class="contents__text--05 home_adplay_content_text home_adplay_left_textalign">VMFive's cutting-edge mobile virtualization technology, coupled with its advanced streaming technology, allows users to <strong> experience Apps without downloading them, </strong>across devices.</span><br><a href="adplay.html" class="button contents__button--05 home_adplay_button button--border-white">Explore AdPlay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .home_adplay_bg {
+        	background-image: url(img/new-asset/home_bg_2.png);
+        }
+        .home_adplay_title {
+        	font-size: 48px;
+        	color: #424753;
+        }
+        .home_adplay_pic{
+        	width: 70%;
+        	transform: translateY(25%);
+        }
+        .home_adplay_right{
+        	padding-left: 10%;
+        	transform: translateY(60%);
+        }
+        .home_adplay_content_text {
+        	color: #424753;
+        	font-size: 24px;
+        	line-height: 30px;
+        	margin-bottom: 50px;
+        }
+        .home_adplay_button {
+        	background-color: #424753;
+        	color: white;
+        	border-radius: 0;
+        	font-size: 18px;
+        	height: 60px;
+        	width: 218px;
+        	padding: 10px 22px;
+        }
+        @media (max-width: 992px) {
+        	.home_adplay_left_textalign {
+        		text-align: left;
+        		display: block;
+        		max-width: 100%;
+        	}
+        	.home_adplay_right{
+        		//-transform: none;
+        	}
+        	.home_adplay_bg {
+        		height: 105vh;
+        		padding: 33vh 8%;
+        	}
+        	.home_adplay_content_text {
+        		font-size: 16px;
+        	}
+        	.home_adplay_button{
+        		display: block;
+        		width: 10vw;
+        	}
+        }
+        
+      </style>
+      <script>
+        var scene = new ScrollMagic.Scene({
+        			triggerElement: ".home_adplay_bg",
+        			duration: 600
+        		})
+        		.setTween("#adplay_text", 2, {yPercent: -60})
+        		.addIndicators({name: "1 (duration: 0)"})
+        		.addTo(controller); // assign the scene to the controller
+      </script>
+      <!--Media Report-->
+      <div class="partners partners--01 testimonials home_media_report_root">
+        <div class="container">
+          <h2 class="partners__title partners__title--orange partners__title--smaller-margin home_media_report_title">
+            <div class="home_media_report_underline">Media Report</div>
+          </h2>
+        </div>
+        <div style="position: relative">
+          <div class="container">
+            <div class="testimonials__arrows_box testimonials__arrows_box--01">
+              <button type="button" class="testimonials__arrow testimonials__arrow--left testimonials__arrow--01 testimonials__arrow--01--left js-testimonials-prev-arrow--01 home_media_report_prev_arrow"></button>
+              <button type="button" class="testimonials__arrow testimonials__arrow--right testimonials__arrow--01 testimonials__arrow--01--right js-testimonials-next-arrow--01 home_media_report_next_arrow"></button>
+            </div>
+            <div data-slick="{&quot;slidesToShow&quot;: 4, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--01&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--01&quot;, &quot;cssEase&quot;: &quot;linear&quot;,&quot;responsive&quot;: [{&quot;breakpoint&quot;: 500, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1,&quot;slidesPerRow&quot;: 1, &quot;rows&quot;: 4}}]}" class="testimonials__box hiddenoverflow js-slider">
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="https://techcrunch.com/2014/08/12/vmfive-wins-techcrunch-beijings-startup-competition-with-app-advertising-platform-adplay/" target="_blank"><img src="img/report/media-1.png" class="partners__img home_media_img_container"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://technode.com/2014/08/12/announcing-winner-startup-competition/" target="_blank"><img src="img/report/media-2.png" class="partners__img home_media_img_container"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="https://www.techinasia.com/startup-lets-demo-app-downloading-installing-wins-gold-techcrunch-beijing" target="_blank"><img src="img/report/media-3.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://thebridge.jp/2014/08/startup-match-winner-vmfive" target="_blank"><img src="img/report/media-4.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="https://www.bnext.com.tw/article/33390/BN-ARTICLE-33390" target="_blank"><img src="img/report/media-5.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="https://yowureport.com/13714/" target="_blank"><img src="img/report/media-6.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://news.mt.co.kr/mtview.php?no=2014072714402191391" target="_blank"><img src="img/report/media-7.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://www.inside.com.tw/2014/07/25/2014-ideas-show-day-2" target="_blank"><img src="img/report/media-8.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://dentsu-ho.com/articles/1971" target="_blank"><img src="img/report/media-9.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://technews.tw/2015/04/17/silicon-valley-taiwan-business/" target="_blank"><img src="img/report/media-10.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://ascii.jp/elem/000/001/029/1029457/" target="_blank"><img src="img/report/media-11.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://www.digitimes.com.tw/tw/cloud/shwnws.asp?cnlid=16&amp;cat=20&amp;cat1=25&amp;id=0000414823_L9B7SPLQ3SCZOM2X5RWQX" target="_blank"><img src="img/report/media-12.png" class="partners__img"></a></div>
+              </div>
+              <div class="testimonials__item">
+                <div class="partners__item"><a href="http://www.wealth.com.tw/article_in.aspx?nid=5320" target="_blank"><img src="img/report/media-13.png" class="partners__img"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .home_media_report_root {
+          padding: 75px 10px;
+          background-color: #F2F2F2;
+        }
+        .home_media_report_underline {
+          display: inline-block;
+          border-bottom: 1px solid #C2C2C2;
+          padding-bottom: 20px;
+        }
+        .home_media_report_title {
+          color: black;
+          font-size: 30px;
+        }
+        .home_media_report_prev_arrow:after {
+          background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzFfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQuNDE0MXB4IiBoZWlnaHQ9IjcuMDAxcHgiIHZpZXdCb3g9IjAgMCA0LjQxNDEgNy4wMDEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQuNDE0MSA3LjAwMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBpZD0iaS0tc21hbGwtYXJyb3ctLWJsYWNrLS1sZWZ0IiBmaWxsPSIjZmI5NzFiIiBkPSJNMC4yNjc2LDIuODUzNUMwLjA4ODksMy4wMzIyLDAsMy4yNjY2LDAsMy41MDENCgljMCwwLjE3NTgsMC4wNTA4LDAuMzUwNiwwLjE1MDQsMC41MDI5YzAuMDMzMiwwLjA0OTgsMC4wNzIzLDAuMDk4NiwwLjExNzIsMC4xNDI2bDIuNTg1OSwyLjU4NTkNCgljMC4zNTc0LDAuMzU3NCwwLjkzNjUsMC4zNTc0LDEuMjkzLDBjMC4zNTc0LTAuMzU2NCwwLjM1NzQtMC45MzU1LDAtMS4yOTNMMi4yMDcsMy41MDFsMS45Mzk1LTEuOTM5NQ0KCWMwLjM1NzQtMC4zNTc0LDAuMzU3NC0wLjkzNzUsMC0xLjI5MzljLTAuMzU2NC0wLjM1NjQtMC45MzU1LTAuMzU2NC0xLjI5MywwTDAuMjY3NiwyLjg1MzV6Ii8+DQo8L3N2Zz4NCg==) no-repeat center/100% auto;
+        }
+        .home_media_report_next_arrow:after {
+          background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlhNTElEXzJfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iNC40MTQxcHgiIGhlaWdodD0iNy4wMDFweCIgdmlld0JveD0iMCAwIDQuNDE0MSA3LjAwMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNC40MTQxIDcuMDAxIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggaWQ9ImktLXNtYWxsLWFycm93LS1ibGFjay0tcmlnaHQiIGZpbGw9IiNmYjk3MWIiIGQ9Ik0xLjU2MDUsMC4yNjc2Yy0wLjM1NzQtMC4zNTY0LTAuOTM2NS0wLjM1NjQtMS4yOTMsMAoJYy0wLjM1NzQsMC4zNTY0LTAuMzU3NCwwLjkzNjUsMCwxLjI5MzlMMi4yMDcsMy41MDFMMC4yNjc2LDUuNDM5NWMtMC4zNTc0LDAuMzU3NC0wLjM1NzQsMC45MzY1LDAsMS4yOTMKCWMwLjM1NjQsMC4zNTc0LDAuOTM1NSwwLjM1NzQsMS4yOTMsMGwyLjU4NTktMi41ODU5YzAuMDQ0OS0wLjA0MzksMC4wODQtMC4wOTI4LDAuMTE3Mi0wLjE0MjYKCUM0LjM2MzMsMy44NTE2LDQuNDE0MSwzLjY3NjgsNC40MTQxLDMuNTAxYzAtMC4yMzQ0LTAuMDg4OS0wLjQ2ODgtMC4yNjc2LTAuNjQ3NUwxLjU2MDUsMC4yNjc2eiIvPgo8L3N2Zz4K) no-repeat center/100% auto;
+        }
+        //- .home_media_report_top-curve:before {
+        //-   content: '';
+        //-   position: absolute;
+        //-   transform: translate(-50%);
+        //-   width: 100%;
+        //-   height: 30px;
+        //-   top: -30px;
+        //-   background-image: linear-gradient(to bottom, #F2F2F2, #F2F2F2);
+        //-   border-top-left-radius: 50% 80%;
+        //-   border-top-right-radius: 50% 80%;
+        //- }
+        //- .home_media_report_bottom_curve:after {
+        //-   content: '';
+        //-   position: absolute;
+        //-   z-index: 10;
+        //-   transform: translate(-50%);
+        //-   width: 100%;
+        //-   height: 30px;
+        //-   bottom: -30px;
+        //-   background-image: linear-gradient(to bottom, #F2F2F2, #F2F2F2);
+        //-   border-bottom-left-radius: 50% 80%;
+        //-   border-bottom-right-radius: 50% 80%;
+        //- }
+        .hiddenoverflow{/*this slide is not needed to fit margin*/
+          overflow: hidden;
+        }
+      </style>
+      <!--News-->
+      <div class="testimonials testimonials--05 home_news_root">
+        <div class="container"><span class="home_news_label">News</span>
+          <h2 class="testimonials__title testimonials__title--05 home_news_title">Honors and Achievements</h2>
+        </div>
+        <div class="testimonials__container--05">
+          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: false, &quot;autoplay&quot;: true, &quot;autoplaySpeed&quot;: 3000, &quot;centerMode&quot;: true, &quot;infinite&quot;: true, &quot;focusOnSelect&quot;: true, &quot;variableWidth&quot;: true, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 900, &quot;settings&quot;: {&quot;slidesToShow&quot;: 2}}, {&quot;breakpoint&quot;: 650, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1}}]}" class="testimonials__box testimonials__box--05 js-slider"><a target="_blank" href="http://technode.com/2014/08/12/announcing-winner-startup-competition/" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	Aug 2014</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">Winner Of Startup Competition!</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">The TechCrunch Beijing Startup Competition culminates in a series of company pitches that vie for top honors.</span></a><a target="_blank" href="https://www.techinasia.com/startup-lets-demo-app-downloading-installing-wins-gold-techcrunch-beijing" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	Aug 2014</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span style="font-size: 26px; margin-bottom: 26px" class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">VM5 wins gold at Techcrunch Beijing. </span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">VM5, the developer of a technology letting users try an app without downloading, has just walked away with the top prize.</span></a><a target="_blank" href="http://thebridge.jp/2014/08/startup-match-winner-vmfive" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	Aug 2014</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">VMFiveが<br>最優秀賞を受賞</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">TechCrunch の国際イノベーション・サミット北京版では、胸躍るスタートアップ・コンペティションが展開された。</span></a><a target="_blank" href="https://techcrunch.com/2014/08/12/vmfive-wins-techcrunch-beijings-startup-competition-with-app-advertising-platform-adplay/" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	Aug 2014</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">App Advertising <br>Platform AdPlay</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">More than 200 companies representing a wide array of mobile and hardware technology entered TechCrunch Beijing’s startup competition.</span></a><a target="_blank" href="https://www.bnext.com.tw/article/33390/BN-ARTICLE-33390" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	Aug 2014</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">台灣團隊VMFive<br>打敗亞太200團隊</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">TechCrunch北京創業競賽12日落幕，亞太區超過200個團隊發表行動和硬體技術，15強前進北京比賽，第一天選出5強...</span></a><a target="_blank" href="https://yowureport.com/13714/" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	Aug 2014</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">專訪 VMFIVE <br>創辦人丁俊宏</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">購買音樂前可以試聽，看電影前可以看預告片。為什麼在下載 App 前，卻不能先試用呢？</span></a><a target="_blank" href="http://news.mt.co.kr/mtview.php?no=2014072714402191391" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	JUL 2014</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span style="font-size: 21px; margin-bottom: 32px" class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">소셜번역 플리토, 대만 아이디어쇼 스타트업 배틀 '우승'</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">소셜 번역 플랫폼 플리토(대표 이정수)는 대만 최대의 스타트업 컨퍼런스 아이디어쇼 스타트업 배틀에서 우승에 해당하는 심사위원 대상을 수상했다고 27일 밝혔다.</span></a><a target="_blank" href="https://www.inside.com.tw/2014/07/25/2014-ideas-show-day-2" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	JUL 2014</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">2014<br>Ideas Show</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">儘管會前遭逢颱風過境，主辦單位與參加團隊仍在會前一天到場預演。資策會創新應用服務研究所（創研所）舉辦「2014 IDEAS Show 網路創意展」今年邁入第七年，</span></a><a target="_blank" href="https://dentsu-ho.com/articles/1971" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	DEC 2014</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span style="font-size: 24px; margin-bottom: 26px" class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">体験可能なソリューション「AdPlay」</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">D2C Rは、台湾のVMFiveが開発したスマートフォン向けアプリのプロモーションソリューション「AdPlay」の提供を、</span></a><a target="_blank" href="http://technews.tw/2015/04/17/silicon-valley-taiwan-business/" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	APR 2015</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">台灣新創種子團隊赴矽谷</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">由科技部指導、國家實驗研究院科技政策研究與資訊中心執行之「矽谷科技創業培訓計畫」，承接科技部「創新創業激勵計畫」所帶動之創業風潮，進一步甄選團隊赴美受訓</span></a><a target="_blank" href="http://ascii.jp/elem/000/001/029/1029457/" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	JUL 2015</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">広告の先駆者VMFive</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">ゲームをダウンロードする前にプレイできるというプレイアブル広告プラットフォーム「AdPlay」を手がける台湾のVMFive。</span></a><a target="_blank" href="http://www.digitimes.com.tw/iot/article.asp?cat=130&amp;id=0000414823_l9b7splq3sczom2x5rwqx" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	MAR 2015</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">手機遊戲<br>加速軟體</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">VMFive Inc. (第五代虛擬科技股份有限公司)於全球移動大會 (Mobile World Congress；MWC)中宣布與趨勢科技，以及通用移動策略合作關係，</span></a><a target="_blank" href="http://www.wealth.com.tw/article_in.aspx?nid=5320" class="testimonials__item testimonials__item--05 home_news_testimonials"><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_date">	JUL 2015</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_read_more">Read More</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_title">App世代<br>	丁俊宏專訪</span><span class="testimonials__item_text testimonials__item_text--05 home_news_testimonials_text home_news_testimonials_content">拒絕聯發科高薪，五度創業才知道自己要做什麼，創新，我不想只做一間大公司裡的小螺絲釘；現在我要用飛的速度成長。</span></a></div>
+        </div>
+      </div>
+      <style>
+        .home_news_root{
+        	background-color: white;
+        }
+        .home_news_label{
+        	color: #aaa;
+        	font-weight: 300;
+        	font-size: 24px;
+        	display: block;
+        	margin-left: 90px;
+        	text-align: left;
+        }
+        .home_news_title{
+        	color: black;
+        	font-size: 48px;
+        	font-weight: 400;
+        	display: block;
+        	margin-left: 90px;
+        	text-align: left;
+        }
+        .home_news_testimonials_text{
+        	color: black;
+        	font-style: normal;
+        	font-size: 18px;
+        	letter-spacing: initial;
+        	text-align: left;
+        }
+        .home_news_testimonials_title{
+        	font-size: 29px;
+        	padding-top: 0;
+        	padding-bottom: 0;
+        	margin-bottom: 1rem;
+        }
+        .home_news_testimonials_date{
+        	color: #aaa;
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 300;
+        	font-size: 26px;
+        	padding-top: 30%;
+        	margin-bottom: 0;
+        	transition: all 0.5s ease;
+        }
+        .home_news_testimonials_read_more{
+        	color: #aaa;
+        	font-family: 'Roboto', sans-serif;
+        	font-weight: 300;
+        	font-size: 26px;
+        	padding-top: 30%;
+        	margin-bottom: 0;
+        	transition: all 0.5s ease;
+        	transform: translateX(-50%);
+        	opacity: 0;
+        	display: none;
+        }
+        .home_news_testimonials_content{
+        	padding-top: 0;
+        	font-weight: 300;
+        }
+        .home_news_testimonials{
+        	border: #999 1px solid;
+        	cursor: pointer;
+        	width: 290px;
+        	height: 380px;
+        	transition: all 0.4s ease;
+        }
+        .home_news_testimonials{
+        	transition: all 0.6s ease;
+        }
+        .home_news_testimonials.slick-center, .home_news_testimonials:hover{
+        	background-color: #fb971b;
+        	border: #fb971b 1px solid;
+        }
+        .home_news_testimonials.slick-center span, .home_news_testimonials:hover span{
+        	color: white;
+        }
+        .home_news_testimonials.slick-center span.home_news_testimonials_read_more, .home_news_testimonials.home_news_testimonials:hover span.home_news_testimonials_read_more{
+        	display: block;
+        	transform: translateX(0);
+        	opacity: 1;
+        }
+        .home_news_testimonials.slick-center span.home_news_testimonials_date, .home_news_testimonials.home_news_testimonials:hover span.home_news_testimonials_date{
+        	display: none;
+        }
+        .testimonials__box--05:after,.testimonials__box--05:before{
+        	background: none;
+        }
+        a:hover,a:focus{
+        	text-decoration: none;
+        }
+        @media (max-width: 500px)
+        {
+        	.home_news_testimonials_text{
+        		padding-left: 20px;
+        		padding-right: 20px;
+        	}
+        	.home_news_title{
+        		display: none;
+        	}
+        }
+      </style>
+      <!--Contact-->
+      <footer class="about about--07 home_contact_div">
+        <div style="position: relative; width: 100%"><a href="#" class="scroll">
+            <div class="home_back_to_top"></div></a></div>
+        <div class="container">
+          <div class="about__container--07 home_contact_bg">
+            <div class="about__content--07 home_contact_content_div"><a href="#" class="footer__logo_box footer__logo_box--06"><img src="img/etc/vmfive--logo-standard.svg" class="footer__logo footer__logo--06"></a>
+              <div class="footer__subtitle--06"><strong>VMFive Headquarter</strong></div><span class="footer__description footer__description--06">Cooperation: business@vm5.com<br>8F.-3, No.234, Sec. 5, Nanjing E. Rd., Songshan Dist., Taipei City 105, Taiwan<br>105 台北市松山區南京東路 5 段 234 號 8 樓之 3<br></span>
+              <div class="footer__subtitle--06"><strong>VMFive Japan</strong></div><span class="footer__description footer__description--06">Cooperation: jp@vm5.com<br>Yamauchi Building 3F, 3-24-8 Nishi Shinbashi, Minato-ku, Tokyo 105-0003</span>
+              <div class="button--store footer__button--06"><span><img src="img/new-asset/Btn_Footer_Email.png" width="31" height="19" class="home_contact_icon"><img src="img/new-asset/Btn_Footer_Facebook.png" width="18" height="19" class="home_contact_icon"></span></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <style>
+        .home_contact_div {
+        	background-color: white;
+        	border-top: solid 2px #F5F5F5;
+        }
+        .home_contact_bg {
+        	background-image: url(img/new-asset/Btn_Footer_Map.png);
+        	background-repeat: no-repeat;
+        	background-size: contain;
+        	background-position: 100% center;
+        }
+        .home_contact_content_div {
+        	float: left;
+        }
+      </style>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+        ga('create', 'UA-105683329-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+    </main>
+    <div class="js-overlay js-close-navigation js-close-menu overlay"></div>
+  </body>
+</html>
