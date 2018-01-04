@@ -1,0 +1,18 @@
+mixin menu(currentPage)
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    a.navbar-brand(href='/')
+      img.d-inline-block.align-top(src='http://vmfive.com/img/etc/vmfive--logo.svg', height='42px', alt='')
+        
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+      
+    div#navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        each item in [{"id":"pmp", "url":"/"+lang+"/pmp.html", "text":"pmp"},{"id":"adplay", "url":"/"+lang+"/adplay.html", "text":"adplay"},{"id":"about", "url":"/"+lang+"/about.html", "text":"about"},{"id":"joinus", "url":"/"+lang+"/joinus.html", "text":"joinus"}]
+          li.nav-item
+            - if (currentPage == item.id) {
+            a.nav-link.active(class="menu-#{item.id}",href="#{item.url}") #{item.text}
+            - } else {
+            a.nav-link(class="menu-#{item.id}",href="#{item.url}") #{item.text}
+            - }
+          
