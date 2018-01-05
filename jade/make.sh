@@ -12,7 +12,7 @@ cp -R ./* $OUT/en
 
 # Leave an index
 cp ./index.html.default $OUT/index.html
-find . -name '*.html' -exec rm {} +
+# find . -name '*.html' -exec rm {} +
 
 cd $OUT
 find . -name '*.jade' -exec rm {} +

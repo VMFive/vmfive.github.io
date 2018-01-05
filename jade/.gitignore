@@ -1,5 +1,7 @@
 *.html
+*.css
 
 # LINK for local tests
 en
 zh_tw
+css

@@ -1,11 +1,92 @@
+//output:$1.html
+
 extends comp/base
 
+block style
+  style.
+    .pmp-header {
+      overflow:hidden;
+    }
+    .pmp-overlap {
+      background: #0003;
+      padding-top: 100px;
+      /*
+      - padding-bottom: 100px;
+      */
+      height: 100vh;
+    }
+    .pmp-format {
+      background: #fff;
+    }
+  
+
 block content
+  .pmp-header.header
+    .container
+      video.bgvid(playsinline='', autoplay='', muted='', loop='')
+        source(src='http://www.vmfive.com/video/Home_Video.mp4', type='video/mp4')
   +menu("pmp")
-  div(class="pmp-overlap", style="background:#ccf;")
+  
+  div.pmp-overlap
     h1 pmp
     p Light Up Your Brand with Innovation in a <br>
       | Programmatic Way
-  
+
+  div.pmp-format
+    p 1 <br>
+      | 2<br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
+      | <br>
       
   // 
