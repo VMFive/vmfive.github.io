@@ -1,14 +1,3 @@
-.header {
-  > .container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-  }
-}
 .bgvid {
   position: fixed;
   top: 50%;
@@ -26,13 +15,13 @@
 
 .navbar-nav {
   .active:after {
-    @media (min-width: 992px) {
+    @media (min-width: 991px) {
       width: auto;
     }
     @media (max-width: 991px) {
       width: 100px;
     }
-    border-bottom: 5px solid #5bc0eb;
+    border-bottom: 5px solid #fb971b;
     bottom: -10px;
     content: " ";
     left: 0;
@@ -41,6 +30,15 @@
   }
 
   > li {
+    > a {
+      #nav & {
+        color: #fff;
+      }
+      #nav.shrink & {
+        color: rgba(0,0,0,.9);
+      }
+    }
+
     float: left;
     position: relative;
   }
@@ -58,8 +56,8 @@
   transition: .5s ease;
   top: 15px;
 
-  .shrink {
-    height: 50px;
+  &.shrink {
+    height: auto;
     top: 0px;
     -webkit-transition: .5s ease;
     -moz-transition: .5s ease;
@@ -70,11 +68,6 @@
   }
 
   @media (max-width: 500px){
-    top: 10px;
-  }
-}
-@media (max-width: 500px){
-  #nav{
     top: 10px;
   }
 }
