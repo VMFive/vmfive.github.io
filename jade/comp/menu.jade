@@ -1,5 +1,5 @@
 mixin menu(currentPage)
-  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  nav.navbar.navbar-expand-lg.navbar-light
     a.navbar-brand(href='/')
       img.d-inline-block.align-top(src='http://vmfive.com/img/etc/vmfive--logo.svg', height='42px', alt='')
         
@@ -15,4 +15,3 @@ mixin menu(currentPage)
             - } else {
             a.nav-link(class="menu-#{item.id}",href="#{item.url}") #{item.text}
             - }
-          
