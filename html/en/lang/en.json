@@ -2,6 +2,12 @@
   "pmp":{
     "word": "word"
   },
+  "menu":{
+    "textPMP":"PMP",
+    "textAdplay":"Adplay",
+    "textAbout":"About us",
+    "textJoinUs":"Join Us"
+  },
   "name":"vm5",
   "lang":"en"
 }

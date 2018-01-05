@@ -2,6 +2,12 @@
   "pmp":{
     "word": "word"
   },
+  "menu":{
+    "textPMP":"PMP",
+    "textAdplay":"Adplay",
+    "textAbout":"關於我們",
+    "textJoinUs":"加入我們"
+  },
   "name":"vm5",
   "lang":"zh_tw"
 }
