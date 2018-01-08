@@ -1,15 +1,114 @@
+.text-white() {
+  color: #fff;
+}
+.general-screen() {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+}
+@description-padding: 15vw;
+
 .pmp-header {
   overflow:hidden;
 }
 .pmp-overlap {
-  background: #0003;
-  padding: 100px 16px 30px 16px;
-  height: 100vh;
+  .general-screen();
+
+  background: #0009;
+  padding: 150px 0px 0px 0px;
+  .text-white();
+
+  .indented {
+    padding-left: 40px;
+  }
+
+  & > h1 {
+    padding-bottom: 1.5rem;
+  }
 
   & > h1, & > p {
-    color: #fff;
+    .indented;
+  }
+
+  position: relative;
+  .bg {
+    position: absolute;
+    bottom: 0;
+    height: 125px;
+    width: calc(100%);
+    background-image: url("/img/bg_under_header_pmp.png");
+    background-position: 0% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 .pmp-format {
   background: #fff;
+  width: 100%;
+  height: 80vh;
+}
+.pmp-nice-media {
+  .general-screen();
+
+  .text-white();
+  text-align: center;
+
+  position: relative;
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    height: 100%;
+    width: 98%;
+    background-image: url("/img/bg_nice_media.png");
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .content {
+    position: absolute;
+
+    padding-top: 30vh;
+    width: 100%;
+    height: 100%;
+
+    .title {
+      padding-bottom: 1rem;
+    }
+    .description {
+      padding: 0 @description-padding 0 @description-padding;
+    }
+
+    @carousel-height: 30vh;
+    .carousel {
+      height: @carousel-height;
+      width: 100vw;
+
+      .carousel-item {
+        // height: @carousel-height;
+      }
+    }
+  }
+}
+
+.pmp-5r {
+  .general-screen();
+  text-align: center;
+
+
+  .content {
+    .title {
+      padding-top: 60px;
+      padding-bottom: 1rem;
+    }
+    .description {
+      padding: 0 @description-padding 0 @description-padding;
+    }
+    .icon5r {
+      display: block;
+      margin: auto;
+      width: 25%;
+    }
+  }
 }

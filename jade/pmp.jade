@@ -1,10 +1,13 @@
 //output:$1.html
+//{"menu":{}}
 
 extends comp/base
 
 block style
   link(rel="stylesheet", type="text/css", href="/css/pmp.css")
-  
+
+block script_after.
+  $('.carousel').carousel()
 
 block content
   .pmp-header.header
@@ -14,65 +17,61 @@ block content
   +menu("pmp")
   
   div.pmp-overlap
+    .bg
     h1 PMP
     p Light Up Your Brand with Innovation in a <br>
       | Programmatic Way
 
   div.pmp-format
-    p 1 <br>
-      | 2<br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
-      | <br>
+    h3 廣告格式
+    p 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字 <br>
+      | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
       
-  // 
+  div.pmp-nice-media
+    .bg
+    .content
+      h3.title 優質媒體
+      p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+        | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+      
+        
+      - var media = [];
+      - media.push({"cmoney": "cmoney","thirty": "30","managertoday":"managertoday","bnext":"bnext","cheers":"cheers","meet":"meet","cnyes":"cnyes","techbang":"techbang","ltn":"ltn","engadget":"engadget",});
+      //- - media.push({"cmoney": "cmoney","thirty": "30",});
+      //- - media.push({"cmoney": "cmoney","thirty": "30",});
+      .carousel.slide(data-ride='carousel')
+        // Indicators
+        //- ul.carousel-indicators
+        //-   each page, page_index in media
+        //-     li(data-target='#demo', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'}")
+        // The slideshow
+        .carousel-inner
+          each page, page_index in media
+            .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
+              .pure-g
+              each key in Object.keys(page)
+                .pure-u-1-6
+                  //- each key, value in page
+                  img.pure-img(src='/img/media/logo_m_#{page[key]}.png', alt='#{key}')
+        // Left and right controls
+        a.carousel-control-prev(href='#demo', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#demo', role="button", data-slide='next')
+          span.carousel-control-next-icon
+          
+  div.pmp-5r
+    .content
+      h3.title 精準觸及
+      p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+        | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+      img.icon5r(src="/img/icon_5r.png")
+  div.pmp-partner
+    .bg
+    .content
+      h3.title 合作夥伴
+  div.pmp-customer
+    .bg
+    .content
+      h3.title 配合客戶
+      

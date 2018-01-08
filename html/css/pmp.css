@@ -2,14 +2,89 @@
   overflow: hidden;
 }
 .pmp-overlap {
-  background: #0003;
-  padding: 100px 16px 30px 16px;
+  background: #fff;
+  width: 100%;
   height: 100vh;
+  background: #0009;
+  padding: 150px 0px 0px 0px;
+  color: #fff;
+  position: relative;
+}
+.pmp-overlap .indented {
+  padding-left: 40px;
+}
+.pmp-overlap > h1 {
+  padding-bottom: 1.5rem;
 }
 .pmp-overlap > h1,
 .pmp-overlap > p {
-  color: #fff;
+  padding-left: 40px;
+}
+.pmp-overlap .bg {
+  position: absolute;
+  bottom: 0;
+  height: 125px;
+  width: calc(100%);
+  background-image: url("/img/bg_under_header_pmp.png");
+  background-position: 0% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .pmp-format {
   background: #fff;
+  width: 100%;
+  height: 80vh;
+}
+.pmp-nice-media {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.pmp-nice-media .bg {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  height: 100%;
+  width: 98%;
+  background-image: url("/img/bg_nice_media.png");
+  background-position: 0% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pmp-nice-media .content {
+  position: absolute;
+  padding-top: 30vh;
+  width: 100%;
+  height: 100%;
+}
+.pmp-nice-media .content .title {
+  padding-bottom: 1rem;
+}
+.pmp-nice-media .content .description {
+  padding: 0 15vw 0 15vw;
+}
+.pmp-nice-media .content .carousel {
+  height: 30vh;
+  width: 100vw;
+}
+.pmp-5r {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.pmp-5r .content .title {
+  padding-top: 60px;
+  padding-bottom: 1rem;
+}
+.pmp-5r .content .description {
+  padding: 0 15vw 0 15vw;
+}
+.pmp-5r .content .icon5r {
+  display: block;
+  margin: auto;
+  width: 25%;
 }
