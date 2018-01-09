@@ -8,6 +8,9 @@
     "textAbout":"About us",
     "textJoinUs":"Join Us"
   },
+  "button":{
+    "more":"more"
+  },
   "name":"vm5",
   "lang":"en"
 }

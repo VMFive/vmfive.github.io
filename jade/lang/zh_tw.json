@@ -8,6 +8,9 @@
     "textAbout":"關於我們",
     "textJoinUs":"加入我們"
   },
+  "button":{
+    "more":"查看更多"
+  },
   "name":"vm5",
   "lang":"zh_tw"
 }
