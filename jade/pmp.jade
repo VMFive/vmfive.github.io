@@ -29,6 +29,7 @@ block content
       
   div.pmp-nice-media
     .bg
+      img.pure-img(src="/img/bg_nice_media.png",alt="nice-media")
     .content
       h3.title 優質媒體
       p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
@@ -37,27 +38,27 @@ block content
         
       - var media = [];
       - media.push({"cmoney": "cmoney","thirty": "30","managertoday":"managertoday","bnext":"bnext","cheers":"cheers","meet":"meet","cnyes":"cnyes","techbang":"techbang","ltn":"ltn","engadget":"engadget",});
-      //- - media.push({"cmoney": "cmoney","thirty": "30",});
-      //- - media.push({"cmoney": "cmoney","thirty": "30",});
-      .carousel.slide(data-ride='carousel')
+      - media.push({"3ctalk": "3ctalk","babyou": "babyou","bluesbear": "bluesbear","ck101": "ck101","dcard": "dcard","english": "english","juksy": "juksy","meteor": "meteor","mf": "mf","nius": "nius",});
+      - media.push({"picsee": "picsee","queentalk": "queentalk","setn": "setn","shoppingdesign": "shoppingdesign","sportsv": "sportsv","taiwan": "taiwan","talk": "talk","teepr": "teepr","udn": "udn","womentalk": "womentalk",});
+      #nice-media.carousel.slide(data-ride='carousel')
         // Indicators
         //- ul.carousel-indicators
         //-   each page, page_index in media
-        //-     li(data-target='#demo', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'}")
+        //-     li(data-target='#nice-media', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'}")
         // The slideshow
         .carousel-inner
           each page, page_index in media
             .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
               .pure-g
-              each key in Object.keys(page)
-                .pure-u-1-6
-                  //- each key, value in page
-                  img.pure-img(src='/img/media/logo_m_#{page[key]}.png', alt='#{key}')
+                each key in Object.keys(page)
+                  .pure-u-1-2.pure-u-md-1-5
+                    //- each key, value in page
+                    img.pure-img(src='/img/media/logo_m_#{page[key]}.png', alt='#{key}')
         // Left and right controls
-        a.carousel-control-prev(href='#demo', role="button", data-slide='prev')
+        a.carousel-control-prev(href='#nice-media', role="button", data-slide='prev')
           span.carousel-control-prev-icon
         |           
-        a.carousel-control-next(href='#demo', role="button", data-slide='next')
+        a.carousel-control-next(href='#nice-media', role="button", data-slide='next')
           span.carousel-control-next-icon
           
   div.pmp-5r
