@@ -1,3 +1,5 @@
+@import "lib";
+
 body {
   font-family: 'Roboto Thin', sans-serif;
   font-weight: lighter;
@@ -20,12 +22,7 @@ body {
 
 .navbar-nav {
   .active:after {
-    @media (min-width: 991px) {
-      width: auto;
-    }
-    @media (max-width: 991px) {
-      width: 100px;
-    }
+    width: auto;
     border-bottom: 5px solid #fb971b;
     bottom: -10px;
     content: " ";
@@ -35,7 +32,15 @@ body {
   }
 
   > li {
+    text-align: center;
+    width: auto;
+    .media-md({
+      width: 12vw;
+    });
+
     > a {
+      font-size: 20;
+
       #nav & {
         color: #fff;
         &.active{

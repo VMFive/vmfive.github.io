@@ -17,6 +17,7 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 .navbar-nav .active:after {
+  width: auto;
   border-bottom: 5px solid #fb971b;
   bottom: -10px;
   content: " ";
@@ -24,19 +25,19 @@ body {
   position: absolute;
   right: 0;
 }
-@media (min-width: 991px) {
-  .navbar-nav .active:after {
-    width: auto;
-  }
-}
-@media (max-width: 991px) {
-  .navbar-nav .active:after {
-    width: 100px;
-  }
-}
 .navbar-nav > li {
+  text-align: center;
+  width: auto;
   float: left;
   position: relative;
+}
+@media screen and (min-width: 48em) {
+  .navbar-nav > li {
+    width: 12vw;
+  }
+}
+.navbar-nav > li > a {
+  font-size: 20;
 }
 #nav .navbar-nav > li > a {
   color: #fff;
