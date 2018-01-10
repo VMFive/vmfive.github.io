@@ -146,6 +146,10 @@
             display: flex;
             text-align: center;
             justify-content: center;
+
+            img {
+              .img-center-margin();
+            }
           }
         }
         // height: @carousel-height;
@@ -298,7 +302,7 @@
   .content {
     position: absolute;
 
-    top: 55%;
+    top: 45%;
     transform: translateY(-50%);
     width: 100%;
     .media-md({
@@ -315,6 +319,28 @@
       padding: 0 @description-padding 0 @description-padding;
     }
 
+    .carousel-indicators {
+      bottom: none;
+      position: relative;
+
+      & > li.active::after {
+        background-color: #000;
+      }
+      & > li::after {
+        height: 5px;
+        background-color: transparent;
+      }
+    }
+    .carousel-indicators-text({
+      .flex-container-center();
+      .media-md({
+        width: 10%;
+        margin-bottom: 0rem;
+      });
+      width: 100px;
+      margin-bottom: 1rem;
+    });
+
     @carousel-height: 30vh;
     .carousel {
       width: 100vw;
@@ -325,9 +351,6 @@
       });
 
       .carousel-buttons-color("b", {});
-      .carousel-indicators {
-        color: #000;
-      }
       .carousel-item {
         & > .pure-g {
           padding: 0 10% 0 10%;
@@ -335,10 +358,40 @@
             display: flex;
             text-align: center;
             justify-content: center;
+
+            img {
+              .img-center-margin();
+            }
           }
         }
         // height: @carousel-height;
       }
     }
+  }
+}
+
+.pmp-hr-container {
+  .background-default;
+  padding-top: 3rem;
+
+  .pmp-hr {
+    height: 2px;
+    background: #333;
+  }
+}
+
+.pmp-contact-us {
+  .background-default;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .button {
+    @color_contactus: #FF7E8F;
+    color: @color_contactus;
+    .button-rounded();
+    margin: auto;
+    background-color: #fff;
+    border: 2px solid @color_contactus;
   }
 }

@@ -119,13 +119,20 @@ block content
       h3.title 配合客戶      
         
       - var customer = [];
-      - customer.push({tag:"tag",data:{"kkbox":"kkbox",}});
-      // Indicators
-      ul.carousel-indicators
-        each page, page_index in customer
-          li(data-target='#customer', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'}")
-            #{page.tag}
+      - customer.push({tag:"運動",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
+      - customer.push({tag:"影視娛樂",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
+      - customer.push({tag:"食品",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
+      - customer.push({tag:"飲料",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
+      - customer.push({tag:"3C",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
+      - customer.push({tag:"速食",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
+      - customer.push({tag:"美妝",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
+      - customer.push({tag:"日常用品",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
       #customer.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators.pure-g
+          each page, page_index in customer
+            li.pure-u-1-2(data-target='#customer', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'} pure-u-md-1-#{customer.length}")
+              | #{page.tag}
         // The slideshow
         .carousel-inner
           each page, page_index in customer
@@ -141,4 +148,8 @@ block content
         |           
         a.carousel-control-next(href='#customer', role="button", data-slide='next')
           span.carousel-control-next-icon
+  .pmp-hr-container
+    .pmp-hr
+  div.pmp-contact-us
+    .button #{button.contactus === undefined ? "Contact Us" : button.contactus}
       

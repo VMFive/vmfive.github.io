@@ -1,3 +1,10 @@
+.background-default {
+  background: #f7f7f7;
+}
+.hr {
+  width: 100%;
+  height: 1px;
+}
 .pmp-header {
   overflow: hidden;
 }
@@ -172,6 +179,9 @@
   text-align: center;
   justify-content: center;
 }
+.pmp-nice-media .content .carousel .carousel-item > .pure-g > div img {
+  margin: auto auto;
+}
 .pmp-5r {
   background: #f7f7f7;
   width: 100%;
@@ -340,7 +350,7 @@
 }
 .pmp-customer .content {
   position: absolute;
-  top: 55%;
+  top: 45%;
   transform: translateY(-50%);
   width: 100%;
 }
@@ -359,6 +369,33 @@
 }
 .pmp-customer .content .description {
   padding: 0 15vw 0 15vw;
+}
+.pmp-customer .content .carousel-indicators {
+  bottom: none;
+  position: relative;
+}
+.pmp-customer .content .carousel-indicators > li.active::after {
+  background-color: #000;
+}
+.pmp-customer .content .carousel-indicators > li::after {
+  height: 5px;
+  background-color: transparent;
+}
+.pmp-customer .content .carousel-indicators li {
+  text-indent: 0;
+  width: auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 48em) {
+  .pmp-customer .content .carousel-indicators li {
+    width: 10%;
+    margin-bottom: 0rem;
+  }
 }
 .pmp-customer .content .carousel {
   width: 100vw;
@@ -379,9 +416,6 @@
   height: 60px;
   width: 40px;
 }
-.pmp-customer .content .carousel .carousel-indicators {
-  color: #000;
-}
 .pmp-customer .content .carousel .carousel-item > .pure-g {
   padding: 0 10% 0 10%;
 }
@@ -389,4 +423,33 @@
   display: flex;
   text-align: center;
   justify-content: center;
+}
+.pmp-customer .content .carousel .carousel-item > .pure-g > div img {
+  margin: auto auto;
+}
+.pmp-hr-container {
+  background: #f7f7f7;
+  padding-top: 3rem;
+}
+.pmp-hr-container .pmp-hr {
+  height: 2px;
+  background: #333;
+}
+.pmp-contact-us {
+  background: #f7f7f7;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.pmp-contact-us .button {
+  color: #FF7E8F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  width: 200px;
+  height: 35px;
+  margin: auto;
+  background-color: #fff;
+  border: 2px solid #FF7E8F;
 }
