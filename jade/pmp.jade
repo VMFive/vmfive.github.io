@@ -1,5 +1,5 @@
 //output:$1.html
-//{"menu":{},"button":{}}
+//{"menu":{},"button":{},"lang":"en"}
 
 extends comp/base
 
@@ -43,7 +43,7 @@ block content
             .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
               .pure-g
                 each key in Object.keys(page)
-                  .pure-u-1-2.pure-u-md-1-5
+                  .pure-u-1-2.pure-u-lg-1-5
                     //- each key, value in page
                     img.pure-img(src='/img/adformat/icon_adformat_phone_#{page[key].url}.png', alt='#{key}')
                     .flex-br

@@ -1,7 +1,8 @@
 .background-default {
   background: #f7f7f7;
 }
-body {
+body,
+h1 {
   font-family: 'Roboto Thin', sans-serif;
   font-weight: lighter;
 }

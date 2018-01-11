@@ -1,6 +1,141 @@
 //output:$1.html
+//{"menu":{},"button":{},"lang":"en"}
 extends comp/base
+
+block style
+  link(rel="stylesheet", type="text/css", href="/css/adplay.css")
+
+block script_after.
+  $('.carousel').carousel()
 
 block content
   +menu("adplay")
-  div adplay
+  .adplay-header.header
+    .container
+      video.bgvid(playsinline='', autoplay='', muted='', loop='')
+        source(src='/video/Home_Video.mp4', type='video/mp4')
+  
+  div.adplay-overlap
+    h1 Adplay
+    p.description Let users expeirence, Get higher <br>
+      | retention. AdPlay is a playble ad solution <br>
+      | with VMFive's patented technology <br>
+      | which allows users to try applications <br>
+      | before download. AdPlay can be <br>
+      | provided as embedded or a link.
+
+          
+  div.adplay-feature
+    .content
+      h3.title 功能
+      p.description VMFive's cutting-edge mobile virtualization technology allows users to experience Apps without downloading them, across devices.
+      - var feature = [];
+      - feature.push({"crossplatform": {"title":"Cross platform","url":"crossplatform","text":"Experience our playable AD through every device. No matter on your smart phone with either iOS or Android system, your tablet, or PC."},"realtime_streaming": {"title":"Realtime Streaming","url":"realtime_streaming","text":"With our streaming technology, AdPlay will not have any latency. The fluent experience makes your APP more attractive to the audience!"},"mobile_virtualization": {"title":"Mobile Virtualization","url":"mobile_virtualization","text":"Through our AdPlay server, your APK file can be lauched easily  with the virtualized phone, which makes AdPlay a simpler and better service ."},"instant_play": {"title":"Instant Play","url":"instant_play","text":"You can enjoy the APP without downloading and lagging. After the play, you can further download it to your device with only one click."},"engaging": {"title":"Engaging","url":"engaging","text":"By playing the climax of your APP directly, the audience can immediately be catched as well as become immersive to your APP."},"differentiation": {"title":"Differentiation","url":"differentiation","text":"AdPlay is the brand-new solution for mobile advertising featuring the game play experience. Its playability makes it different from the common ADs."},});
+      each page, page_index in feature
+        .pure-g
+          each key in Object.keys(page)
+            .pure-u-1-2.pure-u-md-1-3
+              //- each key, value in page
+              img.pure-img(src='/img/feature/icon_adplay_#{page[key].url}.svg', alt='#{key}')
+              h5 #{page[key].title}
+              p #{page[key].text}
+
+  div.adplay-introvideo
+    .content
+      h3.title 影片介紹
+      p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+        | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+      img.icon5r(src="/img/icon/icon_5r_with_text.png")
+      .button #{button.more === undefined ? "more" : button.more}
+      
+  div.adplay-mainflows
+    .content
+      h3.title 廣告主流程
+      img.process(src="/img/icon/icon_ad_mainflows.png")
+
+  div.adplay-ourvalue
+    .bg
+      img.pure-img(src="/img/bg/bg_customer.svg",alt="customer")
+    .content
+      h3.title 價值      
+        
+      - var ourvalue = [];
+      - ourvalue.push({tag:"遊戲開發商",data:{"url":"gamedevvendor","content":["Show the most attractive part of the game not only by photos and videos but instant playing.","Make the high quality users favor your APP while engaging in the game play.","Create higher LTV and bring higher returns from the marketing investment.",],}});
+      - ourvalue.push({tag:"遊戲代理商",data:{"url":"gamedevvendor","content":["Show the most attractive part of the game not only by photos and videos but instant playing.","Make the high quality users favor your APP while engaging in the game play.","Create higher LTV and bring higher returns from the marketing investment.",],}});
+      - ourvalue.push({tag:"遊戲玩家",data:{"url":"gamedevvendor","content":["Show the most attractive part of the game not only by photos and videos but instant playing.","Make the high quality users favor your APP while engaging in the game play.","Create higher LTV and bring higher returns from the marketing investment.",],}});
+      #ourvalue.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators.pure-g
+          each page, page_index in ourvalue
+            li.pure-u-1-2(data-target='#ourvalue', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'} pure-u-md-1-#{ourvalue.length}")
+              | #{page.tag}
+        // The slideshow
+        .carousel-inner
+          each page, page_index in ourvalue
+            .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
+              .pure-g
+                .pure-u-1-1.pure-u-md-1-2
+                  p
+                    each text in page.data.content
+                      | #{text} <br><br>
+                .pure-u-1-1.pure-u-md-1-2
+                  img.pure-img(src='/img/ourvalue/icon_adplay_#{page.data.url}.png', alt='#{key}')
+        // Left and right controls
+        a.carousel-control-prev(href='#ourvalue', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#ourvalue', role="button", data-slide='next')
+          span.carousel-control-next-icon
+
+  div.adplay-scenario
+    .content
+      h3.title 使用情境
+      p.description Adplay is flexible for different scenarios.
+        
+      - var scenario = [];
+      - scenario.push({"01":{text:"廣告樣式名稱",url:"01"},"02":{text:"廣告樣式名稱",url:"02"},"03":{text:"廣告樣式名稱",url:"03"},"04":{text:"廣告樣式名稱",url:"04"},"05":{text:"廣告樣式名稱",url:"05"},});
+      - scenario.push({"01":{text:"廣告樣式名稱",url:"01"},"02":{text:"廣告樣式名稱",url:"02"},"03":{text:"廣告樣式名稱",url:"03"},"04":{text:"廣告樣式名稱",url:"04"},"05":{text:"廣告樣式名稱",url:"05"},});
+      //- - scenario.push({"06":"06","07":"07","08":"08","09":"09","010":"010",});
+      #scenario.carousel.slide(data-ride='carousel')
+        // Indicators
+        //- ul.carousel-indicators
+        //-   each page, page_index in scenario
+        //-     li(data-target='#scenario', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'}")
+        // The slideshow
+        .carousel-inner
+          each page, page_index in scenario
+            .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
+              .pure-g
+                each key in Object.keys(page)
+                  .pure-u-1-2.pure-u-lg-1-5
+                    //- each key, value in page
+                    img.pure-img(src='/img/adformat/icon_adformat_phone_#{page[key].url}.png', alt='#{key}')
+                    .flex-br
+                    p #{page[key].text}
+        // Left and right controls
+        a.carousel-control-prev(href='#scenario', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#scenario', role="button", data-slide='next')
+          span.carousel-control-next-icon
+
+  div.adplay-partner
+    .bg
+      img.pure-img(src="/img/bg/bg_partner.svg",alt="partner")
+    .content
+      h3.title 合作夥伴
+      - var partner = [];
+      - partner.push({"lndata": "lndata","amnet": "amnet","ipg": "ipg",});
+      each page, page_index in partner
+        .pure-g
+          each key in Object.keys(page)
+            .pure-u-1-2.pure-u-md-1-3
+              //- each key, value in page
+              img.pure-img(src='/img/partner/logo_m_#{page[key]}.png', alt='#{key}')
+              p 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+                | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+
+  .adplay-contact-us-hr-container
+    .adplay-contact-us-hr
+  div.adplay-contact-us
+    .button #{button.contactus === undefined ? "Contact Us" : button.contactus}
