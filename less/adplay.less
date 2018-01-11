@@ -58,6 +58,51 @@
 
 .adplay-introvideo {
   .general-screen();
+  padding-bottom: 3rem;
+
+  .overscreen() {
+    width: 100vw;
+    height: 180vh;
+    .media-md({
+      height: 100vh;
+    });
+  }
+  .overscreen();
+
+  position: relative;
+  .bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-image: url("/img/icon/icon_adplay_introvideo_md.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .media-md({
+      left: 2%;
+      width: 98%;
+      background-position: 0% 0%;
+      background-size: auto cover;
+      background-image: url("/img/icon/icon_adplay_introvideo.png");
+    });
+    .overscreen();
+
+    & > img {
+      width: 100%;
+      height: 100%;
+
+      display: none;
+      .media-lg({
+        display: block;
+      });
+    };
+  }
+}
+
+.adplay-mainflows {
+  .general-screen();
   height: auto;
   padding-bottom: 3rem;
 
@@ -71,39 +116,26 @@
     .description {
       padding: 0 @description-padding 0 @description-padding;
     }
-    .icon5r {
-      display: block;
+    .process {
+      display: none;
       margin: auto;
       width: 80%;
       padding-bottom: 2rem;
+      .media-md({
+        display: block;
+      });
     }
-
-    .button {
-      .text-white();
-      .button-rounded();
-      margin: auto;
-      background-color: #FC981C;
-    }
-  }
-}
-
-.adplay-mainflows {
-  .general-screen();
-  padding-bottom: 3rem;
-
-  text-align: center;
-
-  .content {
-    .title {
-      padding-top: 60px;
-      padding-bottom: 1rem;
-    }
-    .description {
-      padding: 0 @description-padding 0 @description-padding;
-    }
-    .process {
+    .process-md {
       display: block;
       margin: auto;
+      width: 30%;
+      padding-bottom: 2rem;
+      .media-md({
+        display: none;
+      });
+    }
+    .process-decorations {
+      height: 50vh;
       width: 80%;
       padding-bottom: 2rem;
     }

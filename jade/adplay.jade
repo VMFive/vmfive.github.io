@@ -41,17 +41,14 @@ block content
               p #{page[key].text}
 
   div.adplay-introvideo
-    .content
-      h3.title 影片介紹
-      p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
-        | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
-      img.icon5r(src="/img/icon/icon_5r_with_text.png")
-      .button #{button.more === undefined ? "more" : button.more}
+    a.bg(href="#")
       
   div.adplay-mainflows
     .content
       h3.title 廣告主流程
-      img.process(src="/img/icon/icon_ad_mainflows.png")
+      img.pure-img.process(src="/img/icon/icon_ad_mainflows.png")
+      img.pure-img.process-md(src="/img/icon/icon_ad_mainflows_md.png")
+      .process-decorations
 
   div.adplay-ourvalue
     .bg

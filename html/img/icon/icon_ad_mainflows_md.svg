@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="129px" height="228px" viewBox="0 0 129 228" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="3_AdPlay_m" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-111.000000, -2625.000000)">
+        <g id="Group-4-Copy" transform="translate(112.000000, 2566.000000)">
+            <g id="Group-11" transform="translate(0.000000, 57.000000)">
+                <text id="Free-Trial" font-family="HelveticaNeue-Light, Helvetica Neue" font-size="20" font-weight="300" line-spacing="20" fill="#000000">
+                    <tspan x="37" y="157">Free Trial</tspan>
+                </text>
+                <text id="Tutorial" font-family="HelveticaNeue-Light, Helvetica Neue" font-size="20" font-weight="300" line-spacing="20" fill="#000000">
+                    <tspan x="37" y="87">Tutorial</tspan>
+                </text>
+                <text id="Download" font-family="HelveticaNeue-Light, Helvetica Neue" font-size="20" font-weight="300" line-spacing="20" fill="#000000">
+                    <tspan x="37" y="227">Download</tspan>
+                </text>
+                <text id="One-Click" font-family="PingFangTC-Regular, PingFang TC" font-size="20" font-weight="normal" line-spacing="20" fill="#000000">
+                    <tspan x="37" y="21">One Click</tspan>
+                </text>
+                <circle id="Oval-Copy-3" stroke="#000000" fill="#FFFFFF" cx="8.5" cy="11.5" r="8.5"></circle>
+                <circle id="Oval-Copy-5" stroke="#000000" fill="#FFFFFF" cx="8.5" cy="150.5" r="8.5"></circle>
+                <circle id="Oval-Copy-4" stroke="#000000" fill="#FFFFFF" cx="8.5" cy="80.5" r="8.5"></circle>
+                <circle id="Oval-Copy-6" stroke="#000000" fill="#FFFFFF" cx="8.5" cy="220.5" r="8.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
