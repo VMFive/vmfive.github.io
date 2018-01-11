@@ -78,7 +78,7 @@
     width: 100%;
     background-image: url("/img/icon/icon_adplay_introvideo_md.png");
     background-position: center center;
-    background-size: contain;
+    background-size: cover contain;
     background-repeat: no-repeat;
     .media-md({
       left: 2%;
@@ -161,11 +161,11 @@
   .bg {
     position: absolute;
     top: 0;
-    left: 2%;
     height: 100%;
-    width: 98%;
-    background-image: url("/img/bg/bg_customer.png");
-    background-position: 0% 0%;
+    right: 0%;
+    width: 100%;
+    background-image: url("/img/bg/bg_adplay_ourvalue.png");
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -174,7 +174,8 @@
     });
 
     & > img {
-      width: 100%;
+      margin-right: auto;
+      width: 98%;
       height: 100%;
 
       display: none;
@@ -308,11 +309,11 @@
   .bg {
     position: absolute;
     top: 0;
-    right: 2%;
     height: 100%;
-    width: 98%;
-    background-image: url("/img/bg/bg_partner.png");
-    background-position: 100% 0%;
+    left: 0%;
+    width: 100%;
+    background-image: url("/img/bg/bg_adplay_partner.png");
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -321,7 +322,8 @@
     });
 
     & > img {
-      width: 100%;
+      margin-left: auto;
+      width: 98%;
       height: 100%;
 
       display: none;
@@ -334,7 +336,7 @@
   .content {
     position: absolute;
 
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
     width: 100%;
     .media-md({
