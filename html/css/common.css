@@ -1,20 +1,24 @@
+.background-default {
+  background: #f7f7f7;
+}
 body {
   font-family: 'Roboto Thin', sans-serif;
   font-weight: lighter;
 }
 .bgvid {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  position: fixed;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
 }
 .navbar-nav .active:after {
   width: auto;
@@ -52,27 +56,22 @@ body {
   color: #f68618;
 }
 #nav {
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
   background: transparent;
   position: fixed;
   width: 100%;
   z-index: 20;
   font-family: 'Roboto', sans-serif;
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -ms-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
   top: 15px;
   padding: 8 40 8 40;
 }
 #nav.shrink {
   height: auto;
   top: 0px;
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -ms-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
   background: #f7f7f7;
 }
 @media (max-width: 500px) {

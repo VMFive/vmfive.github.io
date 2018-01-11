@@ -13,7 +13,7 @@ block content
   .pmp-header.header
     .container
       video.bgvid(playsinline='', autoplay='', muted='', loop='')
-        source(src='http://www.vmfive.com/video/Home_Video.mp4', type='video/mp4')
+        source(src='/video/Home_Video.mp4', type='video/mp4')
   +menu("pmp")
   
   div.pmp-overlap
@@ -58,7 +58,7 @@ block content
       
   div.pmp-nice-media
     .bg
-      img.pure-img(src="/img/bg_nice_media.svg",alt="nice-media")
+      img.pure-img(src="/img/bg/bg_nice_media.svg",alt="nice-media")
     .content
       h3.title 優質媒體
       p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
@@ -95,11 +95,11 @@ block content
       h3.title 精準觸及
       p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
         | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
-      img.icon5r(src="/img/icon_5r_with_text.png")
+      img.icon5r(src="/img/icon/icon_5r_with_text.png")
       .button #{button.more === undefined ? "more" : button.more}
   div.pmp-partner
     .bg
-      img.pure-img(src="/img/bg_partner.svg",alt="partner")
+      img.pure-img(src="/img/bg/bg_partner.svg",alt="partner")
     .content
       h3.title 合作夥伴
       - var partner = [];
@@ -114,7 +114,7 @@ block content
                 | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
   div.pmp-customer
     .bg
-      img.pure-img(src="/img/bg_customer.svg",alt="customer")
+      img.pure-img(src="/img/bg/bg_customer.svg",alt="customer")
     .content
       h3.title 配合客戶      
         
@@ -148,8 +148,8 @@ block content
         |           
         a.carousel-control-next(href='#customer', role="button", data-slide='next')
           span.carousel-control-next-icon
-  .pmp-hr-container
-    .pmp-hr
+  .pmp-contact-us-hr-container
+    .pmp-contact-us-hr
   div.pmp-contact-us
     .button #{button.contactus === undefined ? "Contact Us" : button.contactus}
       

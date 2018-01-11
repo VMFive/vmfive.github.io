@@ -6,18 +6,13 @@ body {
 }
 
 .bgvid {
+  .center-absolute();
   position: fixed;
-  top: 50%;
-  left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
 }
 
 .navbar-nav {
@@ -60,16 +55,12 @@ body {
   }
 }
 #nav {
+  .def-transition(.5s ease);
   background: transparent;
   position: fixed;
   width: 100%;
   z-index: 20;
   font-family: 'Roboto', sans-serif;
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -ms-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
   top: 15px;
 
   padding: 8 40 8 40;
@@ -77,11 +68,6 @@ body {
   &.shrink {
     height: auto;
     top: 0px;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    -ms-transition: .5s ease;
-    -o-transition: .5s ease;
-    transition: .5s ease;
     background: #f7f7f7;
   }
 
