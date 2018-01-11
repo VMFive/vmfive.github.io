@@ -71,7 +71,7 @@
   width: 100%;
   background-image: url("/img/icon/icon_adplay_introvideo_md.png");
   background-position: center center;
-  background-size: cover contain;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 100vw;
   height: 180vh;
