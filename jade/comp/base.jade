@@ -13,7 +13,7 @@ html
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css', integrity='sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy', crossorigin='anonymous')
     link(rel='stylesheet', href='https://unpkg.com/purecss@1.0.0/build/pure-min.css', integrity='sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w', crossorigin='anonymous')
     link(rel='stylesheet', href='https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css')
-    link(rel='stylesheet', href='/css/common.css')
+    //- link(rel='stylesheet', href='/css/common.css')
       
   block style
 
@@ -28,15 +28,16 @@ html
     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js', integrity='sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4', crossorigin='anonymous')
     
-    script(type="text/javascript").
-      window.onscroll = function() {
-        if(document.body.scrollTop + document.documentElement.scrollTop > 20){
-          document.querySelector('#nav').classList.add("shrink");
-          document.querySelector('.navbar-brand img').src = "/img/logo/vmfive--logo-standard.svg";
-        }else{
-          document.querySelector('#nav').classList.remove("shrink");
-          document.querySelector('.navbar-brand img').src = "/img/logo/vmfive--logo.svg";
+    block scroll_nav_change
+      script(type="text/javascript").
+        window.onscroll = function() {
+          if(document.body.scrollTop + document.documentElement.scrollTop > 20){
+            document.querySelector('#nav').classList.add("shrink");
+            document.querySelector('.navbar-brand img').src = "/img/logo/vmfive--logo-standard.svg";
+          }else{
+            document.querySelector('#nav').classList.remove("shrink");
+            document.querySelector('.navbar-brand img').src = "/img/logo/vmfive--logo.svg";
+          }
         }
-      }
     script(type="text/javascript")
       block script_after

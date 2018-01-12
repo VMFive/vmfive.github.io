@@ -1,4 +1,4 @@
-@import "lib.less";
+@import "common.less";
 
 .pmp-header {
   overflow:hidden;
@@ -49,7 +49,7 @@
     .button {
       .text-white();
       .button-rounded();
-      margin: auto;
+      margin: 1rem auto 0 auto;
       background-color: #FC981C;
     }
 
@@ -65,6 +65,14 @@
             .flex-row();
             text-align: center;
             justify-content: center;
+            padding: 10px;
+
+            img {
+              margin: auto 0;
+            }
+            p {
+              margin: auto;
+            }
           }
         }
         // height: @carousel-height;

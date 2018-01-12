@@ -1,0 +1,57 @@
+@import "common.less";
+
+#nav {
+  top: 0;
+  .background-menu-dark;
+}
+
+.adformat-overlap {
+  .general-screen();
+  .background-default;
+  padding: @nav-height 0px 0px 0px;
+
+  .content {
+    overflow-y: scroll;
+
+    height: 70%;
+    .media-md({
+      height: 100%;
+    });
+  }
+
+  .menu {
+    height: 30%;
+    .media-md({
+      height: 100%;
+    });
+
+    @aditem-size-sm: 100vw / 3;
+    @aditem-size-md: 100vw / 3 / 3;
+    & > .itemgrid {
+      position: relative;
+      bottom: 0;
+
+      overflow-y: visible;
+      height: auto;
+      margin-bottom: 0;
+      .media-md({
+        position: absolute;
+        overflow-y: scroll;
+        height: @aditem-size-md * 3;
+        margin-bottom: 3rem;
+      });
+    }
+    .aditem {
+      & > img {
+        display: block;
+        padding: 2px;
+        margin: auto;
+
+        height: @aditem-size-sm;
+        .media-md({
+          height: @aditem-size-md;
+        });
+      }
+    }
+  }
+}

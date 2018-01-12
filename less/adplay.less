@@ -1,4 +1,4 @@
-@import "lib.less";
+@import "common.less";
 
 .adplay-header {
   overflow:hidden;
@@ -283,7 +283,14 @@
             .flex-row();
             text-align: center;
             justify-content: center;
+            padding: 1rem;
 
+            img {
+              margin: auto 0;
+              &::after {
+                height: 1rem;
+              }
+            }
             p {
               margin: auto;
             }

@@ -54,6 +54,7 @@ body, h1 {
     position: relative;
   }
 }
+@nav-padding-topbottom: 8px;
 #nav {
   .def-transition(.5s ease);
   background: transparent;
@@ -63,7 +64,7 @@ body, h1 {
   font-family: 'Roboto', sans-serif;
   top: 15px;
 
-  padding: 8 40 8 40;
+  padding: @nav-padding-topbottom 40 @nav-padding-topbottom 40;
 
   &.shrink {
     height: auto;
@@ -74,4 +75,9 @@ body, h1 {
   @media (max-width: 500px){
     top: 10px;
   }
+}
+@nav-height: 52px + @nav-padding-topbottom * 2;
+
+.background-menu-dark {
+  background: #4A4A4A;
 }

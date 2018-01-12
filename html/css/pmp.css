@@ -1,6 +1,85 @@
 .background-default {
   background: #f7f7f7;
 }
+body,
+h1 {
+  font-family: 'Roboto Thin', sans-serif;
+  font-weight: lighter;
+}
+.bgvid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+.navbar-nav .active:after {
+  width: auto;
+  border-bottom: 5px solid #fb971b;
+  bottom: -10px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.navbar-nav > li {
+  text-align: center;
+  width: auto;
+  float: left;
+  position: relative;
+}
+@media screen and (min-width: 48em) {
+  .navbar-nav > li {
+    width: 12vw;
+  }
+}
+.navbar-nav > li > a {
+  font-size: 20;
+}
+#nav .navbar-nav > li > a {
+  color: #fff;
+}
+#nav .navbar-nav > li > a.active {
+  color: #fb971b;
+}
+#nav.shrink .navbar-nav > li > a {
+  color: rgba(0, 0, 0, 0.9);
+}
+#nav.shrink .navbar-nav > li > a.active {
+  color: #f68618;
+}
+#nav {
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  font-family: 'Roboto', sans-serif;
+  top: 15px;
+  padding: 8 40 8 40;
+}
+#nav.shrink {
+  height: auto;
+  top: 0px;
+  background: #f7f7f7;
+}
+@media (max-width: 500px) {
+  #nav {
+    top: 10px;
+  }
+}
 .pmp-header {
   overflow: hidden;
 }
@@ -51,7 +130,7 @@
   border-radius: 35px;
   width: 200px;
   height: 35px;
-  margin: auto;
+  margin: 1rem auto 0 auto;
   background-color: #FC981C;
 }
 .pmp-format .content .carousel {
@@ -75,6 +154,13 @@
   flex-flow: row wrap;
   text-align: center;
   justify-content: center;
+  padding: 10px;
+}
+.pmp-format .content .carousel .carousel-item > .pure-g > div img {
+  margin: auto 0;
+}
+.pmp-format .content .carousel .carousel-item > .pure-g > div p {
+  margin: auto;
 }
 .pmp-nice-media {
   background: #f7f7f7;

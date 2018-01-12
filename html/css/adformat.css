@@ -83,3 +83,56 @@ h1 {
 .background-menu-dark {
   background: #4A4A4A;
 }
+#nav {
+  top: 0;
+  background: #4A4A4A;
+}
+.adformat-overlap {
+  width: 100%;
+  height: 100vh;
+  background: #f7f7f7;
+  padding: 68px 0px 0px 0px;
+}
+.adformat-overlap .content {
+  overflow-y: scroll;
+  height: 70%;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content {
+    height: 100%;
+  }
+}
+.adformat-overlap .menu {
+  height: 30%;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .menu {
+    height: 100%;
+  }
+}
+.adformat-overlap .menu > .itemgrid {
+  position: relative;
+  bottom: 0;
+  overflow-y: visible;
+  height: auto;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .menu > .itemgrid {
+    position: absolute;
+    overflow-y: scroll;
+    height: 33.33333333vw;
+    margin-bottom: 3rem;
+  }
+}
+.adformat-overlap .menu .aditem > img {
+  display: block;
+  padding: 2px;
+  margin: auto;
+  height: 33.33333333vw;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .menu .aditem > img {
+    height: 11.11111111vw;
+  }
+}
