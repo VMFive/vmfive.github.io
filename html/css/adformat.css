@@ -121,7 +121,7 @@ h1 {
   .adformat-overlap .menu > .itemgrid {
     position: absolute;
     overflow-y: scroll;
-    height: 33.33333333vw;
+    height: 25vw;
     margin-bottom: 3rem;
   }
 }
@@ -133,6 +133,6 @@ h1 {
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .menu .aditem > img {
-    height: 11.11111111vw;
+    height: 8.33333333vw;
   }
 }

@@ -10,6 +10,9 @@
   .background-default;
   padding: @nav-height 0px 0px 0px;
 
+  @menu-width-sm: 100vw;
+  @menu-width-md: 100vw / 4;
+
   .content {
     overflow-y: scroll;
 
@@ -25,8 +28,8 @@
       height: 100%;
     });
 
-    @aditem-size-sm: 100vw / 3;
-    @aditem-size-md: 100vw / 3 / 3;
+    @aditem-size-sm: @menu-width-sm / 3;
+    @aditem-size-md: @menu-width-md / 3;
     & > .itemgrid {
       position: relative;
       bottom: 0;
