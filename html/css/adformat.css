@@ -102,6 +102,46 @@ h1 {
     height: 100%;
   }
 }
+.adformat-overlap .content > h2 {
+  text-align: center;
+}
+.adformat-overlap .content .emulator {
+  position: relative;
+}
+.adformat-overlap .content .emulator > img {
+  position: absolute;
+  padding: 10%;
+  margin: auto;
+  width: 100%;
+  height: 180vw;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content .emulator > img {
+    height: 45vw;
+  }
+}
+.adformat-overlap .content .emulator > .iframe-container {
+  position: absolute;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  top: 90vw;
+  left: 50vw;
+  width: 100vw;
+  height: 180vw;
+  padding: 20%;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content .emulator > .iframe-container {
+    top: 22.5vw;
+    left: 12.5vw;
+    width: 25vw;
+    height: 45vw;
+  }
+}
+.adformat-overlap .content .emulator > .iframe-container > iframe {
+  width: 100%;
+  height: 100%;
+}
 .adformat-overlap .menu {
   height: 30%;
 }

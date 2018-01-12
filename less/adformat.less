@@ -12,6 +12,8 @@
 
   @menu-width-sm: 100vw;
   @menu-width-md: 100vw / 4;
+  @content-width-sm: 100vw;
+  @content-width-md: 100vw - @menu-width-md;
 
   .content {
     overflow-y: scroll;
@@ -20,6 +22,57 @@
     .media-md({
       height: 100%;
     });
+
+    & > h2 {
+      text-align: center;
+    }
+
+    .emulator {
+      @emulator-width-sm: @content-width-sm;
+      @emulator-width-md: @content-width-md / 3;
+      @emulator-height-sm: @emulator-width-sm * 1.8;
+      @emulator-height-md: @emulator-width-md * 1.8;
+
+      position: relative;
+      & > img {
+        position: absolute;
+        padding: 10%;
+        margin: auto;
+
+        width: 100%;
+        height: @emulator-height-sm;
+        .media-md({
+          height: @emulator-height-md;
+        });
+      }
+      & > .iframe-container {
+
+        position: absolute;
+        z-index: 0;
+
+        transform: translate(-50%,-50%);
+
+        top: @emulator-height-sm / 2;
+        left: @emulator-width-sm / 2;
+        width: @emulator-width-sm;
+        height: @emulator-height-sm;
+        .media-md({
+          top: @emulator-height-md / 2;
+          left: @emulator-width-md / 2;
+          width: @emulator-width-md;
+          height: @emulator-height-md;
+        });
+        padding: 20%;
+
+        // overflow-y: scroll;
+
+
+        & > iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
   }
 
   .menu {
