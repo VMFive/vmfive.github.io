@@ -104,23 +104,72 @@ h1 {
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .content {
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content {
     height: 100%;
   }
 }
+.adformat-overlap .content .name-format {
+  margin-top: 5rem;
+  text-align: center;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content .name-format {
+    text-align: left;
+  }
+}
+.adformat-overlap .content .status {
+  display: inline-flex;
+  width: 100%;
+}
+.adformat-overlap .content .status img {
+  align-self: flex-start;
+  margin-left: .5rem;
+}
+.adformat-overlap .content .status img.firstitem {
+  margin-left: 0;
+}
+.adformat-overlap .content .status .button-live {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  width: 200px;
+  height: 35px;
+  align-self: flex-end;
+  width: 10rem;
+  color: #FF7E8F;
+  margin-left: auto;
+  background-color: #fff;
+  border: 2px solid #FF7E8F;
+}
+.adformat-overlap .content .description {
+  overflow-y: visible;
+  height: 50vh;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content .description {
+    overflow-y: scroll;
+  }
+}
 .adformat-overlap .content .emulator {
+  height: 180vw;
   position: relative;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content .emulator {
+    height: 45vw;
+  }
 }
 .adformat-overlap .content .emulator > img {
   position: absolute;
   padding: 10%;
   margin: auto;
   width: 100%;
-  height: 180vw;
-}
-@media screen and (min-width: 48em) {
-  .adformat-overlap .content .emulator > img {
-    height: 45vw;
-  }
+  height: 100%;
 }
 .adformat-overlap .content .emulator > .iframe-container {
   position: absolute;
@@ -130,7 +179,7 @@ h1 {
   left: 50vw;
   width: 100vw;
   height: 180vw;
-  padding: 20%;
+  padding: 25% 13% 25% 13%;
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .content .emulator > .iframe-container {

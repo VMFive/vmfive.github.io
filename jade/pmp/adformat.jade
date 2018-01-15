@@ -20,7 +20,7 @@ block content
     
     script(type="x-template",id="adformat-component")
       div
-        h2 {{adformat[current_ad_id].name}}
+        h2 廣告格式
         .pure-g
           .content.pure-u-1-1.pure-u-md-3-4
             .pure-g
@@ -29,8 +29,14 @@ block content
                 .iframe-container
                   iframe(:src="adformat[current_ad_id].url_demo") 
               .pure-u-1-1.pure-u-md-2-3
-                div
-                  | <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                h3.name-format {{adformat[current_ad_id].name}}
+                .status
+                  img.pure-img.firstitem(v-if="adformat[current_ad_id].support.web",src="/img/icon/icon_mweb.svg")
+                  img.pure-img(v-if="adformat[current_ad_id].support.app",src="/img/icon/icon_mapp.svg")
+                  a.button-live(:href="adformat[current_ad_id].url_demo",target="_blank") Live
+                hr
+                .description
+                  p(v-for="item in adformat[current_ad_id].description",v-html="item") 
           .menu.pure-u-1-1.pure-u-md-1-4
             .itemgrid
               - var adformat = [];
@@ -63,10 +69,23 @@ block content
                   "interstitial": {
                     "name": "Interstitial",
                     "url_demo": "http://ad-demo.vmfive.com/demos/simple-interstitial.html",
+                    "description": [
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                    ],
+                    "support":{"web":true,"app":true},
                   },
                   "impressive": {
                     "name": "Impressive",
                     "url_demo": "http://ad-demo.vmfive.com/demos/simple-impressive.html",
+                    "description": [
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                    ],
+                    "support":{"web":true,},
                   },
                 },
                 "current_ad_id" : "interstitial",

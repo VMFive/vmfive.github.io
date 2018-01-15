@@ -23,17 +23,68 @@
 
   .content {
     overflow-y: scroll;
+    .media-md({
+      overflow-y: scroll;
+    });
 
     height: 70%;
     .media-md({
       height: 100%;
     });
 
+    .name-format {
+      margin-top: 5rem;
+      text-align: center;
+      .media-md({
+        text-align: left;
+      });
+    }
+
+    .status {
+      display: inline-flex;
+      width: 100%;
+
+      img {
+        align-self: flex-start;
+
+        margin-left: .5rem;
+        &.firstitem {
+          margin-left: 0;
+        }
+      }
+
+      .button-live {
+        .button-rounded();
+        align-self: flex-end;
+        width: 10rem;
+
+        @color_button: #FF7E8F;
+        color: @color_button;
+        margin-left: auto;
+        background-color: #fff;
+        border: 2px solid @color_button;
+      }
+    }
+
+    .description {
+      overflow-y: visible;
+      .media-md({
+        overflow-y: scroll;
+      });
+
+      height: 50vh;
+    }
+
     .emulator {
       @emulator-width-sm: @content-width-sm;
       @emulator-width-md: @content-width-md / 3;
       @emulator-height-sm: @emulator-width-sm * 1.8;
       @emulator-height-md: @emulator-width-md * 1.8;
+
+      height: @emulator-height-sm;
+      .media-md({
+        height: @emulator-height-md;
+      });
 
       position: relative;
       & > img {
@@ -42,10 +93,7 @@
         margin: auto;
 
         width: 100%;
-        height: @emulator-height-sm;
-        .media-md({
-          height: @emulator-height-md;
-        });
+        height: 100%;
       }
       & > .iframe-container {
 
@@ -64,7 +112,7 @@
           width: @emulator-width-md;
           height: @emulator-height-md;
         });
-        padding: 20%;
+        padding: 25% 13% 25% 13%;
 
         // overflow-y: scroll;
 
