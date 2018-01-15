@@ -93,6 +93,11 @@ h1 {
   background: #f7f7f7;
   padding: 68px 0px 0px 0px;
 }
+.adformat-overlap h2 {
+  font-size: 36;
+  margin: 1rem;
+  text-align: center;
+}
 .adformat-overlap .content {
   overflow-y: scroll;
   height: 70%;
@@ -101,9 +106,6 @@ h1 {
   .adformat-overlap .content {
     height: 100%;
   }
-}
-.adformat-overlap .content > h2 {
-  text-align: center;
 }
 .adformat-overlap .content .emulator {
   position: relative;

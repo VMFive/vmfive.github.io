@@ -15,6 +15,12 @@
   @content-width-sm: 100vw;
   @content-width-md: 100vw - @menu-width-md;
 
+  h2 {
+    font-size: 36;
+    margin: 1rem;
+    text-align: center;
+  }
+
   .content {
     overflow-y: scroll;
 
@@ -22,10 +28,6 @@
     .media-md({
       height: 100%;
     });
-
-    & > h2 {
-      text-align: center;
-    }
 
     .emulator {
       @emulator-width-sm: @content-width-sm;

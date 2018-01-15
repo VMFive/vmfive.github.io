@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_mweb</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="9.5" cy="9.5" r="9.5"></circle>
+    </defs>
+    <g id="2_main_PMP_1_0_dt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-358.000000, -343.000000)">
+        <g id="ic_mweb" transform="translate(358.000000, 343.000000)">
+            <g id="Group-6">
+                <g id="Group-2" fill="#4D4D4D">
+                    <path d="M18,7 L17,7 L17,5 C17,4.44771525 16.5522847,4 16,4 L2,4 C1.44771525,4 1,4.44771525 1,5 L1,27 C1,27.5522847 1.44771525,28 2,28 L16,28 C16.5522847,28 17,27.5522847 17,27 L17,26 L18,26 L18,30 C18,31.1045695 17.1045695,32 16,32 L2,32 C0.8954305,32 1.3527075e-16,31.1045695 0,30 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L16,0 C17.1045695,-2.02906125e-16 18,0.8954305 18,2 L18,7 Z" id="Combined-Shape"></path>
+                </g>
+                <g id="Group-5" transform="translate(13.000000, 7.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <circle stroke="#4D4D4D" cx="9.5" cy="9.5" r="9"></circle>
+                    <ellipse id="Oval-5-Copy" stroke="#4D4D4D" mask="url(#mask-2)" cx="9.5" cy="1.5" rx="9" ry="4"></ellipse>
+                    <ellipse id="Oval-5-Copy-2" stroke="#4D4D4D" mask="url(#mask-2)" cx="9.5" cy="17.5" rx="9" ry="4"></ellipse>
+                    <rect id="Rectangle-7" fill="#4D4D4D" mask="url(#mask-2)" x="0" y="9" width="19" height="1"></rect>
+                    <ellipse id="Oval-5-Copy" stroke="#4D4D4D" mask="url(#mask-2)" transform="translate(9.500000, 9.500000) rotate(-90.000000) translate(-9.500000, -9.500000) " cx="9.5" cy="9.5" rx="9" ry="4"></ellipse>
+                    <rect id="Rectangle-7" fill="#4D4D4D" mask="url(#mask-2)" transform="translate(9.500000, 9.500000) rotate(-90.000000) translate(-9.500000, -9.500000) " x="0" y="9" width="19" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
