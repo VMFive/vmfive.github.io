@@ -68,7 +68,7 @@ h1 {
   z-index: 20;
   font-family: 'Roboto', sans-serif;
   top: 15px;
-  padding: 8 40 8 40;
+  padding: 8px 40 8px 40;
 }
 #nav.shrink {
   height: auto;
@@ -79,6 +79,9 @@ h1 {
   #nav {
     top: 10px;
   }
+}
+.background-menu-dark {
+  background: #4A4A4A;
 }
 .pmp-header {
   overflow: hidden;

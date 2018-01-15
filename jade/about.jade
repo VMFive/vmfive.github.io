@@ -1,6 +1,52 @@
 //output:$1.html
+//{"menu":{},"button":{},"lang":"en"}
 extends comp/base
+
+block style
+  link(rel="stylesheet", type="text/css", href="/css/about.css")
+
+block script_after.
+  $('.carousel').carousel()
 
 block content
   +menu("about")
-  div about
+  .about-header.header
+    .container
+      img.bgvid(src='/img/bg/bg_aboutus.png')
+  
+  div.about-overlap
+    h1 關於我們
+    p.description 
+      | 文字文字文字文字文字文字文字文字文字 <br>
+      | 文字文字文字文字文字文字文字 <br>
+
+  div.about-feature
+    .content
+      h3.title Vision & Mission
+      p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+      img.pure-img(src="/img/icon/icon_vision_mission.svg")
+
+  div.about-milestone
+    .bg
+      //- img(src="/img/bg/bg_aboutus_timeline.svg",alt="timeline")
+    .content
+      h3.title 里程碑
+      img.pure-img.process(src="/img/icon/icon_milestone.svg")
+      img.pure-img.process-md(src="/img/icon/icon_milestone_md.svg")
+
+  div.about-investor
+    .bg
+      //- img.pure-img(src="/img/bg/bg_about_partner.svg",alt="partner")
+    .content
+      h3.title 投資人
+      - var partner = [];
+      - partner.push({"trend": {"img":"trend",},"cdif": {"img":"cdif",},"cherubic_ventures": {"img":"cherubic_ventures",},"gmobi": {"img":"gmobi",},});
+      each page, page_index in partner
+        .pure-g
+          each key in Object.keys(page)
+            .pure-u-1-1.pure-u-md-1-4
+              //- each key, value in page
+              .logo
+                img.pure-img(src='/img/investor/logo_#{page[key].img}.png', alt='#{key}')
+              p 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+                | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字

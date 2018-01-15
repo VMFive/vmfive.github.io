@@ -1,0 +1,190 @@
+@import "common.less";
+
+.about-header {
+  overflow:hidden;
+}
+
+.about-overlap {
+  .general-screen();
+
+  background: #0006;
+  padding: 150px 0px 0px 0px;
+  .text-white();
+
+  .indented {
+    padding-left: 40px;
+  }
+
+  & > h1 {
+    font-size: 2.5em;
+    padding-bottom: 1.5rem;
+  }
+
+  & > h1, & > p {
+    .indented;
+  }
+}
+
+.about-feature {
+  .general-screen();
+  height: auto;
+  padding-bottom: 3rem;
+
+  text-align: center;
+
+  .content {
+    .title {
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 1rem;
+    }
+    .description {
+      font-size: 1.2em;
+      font-weight: normal;
+      padding: 0 20% 0 20%;
+      padding-bottom: 1rem;
+    }
+    img {
+      margin: auto;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.about-milestone {
+  .general-screen();
+  height: auto;
+  padding-bottom: 3rem;
+
+  text-align: center;
+
+  position: relative;
+
+  background-color: #FACC93;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .media-md({
+    .background-default;
+  });
+  .bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0%;
+    width: 100%;
+    background-image: none;
+    background-position: 100% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .media-md({
+      background-image: url("/img/bg/bg_aboutus_timeline.png");
+    });
+  }
+
+  .content {
+    .title {
+      padding-top: 60px;
+      padding-bottom: 1rem;
+    }
+    .process-md {
+      display: none;
+      margin: auto;
+      width: 80%;
+      padding-bottom: 2rem;
+      .media-md({
+        display: block;
+      });
+    }
+    .process {
+      display: block;
+      margin: auto;
+      width: 50%;
+      padding-bottom: 2rem;
+      .media-md({
+        display: none;
+      });
+    }
+  }
+}
+
+
+.about-investor {
+  .general-screen();
+  height: 150vh;
+  .media-md({
+    height: 80vh;
+  });
+
+  text-align: center;
+
+  position: relative;
+  .bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0%;
+    width: 100%;
+    background-color: #fff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & > img {
+      margin-left: auto;
+      width: 98%;
+      height: 100%;
+
+      display: none;
+      .media-lg({
+        display: block;
+      });
+    };
+  }
+
+  .content {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    .media-md({
+      top: 50%;
+    });
+
+    .title {
+      padding-bottom: 1rem;
+      .media-md({
+        padding-bottom: 1rem;
+      });
+    }
+    .description {
+      padding: 0 @description-padding 0 @description-padding;
+    }
+
+    & > .pure-g {
+      padding: 0 10% 0 10%;
+      & > div {
+        .flex-row();
+        text-align: center;
+        justify-content: center;
+
+        .logo {
+          .flex-row();
+          text-align: center;
+          justify-content: center;
+
+          height: 5rem;
+          padding: auto 0 auto 0;
+          margin-bottom: 2rem;
+
+          img {
+            margin: auto;
+          }
+        }
+      }
+    }
+
+  }
+}
