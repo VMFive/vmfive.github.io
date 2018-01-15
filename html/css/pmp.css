@@ -247,6 +247,12 @@ h1 {
     height: 30vh;
   }
 }
+.pmp-nice-media .content .carousel .carousel-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .pmp-nice-media .content .carousel .carousel-control-next-icon {
   background-image: url("/img/comp/btn_arrow_r_w.svg");
   height: 60px;
