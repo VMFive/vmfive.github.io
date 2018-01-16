@@ -1,10 +1,72 @@
 .background-default {
   background: #f7f7f7;
 }
+.background-footer {
+  background: #FBFBFB;
+}
 body,
 h1 {
   font-family: 'Roboto Thin', sans-serif;
   font-weight: lighter;
+}
+footer {
+  background: #FBFBFB;
+  height: auto;
+}
+footer .logoaddress {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 60%;
+  align-self: center;
+}
+footer .sitemap {
+  height: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .sitemap > .container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 48em) {
+  footer .sitemap > .container {
+    margin-bottom: 0rem;
+  }
+}
+footer .sitemap > .container .category {
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 48em) {
+  footer .sitemap > .container .category {
+    margin-bottom: 2rem;
+  }
+}
+footer .sitemap > .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  font-weight: normal;
+  color: #fb971b;
+  font-size: 20;
+}
+footer .sitemap > .container .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 48em) {
+  footer .sitemap > .container .item {
+    margin-bottom: 0;
+  }
+}
+footer .sitemap > .container .item > a {
+  width: 100%;
 }
 .bgvid {
   position: absolute;
@@ -510,10 +572,14 @@ h1 {
   background: #333;
 }
 .adplay-contact-us {
-  background: #f7f7f7;
+  background: #FBFBFB;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.adplay-contact-us hr {
+  margin-left: 8%;
+  margin-right: 8%;
 }
 .adplay-contact-us .button {
   color: #FF7E8F;
