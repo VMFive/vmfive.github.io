@@ -9,6 +9,7 @@
   .general-screen();
   .background-default;
   padding: @nav-height 0px 0px 0px;
+  height: auto;
 
   h1, h4 {
     font-weight: lighter;
@@ -55,5 +56,124 @@
         margin-bottom: 2rem;
       }
     }
+  }
+}
+
+.goal5r-timeplace {
+  .general-screen();
+  height: auto;
+  background-color: #fff;
+
+  overflow-y: auto;
+  padding-bottom: 3rem;
+
+  position: relative;
+  & > .info {
+    padding: 0 @description-padding 0 @description-padding;
+
+    .background-default;
+    width: 100%;
+    height: auto;
+
+    .title {
+      color: #FC981C;
+
+      padding-top: 3rem;
+      margin-bottom: 2rem;
+
+      text-align: center;
+      .media-md({
+        text-align: left;
+      });
+    }
+
+    .description {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+
+      width: auto;
+      .media-md({
+        width: 30vw;
+      });
+    }
+  }
+  .bg {
+
+    top: none;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+
+    position: relative;
+    height: 60vw;
+    .background-default;
+    .media-lg({
+      position: absolute;
+      height: 90%;
+      background-color: transparent;
+    });
+
+    background-image: url("/img/icon/icon_5r_figure01.svg");
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.goal5r-contentformat {
+  .general-screen();
+  height: auto;
+  background-color: #fff;
+
+  overflow-y: auto;
+  padding-bottom: 3rem;
+
+  position: relative;
+  & > .info {
+    padding: 0 @description-padding 0 @description-padding;
+
+    width: 100%;
+    height: auto;
+
+    .title {
+      color: #FC981C;
+
+      padding-top: 3rem;
+      margin-bottom: 2rem;
+
+      text-align: center;
+      .media-md({
+        text-align: left;
+      });
+    }
+
+    .description {
+      margin-bottom: 2rem;
+
+      width: auto;
+      .media-md({
+        width: 30vw;
+      });
+    }
+  }
+  .bg {
+
+    top: none;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    position: relative;
+    height: 60vw;
+    .media-lg({
+      position: absolute;
+      height: 90%;
+      background-color: transparent;
+    });
+
+    background-image: url("/img/icon/icon_5r_figure02.svg");
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }

@@ -92,6 +92,7 @@ h1 {
   height: 100vh;
   background: #f7f7f7;
   padding: 68px 0px 0px 0px;
+  height: auto;
 }
 .goal5r-overlap h1,
 .goal5r-overlap h4 {
@@ -133,4 +134,129 @@ h1 {
 }
 .goal5r-overlap .audience > .info > .description {
   margin-bottom: 2rem;
+}
+.goal5r-timeplace {
+  background: #f7f7f7;
+  width: 100%;
+  height: 100vh;
+  height: auto;
+  background-color: #fff;
+  overflow-y: auto;
+  padding-bottom: 3rem;
+  position: relative;
+}
+.goal5r-timeplace > .info {
+  padding: 0 15vw 0 15vw;
+  background: #f7f7f7;
+  width: 100%;
+  height: auto;
+}
+.goal5r-timeplace > .info .title {
+  color: #FC981C;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 48em) {
+  .goal5r-timeplace > .info .title {
+    text-align: left;
+  }
+}
+.goal5r-timeplace > .info .description {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  width: auto;
+}
+@media screen and (min-width: 48em) {
+  .goal5r-timeplace > .info .description {
+    width: 30vw;
+  }
+}
+.goal5r-timeplace .bg {
+  top: none;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  height: 60vw;
+  background: #f7f7f7;
+  background-image: url("/img/icon/icon_5r_figure01.svg");
+  background-position: right top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 64em) {
+  .goal5r-timeplace .bg {
+    position: absolute;
+    height: 90%;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 64em) {
+  .goal5r-timeplace .bg {
+    position: absolute;
+    height: 90%;
+    background-color: transparent;
+  }
+}
+.goal5r-contentformat {
+  background: #f7f7f7;
+  width: 100%;
+  height: 100vh;
+  height: auto;
+  background-color: #fff;
+  overflow-y: auto;
+  padding-bottom: 3rem;
+  position: relative;
+}
+.goal5r-contentformat > .info {
+  padding: 0 15vw 0 15vw;
+  width: 100%;
+  height: auto;
+}
+.goal5r-contentformat > .info .title {
+  color: #FC981C;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 48em) {
+  .goal5r-contentformat > .info .title {
+    text-align: left;
+  }
+}
+.goal5r-contentformat > .info .description {
+  margin-bottom: 2rem;
+  width: auto;
+}
+@media screen and (min-width: 48em) {
+  .goal5r-contentformat > .info .description {
+    width: 30vw;
+  }
+}
+.goal5r-contentformat .bg {
+  top: none;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  height: 60vw;
+  background-image: url("/img/icon/icon_5r_figure02.svg");
+  background-position: left top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 64em) {
+  .goal5r-contentformat .bg {
+    position: absolute;
+    height: 90%;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 64em) {
+  .goal5r-contentformat .bg {
+    position: absolute;
+    height: 90%;
+    background-color: transparent;
+  }
 }
