@@ -97,6 +97,7 @@ h1 {
 }
 .pmp-overlap .indented {
   padding-left: 40px;
+  padding-right: 40px;
 }
 .pmp-overlap > h1 {
   font-size: 2.5em;
@@ -105,6 +106,7 @@ h1 {
 .pmp-overlap > h1,
 .pmp-overlap > p {
   padding-left: 40px;
+  padding-right: 40px;
 }
 .pmp-overlap .bg {
   position: absolute;

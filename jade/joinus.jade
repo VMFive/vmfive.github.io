@@ -1,6 +1,33 @@
 //output:$1.html
+//{"menu":{},"button":{},"lang":"en"}
 extends comp/base
+
+block style
+  link(rel="stylesheet", type="text/css", href="/css/joinus.css")
 
 block content
   +menu("joinus")
-  div joinus
+  .joinus-header.header
+    .container
+      img.bgvid(src='/img/bg/bg_joinus.png')
+  
+  div.joinus-overlap
+    h1 加入我們
+    p.description 
+      | 文字文字文字文字文字文字文字文字文字 <br>
+      | 文字文字文字文字文字文字文字 <br>
+
+  div.joinus-member
+    .content
+      h2.title 夥伴招募
+      - var jobs = [];
+      - jobs.push({"position":"職務名稱","url":"mock","description":"我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文",});
+      - jobs.push({"position":"職務名稱","url":"mock","description":"我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文",});
+      .jobs
+        each thejob in jobs
+          .thejob.pure-g
+            .pure-u-1-1.pure-u-md-1-2
+              img.pure-img(src="/img/job/icon_job_#{thejob.url}.png")
+            .text.pure-u-1-1.pure-u-md-1-2
+              h3.title #{thejob.position}
+              .description #{thejob.description}

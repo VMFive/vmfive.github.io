@@ -96,6 +96,7 @@ h1 {
 }
 .adplay-overlap .indented {
   padding-left: 40px;
+  padding-right: 40px;
 }
 .adplay-overlap > h1 {
   font-size: 2.5em;
@@ -104,6 +105,7 @@ h1 {
 .adplay-overlap > h1,
 .adplay-overlap > p {
   padding-left: 40px;
+  padding-right: 40px;
 }
 .adplay-feature {
   background: #f7f7f7;

@@ -96,6 +96,7 @@ h1 {
 }
 .about-overlap .indented {
   padding-left: 40px;
+  padding-right: 40px;
 }
 .about-overlap > h1 {
   font-size: 2.5em;
@@ -104,6 +105,7 @@ h1 {
 .about-overlap > h1,
 .about-overlap > p {
   padding-left: 40px;
+  padding-right: 40px;
 }
 .about-feature {
   background: #f7f7f7;
