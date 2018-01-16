@@ -20,15 +20,17 @@ block content
     
     script(type="x-template",id="adformat-component")
       div
-        h2 廣告格式
+        h2.hint-format.show 廣告格式
         .pure-g
           .content.pure-u-1-1.pure-u-md-3-4
+            h2.name-format-hidden {{adformat[current_ad_id].name}}
+            img.back(@click="exitFullscreenAndShowMenu",src="/img/icon/icon_back.svg")
             .pure-g
               .emulator.pure-u-1-1.pure-u-md-1-3
                 img.pure-img(src="/img/bg/bg_phone.png")
                 .iframe-container
                   iframe(:src="adformat[current_ad_id].url_demo") 
-              .pure-u-1-1.pure-u-md-2-3
+              .adinfo.pure-u-1-1.pure-u-md-2-3
                 h3.name-format {{adformat[current_ad_id].name}}
                 .status
                   img.pure-img.firstitem(v-if="adformat[current_ad_id].support.web",src="/img/icon/icon_mweb.svg")
@@ -37,7 +39,8 @@ block content
                 hr
                 .description
                   p(v-for="item in adformat[current_ad_id].description",v-html="item") 
-          .menu.pure-u-1-1.pure-u-md-1-4
+            .mask
+          .menu.show.pure-u-1-1.pure-u-md-1-4
             .itemgrid
               - var adformat = [];
               - adformat.push({"id": "interstitial","img":"mock","url":"",});
@@ -61,8 +64,33 @@ block content
                     img.pure-img(src="/img/adformat/btn_ad_#{item.img}.png",@click="selectAd('#{item.id}')")
     script(src="https://unpkg.com/vue@2.5.13/dist/vue.js")
     script(type="text/javascript").
+      fullscreenAndHideMenu = function () {
+        document.querySelector('.back').classList.add("show");
+        document.querySelector('.name-format-hidden').classList.add("show");
+        document.querySelector('.content').classList.add("full");
+        document.querySelector('.menu').classList.remove("show");
+        document.querySelector('.hint-format').classList.remove("show");
+      };
+      exitFullscreenAndShowMenu = function () {
+        document.querySelector('.back').classList.remove("show");
+        document.querySelector('.name-format-hidden').classList.remove("show");
+        document.querySelector('.content').classList.remove("full");
+        document.querySelector('.menu').classList.add("show");
+        document.querySelector('.hint-format').classList.add("show");
+      };
+      
       Vue.component('adformat-component', {
           template: '#adformat-component',
+          mounted: function () {
+            document.querySelector(".mask").addEventListener("click", function(event) {
+              if (document.querySelector(".mask").style.display == "none") {
+                return;
+              }
+              fullscreenAndHideMenu();
+              event.preventDefault();
+              event.stopPropagation();
+            }, false);
+          },
           data: function () {
               return {
                 "adformat": {
@@ -94,7 +122,9 @@ block content
           methods: {
               selectAd: function (id) {
                 this.current_ad_id = id;
-              }
+                fullscreenAndHideMenu();
+              },
+              exitFullscreenAndShowMenu: exitFullscreenAndShowMenu,
           }
       });
       var app = new Vue({

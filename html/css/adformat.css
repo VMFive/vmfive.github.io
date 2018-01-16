@@ -95,8 +95,53 @@ h1 {
 }
 .adformat-overlap h2 {
   font-size: 36;
-  margin: 1rem;
+  padding: 1rem;
   text-align: center;
+}
+.adformat-overlap .hint-format {
+  display: none;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .hint-format {
+    display: block;
+  }
+}
+.adformat-overlap .hint-format.show {
+  display: block;
+}
+.adformat-overlap .back {
+  z-index: 2;
+  position: absolute;
+  top: 68px;
+  left: 0;
+  padding: 1.5rem;
+  display: none;
+}
+.adformat-overlap .back.show {
+  display: block;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .back.show {
+    display: none;
+  }
+}
+.adformat-overlap .name-format-hidden {
+  z-index: 2;
+  background: #f7f7f7;
+  position: absolute;
+  top: 68px;
+  width: 100%;
+  margin: 0;
+  display: none;
+  text-align: center;
+}
+.adformat-overlap .name-format-hidden.show {
+  display: block;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .name-format-hidden.show {
+    display: none;
+  }
 }
 .adformat-overlap .content {
   overflow-y: scroll;
@@ -111,6 +156,37 @@ h1 {
   .adformat-overlap .content {
     height: 100%;
   }
+}
+.adformat-overlap .content .adinfo {
+  display: none;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content .adinfo {
+    display: block;
+  }
+}
+.adformat-overlap .content .mask {
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content .mask {
+    display: none;
+  }
+}
+.adformat-overlap .content.full {
+  height: 100%;
+}
+.adformat-overlap .content.full .adinfo {
+  display: block;
+}
+.adformat-overlap .content.full .mask {
+  display: none;
 }
 .adformat-overlap .content .name-format {
   margin-top: 5rem;
@@ -157,11 +233,13 @@ h1 {
 }
 .adformat-overlap .content .emulator {
   height: 180vw;
+  margin-top: 3rem;
   position: relative;
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .content .emulator {
     height: 45vw;
+    margin-top: 0rem;
   }
 }
 .adformat-overlap .content .emulator > img {
@@ -195,10 +273,19 @@ h1 {
 }
 .adformat-overlap .menu {
   height: 30%;
+  display: none;
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .menu {
     height: 100%;
+  }
+}
+.adformat-overlap .menu.show {
+  display: block;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .menu {
+    display: block;
   }
 }
 .adformat-overlap .menu > .itemgrid {

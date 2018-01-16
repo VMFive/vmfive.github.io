@@ -17,8 +17,54 @@
 
   h2 {
     font-size: 36;
-    margin: 1rem;
+    padding: 1rem;
     text-align: center;
+  }
+
+  .hint-format {
+    display: none;
+    .media-md({
+      display: block;
+    });
+
+    &.show {
+      display: block;
+    }
+  }
+
+  @z-higher: 2;
+  .back {
+    z-index: @z-higher;
+    position: absolute;
+    top: @nav-height;
+    left: 0;
+    padding: 1.5rem;
+    display: none;
+
+    &.show {
+      display: block;
+      .media-md({
+        display: none;
+      });
+    }
+  }
+  .name-format-hidden {
+    z-index: @z-higher;
+    .background-default;
+
+    position: absolute;
+    top: @nav-height;
+    width: 100%;
+    margin: 0;
+
+    display: none;
+    text-align: center;
+    &.show {
+      display: block;
+      .media-md({
+        display: none;
+      });
+    }
   }
 
   .content {
@@ -31,6 +77,36 @@
     .media-md({
       height: 100%;
     });
+
+    .adinfo {
+      display: none;
+      .media-md({
+        display: block;
+      });
+    }
+    .mask {
+      z-index: 0;
+
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+
+      display: block;
+      .media-md({
+        display: none;
+      });
+    }
+    &.full {
+      height: 100%;
+      .adinfo {
+        display: block;
+      }
+      .mask {
+        display: none;
+      }
+    }
 
     .name-format {
       margin-top: 5rem;
@@ -82,8 +158,10 @@
       @emulator-height-md: @emulator-width-md * 1.8;
 
       height: @emulator-height-sm;
+      margin-top: 3rem;
       .media-md({
         height: @emulator-height-md;
+        margin-top: 0rem;
       });
 
       position: relative;
@@ -129,6 +207,14 @@
     height: 30%;
     .media-md({
       height: 100%;
+    });
+
+    display: none;
+    &.show {
+      display: block;
+    }
+    .media-md({
+      display: block;
     });
 
     @aditem-size-sm: @menu-width-sm / 3;

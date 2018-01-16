@@ -240,7 +240,7 @@ h1 {
   bottom: 0;
   width: 100%;
   position: relative;
-  height: 60vw;
+  height: 90vw;
   background-image: url("/img/icon/icon_5r_figure02.svg");
   background-position: left top;
   background-size: contain;
@@ -251,6 +251,7 @@ h1 {
     position: absolute;
     height: 90%;
     background-color: transparent;
+    background-size: contain;
   }
 }
 @media screen and (min-width: 64em) {
@@ -258,5 +259,6 @@ h1 {
     position: absolute;
     height: 90%;
     background-color: transparent;
+    background-size: contain;
   }
 }

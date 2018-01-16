@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2_main_PMP_1_3_m" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-24.000000, -100.000000)">
+        <path d="M35.5837691,102.284569 C36.1387436,101.760187 36.1387436,100.911824 35.5837691,100.390782 C35.0323293,99.8697395 34.1344723,99.8697395 33.5830326,100.390782 L24.4135798,109.054776 C24.1378599,109.315297 24,109.655979 24,110.00668 C24,110.347361 24.1378599,110.684703 24.4135798,110.958584 L33.5830326,119.609218 C34.1344723,120.130261 35.0323293,120.130261 35.5837691,119.609218 C36.1387436,119.101536 36.1387436,118.253173 35.5837691,117.732131 L27.4111496,110.00668 L35.5837691,102.284569 Z" id="icon-back" fill="#FF7E8F"></path>
+    </g>
+</svg>
