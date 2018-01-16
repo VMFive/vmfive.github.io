@@ -109,10 +109,53 @@
   }
 }
 
+.about-member {
+  .general-screen();
+  height: auto;
+
+  padding: 3rem;
+
+  .content {
+    text-align: center;
+    & > .title {
+      margin-bottom: 3rem;
+    }
+    img {
+      margin: auto;
+    }
+
+    .vip {
+      text-align: left;
+
+      .person {
+        padding: 1rem;
+        background-color: #fff;
+        margin-bottom: 2rem;
+        .media-md({
+          background-color: transparent;
+        });
+        .text {
+          padding: 0rem;
+          .media-md({
+            padding: 1rem;
+          });
+        }
+
+        .description {
+          width: 100%;
+          .media-md({
+            width: 50%;
+          });
+        }
+      }
+    }
+  }
+}
+
 
 .about-investor {
   .general-screen();
-  height: 150vh;
+  height: 170vh;
   .media-md({
     height: 80vh;
   });

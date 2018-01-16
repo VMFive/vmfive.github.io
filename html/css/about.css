@@ -189,11 +189,56 @@ h1 {
     display: none;
   }
 }
+.about-member {
+  background: #f7f7f7;
+  width: 100%;
+  height: 100vh;
+  height: auto;
+  padding: 3rem;
+}
+.about-member .content {
+  text-align: center;
+}
+.about-member .content > .title {
+  margin-bottom: 3rem;
+}
+.about-member .content img {
+  margin: auto;
+}
+.about-member .content .vip {
+  text-align: left;
+}
+.about-member .content .vip .person {
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 48em) {
+  .about-member .content .vip .person {
+    background-color: transparent;
+  }
+}
+.about-member .content .vip .person .text {
+  padding: 0rem;
+}
+@media screen and (min-width: 48em) {
+  .about-member .content .vip .person .text {
+    padding: 1rem;
+  }
+}
+.about-member .content .vip .person .description {
+  width: 100%;
+}
+@media screen and (min-width: 48em) {
+  .about-member .content .vip .person .description {
+    width: 50%;
+  }
+}
 .about-investor {
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
-  height: 150vh;
+  height: 170vh;
   text-align: center;
   position: relative;
 }

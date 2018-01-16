@@ -34,6 +34,36 @@ block content
       img.pure-img.process(src="/img/icon/icon_milestone.svg")
       img.pure-img.process-md(src="/img/icon/icon_milestone_md.svg")
 
+  div.about-member
+    .content
+      h3.title 團隊介紹
+      - var vip = [];
+      - vip.push({"name":"人名","position":"職位","url":"mock","description":"我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文",});
+      - vip.push({"name":"人名","position":"職位","url":"mock","description":"我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文",});
+      .vip
+        each person in vip
+          .person.pure-g
+            .pure-u-1-1.pure-u-md-1-2
+              img.pure-img(src="/img/member/icon_vip_#{person.url}.png")
+            .text.pure-u-1-1.pure-u-md-1-2
+              h2.title #{person.name} #{person.position}
+              .description #{person.description}
+      - var member = [];
+      - member.push({"name":"人名","position":"職位","url":"mock",});
+      - member.push({"name":"人名","position":"職位","url":"mock",});
+      - member.push({"name":"人名","position":"職位","url":"mock",});
+      - member.push({"name":"人名","position":"職位","url":"mock",});
+      - member.push({"name":"人名","position":"職位","url":"mock",});
+      - member.push({"name":"人名","position":"職位","url":"mock",});
+      .member
+        .pure-g
+          each person in member
+            .person.pure-u-1-2.pure-u-md-1-4
+              img.pure-img(src="/img/member/icon_member_#{person.url}.png")
+              
+              h4 #{person.name}
+              h4 #{person.position}
+          
   div.about-investor
     .bg
       //- img.pure-img(src="/img/bg/bg_about_partner.svg",alt="partner")
