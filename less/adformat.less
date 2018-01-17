@@ -9,6 +9,7 @@
   .general-screen();
   .background-default;
   padding: @nav-height 0px 0px 0px;
+  height: auto;
 
   @menu-width-sm: 100vw;
   @menu-width-md: 100vw / 4;
@@ -110,18 +111,25 @@
 
     .name-format {
       margin-top: 5rem;
+
       text-align: center;
+      display: none;
       .media-md({
         text-align: left;
+        display: block;
       });
     }
 
     .status {
-      display: inline-flex;
+      display: flex;
       width: 100%;
+      justify-content: center;
 
       img {
-        align-self: flex-start;
+        align-self: auto;
+        .media-md({
+          align-self: flex-start;
+        });
 
         margin-left: .5rem;
         &.firstitem {
@@ -133,6 +141,10 @@
         .button-rounded();
         align-self: flex-end;
         width: 10rem;
+        display: none;
+        .media-md({
+          display: flex;
+        });
 
         @color_button: #FF7E8F;
         color: @color_button;
@@ -204,7 +216,7 @@
   }
 
   .menu {
-    height: 30%;
+    height: auto;
     .media-md({
       height: 100%;
     });
@@ -223,7 +235,7 @@
       position: relative;
       bottom: 0;
 
-      overflow-y: visible;
+      overflow-y: auto;
       height: auto;
       margin-bottom: 0;
       .media-md({

@@ -159,6 +159,7 @@ footer .sitemap > .container .item > a {
   height: 100vh;
   background: #f7f7f7;
   padding: 68px 0px 0px 0px;
+  height: auto;
 }
 .adformat-overlap h2 {
   font-size: 36;
@@ -258,19 +259,27 @@ footer .sitemap > .container .item > a {
 .adformat-overlap .content .name-format {
   margin-top: 5rem;
   text-align: center;
+  display: none;
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .content .name-format {
     text-align: left;
+    display: block;
   }
 }
 .adformat-overlap .content .status {
-  display: inline-flex;
+  display: flex;
   width: 100%;
+  justify-content: center;
 }
 .adformat-overlap .content .status img {
-  align-self: flex-start;
+  align-self: auto;
   margin-left: .5rem;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content .status img {
+    align-self: flex-start;
+  }
 }
 .adformat-overlap .content .status img.firstitem {
   margin-left: 0;
@@ -284,10 +293,16 @@ footer .sitemap > .container .item > a {
   height: 35px;
   align-self: flex-end;
   width: 10rem;
+  display: none;
   color: #FF7E8F;
   margin-left: auto;
   background-color: #fff;
   border: 2px solid #FF7E8F;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content .status .button-live {
+    display: flex;
+  }
 }
 .adformat-overlap .content .description {
   overflow-y: visible;
@@ -339,7 +354,7 @@ footer .sitemap > .container .item > a {
   height: 100%;
 }
 .adformat-overlap .menu {
-  height: 30%;
+  height: auto;
   display: none;
 }
 @media screen and (min-width: 48em) {
@@ -358,7 +373,7 @@ footer .sitemap > .container .item > a {
 .adformat-overlap .menu > .itemgrid {
   position: relative;
   bottom: 0;
-  overflow-y: visible;
+  overflow-y: auto;
   height: auto;
   margin-bottom: 0;
 }
