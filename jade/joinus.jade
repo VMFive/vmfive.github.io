@@ -24,8 +24,8 @@ block content
       - jobs.push({"position":"職務名稱","url":"mock","description":"我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文",});
       - jobs.push({"position":"職務名稱","url":"mock","description":"我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文",});
       .jobs
-        each thejob in jobs
-          .thejob.pure-g
+        each thejob, indexjob in jobs
+          .thejob.pure-g(class="#{indexjob == jobs.length - 1 ? 'last' : ''}")
             .pure-u-1-1.pure-u-md-1-2
               img.pure-img(src="/img/job/icon_job_#{thejob.url}.png")
             .text.pure-u-1-1.pure-u-md-1-2
