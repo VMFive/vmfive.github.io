@@ -24,10 +24,10 @@ block content
     script(type="x-template",id="adformat-component")
       div
         h2.hint-format.show 廣告格式
+        h2.name-format-hidden {{adformat[current_ad_id].name}}
+        img.back(@click="exitFullscreenAndShowMenu",src="/img/icon/icon_back.svg")
         .pure-g
           .content.pure-u-1-1.pure-u-md-3-4
-            h2.name-format-hidden {{adformat[current_ad_id].name}}
-            img.back(@click="exitFullscreenAndShowMenu",src="/img/icon/icon_back.svg")
             .pure-g
               .emulator.pure-u-1-1.pure-u-md-1-3
                 img.pure-img(src="/img/bg/bg_phone.png")
@@ -73,6 +73,8 @@ block content
         document.querySelector('.content').classList.add("full");
         document.querySelector('.menu').classList.remove("show");
         document.querySelector('.hint-format').classList.remove("show");
+        
+        scrollToTop();
       };
       exitFullscreenAndShowMenu = function () {
         document.querySelector('.back').classList.remove("show");
@@ -80,7 +82,15 @@ block content
         document.querySelector('.content').classList.remove("full");
         document.querySelector('.menu').classList.add("show");
         document.querySelector('.hint-format').classList.add("show");
+        
+        scrollToTop();
       };
+      scrollToTop = function () {
+        var list = document.querySelectorAll(".content, #vue-app, body");
+        list.forEach(function (el) {
+          el.scrollTop = 0;
+        });
+      }
       
       Vue.component('adformat-component', {
           template: '#adformat-component',
