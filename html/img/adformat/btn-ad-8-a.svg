@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+    <defs>
+        <path id="a" d="M0 0h120v120H0z"/>
+        <circle id="c" cx="9" cy="9" r="9"/>
+        <ellipse id="d" cx="7.826" cy="9" rx="7.826" ry="9"/>
+        <ellipse id="e" cx="7.826" cy="9" rx="7.826" ry="9"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(4 2)">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#FFF" xlink:href="#a"/>
+        <g mask="url(#b)">
+            <path fill="#96D5FF" d="M20 34h80v52H20z"/>
+            <path fill="#C1E6FF" d="M20 34l62.777 52H20z" opacity=".3"/>
+            <path fill="#64C1FF" d="M20 34h80v17.784L20 86z" opacity=".199"/>
+            <g transform="translate(51 51)">
+                <use fill="#5691B8" xlink:href="#c"/>
+                <circle cx="9" cy="9" r="8.5" stroke="#FFF"/>
+            </g>
+            <path fill="#FFF" d="M63.75 60l-6 3.75v-7.5z"/>
+        </g>
+        <g mask="url(#b)">
+            <path fill="#6DB0DD" d="M-64 34h80v52h-80z"/>
+            <path fill="#A6D1ED" d="M-64 34l62.777 52H-64z" opacity=".3"/>
+            <path fill="#9CD4F9" d="M-64 34h80v17.784L-64 86z" opacity=".199"/>
+            <g transform="translate(-31.826 51)">
+                <use fill="#5691B8" xlink:href="#d"/>
+                <ellipse cx="7.826" cy="9" stroke="#FFF" rx="7.326" ry="8.5"/>
+            </g>
+            <path fill="#FFF" d="M-20.74 60l-5.217 3.75v-7.5z"/>
+        </g>
+        <g mask="url(#b)">
+            <path fill="#B3C983" d="M104 34h80v52h-80z"/>
+            <path fill="#C7E28D" d="M104 34l62.777 52H104z" opacity=".3"/>
+            <path fill="#D5EF9D" d="M104 34h80v17.784L104 86z" opacity=".199"/>
+            <g>
+                <g transform="translate(136.174 51)">
+                    <use fill="#94AA64" xlink:href="#e"/>
+                    <ellipse cx="7.826" cy="9" stroke="#FFF" rx="7.326" ry="8.5"/>
+                </g>
+                <path fill="#FFF" d="M147.26 60l-5.217 3.75v-7.5z"/>
+            </g>
+        </g>
+        <path fill="#D8D8D8" d="M20 8h80v4H20V8zm0 8h80v4H20v-4zm0 8h60v4H20v-4zM20 92h80v4H20v-4zm0 16h80v4H20v-4zm0-8h80v4H20v-4z" mask="url(#b)"/>
+    </g>
+</svg>

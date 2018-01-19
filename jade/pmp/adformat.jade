@@ -24,7 +24,7 @@ block content
     script(type="x-template",id="adformat-component")
       div
         h2.hint-format.show 廣告格式
-        h2.name-format-hidden {{adformat[current_ad_id].name}}
+        h2.name-format-hidden {{getAd().name}}
         img.back(@click="exitFullscreenAndShowMenu",src="/img/icon/icon_back.svg")
         .pure-g
           .content.pure-u-1-1.pure-u-md-3-4
@@ -32,39 +32,43 @@ block content
               .emulator.pure-u-1-1.pure-u-md-1-3
                 img.pure-img(src="/img/bg/bg_phone.png")
                 .iframe-container
-                  iframe(:src="adformat[current_ad_id].url_demo") 
+                  iframe(:src="getAd().url_demo") 
               .adinfo.pure-u-1-1.pure-u-md-2-3
-                h3.name-format {{adformat[current_ad_id].name}}
+                h3.name-format {{getAd().name}}
                 .status
-                  img.pure-img.firstitem(v-if="adformat[current_ad_id].support.web",src="/img/icon/icon_mweb.svg")
-                  img.pure-img(v-if="adformat[current_ad_id].support.app",src="/img/icon/icon_mapp.svg")
-                  a.button-live(:href="adformat[current_ad_id].url_demo",target="_blank") Live
+                  img.pure-img.firstitem(v-if="getAdSupport().web",src="/img/icon/icon_mweb.svg")
+                  img.pure-img(v-if="getAdSupport().app",src="/img/icon/icon_mapp.svg")
+                  a.button-live(:href="getAd().url_demo",target="_blank") Live
                 hr
                 .description
-                  p(v-for="item in adformat[current_ad_id].description",v-html="item") 
+                  p(v-for="item in getAd().description",v-html="item") 
             .mask
           .menu.show.pure-u-1-1.pure-u-md-1-4
             .itemgrid
               - var adformat = [];
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "impressive","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
-              - adformat.push({"id": "interstitial","img":"mock","url":"",});
+              - adformat.push({"id": "top","img":"1"});
+              - adformat.push({"id": "native","img":"2"});
+              - adformat.push({"id": "interstitial","img":"3"});
+              - adformat.push({"id": "impressive","img":"4"});
+              - adformat.push({"id": "portrait-interstitial","img":"5"});
+              //- - adformat.push({"id": "interstitial","img":"6"});
+              //- - adformat.push({"id": "interstitial","img":"7"});
+              //- - adformat.push({"id": "interstitial","img":"8"});
+              //- - adformat.push({"id": "interstitial","img":"9"});
+              - adformat.push({"id": "interstitial","img":"1"});
+              - adformat.push({"id": "interstitial","img":"1"});
+              - adformat.push({"id": "interstitial","img":"1"});
+              - adformat.push({"id": "interstitial","img":"1"});
+              - adformat.push({"id": "interstitial","img":"1"});
+              - adformat.push({"id": "interstitial","img":"1"});
+              - adformat.push({"id": "interstitial","img":"1"});
+              - adformat.push({"id": "interstitial","img":"1"});
+              - adformat.push({"id": "interstitial","img":"1"});
+              - adformat.push({"id": "interstitial","img":"1"});
               .pure-g
                 each item in adformat
                   .aditem.pure-u-1-3
-                    img.pure-img(src="/img/adformat/btn_ad_#{item.img}.png",@click="selectAd('#{item.id}')")
+                    img.pure-img(src="/img/adformat/btn-ad-#{item.img}-a.svg",@click="selectAd('#{item.id}')")
     script(src="https://unpkg.com/vue@2.5.13/dist/vue.js")
     script(type="text/javascript").
       fullscreenAndHideMenu = function () {
@@ -105,11 +109,30 @@ block content
             }, false);
           },
           data: function () {
+              var baseUrl = "https://d2v4tz4zvhrua.cloudfront.net/manual_uploads/20180119/demos/";
               return {
                 "adformat": {
+                  "top": {
+                    "name": "Top",
+                    "url_demo": baseUrl + "simple-top.html",
+                    "description": [
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                    ],
+                    "support":{"web":true,},
+                  },
+                  "native": {
+                    "name": "Native",
+                    "url_demo": baseUrl + "simple.html",
+                    "description": [
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                    ],
+                    "support":{"web":true,},
+                  },
                   "interstitial": {
                     "name": "Interstitial",
-                    "url_demo": "http://ad-demo.vmfive.com/demos/simple-interstitial.html",
+                    "url_demo": baseUrl + "simple-interstitial.html",
                     "description": [
                       "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
                       "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
@@ -121,7 +144,16 @@ block content
                   },
                   "impressive": {
                     "name": "Impressive",
-                    "url_demo": "http://ad-demo.vmfive.com/demos/simple-impressive.html",
+                    "url_demo": baseUrl + "simple-impressive.html",
+                    "description": [
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                      "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
+                    ],
+                    "support":{"web":true,},
+                  },
+                  "portrait-interstitial": {
+                    "name": "Portrait Interstitial",
+                    "url_demo": baseUrl + "simple-portrait-interstitial.html",
                     "description": [
                       "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
                       "文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容文字內容",
@@ -138,6 +170,20 @@ block content
                 fullscreenAndHideMenu();
               },
               exitFullscreenAndShowMenu: exitFullscreenAndShowMenu,
+              getAd: function () {
+                var ad = this.adformat[this.current_ad_id];
+                return ad === undefined ? {} : ad;
+              },
+              getAdSupport: function functionName() {
+                if (this.getAd() !== undefined && this.getAd().support !== undefined) {
+                  return this.getAd().support;
+                }
+                
+                return {
+                  "web":true,
+                  "app":true,
+                };
+              },
           }
       });
       var app = new Vue({

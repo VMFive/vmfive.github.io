@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+    <defs>
+        <path id="a" d="M0 0h120v120H0z"/>
+        <path id="c" d="M0 0h100v104H0z"/>
+        <circle id="e" cx="9" cy="9" r="9"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(4 2)">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#FFF" xlink:href="#a"/>
+        <g mask="url(#b)">
+            <g transform="translate(10 8)">
+                <mask id="d" fill="#fff">
+                    <use xlink:href="#c"/>
+                </mask>
+                <use fill="#000" fill-opacity=".301" xlink:href="#c"/>
+                <g mask="url(#d)">
+                    <path fill="#96D5FF" d="M12 28h76v48H12z"/>
+                    <path fill="#C1E6FF" d="M12 28l59.638 48H12z" opacity=".3"/>
+                    <path fill="#64C1FF" d="M12 28h76v16.416L12 76z" opacity=".199"/>
+                    <g transform="translate(41 43)">
+                        <use fill="#5691B8" xlink:href="#e"/>
+                        <circle cx="9" cy="9" r="8.5" stroke="#FFF"/>
+                    </g>
+                    <path fill="#FFF" d="M53.75 52l-6 3.75v-7.5z"/>
+                    <g>
+                        <path fill="#FFD596" d="M12-8h76v36H12z"/>
+                        <path fill="#FFE7C4" d="M12-8l59.638 36H12z" opacity=".3"/>
+                        <path fill="#FFBC57" d="M12-8h76V4.312L12 28z" opacity=".199"/>
+                    </g>
+                    <g>
+                        <path fill="#FFD596" d="M12 76h76v36H12z"/>
+                        <path fill="#FFE7C4" d="M12 76l59.638 36H12z" opacity=".3"/>
+                        <path fill="#FFBC57" d="M12 76h76v12.312L12 112z" opacity=".199"/>
+                    </g>
+                </g>
+                <path fill="#FFF" d="M94 5.273L97.273 2l.727.727L94.727 6 98 9.273l-.727.727L94 6.727 90.727 10 90 9.273 93.273 6 90 2.727 90.727 2z" mask="url(#d)"/>
+            </g>
+        </g>
+    </g>
+</svg>

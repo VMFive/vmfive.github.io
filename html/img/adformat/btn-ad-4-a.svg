@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+    <defs>
+        <path id="a" d="M0 0h120v120H0z"/>
+        <circle id="c" cx="9" cy="9" r="9"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(4 2)">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#FFF" xlink:href="#a"/>
+        <g mask="url(#b)">
+            <path fill="#FFD596" d="M14 25h92v52H14z"/>
+            <path fill="#FFE7C4" d="M14 25l72.193 52H14z" opacity=".3"/>
+            <path fill="#FFBC57" d="M14 25h92v17.784L14 77z" opacity=".199"/>
+            <path fill="#96D5FF" d="M14 51h92v52H14z"/>
+            <path fill="#C1E6FF" d="M14 51l72.193 52H14z" opacity=".3"/>
+            <path fill="#64C1FF" d="M14 51h92v17.784L14 103z" opacity=".199"/>
+            <g transform="translate(51 68)">
+                <use fill="#5691B8" xlink:href="#c"/>
+                <circle cx="9" cy="9" r="8.5" stroke="#FFF"/>
+            </g>
+            <path fill="#FFF" d="M63.75 77l-6 3.75v-7.5z"/>
+            <path fill="#D8D8D8" d="M20 5h80v4H20V5zm0 8h60v4H20v-4zM20 111h80v4H20z"/>
+            <path fill="#3C5967" d="M97.182 44.82V57h-6.364V44.82H87L94 32l7 12.82z"/>
+        </g>
+    </g>
+</svg>
