@@ -6,6 +6,7 @@
 
 .about-overlap {
   .general-screen();
+  height: auto;
 
   background: #0006;
   padding: 150px 0px 0px 0px;
@@ -16,13 +17,18 @@
     padding-right: 40px;
   }
 
-  & > h1 {
+  .title {
     font-size: 2.5em;
     padding-bottom: 1.5rem;
   }
 
-  & > h1, & > p {
+  .title, .description {
     .indented;
+  }
+
+  .description {
+    padding-bottom: 3rem;
+    margin-bottom: 0;
   }
 }
 

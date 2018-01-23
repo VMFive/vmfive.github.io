@@ -169,6 +169,7 @@ footer .sitemap > .container .item > a {
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
+  height: auto;
   background: #0006;
   padding: 150px 0px 0px 0px;
   color: #fff;
@@ -177,14 +178,18 @@ footer .sitemap > .container .item > a {
   padding-left: 40px;
   padding-right: 40px;
 }
-.joinus-overlap > h1 {
+.joinus-overlap .title {
   font-size: 2.5em;
   padding-bottom: 1.5rem;
 }
-.joinus-overlap > h1,
-.joinus-overlap > p {
+.joinus-overlap .title,
+.joinus-overlap .description {
   padding-left: 40px;
   padding-right: 40px;
+}
+.joinus-overlap .description {
+  padding-bottom: 3rem;
+  margin-bottom: 0;
 }
 .joinus-member {
   background: #f7f7f7;
