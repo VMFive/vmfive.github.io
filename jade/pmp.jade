@@ -47,7 +47,8 @@ block content
                     //- each key, value in page
                     .gif
                       img.bg.pure-img(src="/img/bg/bg_phone.png")
-                      img.animation.pure-img(src='/img/adformat/#{page[key].url}.gif', alt='#{key}')
+                      //- img.animation.lazy.pure-img(src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",data-src='/img/adformat/#{page[key].url}.gif', alt='#{key}')
+                      img.animation.pure-img(src='/img/adformat/#{page[key].url}.gif.png',data-src='/img/adformat/#{page[key].url}.gif', alt='#{key}')
                     .flex-br
                     p #{page[key].text}
         // Left and right controls
