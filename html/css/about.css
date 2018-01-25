@@ -380,7 +380,8 @@ footer .sitemap > .container .item > a {
   }
 }
 .about-investor .content .description {
-  padding: 0 15vw 0 15vw;
+  padding: 0 30px 0 30px;
+  text-align: left;
 }
 .about-investor .content > .pure-g {
   padding: 0 10% 0 10%;

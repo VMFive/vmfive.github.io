@@ -1,5 +1,5 @@
 //output:$1.html
-//{"menu":{},"button":{},"lang":"en"}
+//{"menu":{},"button":{},"about":{},"investor":{"trend": {},"cdif": {},"gmobi": {},"cherubic_ventures": {}},"lang":"en"}
 extends comp/base
 
 block style
@@ -23,7 +23,7 @@ block content
   div.about-feature
     .content
       h3.title Vision & Mission
-      p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+      p.description #{about.mission}
       img.pure-img(src="/img/icon/icon_vision_mission.svg")
 
   div.about-milestone
@@ -78,5 +78,4 @@ block content
               //- each key, value in page
               .logo
                 img.pure-img(src='/img/investor/logo_#{page[key].img}.png', alt='#{key}')
-              p 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
-                | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+              p.description #{investor[key].description}
