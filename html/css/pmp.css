@@ -217,6 +217,26 @@ footer .sitemap > .container .item > a {
   margin: 1rem auto 0 auto;
   background-color: #FC981C;
 }
+.pmp-format .content .gif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.pmp-format .content .gif .bg {
+  align-self: center;
+}
+.pmp-format .content .gif .animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  padding: 4%;
+}
 .pmp-format .content .carousel {
   width: 100vw;
 }

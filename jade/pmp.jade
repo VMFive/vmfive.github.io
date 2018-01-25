@@ -29,8 +29,8 @@ block content
         | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
         
       - var adformat = [];
-      - adformat.push({"01":{text:"廣告樣式名稱",url:"01"},"02":{text:"廣告樣式名稱",url:"02"},"03":{text:"廣告樣式名稱",url:"03"},"04":{text:"廣告樣式名稱",url:"04"},"05":{text:"廣告樣式名稱",url:"05"},});
-      - adformat.push({"01":{text:"廣告樣式名稱",url:"01"},"02":{text:"廣告樣式名稱",url:"02"},"03":{text:"廣告樣式名稱",url:"03"},"04":{text:"廣告樣式名稱",url:"04"},"05":{text:"廣告樣式名稱",url:"05"},});
+      - adformat.push({"impressive":{text:"Impressive",url:"impressive"},"interstitial":{text:"Interstitial",url:"interstitial"},"native":{text:"Native",url:"native"},"portriat":{text:"Portriat",url:"portriat"},"top":{text:"Top",url:"top"},});
+      - adformat.push({"impressive_portrait":{text:"Impressive(Portrait)",url:"impressive_portrait"},});
       //- - adformat.push({"06":"06","07":"07","08":"08","09":"09","010":"010",});
       #showcase-adformat.carousel.slide(data-ride='carousel')
         // Indicators
@@ -45,7 +45,9 @@ block content
                 each key in Object.keys(page)
                   .pure-u-1-2.pure-u-lg-1-5
                     //- each key, value in page
-                    img.pure-img(src='/img/adformat/icon_adformat_phone_#{page[key].url}.png', alt='#{key}')
+                    .gif
+                      img.bg.pure-img(src="/img/bg/bg_phone.png")
+                      img.animation.pure-img(src='/img/adformat/#{page[key].url}.gif', alt='#{key}')
                     .flex-br
                     p #{page[key].text}
         // Left and right controls
