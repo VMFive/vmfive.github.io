@@ -345,11 +345,16 @@ footer .sitemap > .container .item > a {
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
-  height: 170vh;
+  height: 200vh;
   text-align: center;
   position: relative;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
+  .about-investor {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 64em) {
   .about-investor {
     height: 80vh;
   }
