@@ -237,6 +237,40 @@ footer .sitemap > .container .item > a {
   transform: translateX(-50%) translateY(-50%);
   padding: 4%;
 }
+.pmp-format .content #showcase-adformat-sm {
+  margin-bottom: 30px;
+  display: block;
+}
+.pmp-format .content #showcase-adformat-sm .carousel-indicators {
+  bottom: -30px;
+}
+.pmp-format .content #showcase-adformat-sm .carousel-indicators li {
+  border-radius: 10px;
+  margin: 1px 3px;
+  height: 10px;
+  max-width: 10px;
+  border: 1px solid #D8D8D8;
+  background-color: transparent;
+}
+.pmp-format .content #showcase-adformat-sm .carousel-indicators .active {
+  background-color: #D8D8D8;
+  max-width: 12px;
+  margin: 0 3px;
+  height: 12px;
+}
+@media screen and (min-width: 48em) {
+  .pmp-format .content #showcase-adformat-sm {
+    display: none;
+  }
+}
+.pmp-format .content #showcase-adformat-md {
+  display: none;
+}
+@media screen and (min-width: 48em) {
+  .pmp-format .content #showcase-adformat-md {
+    display: block;
+  }
+}
 .pmp-format .content .carousel {
   width: 100vw;
 }

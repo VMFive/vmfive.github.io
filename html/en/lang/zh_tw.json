@@ -12,6 +12,16 @@
     "more":"查看更多",
     "contactus":"聯絡我們"
   },
+  "format":{
+    "impressive":"滾動式",
+    "impressive_portrait":"滾動式(直立)",
+    "interstitial":"蓋版",
+    "portrait":"直立式",
+    "native":"原生",
+    "top":"置頂",
+    "dynamic_native":"動態(文中)",
+    "dynamic_interstitial":"動態(蓋版)"
+  },
   "name":"vm5",
   "lang":"zh_tw"
 }

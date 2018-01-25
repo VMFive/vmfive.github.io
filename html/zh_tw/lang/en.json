@@ -12,6 +12,16 @@
     "more":"more",
     "contactus":"Contact Us"
   },
+  "format":{
+    "impressive":"Impressive",
+    "impressive_portrait":"Impressive(Portrait)",
+    "interstitial":"Interstitial",
+    "portrait":"Portrait",
+    "native":"Native",
+    "top":"Top",
+    "dynamic_native":"Dynamic(Native)",
+    "dynamic_interstitial":"Dynamic(Interstitial)"
+  },
   "name":"vm5",
   "lang":"en"
 }
