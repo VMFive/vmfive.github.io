@@ -129,6 +129,10 @@ footer {
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
+  .dropdown-item {
+    color: #fff;
+    background: transparent;
+  }
   &.shrink {
     .navbar-toggler {
         border-color: rgba(0,0,0, 0);
@@ -136,10 +140,28 @@ footer {
     .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
+    .dropdown-item {
+      color: #000;
+      .background-default;
+    }
 
     height: auto;
     top: 0px;
     background: #f7f7f7;
+  }
+
+  .dropdown-menu {
+    background: transparent;
+    border: 0;
+    text-align: center;
+
+    .media-md({
+      text-align: left;
+    });
+  }
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+
   }
 
   @media (max-width: 500px){

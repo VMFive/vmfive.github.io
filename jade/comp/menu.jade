@@ -9,10 +9,16 @@ mixin menu(currentPage)
       
     div#navbarNav.collapse.navbar-collapse
       ul.navbar-nav.ml-auto
+        //- li.nav-item.dropdown
+        //-   a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='http://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        //-     | Dropdown link
+        //-   |         
+        //-   .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+        //-     a.dropdown-item(href='#') Action
+        //-     |           
+        //-     a.dropdown-item(href='#') Another action
+        //-     |           
+        //-     a.dropdown-item(href='#') Something else here
         each item in [{"id":"pmp", "url":"/"+lang+"/pmp.html", "text":menu.textPMP},{"id":"adplay", "url":"/"+lang+"/adplay.html", "text":menu.textAdplay},{"id":"about", "url":"/"+lang+"/about.html", "text":menu.textAbout},{"id":"joinus", "url":"/"+lang+"/joinus.html", "text":menu.textJoinUs}]
           li.nav-item
-            - if (currentPage == item.id) {
-            a.nav-link.active(class="menu-#{item.id}",href="#{item.url}") #{item.text}
-            - } else {
-            a.nav-link(class="menu-#{item.id}",href="#{item.url}") #{item.text}
-            - }
+            a.nav-link(class="menu-#{item.id} #{currentPage == item.id ? 'active' : ''}",href="#{item.url}") #{item.text}
