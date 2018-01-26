@@ -7,7 +7,7 @@ block style
   link(rel="stylesheet", type="text/css", href="/css/pmp.css")
 
 block script_after.
-  $('.carousel').carousel()
+  $('.carousel').carousel({interval:15*1000})
 
 block content
   .pmp-header.header
@@ -126,7 +126,8 @@ block content
       h3.title 精準觸及
       p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
         | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
-      img.icon5r(src="/img/icon/icon_5r_with_text.png")
+      img.icon5r.desktop(src="/img/icon/icon_5r_with_text.png")
+      img.icon5r.mobile(src="/img/icon/icon_5r_with_text_m.png")
       a.button(href="pmp/5R.html") #{button.more === undefined ? "more" : button.more}
   div.pmp-partner
     .bg

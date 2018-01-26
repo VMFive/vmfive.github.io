@@ -235,6 +235,18 @@
       width: 80%;
       padding-bottom: 2rem;
     }
+    .desktop {
+      display: none;
+      .media-md({
+        display: block;
+      });
+    }
+    .mobile {
+      display: block;
+      .media-md({
+        display: none;
+      });
+    }
 
     .button {
       .text-white();

@@ -6,7 +6,7 @@ block style
   link(rel="stylesheet", type="text/css", href="/css/about.css")
 
 block script_after.
-  $('.carousel').carousel()
+  $('.carousel').carousel({interval:15*1000})
 
 block content
   +menu("about")

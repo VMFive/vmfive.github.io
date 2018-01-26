@@ -7,7 +7,7 @@ block style
   link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.4.2/css/lightcase.min.css")
 
 block script_after.
-  $('.carousel').carousel()
+  $('.carousel').carousel({interval:15*1000})
 
 block content
   +menu("adplay")

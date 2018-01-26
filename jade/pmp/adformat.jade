@@ -9,7 +9,7 @@ block style
 block scroll_nav_change
 
 block script_after
-  | $('.carousel').carousel();
+  | $('.carousel').carousel({interval:15*1000});
 
 block foot
   +footerGeneral('../')

@@ -459,6 +459,22 @@ footer .sitemap > .container .item > a {
   width: 80%;
   padding-bottom: 2rem;
 }
+.pmp-5r .content .desktop {
+  display: none;
+}
+@media screen and (min-width: 48em) {
+  .pmp-5r .content .desktop {
+    display: block;
+  }
+}
+.pmp-5r .content .mobile {
+  display: block;
+}
+@media screen and (min-width: 48em) {
+  .pmp-5r .content .mobile {
+    display: none;
+  }
+}
 .pmp-5r .content .button {
   color: #fff;
   display: flex;
