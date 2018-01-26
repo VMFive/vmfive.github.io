@@ -4,6 +4,7 @@ extends comp/base
 
 block style
   link(rel="stylesheet", type="text/css", href="/css/adplay.css")
+  link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.4.2/css/lightcase.min.css")
 
 block script_after.
   $('.carousel').carousel()
@@ -41,7 +42,7 @@ block content
               p #{page[key].text}
 
   div.adplay-introvideo
-    a.bg(href="#")
+    a.bg(data-lc-href="https://s3-ap-northeast-1.amazonaws.com/www-vmfive-com/video/AdPlay+Introduction.mp4",data-rel="lightcase")
       
   div.adplay-mainflows
     .content
@@ -137,3 +138,16 @@ block content
   div.adplay-contact-us
     .button #{button.contactus === undefined ? "Contact Us" : button.contactus}
     hr
+  block block_after
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js",integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=",crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.4.2/js/lightcase.min.js")
+    script(type="text/javascript").
+      $('document').ready(function(){
+        $('a[data-rel^=lightcase]').lightcase({
+          "video" : {
+            width: '100vw',
+            height: '100vh',
+          }
+        });
+      })
+    

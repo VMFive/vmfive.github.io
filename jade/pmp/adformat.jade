@@ -38,7 +38,7 @@ block content
                 .status
                   img.pure-img.firstitem(v-if="getAdSupport().web",src="/img/icon/icon_mweb.svg")
                   img.pure-img(v-if="getAdSupport().app",src="/img/icon/icon_mapp.svg")
-                  a.button-live(:href="getAd().url_demo",target="_blank") Live
+                  //- a.button-live(:href="getAd().url_demo",target="_blank") Live
                 hr
                 .description
                   p(v-for="item in getAd().description",v-html="item") 
