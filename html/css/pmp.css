@@ -498,7 +498,7 @@ footer .sitemap > .container .item > a {
 @media screen and (min-width: 48em) {
   .pmp-partner .bg {
     background-position: 100% 0%;
-    background-size: cover;
+    background-size: auto 100vh;
   }
 }
 .pmp-partner .bg > img {
@@ -571,12 +571,12 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 64em) {
   .pmp-customer {
-    height: 170vh;
+    height: 110vh;
   }
 }
 @media screen and (min-width: 64em) {
   .pmp-customer {
-    height: 170vh;
+    height: 110vh;
   }
 }
 .pmp-customer .bg {
@@ -593,13 +593,13 @@ footer .sitemap > .container .item > a {
 @media screen and (min-width: 64em) {
   .pmp-customer .bg {
     background-position: 0% 100%;
-    background-size: auto 190vh;
+    background-size: auto 130vh;
   }
 }
 @media screen and (min-width: 64em) {
   .pmp-customer .bg {
     background-position: 0% 100%;
-    background-size: auto 190vh;
+    background-size: auto 130vh;
   }
 }
 .pmp-customer .bg > img {
