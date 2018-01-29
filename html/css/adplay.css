@@ -525,6 +525,7 @@ footer .sitemap > .container .item > a {
   margin: auto;
 }
 .adplay-partner {
+  display: none;
   background: #f7f7f7;
   width: 100%;
   height: 100vh;

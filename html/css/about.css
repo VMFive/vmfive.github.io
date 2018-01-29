@@ -194,6 +194,32 @@ footer .sitemap > .container .item > a {
 .about-header {
   overflow: hidden;
 }
+.about-header .bg {
+  top: 0;
+  transform: translate(-50%, 0);
+  position: fixed;
+  min-width: 100vw;
+  min-height: 20%;
+  z-index: -100;
+}
+.about-header .bg.desktop {
+  left: 50%;
+  display: none;
+}
+@media screen and (min-width: 48em) {
+  .about-header .bg.desktop {
+    display: block;
+  }
+}
+.about-header .bg.mobile {
+  left: 0%;
+  display: block;
+}
+@media screen and (min-width: 48em) {
+  .about-header .bg.mobile {
+    display: none;
+  }
+}
 .about-overlap {
   background: #f7f7f7;
   width: 100%;

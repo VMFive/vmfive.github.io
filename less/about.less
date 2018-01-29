@@ -2,6 +2,31 @@
 
 .about-header {
   overflow:hidden;
+
+  .bg {
+    top: 0;
+    transform: translate(-50%,0);
+
+    &.desktop {
+      left: 50%;
+      display: none;
+      .media-md({
+        display: block;
+      });
+    };
+    &.mobile {
+      left: 0%;
+      display: block;
+      .media-md({
+        display: none;
+      });
+    };
+
+    position: fixed;
+    min-width: 100vw;
+    min-height: 20%;
+    z-index: -100;
+  }
 }
 
 .about-overlap {
