@@ -249,6 +249,9 @@ footer .sitemap > .container .item > a {
   margin: 1rem auto 0 auto;
   background-color: #FC981C;
 }
+.pmp-format .content .description {
+  padding: 0 15vw 0 15vw;
+}
 .pmp-format .content .gif {
   display: flex;
   align-items: center;
@@ -329,8 +332,9 @@ footer .sitemap > .container .item > a {
 .pmp-format .content .carousel .carousel-item > .pure-g > div img {
   margin: auto 0;
 }
-.pmp-format .content .carousel .carousel-item > .pure-g > div p {
+.pmp-format .content .carousel .carousel-item > .pure-g > div .title {
   margin: auto;
+  width: 100%;
 }
 .pmp-nice-media {
   background: #f7f7f7;

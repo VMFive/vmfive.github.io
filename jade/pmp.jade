@@ -38,7 +38,7 @@ block content
           //- img.animation.lazy.pure-img(src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",data-src='/img/adformat/#{page[key].url}.gif', alt='#{key}')
           img.animation.pure-img(src='#{staticbaseurl}/img/adformat/#{page[key].url}.gif.png', alt='#{key}')
         .flex-br
-        p #{page[key].text}
+        p.title #{page[key].text}
       
       // Media SM
       #showcase-adformat-sm.carousel.slide(data-ride='carousel')
@@ -72,7 +72,7 @@ block content
             .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
               .pure-g
                 each key in Object.keys(page)
-                  .pure-u-1-2.pure-u-lg-1-5
+                  .pure-u-1-2.pure-u-md-1-5
                     //- each key, value in page
                     +formatdemo(page, key)
         // Left and right controls
