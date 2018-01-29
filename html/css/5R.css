@@ -9,6 +9,14 @@ h1 {
   font-family: 'Roboto Thin', sans-serif;
   font-weight: lighter;
 }
+.footer-hr-container {
+  background: #f7f7f7;
+  padding-top: 3rem;
+}
+.footer-hr-container .footer-hr {
+  height: 2px;
+  background: #333;
+}
 footer {
   background: #FBFBFB;
   height: auto;
