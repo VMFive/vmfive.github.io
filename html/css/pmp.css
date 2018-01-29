@@ -207,12 +207,15 @@ footer .sitemap > .container .item > a {
   padding-left: 40px;
   padding-right: 40px;
 }
-.pmp-overlap > h1 {
+.pmp-overlap .title {
   font-size: 2.5em;
   padding-bottom: 1.5rem;
 }
-.pmp-overlap > h1,
-.pmp-overlap > p {
+.pmp-overlap .description {
+  max-width: 400px;
+}
+.pmp-overlap .title,
+.pmp-overlap .description {
   padding-left: 40px;
   padding-right: 40px;
 }

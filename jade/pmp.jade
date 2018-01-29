@@ -1,5 +1,5 @@
 //output:$1.html
-//{"menu":{},"button":{},"format":{},"lang":"en"}
+//{"menu":{},"button":{},"format":{},"pmp":{},"lang":"en"}
 
 extends comp/base
 
@@ -18,15 +18,13 @@ block content
   
   div.pmp-overlap
     .bg
-    h1 PMP
-    p Light Up Your Brand with Innovation in a <br>
-      | Programmatic Way
+    h1.title #{pmp.pmp_title}
+    p.description #{pmp.pmp_description}
 
   div.pmp-format
     .content
-      h3 廣告格式
-      p 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字 <br>
-        | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+      h3.title #{pmp.adformat_title}
+      p.description #{pmp.adformat_description}
         
       - var adformat = [];
       - adformat.push({"impressive":{text:format.impressive,url:"impressive"},"interstitial":{text:format.interstitial,url:"interstitial"},"native":{text:format.native,url:"native"},"portrait":{text:format.portrait,url:"portrait"},"top":{text:format.top,url:"top"},});
@@ -92,9 +90,8 @@ block content
     .bg
       //- img.pure-img(src="/img/bg/bg_nice_media.svg",alt="nice-media")
     .content
-      h3.title 優質媒體
-      p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
-        | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+      h3.title #{pmp.nice_media_title}
+      p.description #{pmp.nice_media_description}
       
         
       - var media = [];
@@ -124,9 +121,8 @@ block content
           
   div.pmp-5r
     .content
-      h3.title 精準觸及
-      p.description 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
-        | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+      h3.title #{pmp['5r_title']}
+      p.description #{pmp['5r_description']}
       img.icon5r.desktop(src="/img/icon/icon_5r_with_text.png")
       img.icon5r.mobile(src="/img/icon/icon_5r_with_text_m.png")
       a.button(href="pmp/5R.html") #{button.more === undefined ? "more" : button.more}

@@ -1,6 +1,14 @@
 {
   "pmp":{
-    "word": "word"
+    "word": "word",
+    "pmp_title": "影音PMP",
+    "pmp_description": "VMFive影音PMP 透過創新吸睛的廣告格式抓住受眾目光，透過機器學習的演算法精準的找到理想客群，並透過優質的流量幫助您有效的傳達品牌故事",
+    "adformat_title": "廣告格式",
+    "adformat_description": "我們理解不同的廣告品牌在每一波的行銷活動有不同的目標。我們相信透過不同的廣告格式我們更可以協助您達到行銷目的。VMFive 的 ADK 實驗室透過科學地方式開發出創新、吸睛和有效的廣告格式。",
+    "nice_media_title": "優質媒體",
+    "nice_media_description": "VMFive 提供了最優質的媒體流量。我們除了提供每個媒體最好的版位外，也無時無刻檢測並阻擋非人為 (non-human) 與無效 (invalid) 流量。我們也同時兼顧品牌安全(brand safety) 和能見度 (viewability)，確保您的廣告出現的位子和頁面內容符合您的品牌形象",
+    "5r_title": "精準觸及",
+    "5r_description": "相較於傳統的投放優化演算法，VMFive 5R智能演算法引入了更多維度的數據。VMFive融合了從媒體端，廣告平台端到廣告主端的貫穿整個數位行銷週期的所有數據。并以此為基礎，通過機器學習的方式不斷分析訓練廣告投放演算法。"
   },
   "menu":{
     "textPMP":"PMP",
