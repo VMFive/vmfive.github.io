@@ -452,6 +452,7 @@ footer .sitemap > .container .item > a {
 }
 .pmp-nice-media .content .carousel .carousel-item > .pure-g > div img {
   margin: auto auto;
+  padding: 10%;
 }
 .pmp-5r {
   background: #f7f7f7;
@@ -523,7 +524,7 @@ footer .sitemap > .container .item > a {
   width: 98%;
   background-image: url("/img/bg/bg_partner.png");
   background-position: 99% 0%;
-  background-size: auto 180vh;
+  background-size: auto 230vh;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 48em) {
@@ -549,7 +550,7 @@ footer .sitemap > .container .item > a {
 }
 .pmp-partner .content {
   position: absolute;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
   width: 100%;
 }
@@ -587,15 +588,17 @@ footer .sitemap > .container .item > a {
   flex-flow: row wrap;
   text-align: center;
   justify-content: center;
+  padding: 10px;
 }
 .pmp-partner .content > .pure-g > div > img {
+  object-fit: contain;
   margin-bottom: 2rem;
 }
 .pmp-customer {
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
-  height: 280vh;
+  height: 230vh;
   padding-bottom: 1rem;
   text-align: center;
   position: relative;
@@ -650,7 +653,7 @@ footer .sitemap > .container .item > a {
 }
 .pmp-customer .content {
   position: absolute;
-  top: 35%;
+  top: 25%;
   transform: translateY(-50%);
   width: 100%;
 }
@@ -731,6 +734,10 @@ footer .sitemap > .container .item > a {
 }
 .pmp-customer .content .carousel .carousel-item > .pure-g > div img {
   margin: auto auto;
+  padding: 10%;
+  object-fit: contain;
+  max-height: 150px;
+  max-width: 100%;
 }
 .pmp-contact-us-hr-container {
   background: #f7f7f7;

@@ -214,6 +214,7 @@
 
             img {
               .img-center-margin();
+              padding: 10%;
             }
           }
         }
@@ -285,7 +286,7 @@
     width: 98%;
     background-image: url("/img/bg/bg_partner.png");
     background-position: 99% 0%;
-    background-size: auto 180vh;
+    background-size: auto 230vh;
     background-repeat: no-repeat;
 
     .media-md({
@@ -308,7 +309,7 @@
   .content {
     position: absolute;
 
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
     width: 100%;
     .media-md({
@@ -335,7 +336,10 @@
         text-align: center;
         justify-content: center;
 
+        padding: 10px;
+
         & > img {
+          object-fit: contain;
           margin-bottom: 2rem;
         }
       }
@@ -346,7 +350,7 @@
 
 .pmp-customer {
   .general-screen();
-  height: 280vh;
+  height: 230vh;
   .media-lg({
     height: 110vh;
   });
@@ -386,7 +390,7 @@
   .content {
     position: absolute;
 
-    top: 35%;
+    top: 25%;
     transform: translateY(-50%);
     width: 100%;
     .media-lg({
@@ -445,6 +449,11 @@
 
             img {
               .img-center-margin();
+              padding: 10%;
+              object-fit: contain;
+
+              max-height: 150px;
+              max-width: 100%;
             }
           }
         }
