@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1222px" height="793px" viewBox="0 0 1222 793" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1132px" height="594px" viewBox="0 0 1132 594" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>Stroke 3</title>
+    <title>Group 11</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="關於我們_dt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -1432.000000)" opacity="0.636152627">
-        <path d="M1200.97558,1707.19658 L1221.83671,1534.72828 C1222.75941,1529.98957 1219.6795,1524.55378 1214.92606,1522.50173 L1058.51678,1434.23227 C1050.18388,1428.43192 1043.70693,1434.69175 1048.30846,1444.32028 L1071.55616,1492.1688 L-75.2206313,1771.9464 C-79.5974402,1772.89258 -83.098826,1784.11364 -82.9978705,1797.00689 L-53.5346698,2224.95106 C-51.8600089,2237.8463 -46.3997853,2246.69876 -41.384633,2244.72466 L1158.65006,1661.00365 L1184.76792,1708.85216 C1190.09981,1718.47999 1200.31467,1717.33082 1200.97558,1707.19658 Z" id="Stroke-3" fill="#FFB75D"></path>
+    <g id="關於我們_dt_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-10.000000, -1123.000000)" opacity="0.69701087">
+        <g id="Group-11" transform="translate(-56.000000, 1123.000000)">
+            <path d="M0.5,587.5 L1149.50696,587.5" id="Line" stroke="#F7E8D1" stroke-width="12" stroke-linecap="round" stroke-dasharray="1,23"></path>
+            <g id="Group-10" transform="translate(762.000000, 0.000000)">
+                <rect id="Rectangle" fill="#F7E8D1" x="0" y="528" width="100" height="66"></rect>
+                <rect id="Rectangle-Copy" fill="#FAE5C5" x="100" y="454" width="100" height="140"></rect>
+                <rect id="Rectangle-Copy-2" fill="#FDE1B7" x="200" y="326" width="100" height="268"></rect>
+                <rect id="Rectangle-Copy-3" fill="#FEDDAA" x="300" y="84" width="100" height="510"></rect>
+                <polygon id="Triangle-2" fill="#FEDDAA" points="350 0 436 123 264 123"></polygon>
+            </g>
+        </g>
     </g>
 </svg>
