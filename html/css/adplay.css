@@ -338,9 +338,12 @@ footer .sitemap > .container .item > a {
   }
 }
 .adplay-mainflows .content .process-decorations {
-  height: 50vh;
-  width: 80%;
+  height: auto;
+  width: 100%;
   padding-bottom: 2rem;
+}
+.adplay-mainflows .content .process-decorations > img {
+  margin: auto;
 }
 .adplay-mainflows .content .button {
   color: #fff;
