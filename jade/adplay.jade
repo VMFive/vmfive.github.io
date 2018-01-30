@@ -1,5 +1,5 @@
 //output:$1.html
-//{"menu":{},"button":{},"lang":"en"}
+//{"menu":{},"button":{},"adplay":{},"lang":"en"}
 extends comp/base
 
 block style
@@ -17,21 +17,16 @@ block content
         source(src='#{staticbaseurl}/video/AdPlay+Demo+Video.mp4', type='video/mp4')
   
   div.adplay-overlap
-    h1 Adplay
-    p.description Let users expeirence, Get higher <br>
-      | retention. AdPlay is a playble ad solution <br>
-      | with VMFive's patented technology <br>
-      | which allows users to try applications <br>
-      | before download. AdPlay can be <br>
-      | provided as embedded or a link.
+    h1.title #{adplay.adplay_title}
+    p.description #{adplay.adplay_description}
 
           
   div.adplay-feature
     .content
-      h3.title 功能
-      p.description VMFive's cutting-edge mobile virtualization technology allows users to experience Apps without downloading them, across devices.
+      h3.title #{adplay.feature_title}
+      p.description #{adplay.feature_description}
       - var feature = [];
-      - feature.push({"crossplatform": {"title":"Cross platform","url":"crossplatform","text":"Experience our playable AD through every device. No matter on your smart phone with either iOS or Android system, your tablet, or PC."},"realtime_streaming": {"title":"Realtime Streaming","url":"realtime_streaming","text":"With our streaming technology, AdPlay will not have any latency. The fluent experience makes your APP more attractive to the audience!"},"mobile_virtualization": {"title":"Mobile Virtualization","url":"mobile_virtualization","text":"Through our AdPlay server, your APK file can be lauched easily  with the virtualized phone, which makes AdPlay a simpler and better service ."},"instant_play": {"title":"Instant Play","url":"instant_play","text":"You can enjoy the APP without downloading and lagging. After the play, you can further download it to your device with only one click."},"engaging": {"title":"Engaging","url":"engaging","text":"By playing the climax of your APP directly, the audience can immediately be catched as well as become immersive to your APP."},"differentiation": {"title":"Differentiation","url":"differentiation","text":"AdPlay is the brand-new solution for mobile advertising featuring the game play experience. Its playability makes it different from the common ADs."},});
+      - feature.push({"crossplatform": {"title":adplay.cross_platform_title,"url":"crossplatform","text":adplay.cross_platform_description},"realtime_streaming": {"title":adplay.real_time_streaming_title,"url":"realtime_streaming","text":adplay.real_time_streaming_description},"mobile_virtualization": {"title":adplay.mobile_virtualization_title,"url":"mobile_virtualization","text":adplay.mobile_virtualization_description},"instant_play": {"title":adplay.instant_play_title,"url":"instant_play","text":adplay.instant_play_description},"engaging": {"title":"Engaging","url":"engaging","text":"By playing the climax of your APP directly, the audience can immediately be catched as well as become immersive to your APP."},"differentiation": {"title":"Differentiation","url":"differentiation","text":"AdPlay is the brand-new solution for mobile advertising featuring the game play experience. Its playability makes it different from the common ADs."},});
       each page, page_index in feature
         .pure-g
           each key in Object.keys(page)

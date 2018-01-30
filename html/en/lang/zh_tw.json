@@ -1,14 +1,28 @@
 {
+  "adplay":{
+    "adplay_title": "試玩廣告 Adplay",
+    "adplay_description": "更好的用戶體驗、更高的用戶留存率。VMFive 試玩廣告 Adplay 透過了專利技術讓用戶在下載遊戲或應用前完整試玩。",
+    "feature_title": "功能",
+    "feature_description": "VMFive 領先的行動虛擬化科技讓用戶可以跨裝置的在不用下載遊戲或應用直接體驗。",
+    "cross_platform_title": "跨平台",
+    "cross_platform_description": "不論用戶的裝置是 Android 或是 iOS，智慧型手機、平板或是 PC 都可以獲得相同的試玩廣告體驗。",
+    "real_time_streaming_title": "即時串流",
+    "real_time_streaming_description": "透過我們的串流技術，Adplay 廣告不會有任何的延遲。流暢的體驗讓您的應用更吸引用戶下載。",
+    "mobile_virtualization_title": "行動虛擬化",
+    "mobile_virtualization_description": "透過我們的 Adplay 伺服器，您的 APK 檔案可以輕易的透過我們的虛擬設備運行。無需任何客製化，即時上傳即時體驗。",
+    "instant_play_title": "即時遊玩",
+    "instant_play_description": "用戶可以無須下載得到完整的應用與遊戲體驗。試玩後如果用戶希望持續擁有也只需要一鍵點擊下載應用。"
+  },
   "pmp":{
     "word": "word",
-    "pmp_title": "影音PMP",
-    "pmp_description": "VMFive影音PMP 透過創新吸睛的廣告格式抓住受眾目光，透過機器學習的演算法精準的找到理想客群，並透過優質的流量幫助您有效的傳達品牌故事",
+    "pmp_title": "影音 PMP",
+    "pmp_description": "VMFive 影音 PMP 透過創新吸睛的廣告格式抓住受眾目光，透過機器學習的演算法精準的找到理想客群，並透過優質的流量幫助您有效的傳達品牌故事",
     "adformat_title": "廣告格式",
     "adformat_description": "我們理解不同的廣告品牌在每一波的行銷活動有不同的目標。我們相信透過不同的廣告格式我們更可以協助您達到行銷目的。VMFive 的 ADK 實驗室透過科學地方式開發出創新、吸睛和有效的廣告格式。",
     "nice_media_title": "優質媒體",
     "nice_media_description": "VMFive 提供了最優質的媒體流量。我們除了提供每個媒體最好的版位外，也無時無刻檢測並阻擋非人為 (non-human) 與無效 (invalid) 流量。我們也同時兼顧品牌安全(brand safety) 和能見度 (viewability)，確保您的廣告出現的位子和頁面內容符合您的品牌形象",
     "5r_title": "精準觸及",
-    "5r_description": "相較於傳統的投放優化演算法，VMFive 5R智能演算法引入了更多維度的數據。VMFive融合了從媒體端，廣告平台端到廣告主端的貫穿整個數位行銷週期的所有數據。并以此為基礎，通過機器學習的方式不斷分析訓練廣告投放演算法。"
+    "5r_description": "相較於傳統的投放優化演算法，VMFive 5R智能演算法引入了更多維度的數據。VMFive 融合了從媒體端，廣告平台端到廣告主端的貫穿整個數位行銷週期的所有數據。并以此為基礎，通過機器學習的方式不斷分析訓練廣告投放演算法。"
   },
   "menu":{
     "textPMP":"PMP",
@@ -36,19 +50,19 @@
   "investor" : {
     "trend": {
       "name":"趨勢科技",
-      "description":"作為全球資安領導廠商，趨勢科技致力開發創新的防護解決方案來保護企業和消費者所在的數位資訊交換世界。憑著 25 年以上的資安專業經驗，趨勢科技是許多領域公認的市場領導者。"
+      "description":"作為全球資安領導廠商，趨勢科技致力開發創新的防護解決方案來保護企業和消費者所在的數位資訊交換世界。"
     },
     "cdif": {
       "name":"開發國際",
-      "description":"中華開發金控旗下的私募股權投資公司，專責將集團的自有資本透過台灣以外的區域進行多元化的配置及運用，為打造區域性頂尖私募股權資產管理公司奠定基礎。"
+      "description":"中華開發金控旗下的私募股權投資公司，專責將集團的自有資本透過台灣以外的區域進行多元化的配置及運用。"
     },
     "gmobi": {
       "name":"GMobi",
-      "description":"GMobi 擁有自行開發的完整移動服務平台，提供全球超過 100 家手機品牌商及電信商一站式優質的移動網路服務，橫跨眾多技術平台，支援超過 2000款 Android 裝置，目前全球共有超過1億5千萬用戶，並以每個月700萬的速度成長中。"
+      "description":"GMobi 擁有自行開發的完整移動服務平台，提供全球超過 100 家手機品牌商及電信商一站式優質的移動網路服務，橫跨眾多技術平台。"
     },
     "cherubic_ventures": {
       "name":"心元資本",
-      "description":"心元資本由連續創業者和天使投資人鄭博仁 (Matt) 所創立。鄭博仁曾經是中國最大直播社交平台——天鴿互動的創始夥伴兼策略長，並協助團隊成功於香港上市。心元資本豐富的經驗和實作的精神，能夠有效地幫助新創團隊渡過最辛苦的草創時期。"
+      "description":"心元資本由連續創業者和天使投資人鄭博仁 (Matt) 所創立。心元資本豐富的經驗和實作的精神，能夠有效地幫助新創團隊渡過最辛苦的草創時期。"
     }
   },
 
