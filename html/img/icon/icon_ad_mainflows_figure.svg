@@ -124,14 +124,14 @@
                     </g>
                 </g>
             </g>
-            <path d="M209,182.178343 L392.536074,133" id="Line-Copy" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
-            <path id="Line-Copy-decoration-1" d="M392.536074,133 L381.327618,132.897468 L382.880533,138.693023 L392.536074,133 Z" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
+            <path d="M209,158.178343 L392.536074,109" id="Line-Copy" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
+            <path id="Line-Copy-decoration-1" d="M392.536074,109 L381.327618,108.897468 L382.880533,114.693023 L392.536074,109 Z" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
             <path d="M657,182.178343 L840.536074,133" id="Line-Copy-5" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round" transform="translate(748.768037, 157.589171) scale(-1, 1) translate(-748.768037, -157.589171) "></path>
             <path id="Line-Copy-5-decoration-1" d="M840.536074,133 L829.327618,132.897468 L830.880533,138.693023 L840.536074,133 Z" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
             <path d="M657,401.178343 L840.536074,352" id="Line-Copy-4" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
             <path id="Line-Copy-4-decoration-1" d="M840.536074,352 L829.327618,351.897468 L830.880533,357.693023 L840.536074,352 Z" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
-            <path d="M209,158.178343 L392.536074,109" id="Line-Copy-2" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
-            <path id="Line-Copy-2-decoration-1" d="M209,158.178343 L218.655542,152.48532 L220.208456,158.280875 L209,158.178343 Z" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
+            <path d="M209,182.178343 L392.536074,133" id="Line-Copy-2" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
+            <path id="Line-Copy-2-decoration-1" d="M209,182.178343 L218.655542,176.48532 L220.208456,182.280875 L209,182.178343 Z" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
             <path d="M392.536074,401.178343 L209,352 L392.536074,401.178343 Z" id="Line-Copy-3" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
             <path id="Line-Copy-3-decoration-1" d="M392.536074,401.178343 L381.327618,401.280875 L382.880533,395.48532 L392.536074,401.178343 Z" stroke="#E2E2E2" stroke-width="5" stroke-linecap="round"></path>
             <text id="Game-Publisher" font-family="PingFangTC-Regular, PingFang TC" font-size="16" font-weight="normal" letter-spacing="-0.145454556" fill="#2C2C2C">
