@@ -6,8 +6,8 @@ block style
   link(rel="stylesheet", type="text/css", href="/css/adplay.css")
   link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.4.2/css/lightcase.min.css")
 
-block script_after.
-  $('.carousel').carousel({interval:15*1000})
+block script_after
+  | $('.carousel').carousel({interval:15*1000})
 
 block content
   +menu("adplay")
@@ -42,8 +42,8 @@ block content
   div.adplay-mainflows
     .content
       h3.title 廣告主流程
-      img.pure-img.process(src="/img/icon/icon_ad_mainflows.png")
-      img.pure-img.process-md(src="/img/icon/icon_ad_mainflows_md.png")
+      //- img.pure-img.process(src="/img/icon/icon_ad_mainflows.png")
+      //- img.pure-img.process-md(src="/img/icon/icon_ad_mainflows_md.png")
       .process-decorations
         img.pure-img(src="/img/icon/icon_ad_mainflows_figure.png")
 

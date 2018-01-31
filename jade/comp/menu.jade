@@ -2,13 +2,19 @@
 mixin menu(currentPage)
   nav#nav.navbar.navbar-expand-lg.navbar-light
     a.navbar-brand(href='/')
-      img.logo.d-inline-block.align-top(src='/img/logo/vmfive--logo.svg', height='42px', alt='')
-        
+      img.logo.d-inline-block.align-top(src='/img/logo/vmfive--logo.svg', alt='')
+    
+    mixin langblock(moreClass)
+      .lang-block(class="#{moreClass}")
+        each item in [{"id":"en","name":"EN",},{"id":"zh_tw","name":"繁中",}]
+          a.lang(href="/#{item.id}",class="#{lang == item.id ? 'active' : ''}") #{item.name}
+    
+    +langblock("mobile")
     button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
       span.navbar-toggler-icon
       
     div#navbarNav.collapse.navbar-collapse
-      ul.navbar-nav.ml-auto
+      ul.navbar-nav
         //- li.nav-item.dropdown
         //-   a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='http://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
         //-     | Dropdown link
@@ -22,3 +28,5 @@ mixin menu(currentPage)
         each item in [{"id":"pmp", "url":"/"+lang+"/pmp.html", "text":menu.textPMP},{"id":"adplay", "url":"/"+lang+"/adplay.html", "text":menu.textAdplay},{"id":"about", "url":"/"+lang+"/about.html", "text":menu.textAbout},{"id":"joinus", "url":"/"+lang+"/joinus.html", "text":menu.textJoinUs}]
           li.nav-item
             a.nav-link(class="menu-#{item.id} #{currentPage == item.id ? 'active' : ''}",href="#{item.url}") #{item.text}
+    
+    +langblock("desktop")
