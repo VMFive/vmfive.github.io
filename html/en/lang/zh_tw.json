@@ -8,6 +8,10 @@
       "qrcode":"QRCode",
       "socialnetwork":"Social Network"
     },
+    "gamepublisher_title":"遊戲開發商",
+    "gamepublisher_description":["透過試玩廣告展示遊戲最吸引人的片段給用戶","透過獲取高價值用戶提升您的每用戶平均收入","輕鬆的上傳 APK 產生試玩連結"],
+    "gamer_title":"遊戲玩家",
+    "gamer_description":["先試玩，不再後悔下載到不適合您的遊戲","別再浪費下載流量，先體驗再下載"],
 
     "adplay_title": "試玩廣告 Adplay",
     "adplay_description": "更好的用戶體驗、更高的用戶留存率。VMFive 試玩廣告 Adplay 透過了專利技術讓用戶在下載遊戲或應用前完整試玩。",

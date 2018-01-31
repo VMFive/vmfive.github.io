@@ -9,6 +9,11 @@
       "socialnetwork":"Social Network"
     },
 
+    "gamepublisher_title":"Game Publisher",
+    "gamepublisher_description":["Show the most attractive part of the game through playable ad.","Increase your ARPU through attracting excited gamers","Simply upload APK to generate playable link"],
+    "gamer_title":"Gamer",
+    "gamer_description":["Never regret downloading a game again","Experience before download, do not waste any internet traffic"],
+
     "adplay_title": "Adplay",
     "adplay_description": "Great user experience, Better user retention. VMFive’s AdPlay is a playble ad solution with patented technology that allows users to try applications before downloading them.",
     "feature_title": "Features",
