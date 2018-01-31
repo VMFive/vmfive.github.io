@@ -20,8 +20,39 @@
     padding: 0 @description-padding 0 @description-padding;
   }
 
+  & > .figure-decoration {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
   .audience {
     width: 100%;
+
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & > .figure {
+      width: inherit;
+
+      & > img {
+        width: 70%;
+        margin: auto;
+
+        &.mobile {
+          display: block;
+          .media-lg({
+            display: none;
+          });
+        }
+        &.desktop {
+          display: none;
+          .media-lg({
+            display: block;
+          });
+        }
+      }
+    }
      .bg {
       width: 100%;
       height: 40vh;

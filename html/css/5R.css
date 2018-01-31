@@ -280,9 +280,49 @@ footer .sitemap > .container .item > a {
 .goal5r-overlap > .description {
   padding: 0 15vw 0 15vw;
 }
+.goal5r-overlap > .figure-decoration {
+  margin: auto;
+  margin-bottom: 30px;
+}
 .goal5r-overlap .audience {
   width: 100%;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: relative;
+}
+.goal5r-overlap .audience > .figure {
+  width: inherit;
+}
+.goal5r-overlap .audience > .figure > img {
+  width: 70%;
+  margin: auto;
+}
+.goal5r-overlap .audience > .figure > img.mobile {
+  display: block;
+}
+@media screen and (min-width: 64em) {
+  .goal5r-overlap .audience > .figure > img.mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 64em) {
+  .goal5r-overlap .audience > .figure > img.mobile {
+    display: none;
+  }
+}
+.goal5r-overlap .audience > .figure > img.desktop {
+  display: none;
+}
+@media screen and (min-width: 64em) {
+  .goal5r-overlap .audience > .figure > img.desktop {
+    display: block;
+  }
+}
+@media screen and (min-width: 64em) {
+  .goal5r-overlap .audience > .figure > img.desktop {
+    display: block;
+  }
 }
 .goal5r-overlap .audience .bg {
   width: 100%;
