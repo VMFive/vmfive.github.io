@@ -9,7 +9,7 @@ function setLazy(){
 
     // lazy = document.getElementsByClassName('lazy');
     lazy = document.querySelectorAll('img');
-    console.log('Found ' + lazy.length + ' lazy images');
+    // console.log('Found ' + lazy.length + ' lazy images');
 }
 function lazyLoad(){
     for(var i=0; i<lazy.length; i++){
