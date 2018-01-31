@@ -132,11 +132,11 @@ block content
     .content
       h3.title 合作夥伴
       - var partner = [];
-      - partner.push({"lndata": "lndata","amnet": "amnet","ipg": "ipg",});
+      - partner.push({"lndata": "lndata","amnet": "amnet","gmobi": "gmobi","cymmetrics": "cymmetrics",});
       each page, page_index in partner
         .pure-g
           each key in Object.keys(page)
-            .pure-u-1-2.pure-u-md-1-3
+            .pure-u-1-2.pure-u-md-1-4
               //- each key, value in page
               img.pure-img(src='/img/partner/logo_m_#{page[key]}.png', alt='#{key}')
               p 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字

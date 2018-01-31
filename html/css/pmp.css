@@ -662,7 +662,11 @@ footer .sitemap > .container .item > a {
 }
 .pmp-partner .content > .pure-g > div > img {
   object-fit: contain;
+  height: 150px;
   margin-bottom: 2rem;
+}
+.pmp-partner .content > .pure-g > div > p {
+  display: none;
 }
 .pmp-customer {
   background: #f7f7f7;
