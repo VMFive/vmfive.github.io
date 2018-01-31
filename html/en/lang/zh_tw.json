@@ -1,5 +1,14 @@
 {
   "adplay":{
+    "scenario":{
+      "adnetwork":"Ad Network",
+      "appstore":"App Store",
+      "gamepage":"Game Page",
+      "instantmessage":"Instant Message",
+      "qrcode":"QRCode",
+      "socialnetwork":"Social Network"
+    },
+
     "adplay_title": "試玩廣告 Adplay",
     "adplay_description": "更好的用戶體驗、更高的用戶留存率。VMFive 試玩廣告 Adplay 透過了專利技術讓用戶在下載遊戲或應用前完整試玩。",
     "feature_title": "功能",

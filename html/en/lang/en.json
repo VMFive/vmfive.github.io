@@ -1,5 +1,14 @@
 {
   "adplay":{
+    "scenario":{
+      "adnetwork":"Ad Network",
+      "appstore":"App Store",
+      "gamepage":"Game Page",
+      "instantmessage":"Instant Message",
+      "qrcode":"QRCode",
+      "socialnetwork":"Social Network"
+    },
+
     "adplay_title": "Adplay",
     "adplay_description": "Great user experience, Better user retention. VMFive’s AdPlay is a playble ad solution with patented technology that allows users to try applications before downloading them.",
     "feature_title": "Features",
