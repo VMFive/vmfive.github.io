@@ -90,11 +90,42 @@ block content
       - scenario.push({"adnetwork":{text:adplay.scenario.adnetwork,url:"adnetwork"},"appstore":{text:adplay.scenario.appstore,url:"appstore"},"gamepage":{text:adplay.scenario.gamepage,url:"gamepage"},"instantmessage":{text:adplay.scenario.instantmessage,url:"instantmessage"},"qrcode":{text:adplay.scenario.qrcode,url:"qrcode"},});
       - scenario.push({"socialnetwork":{text:adplay.scenario.socialnetwork,url:"socialnetwork"},});
       //- - scenario.push({"06":"06","07":"07","08":"08","09":"09","010":"010",});
-      #scenario.carousel.slide(data-ride='carousel')
+      
+      mixin scenariodemo(page, key)
+        img.pure-img(src='/img/adplay/icon_adplay_scenario_#{page[key].url}.png', alt='#{key}')
+        .flex-br
+        p #{page[key].text}
+      
+      // Media SM
+      #scenario-sm.carousel.slide(data-ride='carousel')
+        // Indicators
+        ul.carousel-indicators
+          each page, page_index in scenario
+            each key, item_index in Object.keys(page)
+              - var flatten_item_index = page_index * 5 + item_index;
+              li(data-target='#scenario-sm', data-slide-to='#{flatten_item_index}', class="#{flatten_item_index > 0 ? '' : 'active'}")
+        // The slideshow
+        .sm.carousel-inner
+          each page, page_index in scenario
+            each key, item_index in Object.keys(page)
+              .carousel-item(class="#{item_index + page_index > 0 ? '' : 'active'}")
+                .pure-g
+                  .pure-u-1-1
+                    //- each key, value in page
+                    +scenariodemo(page, key)
+        // Left and right controls
+        a.carousel-control-prev(href='#scenario-sm', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#scenario-sm', role="button", data-slide='next')
+          span.carousel-control-next-icon
+      
+      // Media MD
+      #scenario-md.carousel.slide(data-ride='carousel')
         // Indicators
         //- ul.carousel-indicators
         //-   each page, page_index in scenario
-        //-     li(data-target='#scenario', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'}")
+        //-     li(data-target='#scenario-md', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'}")
         // The slideshow
         .carousel-inner
           each page, page_index in scenario
@@ -103,14 +134,12 @@ block content
                 each key in Object.keys(page)
                   .pure-u-1-2.pure-u-lg-1-5
                     //- each key, value in page
-                    img.pure-img(src='/img/adplay/icon_adplay_scenario_#{page[key].url}.png', alt='#{key}')
-                    .flex-br
-                    p #{page[key].text}
+                    +scenariodemo(page, key)
         // Left and right controls
-        a.carousel-control-prev(href='#scenario', role="button", data-slide='prev')
+        a.carousel-control-prev(href='#scenario-md', role="button", data-slide='prev')
           span.carousel-control-prev-icon
         |           
-        a.carousel-control-next(href='#scenario', role="button", data-slide='next')
+        a.carousel-control-next(href='#scenario-md', role="button", data-slide='next')
           span.carousel-control-next-icon
 
   div.adplay-partner

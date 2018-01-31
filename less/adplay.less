@@ -280,6 +280,25 @@
   text-align: center;
 
   .content {
+    #scenario-sm {
+      margin-bottom: 30px;
+      .carousel-indicators {
+        bottom: -30px;
+      }
+      .carousel-indicators-round(#D8D8D8);
+
+      display: block;
+      .media-lg({
+        display: none;
+      });
+    }
+    #scenario-md {
+      display: none;
+      .media-lg({
+        display: block;
+      });
+    }
+
     @carousel-height: 30vh;
     .carousel {
       width: 100vw;
@@ -302,6 +321,7 @@
             }
             p {
               margin: auto;
+              width: 100%;
             }
           }
         }

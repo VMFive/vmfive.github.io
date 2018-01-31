@@ -568,6 +568,50 @@ footer .sitemap > .container .item > a {
   padding-bottom: 3rem;
   text-align: center;
 }
+.adplay-scenario .content #scenario-sm {
+  margin-bottom: 30px;
+  display: block;
+}
+.adplay-scenario .content #scenario-sm .carousel-indicators {
+  bottom: -30px;
+}
+.adplay-scenario .content #scenario-sm .carousel-indicators li {
+  border-radius: 10px;
+  margin: 1px 3px;
+  height: 10px;
+  max-width: 10px;
+  border: 1px solid #D8D8D8;
+  background-color: transparent;
+}
+.adplay-scenario .content #scenario-sm .carousel-indicators .active {
+  background-color: #D8D8D8;
+  max-width: 12px;
+  margin: 0 3px;
+  height: 12px;
+}
+@media screen and (min-width: 64em) {
+  .adplay-scenario .content #scenario-sm {
+    display: none;
+  }
+}
+@media screen and (min-width: 64em) {
+  .adplay-scenario .content #scenario-sm {
+    display: none;
+  }
+}
+.adplay-scenario .content #scenario-md {
+  display: none;
+}
+@media screen and (min-width: 64em) {
+  .adplay-scenario .content #scenario-md {
+    display: block;
+  }
+}
+@media screen and (min-width: 64em) {
+  .adplay-scenario .content #scenario-md {
+    display: block;
+  }
+}
 .adplay-scenario .content .carousel {
   width: 100vw;
 }
@@ -599,6 +643,7 @@ footer .sitemap > .container .item > a {
 }
 .adplay-scenario .content .carousel .carousel-item > .pure-g > div p {
   margin: auto;
+  width: 100%;
 }
 .adplay-partner {
   display: none;
