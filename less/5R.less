@@ -28,32 +28,39 @@
   .audience {
     width: 100%;
 
-    background-color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+    @padding-block: 30px;
     & > .figure {
+      background-color: #fff;
       width: inherit;
+      padding-top: @padding-block;
+      padding-bottom: @padding-block;
+    }
+    & > .feature {
+      width: inherit;
+      padding-top: @padding-block;
+      padding-bottom: @padding-block;
+    }
+    & > div > img {
+      width: 70%;
+      margin: auto;
 
-      & > img {
-        width: 70%;
-        margin: auto;
-
-        &.mobile {
-          display: block;
-          .media-lg({
-            display: none;
-          });
-        }
-        &.desktop {
+      &.mobile {
+        display: block;
+        .media-lg({
           display: none;
-          .media-lg({
-            display: block;
-          });
-        }
+        });
+      }
+      &.desktop {
+        display: none;
+        .media-lg({
+          display: block;
+        });
       }
     }
+
      .bg {
+      // NOTE DISABLED
+      display: none;
       width: 100%;
       height: 40vh;
       .media-md({
@@ -67,6 +74,9 @@
 
     position: relative;
     & > .info {
+      // NOTE DISABLED
+      display: none;
+
       position: absolute;
       bottom: 0;
       padding: 0 30% 0 30%;
@@ -91,6 +101,9 @@
 }
 
 .goal5r-timeplace {
+  // NOTE DISABLED
+  display: none;
+
   .general-screen();
   height: auto;
   background-color: #fff;
@@ -152,6 +165,9 @@
 }
 
 .goal5r-contentformat {
+  // NOTE DISABLED
+  display: none;
+
   .general-screen();
   height: auto;
   background-color: #fff;

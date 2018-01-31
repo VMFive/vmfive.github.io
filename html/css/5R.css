@@ -286,45 +286,51 @@ footer .sitemap > .container .item > a {
 }
 .goal5r-overlap .audience {
   width: 100%;
-  background-color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
   position: relative;
 }
 .goal5r-overlap .audience > .figure {
+  background-color: #fff;
   width: inherit;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.goal5r-overlap .audience > .figure > img {
+.goal5r-overlap .audience > .feature {
+  width: inherit;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.goal5r-overlap .audience > div > img {
   width: 70%;
   margin: auto;
 }
-.goal5r-overlap .audience > .figure > img.mobile {
+.goal5r-overlap .audience > div > img.mobile {
   display: block;
 }
 @media screen and (min-width: 64em) {
-  .goal5r-overlap .audience > .figure > img.mobile {
+  .goal5r-overlap .audience > div > img.mobile {
     display: none;
   }
 }
 @media screen and (min-width: 64em) {
-  .goal5r-overlap .audience > .figure > img.mobile {
+  .goal5r-overlap .audience > div > img.mobile {
     display: none;
   }
 }
-.goal5r-overlap .audience > .figure > img.desktop {
+.goal5r-overlap .audience > div > img.desktop {
   display: none;
 }
 @media screen and (min-width: 64em) {
-  .goal5r-overlap .audience > .figure > img.desktop {
+  .goal5r-overlap .audience > div > img.desktop {
     display: block;
   }
 }
 @media screen and (min-width: 64em) {
-  .goal5r-overlap .audience > .figure > img.desktop {
+  .goal5r-overlap .audience > div > img.desktop {
     display: block;
   }
 }
 .goal5r-overlap .audience .bg {
+  display: none;
   width: 100%;
   height: 40vh;
 }
@@ -337,6 +343,7 @@ footer .sitemap > .container .item > a {
   margin: auto;
 }
 .goal5r-overlap .audience > .info {
+  display: none;
   position: absolute;
   bottom: 0;
   padding: 0 30% 0 30%;
@@ -354,6 +361,7 @@ footer .sitemap > .container .item > a {
   margin-bottom: 2rem;
 }
 .goal5r-timeplace {
+  display: none;
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
@@ -418,6 +426,7 @@ footer .sitemap > .container .item > a {
   }
 }
 .goal5r-contentformat {
+  display: none;
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
