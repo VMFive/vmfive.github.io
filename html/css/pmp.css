@@ -410,7 +410,7 @@ footer .sitemap > .container .item > a {
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
-  height: 130vh;
+  height: 140vh;
   padding-bottom: 1rem;
   color: #fff;
   text-align: center;
@@ -418,7 +418,7 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 48em) {
   .pmp-nice-media {
-    height: 80vh;
+    height: 700px;
   }
 }
 .pmp-nice-media .bg {
@@ -576,14 +576,13 @@ footer .sitemap > .container .item > a {
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
-  height: 150vh;
   color: #fff;
   text-align: center;
   position: relative;
 }
 @media screen and (min-width: 48em) {
   .pmp-partner {
-    height: 80vh;
+    height: 700px;
   }
 }
 .pmp-partner .bg {
@@ -594,7 +593,7 @@ footer .sitemap > .container .item > a {
   width: 98%;
   background-image: url("/img/bg/bg_partner.png");
   background-position: 99% 0%;
-  background-size: auto 230vh;
+  background-size: auto 130vh;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 48em) {
@@ -662,7 +661,7 @@ footer .sitemap > .container .item > a {
 }
 .pmp-partner .content > .pure-g > div > img {
   object-fit: contain;
-  height: 150px;
+  height: 100px;
   margin-bottom: 2rem;
 }
 .pmp-partner .content > .pure-g > div > p {
@@ -679,12 +678,12 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 64em) {
   .pmp-customer {
-    height: 110vh;
+    height: 900px;
   }
 }
 @media screen and (min-width: 64em) {
   .pmp-customer {
-    height: 110vh;
+    height: 900px;
   }
 }
 .pmp-customer .bg {
