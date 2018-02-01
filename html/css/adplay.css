@@ -320,22 +320,27 @@ footer .sitemap > .container .item > a {
   height: 100vh;
   padding-bottom: 3rem;
   width: 100vw;
-  height: 180vh;
+  height: 120vh;
   position: relative;
+}
+@media screen and (min-width: 35.5em) {
+  .adplay-introvideo {
+    height: 180vh;
+  }
 }
 @media screen and (min-width: 48em) {
   .adplay-introvideo {
-    height: 80vh;
+    height: 600px;
   }
 }
 @media screen and (min-width: 64em) {
   .adplay-introvideo {
-    height: 100vh;
+    height: 800px;
   }
 }
 @media screen and (min-width: 64em) {
   .adplay-introvideo {
-    height: 100vh;
+    height: 800px;
   }
 }
 .adplay-introvideo .bg {
@@ -349,7 +354,7 @@ footer .sitemap > .container .item > a {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 180vh;
+  height: 120vh;
 }
 @media screen and (min-width: 48em) {
   .adplay-introvideo .bg {
@@ -376,19 +381,24 @@ footer .sitemap > .container .item > a {
     background-position: 0% 0%;
   }
 }
+@media screen and (min-width: 35.5em) {
+  .adplay-introvideo .bg {
+    height: 180vh;
+  }
+}
 @media screen and (min-width: 48em) {
   .adplay-introvideo .bg {
-    height: 80vh;
+    height: 600px;
   }
 }
 @media screen and (min-width: 64em) {
   .adplay-introvideo .bg {
-    height: 100vh;
+    height: 800px;
   }
 }
 @media screen and (min-width: 64em) {
   .adplay-introvideo .bg {
-    height: 100vh;
+    height: 800px;
   }
 }
 .adplay-introvideo .bg > img {
