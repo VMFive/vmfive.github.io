@@ -325,6 +325,16 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 48em) {
   .adplay-introvideo {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 64em) {
+  .adplay-introvideo {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 64em) {
+  .adplay-introvideo {
     height: 100vh;
   }
 }
@@ -346,11 +356,37 @@ footer .sitemap > .container .item > a {
     left: 2%;
     width: 98%;
     background-position: 0% 0%;
-    background-size: auto cover;
+    background-size: cover;
     background-image: url("/img/icon/icon_adplay_introvideo.png");
   }
 }
+@media screen and (min-width: 64em) {
+  .adplay-introvideo .bg {
+    left: 2%;
+    width: 98%;
+    background-size: cover;
+    background-position: 0% 0%;
+  }
+}
+@media screen and (min-width: 64em) {
+  .adplay-introvideo .bg {
+    left: 2%;
+    width: 98%;
+    background-size: cover;
+    background-position: 0% 0%;
+  }
+}
 @media screen and (min-width: 48em) {
+  .adplay-introvideo .bg {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 64em) {
+  .adplay-introvideo .bg {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 64em) {
   .adplay-introvideo .bg {
     height: 100vh;
   }
