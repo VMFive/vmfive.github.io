@@ -25,7 +25,7 @@
     "mobile_virtualization_description": "透過VMFive的 AdPlay 伺服器，您的 APK 檔案可以輕易的透過我們的虛擬設備運行。無需任何客製化，即時上傳即刻體驗。",
     "instant_play_title": "即時遊玩",
     "instant_play_description": "用戶無須下載便能得到完整的遊戲與 APP 體驗。試玩後，用戶一鍵點擊即可下載。",
-    "engaging_title": "創新",
+    "engaging_title": "互動性",
     "engaging_description": "用戶可以直接體驗遊戲或 APP 最精彩的片段，容易立即深受吸引，讓您緊緊抓住用戶的心。",
     "differentiation_title": "創新",
     "differentiation_description": "試玩廣告 AdPlay 提供了全新的行動廣告解決方案。它所提供的用戶體驗與互動性前所未見。"
@@ -40,6 +40,9 @@
     "nice_media_description": "VMFive影音PMP 提供了最優質的媒體流量。我們堅持每次的曝光都是被實際看見的。除了提供您合作媒體的最佳版位外，也時刻為您監測並阻擋非人為 (non-human) 與無效 (invalid) 流量。同時，我們也兼顧品牌安全 (brand safety)，確保廣告出現的版位和頁面內容與您的品牌形象相符。",
     "5r_title": "精準觸及",
     "5r_description": "相較於傳統的投放優化演算法，VMFive 5R智能演算法引入了更多維度的數據。VMFive的數據管理平台 (DMP)，融合了從媒體端、廣告平台端至廣告主端的所有數據。並以此為基礎，通過機器學習的方式不斷分析訓練廣告投放演算法。"
+  },
+  "joinus":{
+    "joinus_description":["誠摯邀請對數位廣告產業充滿熱忱的你，一起加入VMFive團隊，與我們一同創造更多的可能。","如果您有興趣進一步了解以下職缺，請將簡歷 / LinkedIn / GitHub / 或作品資料寄至本公司招募信箱 job@vm5.com。"]
   },
   "menu":{
     "textPMP":"影音 PMP",

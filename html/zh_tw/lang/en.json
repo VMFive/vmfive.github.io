@@ -42,6 +42,9 @@
     "5r_title": "精準觸及",
     "5r_description": "相較於傳統的投放優化演算法，VMFive 5R智能演算法引入了更多維度的數據。VMFive融合了從媒體端，廣告平台端到廣告主端的貫穿整個數位行銷週期的所有數據。并以此為基礎，通過機器學習的方式不斷分析訓練廣告投放演算法。"
   },
+  "joinus":{
+    "joinus_description":["誠摯邀請對數位廣告產業充滿熱忱的你，一起加入VMFive團隊，與我們一同創造更多的可能。","如果您有興趣進一步了解以下職缺，請將簡歷 / LinkedIn / GitHub / 或作品資料寄至本公司招募信箱 job@vm5.com。"]
+  },
   "menu":{
     "textPMP":"PMP",
     "textAdplay":"Adplay",
