@@ -335,12 +335,12 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 64em) {
   .adplay-introvideo {
-    height: 800px;
+    height: 60vw;
   }
 }
 @media screen and (min-width: 64em) {
   .adplay-introvideo {
-    height: 800px;
+    height: 60vw;
   }
 }
 .adplay-introvideo .bg {
@@ -393,12 +393,12 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 64em) {
   .adplay-introvideo .bg {
-    height: 800px;
+    height: 60vw;
   }
 }
 @media screen and (min-width: 64em) {
   .adplay-introvideo .bg {
-    height: 800px;
+    height: 60vw;
   }
 }
 .adplay-introvideo .bg > img {
