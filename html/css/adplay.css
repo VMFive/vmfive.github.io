@@ -314,6 +314,9 @@ footer .sitemap > .container .item > a {
 .adplay-feature .content .pure-g > div {
   padding: 5%;
 }
+.adplay-feature .content .pure-g > div h5 {
+  text-align: center;
+}
 .adplay-introvideo {
   background: #f7f7f7;
   width: 100%;
