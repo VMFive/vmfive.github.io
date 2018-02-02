@@ -548,10 +548,10 @@ footer .sitemap > .container .item > a {
   display: flex;
   text-align: center;
   justify-content: center;
+  padding: 10px;
 }
 .pmp-nice-media .content .carousel .carousel-item > .pure-g > div img {
   margin: auto auto;
-  padding: 10%;
 }
 .pmp-5r {
   background: #f7f7f7;

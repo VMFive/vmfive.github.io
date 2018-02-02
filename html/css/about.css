@@ -484,12 +484,12 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 992px) {
   .about-investor {
-    height: 600px;
+    height: 800px;
   }
 }
 @media screen and (min-width: 64em) {
   .about-investor {
-    height: 600px;
+    height: 800px;
   }
 }
 .about-investor .bg {
