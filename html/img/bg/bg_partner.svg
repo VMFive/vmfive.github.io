@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1240px" height="587px" viewBox="0 0 1240 587" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+<svg width="3800px" height="784px" viewBox="0 0 3800 784" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
     <title>Combined Shape</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="50%" y1="96.8391263%" x2="50%" y2="0%" id="linearGradient-1">
+        <linearGradient x1="50%" y1="69.0842855%" x2="50%" y2="0%" id="linearGradient-1">
             <stop stop-color="#FFB75D" offset="0%"></stop>
             <stop stop-color="#FF9454" offset="100%"></stop>
         </linearGradient>
+        <path d="M8.81641427e-11,301.63011 L3756.88449,8.12350899 C3778.90877,6.40286216 3798.15784,22.8622085 3799.87849,44.886488 C3799.95946,45.9230163 3800,46.9623079 3800,48.0019946 L3800,457.801127 C3800,478.684205 3783.93514,496.053079 3763.11551,497.679613 L0,791.673012 L8.81641427e-11,301.63011 Z" id="path-2"></path>
     </defs>
-    <g id="1_main_PMP_dt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -2890.000000)">
-        <g id="Group-4-Copy-2" transform="translate(0.000000, 2890.000000)" fill="url(#linearGradient-1)">
-            <path d="M0,96.6464357 L1196.78463,0.13154598 C1218.80453,-1.64425251 1238.09476,14.7668353 1239.87056,36.7867366 C1239.95682,37.8563556 1240,38.9290126 1240,40.0021042 L1240,449.74238 C1240,470.586956 1223.99249,487.937364 1203.21537,489.612938 L0,586.646436 L0,96.6464357 Z" id="Combined-Shape"></path>
-        </g>
+    <g id="bg_partner" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -8.000000)">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Combined-Shape" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
     </g>
 </svg>
