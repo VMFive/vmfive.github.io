@@ -120,16 +120,33 @@ footer .sitemap > .container .item > a {
   font-size: 20;
 }
 #nav .navbar-nav > li > a {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.9);
 }
 #nav .navbar-nav > li > a.active {
   color: #fb971b;
 }
-#nav.shrink .navbar-nav > li > a {
-  color: rgba(0, 0, 0, 0.9);
+@media screen and (min-width: 992px) {
+  #nav .navbar-nav > li > a {
+    color: #fff;
+  }
+}
+@media screen and (min-width: 64em) {
+  #nav .navbar-nav > li > a {
+    color: #fff;
+  }
 }
 #nav.shrink .navbar-nav > li > a.active {
   color: #f68618;
+}
+@media screen and (min-width: 992px) {
+  #nav.shrink .navbar-nav > li > a {
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+@media screen and (min-width: 64em) {
+  #nav.shrink .navbar-nav > li > a {
+    color: rgba(0, 0, 0, 0.9);
+  }
 }
 #nav {
   -webkit-transition: 0.5s ease;
@@ -197,6 +214,17 @@ footer .sitemap > .container .item > a {
 #nav #navbarNav {
   flex-grow: unset;
   margin-left: auto;
+  background: #f7f7f7;
+}
+@media screen and (min-width: 992px) {
+  #nav #navbarNav {
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 64em) {
+  #nav #navbarNav {
+    background-color: transparent;
+  }
 }
 #nav .navbar-brand img {
   height: 31.5px;
@@ -213,7 +241,7 @@ footer .sitemap > .container .item > a {
   margin-left: auto;
   display: block;
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   #nav .lang-block.mobile {
     display: none;
   }
@@ -226,7 +254,7 @@ footer .sitemap > .container .item > a {
 #nav .lang-block.desktop {
   display: none;
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   #nav .lang-block.desktop {
     display: block;
   }
@@ -336,7 +364,7 @@ footer .sitemap > .container .item > a {
     height: 600px;
   }
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   .adplay-introvideo {
     height: 60vw;
   }
@@ -368,7 +396,7 @@ footer .sitemap > .container .item > a {
     background-image: url("/img/icon/icon_adplay_introvideo.png");
   }
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   .adplay-introvideo .bg {
     left: 2%;
     width: 98%;
@@ -394,7 +422,7 @@ footer .sitemap > .container .item > a {
     height: 600px;
   }
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   .adplay-introvideo .bg {
     height: 60vw;
   }
@@ -409,7 +437,7 @@ footer .sitemap > .container .item > a {
   height: 100%;
   display: none;
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   .adplay-introvideo .bg > img {
     display: block;
   }
@@ -499,7 +527,7 @@ footer .sitemap > .container .item > a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   .adplay-ourvalue .bg {
     background-image: none;
   }
@@ -515,7 +543,7 @@ footer .sitemap > .container .item > a {
   height: 100%;
   display: none;
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   .adplay-ourvalue .bg > img {
     display: block;
   }
@@ -638,7 +666,7 @@ footer .sitemap > .container .item > a {
   margin: 0 3px;
   height: 12px;
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   .adplay-scenario .content #scenario-sm {
     display: none;
   }
@@ -651,7 +679,7 @@ footer .sitemap > .container .item > a {
 .adplay-scenario .content #scenario-md {
   display: none;
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   .adplay-scenario .content #scenario-md {
     display: block;
   }
@@ -720,7 +748,7 @@ footer .sitemap > .container .item > a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   .adplay-partner .bg {
     background-image: none;
   }
@@ -736,7 +764,7 @@ footer .sitemap > .container .item > a {
   height: 100%;
   display: none;
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 992px) {
   .adplay-partner .bg > img {
     display: block;
   }

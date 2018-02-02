@@ -103,16 +103,23 @@ footer {
       font-size: 20;
 
       #nav & {
-        color: #fff;
+        // color: #fff;
+        color: rgba(0,0,0,.9);
         &.active{
           color: #fb971b;
         }
+        .media-lg({
+          color: #fff;
+        });
       }
       #nav.shrink & {
-        color: rgba(0,0,0,.9);
+        // color: rgba(0,0,0,.9);
         &.active{
           color: #f68618;
         }
+        .media-lg({
+          color: rgba(0,0,0,.9);
+        });
       }
     }
 
@@ -185,6 +192,10 @@ footer {
   #navbarNav {
     flex-grow: unset;
     margin-left: auto;
+    .background-default;
+    .media-lg({
+      background-color: transparent;
+    });
   }
   .navbar-brand {
     img {
