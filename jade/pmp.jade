@@ -33,12 +33,13 @@ block content
       //- - adformat.push({"06":"06","07":"07","08":"08","09":"09","010":"010",});
       
       mixin formatdemo(page, key)
-        .gif
-          img.bg.pure-img(src="/img/bg/bg_phone.png")
-          //- img.animation.lazy.pure-img(src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",data-src='/img/adformat/#{page[key].url}.gif', alt='#{key}')
-          img.animation.pure-img(src='#{staticbaseurl}/img/adformat/#{page[key].url}.gif.png', alt='#{key}')
-        .flex-br
-        p.title #{page[key].text}
+        a(href="pmp/adformat.html?format=#{key}")
+          .gif
+            img.bg.pure-img(src="/img/bg/bg_phone.png")
+            //- img.animation.lazy.pure-img(src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",data-src='/img/adformat/#{page[key].url}.gif', alt='#{key}')
+            img.animation.pure-img(src='#{staticbaseurl}/img/adformat/#{page[key].url}.gif.png', alt='#{key}')
+          .flex-br
+          p.title #{page[key].text}
       
       // Media SM
       #showcase-adformat-sm.carousel.slide(data-ride='carousel')
