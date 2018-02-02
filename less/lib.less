@@ -34,6 +34,38 @@
   }
 }
 @description-padding: 15vw;
+.rwd-switch-md(@rulesD, @rulesM) {
+  &.desktop {
+    display: none;
+    .media-md({
+      display: block;
+    });
+    @rulesD();
+  };
+  &.mobile {
+    display: block;
+    .media-md({
+      display: none;
+    });
+    @rulesM();
+  };
+}
+.rwd-switch-lg(@rulesD, @rulesM) {
+  &.desktop {
+    display: none;
+    .media-lg({
+      display: block;
+    });
+    @rulesD();
+  };
+  &.mobile {
+    display: block;
+    .media-lg({
+      display: none;
+    });
+    @rulesM();
+  };
+}
 
 .flex-br() {
   flex-basis: 100%;

@@ -237,20 +237,6 @@ footer .sitemap > .container .item > a {
 #nav .lang-block {
   width: 150px;
 }
-#nav .lang-block.mobile {
-  margin-left: auto;
-  display: block;
-}
-@media screen and (min-width: 992px) {
-  #nav .lang-block.mobile {
-    display: none;
-  }
-}
-@media screen and (min-width: 64em) {
-  #nav .lang-block.mobile {
-    display: none;
-  }
-}
 #nav .lang-block.desktop {
   display: none;
 }
@@ -262,6 +248,20 @@ footer .sitemap > .container .item > a {
 @media screen and (min-width: 64em) {
   #nav .lang-block.desktop {
     display: block;
+  }
+}
+#nav .lang-block.mobile {
+  display: block;
+  margin-left: auto;
+}
+@media screen and (min-width: 992px) {
+  #nav .lang-block.mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 64em) {
+  #nav .lang-block.mobile {
+    display: none;
   }
 }
 #nav .lang-block .lang {

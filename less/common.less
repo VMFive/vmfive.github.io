@@ -209,19 +209,9 @@ footer {
     // margin-left: auto;
     width: 150px;
 
-    &.mobile {
+    .rwd-switch-lg({},{
       margin-left: auto;
-      display: block;
-      .media-lg({
-        display: none;
-      });
-    }
-    &.desktop {
-      display: none;
-      .media-lg({
-        display: block;
-      });
-    }
+    });
 
     .lang {
       .button-rounded();
