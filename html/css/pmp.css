@@ -438,7 +438,7 @@ footer .sitemap > .container .item > a {
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
-  height: 140vh;
+  height: 1000px;
   padding-bottom: 1rem;
   color: #fff;
   text-align: center;
@@ -457,7 +457,7 @@ footer .sitemap > .container .item > a {
   width: 100%;
   background-image: url("/img/bg/bg_nice_media.png");
   background-position: 1% 100%;
-  background-size: auto 180vh;
+  background-size: auto 1400px;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 48em) {
@@ -465,7 +465,7 @@ footer .sitemap > .container .item > a {
     height: 100%;
     width: 100%;
     background-position: 1% 100%;
-    background-size: auto 100vh;
+    background-size: auto 850px;
   }
 }
 .pmp-nice-media .bg > img {
@@ -517,11 +517,11 @@ footer .sitemap > .container .item > a {
 }
 .pmp-nice-media .content .carousel {
   width: 100vw;
-  height: 60vh;
+  height: 600px;
 }
 @media screen and (min-width: 48em) {
   .pmp-nice-media .content .carousel {
-    height: 30vh;
+    height: 300px;
   }
 }
 .pmp-nice-media .content .carousel .carousel-inner {
@@ -604,6 +604,7 @@ footer .sitemap > .container .item > a {
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
+  height: 700px;
   color: #fff;
   text-align: center;
   position: relative;
@@ -621,13 +622,13 @@ footer .sitemap > .container .item > a {
   width: 98%;
   background-image: url("/img/bg/bg_partner.svg");
   background-position: 99% 0%;
-  background-size: auto 130vh;
+  background-size: auto 800px;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 48em) {
   .pmp-partner .bg {
     background-position: 100% 0%;
-    background-size: auto 100vh;
+    background-size: auto 800px;
   }
 }
 .pmp-partner .bg > img {
@@ -647,7 +648,7 @@ footer .sitemap > .container .item > a {
 }
 .pmp-partner .content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   width: 100%;
 }
@@ -699,17 +700,12 @@ footer .sitemap > .container .item > a {
   background: #f7f7f7;
   width: 100%;
   height: 100vh;
-  height: 230vh;
+  height: 1600px;
   padding-bottom: 1rem;
   text-align: center;
   position: relative;
 }
-@media screen and (min-width: 992px) {
-  .pmp-customer {
-    height: 900px;
-  }
-}
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 48em) {
   .pmp-customer {
     height: 900px;
   }
@@ -722,19 +718,13 @@ footer .sitemap > .container .item > a {
   width: 100%;
   background-image: url("/img/bg/bg_customer.png");
   background-position: 1% 100%;
-  background-size: auto 330vh;
+  background-size: auto 2200px;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 48em) {
   .pmp-customer .bg {
     background-position: 0% 100%;
-    background-size: auto 130vh;
-  }
-}
-@media screen and (min-width: 64em) {
-  .pmp-customer .bg {
-    background-position: 0% 100%;
-    background-size: auto 130vh;
+    background-size: auto 1000px;
   }
 }
 .pmp-customer .bg > img {
@@ -754,18 +744,13 @@ footer .sitemap > .container .item > a {
 }
 .pmp-customer .content {
   position: absolute;
-  top: 25%;
+  top: 30%;
   transform: translateY(-50%);
   width: 100%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 48em) {
   .pmp-customer .content {
-    top: 40%;
-  }
-}
-@media screen and (min-width: 64em) {
-  .pmp-customer .content {
-    top: 40%;
+    top: 45%;
   }
 }
 .pmp-customer .content .title {
