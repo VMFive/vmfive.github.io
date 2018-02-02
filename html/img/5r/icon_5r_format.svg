@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2_main_PMP_2_0_dt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-188.000000, -949.000000)">
+        <g id="Group-5" transform="translate(188.000000, 877.000000)">
+            <g id="Group-19">
+                <g id="Group-15" transform="translate(0.000000, 72.000000)">
+                    <g id="Group-9">
+                        <circle id="Oval" fill="#00AEEF" cx="24" cy="24" r="24"></circle>
+                        <path d="M43.5,24 C43.5,34.7693491 34.7695675,43.5 23.9997479,43.5 C13.2304325,43.5 4.5,34.7693491 4.5,24 C4.5,13.2301466 12.8330445,4.5 23.9997479,4.5 C34.7695675,4.5 43.5,13.2301466 43.5,24" id="Fill-54" fill="#FFFFFF"></path>
+                        <g id="Group-12" transform="translate(7.000000, 10.000000)">
+                            <path d="M12,18 L12,10 L22,10 L22,18 L12,18 Z M18.882,12.5 L16.3125,15.0695 L14.514,13.271 L14,13.7845 L16.3125,16.097 L19.396,13.0135 L18.882,12.5 Z" id="Combined-Shape" fill="#5D949B"></path>
+                            <polygon id="Fill-58" fill="#C9C9C9" points="0 18 10 18 10 10 0 10"></polygon>
+                            <path d="M24,18 L24,10 L34,10 L34,18 L24,18 Z M31.382,12.5 L28.8125,15.0695 L27.014,13.271 L26.5,13.7845 L28.8125,16.097 L31.896,13.0135 L31.382,12.5 Z" id="Combined-Shape" fill="#99C69C"></path>
+                            <polygon id="Fill-60" fill="#C9C9C9" points="18 8 28 8 28 0 18 0"></polygon>
+                            <path d="M6,8 L6,0 L16,0 L16,8 L6,8 Z M13.382,2.5 L10.8125,5.07 L9.014,3.271 L8.5,3.785 L10.8125,6.0975 L13.896,3.014 L13.382,2.5 Z" id="Combined-Shape" fill="#FF916E"></path>
+                            <polygon id="Fill-62" fill="#C9C9C9" points="18 28 28 28 28 20 18 20"></polygon>
+                            <polygon id="Fill-63" fill="#C9C9C9" points="6 28 16 28 16 20 6 20"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
