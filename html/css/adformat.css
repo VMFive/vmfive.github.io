@@ -381,7 +381,7 @@ footer .sitemap > .container .item > a {
   }
 }
 .adformat-overlap .content {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 70%;
 }
 @media screen and (min-width: 48em) {
@@ -475,7 +475,7 @@ footer .sitemap > .container .item > a {
 }
 .adformat-overlap .content .description {
   overflow-y: visible;
-  height: 50vh;
+  height: 50%;
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .content .description {
