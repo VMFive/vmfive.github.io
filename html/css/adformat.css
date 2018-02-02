@@ -329,6 +329,9 @@ footer .sitemap > .container .item > a {
 .adformat-overlap h2 {
   font-size: 36;
   padding: 1rem;
+}
+.adformat-overlap h2,
+.adformat-overlap h6 {
   text-align: center;
 }
 .adformat-overlap .hint-format {
