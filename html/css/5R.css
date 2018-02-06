@@ -380,9 +380,9 @@ footer .sitemap > .container .item > a {
   flex-direction: column;
 }
 .goal5r-overlap .audience > .feature .howto.desktop {
+  display: none;
   margin-top: auto;
   align-self: flex-end;
-  display: none;
 }
 @media screen and (min-width: 992px) {
   .goal5r-overlap .audience > .feature .howto.desktop {
@@ -395,13 +395,13 @@ footer .sitemap > .container .item > a {
   }
 }
 .goal5r-overlap .audience > .feature .howto.mobile {
+  display: block;
   width: 100vw;
   position: absolute;
   align-self: center;
   justify-content: center;
   padding-left: 15vw;
   padding-right: 15vw;
-  display: block;
 }
 @media screen and (min-width: 992px) {
   .goal5r-overlap .audience > .feature .howto.mobile {

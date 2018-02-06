@@ -85,16 +85,12 @@
       }
 
       .howto {
-        &.desktop {
+        .rwd-switch-lg({
           margin-top: auto;
           align-self: flex-end;
-
-          display: none;
-          .media-lg({
-            display: block;
-          });
         }
-        &.mobile {
+        ,
+        {
           width: 100vw;
           position: absolute;
           align-self: center;
@@ -102,12 +98,7 @@
 
           padding-left: @description-padding;
           padding-right: @description-padding;
-
-          display: block;
-          .media-lg({
-            display: none;
-          });
-        }
+        });
       }
     }
     & > div > img {
