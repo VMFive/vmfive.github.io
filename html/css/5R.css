@@ -240,7 +240,12 @@ footer .sitemap > .container .item > a {
 #nav .lang-block.desktop {
   display: none;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 992px) {
+  #nav .lang-block.desktop {
+    display: block;
+  }
+}
+@media screen and (min-width: 64em) {
   #nav .lang-block.desktop {
     display: block;
   }
@@ -249,7 +254,12 @@ footer .sitemap > .container .item > a {
   display: block;
   margin-left: auto;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 992px) {
+  #nav .lang-block.mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 64em) {
   #nav .lang-block.mobile {
     display: none;
   }
@@ -302,6 +312,20 @@ footer .sitemap > .container .item > a {
   margin: auto;
   margin-bottom: 30px;
 }
+.goal5r-overlap .goal5r-description {
+  width: 100%;
+  padding: 0 15vw 0 15vw;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  /* align vertical */
+}
+.goal5r-overlap .goal5r-description > img {
+  align-self: flex-start;
+}
+.goal5r-overlap .goal5r-description > .description {
+  margin-left: 24px;
+}
 .goal5r-overlap .audience {
   width: 100%;
   position: relative;
@@ -316,23 +340,82 @@ footer .sitemap > .container .item > a {
   width: inherit;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
 }
-.goal5r-overlap .audience > div > img {
-  width: 70%;
-  margin: auto;
+@media screen and (min-width: 992px) {
+  .goal5r-overlap .audience > .feature {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
 }
-.goal5r-overlap .audience > div > img.mobile {
+@media screen and (min-width: 64em) {
+  .goal5r-overlap .audience > .feature {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+.goal5r-overlap .audience > .feature h1 {
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .goal5r-overlap .audience > .feature h1 {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 64em) {
+  .goal5r-overlap .audience > .feature h1 {
+    text-align: left;
+  }
+}
+.goal5r-overlap .audience > .feature .feature-left-side {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.goal5r-overlap .audience > .feature .feature-right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.goal5r-overlap .audience > .feature .howto.desktop {
+  margin-top: auto;
+  align-self: flex-end;
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .goal5r-overlap .audience > .feature .howto.desktop {
+    display: block;
+  }
+}
+@media screen and (min-width: 64em) {
+  .goal5r-overlap .audience > .feature .howto.desktop {
+    display: block;
+  }
+}
+.goal5r-overlap .audience > .feature .howto.mobile {
+  width: 100vw;
+  position: absolute;
+  align-self: center;
+  justify-content: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
   display: block;
 }
 @media screen and (min-width: 992px) {
-  .goal5r-overlap .audience > div > img.mobile {
+  .goal5r-overlap .audience > .feature .howto.mobile {
     display: none;
   }
 }
 @media screen and (min-width: 64em) {
-  .goal5r-overlap .audience > div > img.mobile {
+  .goal5r-overlap .audience > .feature .howto.mobile {
     display: none;
   }
+}
+.goal5r-overlap .audience > div > img {
+  width: 70%;
+  margin: auto;
 }
 .goal5r-overlap .audience > div > img.desktop {
   display: none;
@@ -345,6 +428,19 @@ footer .sitemap > .container .item > a {
 @media screen and (min-width: 64em) {
   .goal5r-overlap .audience > div > img.desktop {
     display: block;
+  }
+}
+.goal5r-overlap .audience > div > img.mobile {
+  display: block;
+}
+@media screen and (min-width: 992px) {
+  .goal5r-overlap .audience > div > img.mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 64em) {
+  .goal5r-overlap .audience > div > img.mobile {
+    display: none;
   }
 }
 .goal5r-overlap .audience .bg {

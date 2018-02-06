@@ -25,6 +25,21 @@
     margin-bottom: 30px;
   }
 
+  .goal5r-description {
+    width: 100%;
+    padding: 0 @description-padding 0 @description-padding;
+    margin-bottom: 24px;
+
+    display: flex;
+    align-items: center; /* align vertical */
+    & > img {
+      align-self: flex-start;
+    }
+    & > .description {
+      margin-left: 24px;
+    }
+  }
+
   .audience {
     width: 100%;
 
@@ -39,12 +54,67 @@
       width: inherit;
       padding-top: @padding-block;
       padding-bottom: @padding-block;
+
+      padding-left: @description-padding*.5;
+      padding-right: @description-padding*.5;
+      .media-lg({
+        padding-left: @description-padding;
+        padding-right: @description-padding;
+      });
+
+      h1 {
+        text-align: center;
+        .media-lg({
+          text-align: left;
+        });
+      }
+
+      @feature-padding: 50px;
+      .feature-left-side {
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+      }
+      .feature-right-side {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .howto {
+        &.desktop {
+          margin-top: auto;
+          align-self: flex-end;
+
+          display: none;
+          .media-lg({
+            display: block;
+          });
+        }
+        &.mobile {
+          width: 100vw;
+          position: absolute;
+          align-self: center;
+          justify-content: center;
+
+          padding-left: @description-padding;
+          padding-right: @description-padding;
+
+          display: block;
+          .media-lg({
+            display: none;
+          });
+        }
+      }
     }
     & > div > img {
       width: 70%;
       margin: auto;
 
-      .rwd-switch({},{});
+      .rwd-switch-lg({},{});
     }
 
      .bg {
