@@ -38,42 +38,50 @@ block content
           hr
           .description
             div(v-for="description in getAd().description" v-html="description")
+        - var adformatList = [];
+        - adformatList.push({"id": "top","img":"1"});
+        - adformatList.push({"id": "native","img":"2"});
+        - adformatList.push({"id": "interstitial","img":"3"});
+        - adformatList.push({"id": "impressive","img":"4"});
+        - adformatList.push({"id": "vertical","img":"5"});
+        //- - adformatList.push({"id": "interstitial","img":"6"});
+        //- - adformatList.push({"id": "interstitial","img":"7"});
+        //- - adformatList.push({"id": "interstitial","img":"8"});
+        //- - adformatList.push({"id": "interstitial","img":"9"});
+        //- - adformatList.push({"id": "interstitial","img":"1"});
+        //- - adformatList.push({"id": "interstitial","img":"1"});
+        //- - adformatList.push({"id": "interstitial","img":"1"});
+        //- - adformatList.push({"id": "interstitial","img":"1"});
+        //- - adformatList.push({"id": "interstitial","img":"1"});
+        //- - adformatList.push({"id": "interstitial","img":"1"});
+        //- - adformatList.push({"id": "interstitial","img":"1"});
+        //- - adformatList.push({"id": "interstitial","img":"1"});
+        //- - adformatList.push({"id": "interstitial","img":"1"});
+        //- - adformatList.push({"id": "interstitial","img":"1"});
         .pure-g
-          .content.pure-u-1-1.pure-u-md-3-4
+          .emulator-container.desktop.pure-u
+            .emulator.desktop
+              img.pure-img(src="/img/bg/bg_phone.png")
+              .iframe-container
+                iframe(:src="getAd().url_demo")
+          .pure-u(style="flex:1;")
             .pure-g
-              .emulator.pure-u-1-1.pure-u-md-1-3
-                img.pure-img(src="/img/bg/bg_phone.png")
-                .iframe-container
-                  iframe(:src="getAd().url_demo") 
-              .adinfo.pure-u-1-1.pure-u-md-2-3
-                +adinfo()
-            .mask
-          .menu.show.pure-u-1-1.pure-u-md-1-4
-            .itemgrid
-              - var adformatList = [];
-              - adformatList.push({"id": "top","img":"1"});
-              - adformatList.push({"id": "native","img":"2"});
-              - adformatList.push({"id": "interstitial","img":"3"});
-              - adformatList.push({"id": "impressive","img":"4"});
-              - adformatList.push({"id": "vertical","img":"5"});
-              //- - adformatList.push({"id": "interstitial","img":"6"});
-              //- - adformatList.push({"id": "interstitial","img":"7"});
-              //- - adformatList.push({"id": "interstitial","img":"8"});
-              //- - adformatList.push({"id": "interstitial","img":"9"});
-              //- - adformatList.push({"id": "interstitial","img":"1"});
-              //- - adformatList.push({"id": "interstitial","img":"1"});
-              //- - adformatList.push({"id": "interstitial","img":"1"});
-              //- - adformatList.push({"id": "interstitial","img":"1"});
-              //- - adformatList.push({"id": "interstitial","img":"1"});
-              //- - adformatList.push({"id": "interstitial","img":"1"});
-              //- - adformatList.push({"id": "interstitial","img":"1"});
-              //- - adformatList.push({"id": "interstitial","img":"1"});
-              //- - adformatList.push({"id": "interstitial","img":"1"});
-              //- - adformatList.push({"id": "interstitial","img":"1"});
-              .pure-g
-                each item in adformatList
-                  .aditem.ripple.pure-u-1-3
-                    img.pure-img(src="/img/adformat/btn-ad-#{item.img}-a.svg",@click="selectAd('#{item.id}')")
+              .content.pure-u-1-1.pure-u-md-3-4 
+                .pure-g
+                  .emulator.mobile.pure-u-1-1
+                    img.pure-img(src="/img/bg/bg_phone.png")
+                    .iframe-container
+                      iframe(:src="getAd().url_demo")
+                  .pure-u-1-1
+                    .adinfo
+                      +adinfo()
+                    .mask
+              .menu.show.pure-u-1-1.pure-u-md-1-4
+                .itemgrid
+                  .pure-g
+                    each item in adformatList
+                      .aditem.ripple.pure-u-1-3
+                        img.pure-img(src="/img/adformat/btn-ad-#{item.img}-a.svg",@click="selectAd('#{item.id}')")
           //- .pure-u-1-1.pure-u-md-1-4
           //-   +adinfo()
     script(src="https://unpkg.com/vue@2.5.13/dist/vue.js")

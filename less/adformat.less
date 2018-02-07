@@ -177,59 +177,73 @@
 
       height: 50%;
     }
+  }
 
-    .emulator {
-      @emulator-width-sm: @content-width-sm;
-      @emulator-width-md: @content-width-md / 3;
-      @emulator-height-sm: @emulator-width-sm * 1.8;
-      @emulator-height-md: @emulator-width-md * 1.8;
+  @emulator-width-sm: @content-width-sm;
+  @emulator-width-sm: 100vw;
+  @emulator-width-md: @content-width-md / 3;
+  @emulator-width-md: 300px;
+  @emulator-height-sm: @emulator-width-sm * 1.8;
+  @emulator-height-md: @emulator-width-md * 1.8;
 
+  .emulator-container {
+    width: @emulator-width-sm;
+    height: @emulator-height-sm;
+    .media-md({
+      width: @emulator-width-md;
+      height: @emulator-height-md;
+    });
+    .rwd-switch-md({},{});
+  }
+
+  .emulator {
+
+    height: @emulator-height-sm;
+    margin-top: 3rem;
+    .media-md({
+      height: @emulator-height-md;
+      margin-top: 0rem;
+    });
+    .rwd-switch-md({},{});
+
+    position: relative;
+    & > img {
+      position: absolute;
+      padding: 10%;
+      margin: auto;
+
+      width: 100%;
+      height: 100%;
+    }
+    & > .iframe-container {
+
+      position: absolute;
+      z-index: 0;
+
+      transform: translate(-50%,-50%);
+
+      top: @emulator-height-sm / 2;
+      left: @emulator-width-sm / 2;
+      width: @emulator-width-sm;
       height: @emulator-height-sm;
-      margin-top: 3rem;
       .media-md({
+        top: @emulator-height-md / 2;
+        left: @emulator-width-md / 2;
+        width: @emulator-width-md;
         height: @emulator-height-md;
-        margin-top: 0rem;
       });
+      padding: 25% 13% 25% 13%;
 
-      position: relative;
-      & > img {
-        position: absolute;
-        padding: 10%;
-        margin: auto;
-
-        width: 100%;
-        height: 100%;
-      }
-      & > .iframe-container {
-
-        position: absolute;
-        z-index: 0;
-
-        transform: translate(-50%,-50%);
-
-        top: @emulator-height-sm / 2;
-        left: @emulator-width-sm / 2;
-        width: @emulator-width-sm;
-        height: @emulator-height-sm;
-        .media-md({
-          top: @emulator-height-md / 2;
-          left: @emulator-width-md / 2;
-          width: @emulator-width-md;
-          height: @emulator-height-md;
-        });
-        padding: 25% 13% 25% 13%;
-
-        // overflow-y: scroll;
+      // overflow-y: scroll;
 
 
-        & > iframe {
-          width: 0;
-          height: 0;
-          max-height: 100%;
-          max-width: 100%;
-          min-height: 100%;
-          min-width: 100%;
-        }
+      & > iframe {
+        width: 0;
+        height: 0;
+        max-height: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        min-width: 100%;
       }
     }
   }

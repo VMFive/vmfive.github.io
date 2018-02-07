@@ -482,25 +482,67 @@ footer .sitemap > .container .item > a {
     overflow-y: scroll;
   }
 }
-.adformat-overlap .content .emulator {
+.adformat-overlap .emulator-container {
+  width: 100vw;
+  height: 180vw;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .emulator-container {
+    width: 300px;
+    height: 540px;
+  }
+}
+.adformat-overlap .emulator-container.desktop {
+  display: none;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .emulator-container.desktop {
+    display: block;
+  }
+}
+.adformat-overlap .emulator-container.mobile {
+  display: block;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .emulator-container.mobile {
+    display: none;
+  }
+}
+.adformat-overlap .emulator {
   height: 180vw;
   margin-top: 3rem;
   position: relative;
 }
 @media screen and (min-width: 48em) {
-  .adformat-overlap .content .emulator {
-    height: 45vw;
+  .adformat-overlap .emulator {
+    height: 540px;
     margin-top: 0rem;
   }
 }
-.adformat-overlap .content .emulator > img {
+.adformat-overlap .emulator.desktop {
+  display: none;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .emulator.desktop {
+    display: block;
+  }
+}
+.adformat-overlap .emulator.mobile {
+  display: block;
+}
+@media screen and (min-width: 48em) {
+  .adformat-overlap .emulator.mobile {
+    display: none;
+  }
+}
+.adformat-overlap .emulator > img {
   position: absolute;
   padding: 10%;
   margin: auto;
   width: 100%;
   height: 100%;
 }
-.adformat-overlap .content .emulator > .iframe-container {
+.adformat-overlap .emulator > .iframe-container {
   position: absolute;
   z-index: 0;
   transform: translate(-50%, -50%);
@@ -511,14 +553,14 @@ footer .sitemap > .container .item > a {
   padding: 25% 13% 25% 13%;
 }
 @media screen and (min-width: 48em) {
-  .adformat-overlap .content .emulator > .iframe-container {
-    top: 22.5vw;
-    left: 12.5vw;
-    width: 25vw;
-    height: 45vw;
+  .adformat-overlap .emulator > .iframe-container {
+    top: 270px;
+    left: 150px;
+    width: 300px;
+    height: 540px;
   }
 }
-.adformat-overlap .content .emulator > .iframe-container > iframe {
+.adformat-overlap .emulator > .iframe-container > iframe {
   width: 0;
   height: 0;
   max-height: 100%;
