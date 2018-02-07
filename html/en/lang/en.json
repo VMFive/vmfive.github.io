@@ -57,7 +57,9 @@
     }
   },
   "joinus":{
-    "joinus_description":["誠摯邀請對數位廣告產業充滿熱忱的你，一起加入VMFive團隊，與我們一同創造更多的可能。","如果您有興趣進一步了解以下職缺，請將簡歷 / LinkedIn / GitHub / 或作品資料寄至本公司招募信箱 job@vm5.com。"]
+    "joinus_description":["誠摯邀請對數位廣告產業充滿熱忱的你，一起加入VMFive團隊，與我們一同創造更多的可能。","如果您有興趣進一步了解以下職缺，請將簡歷 / LinkedIn / GitHub / 或作品資料寄至本公司招募信箱 job@vm5.com。"],
+    "job_description": "Description",
+    "job_requirement": "Requirement"
   },
   "menu":{
     "textPMP":"PMP",
