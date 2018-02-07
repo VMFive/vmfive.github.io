@@ -31,11 +31,12 @@
 
   @menu-width-sm: 100vw;
   // @menu-width-md: 100vw / 4;
-  @menu-width-md: '(100vw - @{emulator-width-md}) / 4';
+  @menu-width-md: '(100vw - @{emulator-width-md}) * 2 / 5';
 
   @aditem-size-sm: @menu-width-sm / 3;
   @aditem-size-md: calc(~'@{menu-width-md} / 3');
-  @itemgrid-size-md: calc(~'@{menu-width-md}');
+  @itemgrid-padding-md: 3px;
+  @itemgrid-size-md: calc(~'@{menu-width-md} + @{itemgrid-padding-md}*2');
 
   @content-width-sm: 100vw;
   @content-width-md: calc(~'100vw - @{menu-width-md}');
@@ -152,6 +153,9 @@
       display: flex;
       width: 100%;
       justify-content: center;
+      .media-md({
+        justify-content: left;
+      });
 
       img {
         align-self: auto;
@@ -260,23 +264,48 @@
       height: 100%;
     });
 
-    display: none;
-    &.show {
-      display: block;
+    // For Mobile
+    &.mobile {
+      display: none;
+      &.show {
+        display: block;
+      }
     }
+    &.desktop {
+      display: none;
+    }
+    // For Desktop
     .media-md({
-      display: block;
+      &.mobile {
+        display: none;
+        &.show {
+          display: none;
+        }
+      }
+      &.desktop {
+        display: block;
+      }
     });
 
     & > .itemgrid {
       position: relative;
       bottom: 0;
 
+      // For Mobile
+      background-color: none;
+      margin-top: 0;
+      padding: 0;
+      //
       overflow-y: auto;
       height: auto;
       margin-bottom: 0;
       .media-md({
-        position: absolute;
+        // For Desktop
+        background-color: #EFEFEF;
+        margin-top: 5rem;
+        padding: @itemgrid-padding-md;
+        //
+        // position: absolute;
         overflow-y: scroll;
         // height: @aditem-size-md * 3;
         height: @itemgrid-size-md;

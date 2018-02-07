@@ -441,6 +441,11 @@ footer .sitemap > .container .item > a {
   width: 100%;
   justify-content: center;
 }
+@media screen and (min-width: 48em) {
+  .adformat-overlap .content .status {
+    justify-content: left;
+  }
+}
 .adformat-overlap .content .status img {
   align-self: auto;
   margin-left: .5rem;
@@ -570,33 +575,49 @@ footer .sitemap > .container .item > a {
 }
 .adformat-overlap .menu {
   height: auto;
-  display: none;
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .menu {
     height: 100%;
   }
 }
-.adformat-overlap .menu.show {
+.adformat-overlap .menu.mobile {
+  display: none;
+}
+.adformat-overlap .menu.mobile.show {
   display: block;
 }
+.adformat-overlap .menu.desktop {
+  display: none;
+}
 @media screen and (min-width: 48em) {
-  .adformat-overlap .menu {
+  .adformat-overlap .menu.mobile {
+    display: none;
+  }
+  .adformat-overlap .menu.mobile.show {
+    display: none;
+  }
+  .adformat-overlap .menu.desktop {
     display: block;
   }
 }
 .adformat-overlap .menu > .itemgrid {
   position: relative;
   bottom: 0;
+  background-color: none;
+  margin-top: 0;
+  padding: 0;
   overflow-y: auto;
   height: auto;
   margin-bottom: 0;
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .menu > .itemgrid {
-    position: absolute;
+    background-color: #EFEFEF;
+    margin-top: 5rem;
+    padding: 3px;
     overflow-y: scroll;
-    height: calc((100vw - 350px) / 4);
+    height: calc((100vw - 350px) * 2 / 5 + 3px*2);
     margin-bottom: 3rem;
   }
 }
@@ -608,6 +629,6 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .menu .aditem > img {
-    height: calc((100vw - 350px) / 4 / 3);
+    height: calc((100vw - 350px) * 2 / 5 / 3);
   }
 }

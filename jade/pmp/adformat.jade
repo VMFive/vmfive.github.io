@@ -35,9 +35,16 @@ block content
             img.pure-img.firstitem(v-if="getAdSupport().web",src="/img/icon/icon_mweb.svg")
             img.pure-img(v-if="getAdSupport().app",src="/img/icon/icon_mapp.svg")
             //- a.button-live(:href="getAd().url_demo",target="_blank") Live
-          hr
+          //- hr
           .description
             div(v-for="description in getAd().description" v-html="description")
+        mixin menu(className)
+          .menu(class="#{className}")
+            .itemgrid
+              .pure-g
+                each item in adformatList
+                  .aditem.ripple.pure-u-1-3
+                    img.pure-img(src="/img/adformat/btn-ad-#{item.img}-a.svg",@click="selectAd('#{item.id}')")
         - var adformatList = [];
         - adformatList.push({"id": "top","img":"1"});
         - adformatList.push({"id": "native","img":"2"});
@@ -66,22 +73,18 @@ block content
                 iframe(:src="getAd().url_demo")
           .pure-u(style="flex:1;")
             .pure-g
-              .content.pure-u-1-1.pure-u-md-3-4 
+              .content.pure-u-1-1
                 .pure-g
                   .emulator.mobile.pure-u-1-1
                     img.pure-img(src="/img/bg/bg_phone.png")
                     .iframe-container
                       iframe(:src="getAd().url_demo")
-                  .pure-u-1-1
+                  +menu('desktop pure-u-2-5')
+                  .pure-u-1-1.pure-u-md-3-5
                     .adinfo
                       +adinfo()
                     .mask
-              .menu.show.pure-u-1-1.pure-u-md-1-4
-                .itemgrid
-                  .pure-g
-                    each item in adformatList
-                      .aditem.ripple.pure-u-1-3
-                        img.pure-img(src="/img/adformat/btn-ad-#{item.img}-a.svg",@click="selectAd('#{item.id}')")
+              +menu('show mobile pure-u-1-1')
           //- .pure-u-1-1.pure-u-md-1-4
           //-   +adinfo()
     script(src="https://unpkg.com/vue@2.5.13/dist/vue.js")
@@ -117,7 +120,7 @@ block content
         document.querySelector('.back').classList.add("show");
         document.querySelector('.name-format-hidden').classList.add("show");
         document.querySelector('.content').classList.add("full");
-        document.querySelector('.menu').classList.remove("show");
+        document.querySelector('.menu.mobile').classList.remove("show");
         document.querySelector('.hint-format').classList.remove("show");
         
         scrollToTop();
@@ -126,7 +129,7 @@ block content
         document.querySelector('.back').classList.remove("show");
         document.querySelector('.name-format-hidden').classList.remove("show");
         document.querySelector('.content').classList.remove("full");
-        document.querySelector('.menu').classList.add("show");
+        document.querySelector('.menu.mobile').classList.add("show");
         document.querySelector('.hint-format').classList.add("show");
         
         scrollToTop();
