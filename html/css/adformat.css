@@ -488,8 +488,8 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .emulator-container {
-    width: 300px;
-    height: 540px;
+    width: 350px;
+    height: 630px;
   }
 }
 .adformat-overlap .emulator-container.desktop {
@@ -515,7 +515,7 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .emulator {
-    height: 540px;
+    height: 630px;
     margin-top: 0rem;
   }
 }
@@ -554,10 +554,10 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .emulator > .iframe-container {
-    top: 270px;
-    left: 150px;
-    width: 300px;
-    height: 540px;
+    top: 315px;
+    left: 175px;
+    width: 350px;
+    height: 630px;
   }
 }
 .adformat-overlap .emulator > .iframe-container > iframe {
@@ -596,7 +596,7 @@ footer .sitemap > .container .item > a {
   .adformat-overlap .menu > .itemgrid {
     position: absolute;
     overflow-y: scroll;
-    height: 25vw;
+    height: calc((100vw - 350px) / 4);
     margin-bottom: 3rem;
   }
 }
@@ -608,6 +608,6 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .menu .aditem > img {
-    height: 8.33333333vw;
+    height: calc((100vw - 350px) / 4 / 3);
   }
 }
