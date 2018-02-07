@@ -395,11 +395,14 @@ footer .sitemap > .container .item > a {
   }
 }
 .adformat-overlap .content .adinfo {
+  padding-left: 2rem;
+  padding-right: 2rem;
   display: none;
 }
 @media screen and (min-width: 48em) {
   .adformat-overlap .content .adinfo {
     display: block;
+    margin-left: 20px;
   }
 }
 .adformat-overlap .content .mask {
@@ -439,6 +442,8 @@ footer .sitemap > .container .item > a {
 .adformat-overlap .content .status {
   display: flex;
   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   justify-content: center;
 }
 @media screen and (min-width: 48em) {
