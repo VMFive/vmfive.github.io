@@ -6,7 +6,10 @@ mixin menu(currentPage)
     
     mixin langblock(moreClass)
       .lang-block(class="#{moreClass}")
-        each item in [{"id":"en","name":"EN",},{"id":"zh_tw","name":"繁中",}]
+        - var langlist = [];
+        - langlist.push({"id":"en","name":"EN",});
+        - langlist.push({"id":"zh_tw","name":"繁中",});
+        each item in langlist
           a.lang(href="/#{item.id}",class="#{lang == item.id ? 'active' : ''}") #{item.name}
     
     +langblock("mobile")

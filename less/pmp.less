@@ -286,16 +286,18 @@
   .bg {
     position: absolute;
     top: 0;
-    right: 2%;
+    right: 0%;
     height: 100%;
-    width: 98%;
+    width: 100%;
     background-image: url("/img/bg/bg_partner.svg");
-    background-position: 99% 0%;
+    background-position: center center;
     // background-size: auto 230vh;
     background-size: auto 650px;
     background-repeat: no-repeat;
 
     .media-md({
+      right: 2%;
+      width: 98%;
       background-position: 100% 0%;
       background-size: auto 600px;
     });
@@ -319,14 +321,14 @@
   .content {
     position: absolute;
 
-    top: 45%;
+    top: 50%;
     transform: translateY(-50%);
     width: 100%;
     .media-md({
       top: 40%;
     });
     .media-lg({
-      top: 40%;
+      top: 45%;
     });
 
     .title {
@@ -416,7 +418,7 @@
       top: 40%;
     });
     .media-lg({
-      top: 50%;
+      top: 40%;
     });
 
     .title {
