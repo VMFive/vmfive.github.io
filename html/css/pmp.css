@@ -735,7 +735,17 @@ footer .sitemap > .container .item > a {
 }
 @media screen and (min-width: 48em) {
   .pmp-customer {
-    height: 850px;
+    height: 800px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .pmp-customer {
+    height: 900px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .pmp-customer {
+    height: 900px;
   }
 }
 .pmp-customer .bg {
