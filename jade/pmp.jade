@@ -133,7 +133,7 @@ block content
     .content
       h3.title 合作夥伴
       - var partner = [];
-      - partner.push({"lndata": "lndata","amnet": "amnet","gmobi": "gmobi","cymmetrics": "cymmetrics",});
+      - partner.push({"amnet": "amnet","cymmetrics": "cymmetrics","gmobi": "gmobi","lndata": "lndata",});
       each page, page_index in partner
         .pure-g
           each key in Object.keys(page)
