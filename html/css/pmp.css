@@ -116,13 +116,13 @@ footer .sitemap > .container .item > a {
     width: 12vw;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .navbar-nav > li {
+    width: 16vw;
+  }
+}
 .navbar-nav > li > a {
   font-size: 20;
-}
-@media screen and (min-width: 992px) and (max-width: 1400px) {
-  .navbar-nav > li > a {
-    font-size: 14;
-  }
 }
 #nav .navbar-nav > li > a {
   color: rgba(0, 0, 0, 0.9);
