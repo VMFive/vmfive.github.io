@@ -88,8 +88,11 @@ block content
       p.description Adplay is flexible for different scenarios.
         
       - var scenario = [];
+      - /*
       - scenario.push({"adnetwork":{text:adplay.scenario.adnetwork,url:"adnetwork"},"appstore":{text:adplay.scenario.appstore,url:"appstore"},"gamepage":{text:adplay.scenario.gamepage,url:"gamepage"},"instantmessage":{text:adplay.scenario.instantmessage,url:"instantmessage"},"qrcode":{text:adplay.scenario.qrcode,url:"qrcode"},});
       - scenario.push({"socialnetwork":{text:adplay.scenario.socialnetwork,url:"socialnetwork"},});
+      - */
+      - scenario.push({"adnetwork":{text:adplay.scenario.adnetwork,url:"adnetwork"},"appstore":{text:adplay.scenario.appstore,url:"appstore"},"gamepage":{text:adplay.scenario.gamepage,url:"gamepage"},"instantmessage":{text:adplay.scenario.instantmessage,url:"instantmessage"},"qrcode":{text:adplay.scenario.qrcode,url:"qrcode"},"socialnetwork":{text:adplay.scenario.socialnetwork,url:"socialnetwork"},});
       //- - scenario.push({"06":"06","07":"07","08":"08","09":"09","010":"010",});
       
       mixin scenariodemo(page, key)
@@ -103,7 +106,10 @@ block content
         ul.carousel-indicators
           each page, page_index in scenario
             each key, item_index in Object.keys(page)
+              - /*
               - var flatten_item_index = page_index * 5 + item_index;
+              - */
+              - var flatten_item_index = page_index * 6 + item_index;
               li(data-target='#scenario-sm', data-slide-to='#{flatten_item_index}', class="#{flatten_item_index > 0 ? '' : 'active'}")
         // The slideshow
         .sm.carousel-inner
@@ -133,7 +139,8 @@ block content
             .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
               .pure-g
                 each key in Object.keys(page)
-                  .pure-u-1-2.pure-u-lg-1-5
+                  //- .pure-u-1-2.pure-u-lg-1-5
+                  .pure-u-1-2.pure-u-lg-1-6
                     //- each key, value in page
                     +scenariodemo(page, key)
         // Left and right controls
