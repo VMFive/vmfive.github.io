@@ -791,6 +791,16 @@ footer .sitemap > .container .item > a {
     top: 40%;
   }
 }
+@media screen and (min-width: 992px) {
+  .pmp-customer .content {
+    top: 50%;
+  }
+}
+@media screen and (min-width: 64em) {
+  .pmp-customer .content {
+    top: 50%;
+  }
+}
 .pmp-customer .content .title {
   padding-bottom: 1rem;
 }
