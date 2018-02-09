@@ -363,6 +363,32 @@ footer .sitemap > .container .item > a {
   justify-content: center;
   flex-direction: column;
 }
+.goal5r-overlap .audience > .feature .feature-right-side > img.desktop {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .goal5r-overlap .audience > .feature .feature-right-side > img.desktop {
+    display: block;
+  }
+}
+@media screen and (min-width: 64em) {
+  .goal5r-overlap .audience > .feature .feature-right-side > img.desktop {
+    display: block;
+  }
+}
+.goal5r-overlap .audience > .feature .feature-right-side > img.mobile {
+  display: block;
+}
+@media screen and (min-width: 992px) {
+  .goal5r-overlap .audience > .feature .feature-right-side > img.mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 64em) {
+  .goal5r-overlap .audience > .feature .feature-right-side > img.mobile {
+    display: none;
+  }
+}
 .goal5r-overlap .audience > .feature .howto.desktop {
   display: none;
   margin-top: auto;
