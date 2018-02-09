@@ -1,6 +1,7 @@
 {
   "adplay":{
     "scenario":{
+      "descriptoin":"AdPlay 適用於各種行銷情境",
       "adnetwork":"Ad Network",
       "appstore":"App Store",
       "gamepage":"Game Page",
@@ -79,7 +80,8 @@
     "native":"原生",
     "top":"置頂",
     "dynamic_native":"動態(文中)",
-    "dynamic_interstitial":"動態(蓋版)"
+    "dynamic_interstitial":"動態(蓋版)",
+    "miniplayer":"迷你播放器"
   },
   "about" : {
     "mission": "透過創新廣告格式、優質流量和數據科學來協助廣告主達到超乎預期的行銷目標"

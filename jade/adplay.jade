@@ -2,6 +2,9 @@
 //{"menu":{},"button":{},"adplay":{"scenario":{},"gamepublisher_description":[],"gamer_description":[]},"lang":"en"}
 extends comp/base
 
+block meta
+  title #{menu.textAdplay}
+
 block style
   link(rel="stylesheet", type="text/css", href="/css/adplay.css")
   link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.4.2/css/lightcase.min.css")
@@ -85,7 +88,7 @@ block content
   div.adplay-scenario
     .content
       h3.title 使用情境
-      p.description Adplay is flexible for different scenarios.
+      p.description #{adplay.scenario.description}
         
       - var scenario = [];
       - /*

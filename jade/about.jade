@@ -2,6 +2,9 @@
 //{"menu":{},"button":{},"about":{},"investor":{"trend": {},"cdif": {},"gmobi": {},"cherubic_ventures": {}},"lang":"en"}
 extends comp/base
 
+block meta
+  title #{menu.textAbout}
+
 block style
   link(rel="stylesheet", type="text/css", href="/css/about.css")
 
@@ -18,8 +21,8 @@ block content
   div.about-overlap
     h1.title 關於我們
     p.description 
-      | 文字文字文字文字文字文字文字文字文字 <br>
-      | 文字文字文字文字文字文字文字 <br>
+      //- | 文字文字文字文字文字文字文字文字文字 <br>
+      //- | 文字文字文字文字文字文字文字 <br>
 
   div.about-feature
     .content
