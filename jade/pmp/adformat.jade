@@ -54,8 +54,8 @@ block content
         - adformatList.push({"id": "interstitial","img":"3"});
         - adformatList.push({"id": "impressive","img":"4"});
         - adformatList.push({"id": "vertical","img":"5"});
-        //- - adformatList.push({"id": "interstitial","img":"6"});
-        //- - adformatList.push({"id": "interstitial","img":"7"});
+        - adformatList.push({"id": "dynamic_native","img":"6"});
+        - adformatList.push({"id": "dynamic_interstitial","img":"7"});
         //- - adformatList.push({"id": "interstitial","img":"8"});
         //- - adformatList.push({"id": "interstitial","img":"9"});
         //- - adformatList.push({"id": "interstitial","img":"1"});
@@ -190,6 +190,18 @@ block content
                     "name": adformat.vertical.title,
                     "url_demo": baseUrl + "simple-portrait-interstitial.html",
                     "description": adformat.vertical.description,
+                    "support":{"web":true,},
+                  },
+                  "dynamic_native": {
+                    "name": adformat.dynamic_native.title,
+                    //- "url_demo": baseUrl + "simple.html",
+                    "description": adformat.dynamic_native.description,
+                    "support":{"web":true,},
+                  },
+                  "dynamic_interstitial": {
+                    "name": adformat.dynamic_interstitial.title,
+                    //- "url_demo": baseUrl + "simple-interstitial.html",
+                    "description": adformat.dynamic_interstitial.description,
                     "support":{"web":true,},
                   },
                 },
