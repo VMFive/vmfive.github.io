@@ -1,0 +1,81 @@
+@import "common.less";
+
+.joinus-header {
+  overflow:hidden;
+}
+
+.joinus-overlap {
+  .general-screen();
+  height: auto;
+
+
+
+  background: #0006;
+  padding: 150px 0px 0px 0px;
+  .text-white();
+
+  .indented {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .title {
+    font-size: 2.5em;
+    padding-bottom: 1.5rem;
+  }
+
+  .title, .description {
+    .indented;
+  }
+
+  .description {
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+  }
+}
+
+.joinus-member {
+  .general-screen();
+  height: auto;
+
+  padding: 0rem;
+  .media-md({
+    padding: 3rem;
+  });
+
+  .content {
+    & > .title {
+      text-align: center;
+      padding-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    img {
+      margin: auto;
+    }
+
+    text-align: left;
+    .thejob {
+      margin-bottom: 2rem;
+      padding: 0rem;
+      &.last {
+        margin-bottom: 0rem;
+      }
+      .media-md({
+        padding: 1rem;
+      });
+      .text {
+        padding: 1rem;
+        .media-md({
+          padding: 1rem;
+        });
+      }
+
+      .description {
+        width: 100%;
+        .media-md({
+          width: 80%;
+        });
+      }
+    }
+  }
+}

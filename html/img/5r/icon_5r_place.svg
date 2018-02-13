@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2_main_PMP_2_0_dt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-188.000000, -1165.000000)">
+        <g id="Group-5" transform="translate(188.000000, 877.000000)">
+            <g id="Group-19">
+                <g id="Group-18" transform="translate(0.000000, 288.000000)">
+                    <g id="Group-3">
+                        <path d="M24,0 C10.7451665,0 0,10.7451665 0,24 C0,37.2548335 10.7451665,48 24,48 C37.2548335,48 48,37.2548335 48,24 C48,10.7451665 37.2548335,0 24,0" id="Fill-1" fill="#00AEEF"></path>
+                        <path d="M43.5,24 C43.5,34.7693491 34.7694282,43.5 23.9997466,43.5 C13.2300651,43.5 4.5,34.7693491 4.5,24 C4.5,13.2306509 12.8013656,4.5 23.9997466,4.5 C35.2665372,4.5 43.5,13.2306509 43.5,24" id="Fill-3" fill="#FFFFFF"></path>
+                        <path d="M33.155,20.0775 C33.155,25.0905 24.0775,37.224 24.0775,37.224 C24.0775,37.224 15,25.0905 15,20.0775 C15,15.064 19.064,11 24.0775,11 C29.091,11 33.155,15.064 33.155,20.0775 Z M28.11205,20.0775 C28.11205,17.849 26.30555,16.043 24.07755,16.043 C21.84955,16.043 20.04305,17.849 20.04305,20.0775 C20.04305,22.3055 21.84955,24.1115 24.07755,24.1115 C26.30555,24.1115 28.11205,22.3055 28.11205,20.0775 Z" id="Combined-Shape" fill="#DB4F4F"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,192 @@
+//output:$1.html
+//{"menu":{},"button":{},"format":{},"pmp":{},"lang":"en"}
+
+extends comp/base
+
+block meta
+  title #{menu.textPMP}
+
+block style
+  link(rel="stylesheet", type="text/css", href="/css/pmp.css")
+
+block script_after.
+  $('.carousel').carousel({interval:15*1000})
+
+block content
+  .pmp-header.header
+    .container
+      video.bgvid(playsinline='', autoplay='', muted='', loop='')
+        source(src='#{staticbaseurl}/video/Home_Video.mp4', type='video/mp4')
+  +menu("pmp")
+  
+  div.pmp-overlap
+    .bg
+    h1.title #{pmp.pmp_title}
+    p.description #{pmp.pmp_description}
+
+  div.pmp-format
+    .content
+      h3.title #{pmp.adformat_title}
+      p.description #{pmp.adformat_description}
+        
+      - var adformat = [];
+      - adformat.push({"impressive":{text:format.impressive,url:"impressive"},"interstitial":{text:format.interstitial,url:"interstitial"},"native":{text:format.native,url:"native"},"vertical":{text:format.vertical,url:"portrait"},"top":{text:format.top,url:"top"},});
+      - adformat.push({"dynamic_interstitial":{text:format.dynamic_interstitial,url:"dynamic_interstitial"},"dynamic_native":{text:format.dynamic_native,url:"dynamic_native"},});
+      //- "impressive_portrait":{text:format.impressive_portrait,url:"impressive_portrait"},
+      //- - adformat.push({"06":"06","07":"07","08":"08","09":"09","010":"010",});
+      
+      mixin formatdemo(page, key)
+        a(href="pmp/adformat.html?format=#{key}")
+          .gif
+            img.bg.pure-img(src="/img/bg/bg_phone.png")
+            //- img.animation.lazy.pure-img(src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",data-src='/img/adformat/#{page[key].url}.gif', alt='#{key}')
+            img.animation.pure-img(src='#{staticbaseurl}/img/adformat/#{page[key].url}.gif.png', alt='#{key}')
+          .flex-br
+          p.title #{page[key].text}
+      
+      // Media SM
+      #showcase-adformat-sm.carousel.slide(data-ride='carousel')
+        // Indicators
+        ul.carousel-indicators
+          each page, page_index in adformat
+            each key, item_index in Object.keys(page)
+              - var flatten_item_index = page_index * 5 + item_index;
+              li(data-target='#showcase-adformat-sm', data-slide-to='#{flatten_item_index}', class="#{flatten_item_index > 0 ? '' : 'active'}")
+        // The slideshow
+        .sm.carousel-inner
+          each page, page_index in adformat
+            each key, item_index in Object.keys(page)
+              .carousel-item(class="#{item_index + page_index > 0 ? '' : 'active'}")
+                .pure-g
+                  .pure-u-1-1
+                    //- each key, value in page
+                    +formatdemo(page, key)
+        // Left and right controls
+        a.carousel-control-prev(href='#showcase-adformat-sm', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#showcase-adformat-sm', role="button", data-slide='next')
+          span.carousel-control-next-icon
+      
+      // Media MD
+      #showcase-adformat-md.carousel.slide(data-ride='carousel')
+        // The slideshow
+        .md.carousel-inner
+          each page, page_index in adformat
+            .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
+              .pure-g
+                each key in Object.keys(page)
+                  .pure-u-1-2.pure-u-md-1-5
+                    //- each key, value in page
+                    +formatdemo(page, key)
+        // Left and right controls
+        a.carousel-control-prev(href='#showcase-adformat-md', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#showcase-adformat-md', role="button", data-slide='next')
+          span.carousel-control-next-icon
+      
+      // Button More
+      a.button(href="pmp/adformat.html")
+        | #{button.more === undefined ? "more" : button.more}
+      
+  div.pmp-nice-media
+    .bg
+      //- img.pure-img(src="/img/bg/bg_nice_media.svg",alt="nice-media")
+    .content
+      h3.title #{pmp.nice_media_title}
+      p.description #{pmp.nice_media_description}
+      
+        
+      - var media = [];
+      - media.push({"cmoney": "cmoney","thirty": "30","managertoday":"managertoday","bnext":"bnext","cheers":"cheers","meet":"meet","cnyes":"cnyes","techbang":"techbang","ltn":"ltn","engadget":"engadget",});
+      - media.push({"3ctalk": "3ctalk","babyou": "babyou","bluesbear": "bluesbear","ck101": "ck101","dcard": "dcard","english": "english","juksy": "juksy","meteor": "meteor","mf": "mf","nius": "nius",});
+      - media.push({"picsee": "picsee","queentalk": "queentalk","setn": "setn","shoppingdesign": "shoppingdesign","sportsv": "sportsv","taiwan": "taiwan","talk": "talk","teepr": "teepr","udn": "udn","womentalk": "womentalk",});
+      - media.push({"babyhome": "babyhome","dongtw": "dongtw","gq": "gq","ifoodie": "ifoodie","mamaclub": "mamaclub","moneydj": "moneydj","vogue": "vogue",});
+      #nice-media.carousel.slide(data-ride='carousel')
+        // Indicators
+        //- ul.carousel-indicators
+        //-   each page, page_index in media
+        //-     li(data-target='#nice-media', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'}")
+        // The slideshow
+        .carousel-inner
+          each page, page_index in media
+            .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
+              .pure-g
+                each key in Object.keys(page)
+                  .pure-u-1-2.pure-u-md-1-5
+                    //- each key, value in page
+                    img.pure-img(src='/img/media/logo_m_#{page[key]}.png', alt='#{key}')
+        // Left and right controls
+        a.carousel-control-prev(href='#nice-media', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#nice-media', role="button", data-slide='next')
+          span.carousel-control-next-icon
+          
+  div.pmp-5r
+    .content
+      h3.title #{pmp['5r_title']}
+      p.description #{pmp['5r_description']}
+      img.icon5r.desktop(src="/img/icon/icon_5r_with_text_md.svg")
+      img.icon5r.mobile(src="/img/icon/icon_5r_with_text.svg")
+      a.button(href="pmp/5R.html") #{button.more === undefined ? "more" : button.more}
+  div.pmp-partner
+    .bg
+      //- img.pure-img(src="/img/bg/bg_partner.svg",alt="partner")
+    .content
+      h3.title 合作夥伴
+      - var partner = [];
+      - partner.push({"amnet": "amnet","cymmetrics": "cymmetrics","gmobi": "gmobi","lndata": "lndata",});
+      each page, page_index in partner
+        .pure-g
+          each key in Object.keys(page)
+            .pure-u-1-2.pure-u-md-1-4
+              //- each key, value in page
+              img.pure-img(src='/img/partner/logo_m_#{page[key]}.png', alt='#{key}')
+              p 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+                | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+  div.pmp-customer
+    .bg
+      //- img.pure-img(src="/img/bg/bg_customer.svg",alt="customer")
+    .content
+      h3.title 配合客戶      
+        
+      - var customer = [];
+      - customer.push({tag:"運動",data:{"adidas":"sport/adidas","converse":"sport/converse","nike":"sport/nike","puma":"sport/puma",}});
+      - customer.push({tag:"娛樂與遊戲",data:{"disney":"entertainment/disney","fox":"entertainment/fox","yahootv":"entertainment/yahootv","kkbox":"entertainment/kkbox","universal":"entertainment/universal","applause":"entertainment/applause","kktv":"entertainment/kktv","uip":"entertainment/uip","blizzard":"entertainment/blizzard","gamania":"entertainment/gamania","caichang":"entertainment/caichang","elsword":"entertainment/elsword","legendmainland":"entertainment/legendmainland",}});
+      - customer.push({tag:"食品和飲料",data:{"huada":"food/huada","mcdonalds":"food/mcdonalds","cocacola":"food/cocacola","xiaomei":"food/xiaomei","doritos":"food/doritos","fuze_tea":"food/fuze_tea","hichew":"food/hichew","85_C":"food/85_C","morinaga":"food/morinaga","mineshine":"food/mineshine","hsintungyang":"food/hsintungyang","nestle":"food/nestle","lays":"food/lays","unipresident":"food/unipresident","weidang":"food/weidang",}});
+      //- - customer.push({tag:"飲料",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
+      - customer.push({tag:"3C 與電信",data:{"tokuyo":"3c/tokuyo","samsung":"3c/samsung","taiwan_mobile":"3c/taiwan_mobile","purus":"3c/purus"}});
+      //- - customer.push({tag:"速食",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
+      - customer.push({tag:"美妝與女性",data:{"decorte":"cosmetic/decorte","johnson":"cosmetic/johnson","uno":"cosmetic/uno","senka":"cosmetic/senka","neutrogena":"cosmetic/neutrogena","sofina":"cosmetic/sofina","sekkisei":"cosmetic/sekkisei","shiseido":"cosmetic/shiseido","wacoal":"cosmetic/wacoal","za":"cosmetic/za",}});
+      - customer.push({tag:"快速消費品",data:{"3m":"daily/3m","kao":"daily/kao","reckitt_benckiser":"daily/reckitt_benckiser","schick":"daily/schick","unicharm":"daily/unicharm",}});
+      - customer.push({tag:"汽機車",data:{"aeonmotor":"car/aeonmotor","infiniti":"car/infiniti","kymco":"car/kymco","luxgen":"car/luxgen","subaru":"car/subaru","suzuki":"car/suzuki","vespa":"car/vespa",}});
+      - customer.push({tag:"其他",data:{"12elementaryedu":"else/12elementaryedu","104":"else/104","formosa_watch":"else/formosa_watch","engoo":"else/engoo","marcobelli":"else/marcobelli","tutorabc":"else/tutorabc","cti":"else/cti","diageo":"else/diageo","kgi":"else/kgi","mastercard":"else/mastercard","pr":"else/pr",}});
+      #customer.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators.pure-g
+          each page, page_index in customer
+            li.pure-u-1-2(data-target='#customer', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'} pure-u-md-1-#{customer.length}")
+              | #{page.tag}
+        // The slideshow
+        .carousel-inner
+          each page, page_index in customer
+            .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
+              .pure-g
+                each key in Object.keys(page.data)
+                  .pure-u-1-2.pure-u-md-1-5
+                    //- each key, value in page
+                    img.pure-img(src='/img/customer/#{page.data[key]}.png', alt='#{key}')
+        // Left and right controls
+        a.carousel-control-prev(href='#customer', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#customer', role="button", data-slide='next')
+          span.carousel-control-next-icon
+  //- .pmp-contact-us-hr-container
+  //-   .pmp-contact-us-hr
+  //- div.pmp-contact-us
+  //-   .button #{button.contactus === undefined ? "Contact Us" : button.contactus}
+  //-   hr
+      

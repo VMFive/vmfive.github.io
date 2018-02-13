@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_mapp</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2_main_PMP_1_0_dt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-400.000000, -343.000000)">
+        <g id="ic_mapp" transform="translate(400.000000, 343.000000)" fill="#4D4D4D">
+            <g id="Group-6-Copy">
+                <g id="Group-2">
+                    <path d="M18,7 L17,7 L17,5 C17,4.44771525 16.5522847,4 16,4 L2,4 C1.44771525,4 1,4.44771525 1,5 L1,27 C1,27.5522847 1.44771525,28 2,28 L16,28 C16.5522847,28 17,27.5522847 17,27 L17,26 L18,26 L18,30 C18,31.1045695 17.1045695,32 16,32 L2,32 C0.8954305,32 1.3527075e-16,31.1045695 0,30 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L16,0 C17.1045695,-2.02906125e-16 18,0.8954305 18,2 L18,7 Z" id="Combined-Shape"></path>
+                </g>
+                <text id="APP" font-family="LucidaGrande-Bold, Lucida Grande" font-size="12" font-weight="bold">
+                    <tspan x="8" y="21">APP</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

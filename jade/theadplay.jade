@@ -1,0 +1,189 @@
+//output:$1.html
+//{"menu":{},"button":{},"adplay":{"scenario":{},"gamepublisher_description":[],"gamer_description":[]},"lang":"en"}
+extends comp/base
+
+block meta
+  title #{menu.textAdplay}
+
+block style
+  link(rel="stylesheet", type="text/css", href="/css/theadplay.css")
+  link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.4.2/css/lightcase.min.css")
+
+block script_after
+  | $('.carousel').carousel({interval:15*1000})
+
+block content
+  +menu("adplay")
+  .adplay-header.header
+    .container
+      video.bgvid(playsinline='', autoplay='', muted='', loop='')
+        source(src='#{staticbaseurl}/video/AdPlay+Demo+Video.mp4', type='video/mp4')
+  
+  div.adplay-overlap
+    h1.title #{adplay.adplay_title}
+    p.description #{adplay.adplay_description}
+
+          
+  div.adplay-feature
+    .content
+      h3.title #{adplay.feature_title}
+      p.description #{adplay.feature_description}
+      - var feature = [];
+      - feature.push({"crossplatform": {"title":adplay.cross_platform_title,"url":"crossplatform","text":adplay.cross_platform_description},"realtime_streaming": {"title":adplay.real_time_streaming_title,"url":"realtime_streaming","text":adplay.real_time_streaming_description},"mobile_virtualization": {"title":adplay.mobile_virtualization_title,"url":"mobile_virtualization","text":adplay.mobile_virtualization_description},"instant_play": {"title":adplay.instant_play_title,"url":"instant_play","text":adplay.instant_play_description},"engaging": {"title":adplay.engaging_title,"url":"engaging","text":adplay.engaging_description},"differentiation": {"title":adplay.differentiation_title,"url":"differentiation","text":adplay.differentiation_description},});
+      each page, page_index in feature
+        .pure-g
+          each key in Object.keys(page)
+            .pure-u-1-2.pure-u-md-1-3
+              //- each key, value in page
+              img.pure-img(src='/img/feature/icon_adplay_#{page[key].url}.svg', alt='#{key}')
+              h5 #{page[key].title}
+              p #{page[key].text}
+
+  div.adplay-introvideo
+    a.bg(data-lc-href="https://s3-ap-northeast-1.amazonaws.com/www-vmfive-com/video/AdPlay+Introduction.mp4",data-rel="lightcase")
+      
+  div.adplay-mainflows
+    .content
+      h3.title 廣告主流程
+      //- img.pure-img.process(src="/img/icon/icon_ad_mainflows.png")
+      //- img.pure-img.process-md(src="/img/icon/icon_ad_mainflows_md.png")
+      .process-decorations
+        img.desktop.pure-img(src="/img/icon/icon_ad_mainflows_figure_md_#{lang}.svg")
+        img.mobile.pure-img(src="/img/icon/icon_ad_mainflows_figure_#{lang}.svg")
+
+  div.adplay-ourvalue
+    .bg
+      img.pure-img(src="/img/bg/bg_adplay_ourvalue.svg",alt="ourvalue")
+    .content
+      h3.title 價值      
+        
+      - var ourvalue = [];
+      - ourvalue.push({tag:adplay.gamepublisher_title,data:{"url":"gamepublisher","content":adplay.gamepublisher_description,}});
+      //- - ourvalue.push({tag:"遊戲代理商",data:{"url":"gamedevvendor","content":["Show the most attractive part of the game not only by photos and videos but instant playing.","Make the high quality users favor your APP while engaging in the game play.","Create higher LTV and bring higher returns from the marketing investment.",],}});
+      - ourvalue.push({tag:adplay.gamer_title,data:{"url":"gamer","content":adplay.gamer_description,}});
+      #ourvalue.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators.pure-g
+          each page, page_index in ourvalue
+            li.pure-u-1-2(data-target='#ourvalue', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'} pure-u-md-1-#{ourvalue.length}")
+              | #{page.tag}
+        // The slideshow
+        .carousel-inner
+          each page, page_index in ourvalue
+            .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
+              .pure-g
+                .pure-u-1-1.pure-u-md-1-2
+                  p
+                    each text in page.data.content
+                      | #{text} <br><br>
+                .pure-u-1-1.pure-u-md-1-2
+                  img.pure-img(src='/img/ourvalue/icon_adplay_#{page.data.url}.png', alt='#{key}')
+        // Left and right controls
+        a.carousel-control-prev(href='#ourvalue', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#ourvalue', role="button", data-slide='next')
+          span.carousel-control-next-icon
+
+  div.adplay-scenario
+    .content
+      h3.title 使用情境
+      p.description #{adplay.scenario.description}
+        
+      - var scenario = [];
+      - /*
+      - scenario.push({"adnetwork":{text:adplay.scenario.adnetwork,url:"adnetwork"},"appstore":{text:adplay.scenario.appstore,url:"appstore"},"gamepage":{text:adplay.scenario.gamepage,url:"gamepage"},"instantmessage":{text:adplay.scenario.instantmessage,url:"instantmessage"},"qrcode":{text:adplay.scenario.qrcode,url:"qrcode"},});
+      - scenario.push({"socialnetwork":{text:adplay.scenario.socialnetwork,url:"socialnetwork"},});
+      - */
+      - scenario.push({"adnetwork":{text:adplay.scenario.adnetwork,url:"theadnetwork"},"appstore":{text:adplay.scenario.appstore,url:"appstore"},"gamepage":{text:adplay.scenario.gamepage,url:"gamepage"},"instantmessage":{text:adplay.scenario.instantmessage,url:"instantmessage"},"qrcode":{text:adplay.scenario.qrcode,url:"qrcode"},"socialnetwork":{text:adplay.scenario.socialnetwork,url:"socialnetwork"},});
+      //- - scenario.push({"06":"06","07":"07","08":"08","09":"09","010":"010",});
+      
+      mixin scenariodemo(page, key)
+        img.pure-img(src='/img/adplay/icon_adplay_scenario_#{page[key].url}.png', alt='#{key}')
+        .flex-br
+        p #{page[key].text}
+      
+      // Media SM
+      #scenario-sm.carousel.slide(data-ride='carousel')
+        // Indicators
+        ul.carousel-indicators
+          each page, page_index in scenario
+            each key, item_index in Object.keys(page)
+              - /*
+              - var flatten_item_index = page_index * 5 + item_index;
+              - */
+              - var flatten_item_index = page_index * 6 + item_index;
+              li(data-target='#scenario-sm', data-slide-to='#{flatten_item_index}', class="#{flatten_item_index > 0 ? '' : 'active'}")
+        // The slideshow
+        .sm.carousel-inner
+          each page, page_index in scenario
+            each key, item_index in Object.keys(page)
+              .carousel-item(class="#{item_index + page_index > 0 ? '' : 'active'}")
+                .pure-g
+                  .pure-u-1-1
+                    //- each key, value in page
+                    +scenariodemo(page, key)
+        // Left and right controls
+        a.carousel-control-prev(href='#scenario-sm', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#scenario-sm', role="button", data-slide='next')
+          span.carousel-control-next-icon
+      
+      // Media MD
+      #scenario-md.carousel.slide(data-ride='carousel')
+        // Indicators
+        //- ul.carousel-indicators
+        //-   each page, page_index in scenario
+        //-     li(data-target='#scenario-md', data-slide-to='#{page_index}', class="#{page_index > 0 ? '' : 'active'}")
+        // The slideshow
+        .carousel-inner
+          each page, page_index in scenario
+            .carousel-item(class="#{page_index > 0 ? '' : 'active'}")
+              .pure-g
+                each key in Object.keys(page)
+                  //- .pure-u-1-2.pure-u-lg-1-5
+                  .pure-u-1-2.pure-u-lg-1-6
+                    //- each key, value in page
+                    +scenariodemo(page, key)
+        // Left and right controls
+        a.carousel-control-prev(href='#scenario-md', role="button", data-slide='prev')
+          span.carousel-control-prev-icon
+        |           
+        a.carousel-control-next(href='#scenario-md', role="button", data-slide='next')
+          span.carousel-control-next-icon
+
+  div.adplay-partner
+    .bg
+      img.pure-img(src="/img/bg/bg_adplay_partner.svg",alt="partner")
+    .content
+      h3.title 合作夥伴
+      - var partner = [];
+      - partner.push({"lndata": "lndata","amnet": "amnet","ipg": "ipg",});
+      each page, page_index in partner
+        .pure-g
+          each key in Object.keys(page)
+            .pure-u-1-2.pure-u-md-1-3
+              //- each key, value in page
+              img.pure-img(src='/img/partner/logo_m_#{page[key]}.png', alt='#{key}')
+              p 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+                | 說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字
+
+  //- .adplay-contact-us-hr-container
+  //-   .adplay-contact-us-hr
+  //- div.adplay-contact-us
+  //-   .button #{button.contactus === undefined ? "Contact Us" : button.contactus}
+  //-   hr
+  block block_after
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js",integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=",crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.4.2/js/lightcase.min.js")
+    script(type="text/javascript").
+      $('document').ready(function(){
+        $('a[data-rel^=lightcase]').lightcase({
+          "video" : {
+            width: '100vw',
+            height: '100vh',
+          }
+        });
+      })
+    

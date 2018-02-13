@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="51px" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon s/ 1 copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="96.8391263%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFB75D" offset="0%"></stop>
+            <stop stop-color="#FF9454" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="3_AdPlay_dt" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-207.000000, -888.000000)">
+        <g id="Group-17" transform="translate(80.000000, 888.000000)">
+            <g id="Group-21">
+                <g id="icon-s/-adplay1" transform="translate(127.000000, 0.000000)">
+                    <circle id="Oval" fill="url(#linearGradient-1)" cx="25.5" cy="25.5" r="25.5"></circle>
+                    <g id="opposite-arrows-couple" stroke-width="1" transform="translate(11.000000, 11.000000)" fill="#FFFFFF">
+                        <path d="M7.85497099,17.6570868 C8.43777435,18.2526141 8.90992698,18.0527558 8.90992698,17.2105508 L8.90992698,14.3174197 L19.4031177,14.3174197 C19.7327145,14.3174197 20,14.0442691 20,13.7075622 L20,4.29234686 C20,3.95558519 19.7327145,3.68243467 19.4031177,3.68243467 L8.90992698,3.68243467 L8.90992698,0.789358195 C8.90992698,-0.0525186348 8.43782788,-0.252705043 7.85497099,0.342822174 L0.437142674,7.92190147 C-0.145714225,8.51742869 -0.145714225,9.48248032 0.437142674,10.0779528 L7.85497099,17.6570868 Z" id="Shape" fill-rule="nonzero"></path>
+                        <path d="M22.1453014,11.3427957 C21.5627681,10.7473221 21.0903497,10.9474542 21.0903497,11.7893873 L21.0903497,14.6825237 L10.5968799,14.6825237 C10.2672844,14.6825237 10,14.9556747 10,15.2923823 L10,24.7076145 C10,25.0443221 10.267338,25.3174731 10.5968799,25.3174731 L21.0900285,25.3174731 L21.0900285,28.2106642 C21.0900285,29.0525426 21.5624469,29.2526746 22.1449267,28.657201 L29.5631,21.0779987 C30.1456333,20.4824704 30.1456333,19.5174717 29.5631,18.9219434 L22.1453014,11.3427957 Z" id="Shape" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

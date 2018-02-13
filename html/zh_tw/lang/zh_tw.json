@@ -1,0 +1,114 @@
+{
+  "adplay":{
+    "scenario":{
+      "descriptoin":"AdPlay 適用於各種行銷情境",
+      "adnetwork":"Ad Network",
+      "appstore":"App Store",
+      "gamepage":"Game Page",
+      "instantmessage":"Instant Message",
+      "qrcode":"QRCode",
+      "socialnetwork":"Social Network"
+    },
+    "gamepublisher_title":"遊戲開發商",
+    "gamepublisher_description":["透過試玩廣告展示遊戲最吸引人的片段給用戶","透過獲取高價值用戶提升您的每用戶平均收入","輕鬆的上傳 APK 產生試玩連結"],
+    "gamer_title":"遊戲玩家",
+    "gamer_description":["先試玩，不再後悔下載到不適合您的遊戲","別再浪費下載流量，先體驗再下載"],
+
+    "adplay_title": "試玩廣告 Adplay",
+    "adplay_description": "更好的用戶體驗、更高的用戶留存率。VMFive 試玩廣告 AdPlay 透過專利技術，讓用戶在下載遊戲或 APP 前得以完整試玩。",
+    "feature_title": "功能",
+    "feature_description": "VMFive 以領先業界的行動虛擬化技術，讓用戶不用下載遊戲或 APP ，即可以各種裝置直接體驗。",
+    "cross_platform_title": "跨平台",
+    "cross_platform_description": "不論用戶的裝置是 Android 或 iOS；智慧型手機、平板或 PC，都可以獲得相同的試玩廣告體驗。",
+    "real_time_streaming_title": "即時串流",
+    "real_time_streaming_description": "透過 VMFive 的串流技術，AdPlay 廣告不會有任何的延遲。流暢的體驗讓您的 APP 更具吸引力。",
+    "mobile_virtualization_title": "行動虛擬化",
+    "mobile_virtualization_description": "透過VMFive的 AdPlay 伺服器，您的 APK 檔案可以輕易的透過我們的虛擬設備運行。無需任何客製化，即時上傳即刻體驗。",
+    "instant_play_title": "即時遊玩",
+    "instant_play_description": "用戶無須下載便能得到完整的遊戲與 APP 體驗。試玩後，用戶一鍵點擊即可下載。",
+    "engaging_title": "互動性",
+    "engaging_description": "用戶可以直接體驗遊戲或 APP 最精彩的片段，容易立即深受吸引，讓您緊緊抓住用戶的心。",
+    "differentiation_title": "創新",
+    "differentiation_description": "試玩廣告 AdPlay 提供了全新的行動廣告解決方案。它所提供的用戶體驗與互動性前所未見。"
+  },
+  "pmp":{
+    "word": "word",
+    "pmp_title": "影音 PMP",
+    "pmp_description": "VMFive 影音 PMP 以創新吸睛的廣告格式抓住受眾目光，經由機器學習的演算法精準的找到理想客群，並透過優質的流量幫助您有效的傳達品牌故事",
+    "adformat_title": "廣告格式",
+    "adformat_description": "我們理解每個廣告品牌在不同的行銷活動皆有多元的目標，我們相信透過不同的廣告格式，得以更有效地協助您達到行銷目的。因此，VMFive 的 ADK 實驗室透過科學的方式開發出更多創新、吸睛和有效的廣告格式。",
+    "nice_media_title": "優質媒體",
+    "nice_media_description": "VMFive影音PMP 提供了最優質的媒體流量。我們堅持每次的曝光都是被實際看見的。除了提供您合作媒體的最佳版位外，也時刻為您監測並阻擋非人為 (non-human) 與無效 (invalid) 流量。同時，我們也兼顧品牌安全 (brand safety)，確保廣告出現的版位和頁面內容與您的品牌形象相符。",
+    "5r_title": "精準觸及",
+    "5r_description": "相較於傳統的投放優化演算法，VMFive 5R智能演算法引入了更多維度的數據。VMFive的數據管理平台 (DMP)，融合了從媒體端、廣告平台端至廣告主端的所有數據。並以此為基礎，通過機器學習的方式不斷分析訓練廣告投放演算法。"
+
+  },
+  "adformat":{
+    "format":{
+      "interstitial_title": "蓋版廣告 Interstitial",
+      "interstitial_description": ["<h5>蓋版廣告營造的氣勢受到品牌廣告主的喜愛</h5><br>覆蓋於網頁上方，動態影音加上靜態banner的設計讓您可以更完整在手機畫面展演您的廣告訴求。超級大版面確保用戶絕對不會錯過您的廣告。<br><br>蓋版廣告適用於新品或是品牌造勢使用，用戶點擊右上方X鍵即可關閉廣告。"],
+      "impressive_title": "滾動式影音 Impressive",
+      "impressive_description": ["<h5>同時兼顧極佳的用戶體驗和吸睛的大版位</h5><br>廣告版位於內文中，隨著用戶滑動慢慢出現至全版，影音鑲於中間，上下為靜態banner，讓您可以更完整在手機畫面展演您的廣告訴求。<br><br><h5>優化影音設計，強化Viewability</h5><br>為使用戶更專注於影音，當用戶繼續滑動版位至影音位置要滑出螢幕範圍時，影音會維持在置頂位置，一直到看不見版位，特殊設計讓用戶絕對不會錯過您精彩的影音。<br><br>滾動式影音適合用於新品或是品牌造勢使用，廣告版位滑開及略過的特點可以同時兼顧用戶體驗與品牌造勢，是品牌影音不可錯過的優質版位。"],
+      "native_title": "原生廣告Native Video",
+      "native_description": ["<h5>貼合網頁設計造就更好地觀看體驗與成效</h5><br>影音廣告位於文章段落中或文末，動態的影音置於靜態文章中，讓您的影音廣告更容易抓住用戶眼球。<br><br>原生的設計讓您的廣告更自然的融入在網頁中，因閱讀過程比較不會打擾用戶，所以觀看率 (VTR) 極高。適合廣告主全年度影音規劃或是SP活動觸及用戶。<br>"],
+      "dynamic_native_title": "動態廣告(文中)",
+      "dynamic_native_description": ["<h5>除了觀看影片，更多廣告互動</h5><br>動態廣告(文中) 格式一樣出現在內文中，用不打擾使用者的方式播放影片。影音廣告加上動態展示型廣告讓您的廣告更多用戶互動。<br><br><h5>資訊整合，多元行銷</h5><br>動態廣告格式在展示型版位使用 Rich Media，可整合多種資訊，如：天氣（溫度、濕度、PM2.5），時間，地理位置，讓您的訊息更容易抓住使用者的目光。<br><br>適合有實體店面或是多商品、多素材的廣告主。<br>"],
+      "dynamic_interstitial_title": "動態廣告(蓋板)",
+      "dynamic_interstitial_description": ["<h5>除了觀看影片，更多廣告互動</h5><br>動態廣告蓋板格式一樣出現在內文上方，在文章載入前先顯示廣告。影音廣告加上動態展示型廣告讓您的廣告更多用戶互動。 <br><br><h5>資訊整合，多元行銷</h5><br>動態廣告格式在展示型版位使用 Rich Media，可整合多種資訊，如：天氣（溫度、濕度、PM2.5），時間，地理位置，讓您的訊息更容易抓住使用者的目光。<br><br>適合有實體店面或是多商品、多素材的廣告主。<br>"],
+      "top_title": "置頂影音Top View Video",
+      "top_description": ["<h5>行動第一屏，快速抓住用戶眼球</h5><br>影音廣告位於文章最上方，用戶在進到網頁時第一眼就看到您的廣告，動態的影音置於靜態文章中，讓您的影音廣告更容易抓住用戶眼球。<br>置頂廣告等於就是行動第一屏，若您想提供極佳的用戶體驗又確保用戶不會略過您的廣告，原生置頂是您最好的選擇<br><br>置頂影音位在網頁第一屏，適合廣告主全年度影音規劃或是SP活動觸及用戶。<br>"],
+      "vertical_title": "直立式影音 Vertical Video",
+      "vertical_description": ["<h5>為行動而生的直立式廣告更符合用戶觀看體驗</h5><br>廣告主提供的直立式影音內容可以蓋版形式覆蓋在網頁上，提供給用戶更精彩的視覺體驗。<br>用戶點擊右上方X鍵即可關閉廣告。<br><br>直立式影音適合擁有直立式影音素材廣告主作為行銷活動造勢使用，直立式的特殊設計可以更快吸引到用戶目光，完整利用手機全屏。<br>"]
+    }
+  },
+  "joinus":{
+    "joinus_description":["誠摯邀請對數位廣告產業充滿熱忱的你，一起加入VMFive團隊，與我們一同創造更多的可能。","如果您有興趣進一步了解以下職缺，請將簡歷 / LinkedIn / GitHub / 或作品資料寄至本公司招募信箱 job@vm5.com。"],
+    "job_description": "工作內容",
+    "job_requirement": "技能需求"
+  },
+  "menu":{
+    "textPMP":"影音 PMP",
+    "textAdplay":"試玩廣告 Adplay",
+    "textAbout":"關於我們",
+    "textJoinUs":"加入我們"
+  },
+  "button":{
+    "more":"查看更多",
+    "contactus":"聯絡我們"
+  },
+  "format":{
+    "impressive":"滾動式",
+    "impressive_portrait":"滾動式(直立)",
+    "interstitial":"蓋版",
+    "vertical":"直立式",
+    "native":"原生",
+    "top":"置頂",
+    "dynamic_native":"動態(文中)",
+    "dynamic_interstitial":"動態(蓋版)",
+    "miniplayer":"迷你播放器"
+  },
+  "about" : {
+    "mission": "透過創新廣告格式、優質流量和數據科學來協助廣告主達到超乎預期的行銷目標"
+  },
+  "investor" : {
+    "trend": {
+      "name":"趨勢科技",
+      "description":"作為全球資安領導廠商，趨勢科技致力開發創新的防護解決方案來保護企業和消費者所在的數位資訊交換世界。"
+    },
+    "cdif": {
+      "name":"開發國際",
+      "description":"中華開發金控旗下的私募股權投資公司，專責將集團的自有資本透過台灣以外的區域進行多元化的配置及運用。"
+    },
+    "gmobi": {
+      "name":"GMobi",
+      "description":"GMobi 擁有自行開發的完整移動服務平台，提供全球超過 100 家手機品牌商及電信商一站式優質的移動網路服務，橫跨眾多技術平台。"
+    },
+    "cherubic_ventures": {
+      "name":"心元資本",
+      "description":"心元資本由連續創業者和天使投資人鄭博仁 (Matt) 所創立。心元資本豐富的經驗和實作的精神，能夠有效地幫助新創團隊渡過最辛苦的草創時期。"
+    }
+  },
+
+  "name":"vm5",
+  "lang":"zh_tw"
+}

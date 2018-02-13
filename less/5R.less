@@ -1,0 +1,281 @@
+@import "common.less";
+
+#nav {
+  top: 0;
+  .background-menu-dark;
+}
+
+.goal5r-overlap {
+  .general-screen();
+  .background-default;
+  padding: @nav-height 0px 0px 0px;
+  height: auto;
+
+  h1, h4 {
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  & > .description {
+    padding: 0 @description-padding 0 @description-padding;
+  }
+
+  & > .figure-decoration {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .goal5r-description {
+    width: 100%;
+    padding: 0 @description-padding 0 @description-padding;
+    margin-bottom: 24px;
+
+    display: flex;
+    align-items: center; /* align vertical */
+    & > img {
+      align-self: flex-start;
+    }
+    & > .description {
+      margin-left: 24px;
+    }
+  }
+
+  .audience {
+    width: 100%;
+
+    @padding-block: 30px;
+    & > .figure {
+      background-color: #fff;
+      width: inherit;
+      padding-top: @padding-block;
+      padding-bottom: @padding-block;
+    }
+    & > .feature {
+      width: inherit;
+      padding-top: @padding-block;
+      padding-bottom: @padding-block;
+
+      padding-left: @description-padding*.5;
+      padding-right: @description-padding*.5;
+      .media-lg({
+        padding-left: @description-padding;
+        padding-right: @description-padding;
+      });
+
+      h1 {
+        text-align: center;
+        .media-lg({
+          text-align: left;
+        });
+      }
+
+      @feature-padding: 50px;
+      .feature-left-side {
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+      }
+      .feature-right-side {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        & > img {
+          .rwd-switch-lg({},{});
+        }
+      }
+
+      .howto {
+        .rwd-switch-lg({
+          margin-top: auto;
+          align-self: flex-end;
+        }
+        ,
+        {
+          width: 100vw;
+          position: absolute;
+          align-self: center;
+          justify-content: center;
+
+          padding-left: @description-padding;
+          padding-right: @description-padding;
+        });
+      }
+    }
+    & > div > img {
+      width: 70%;
+      margin: auto;
+
+      .rwd-switch-lg({},{});
+    }
+
+     .bg {
+      // NOTE DISABLED
+      display: none;
+      width: 100%;
+      height: 40vh;
+      .media-md({
+        height: 45vh;
+      });
+
+      img {
+        margin: auto;
+      }
+    }
+
+    position: relative;
+    & > .info {
+      // NOTE DISABLED
+      display: none;
+
+      position: absolute;
+      bottom: 0;
+      padding: 0 30% 0 30%;
+
+      background: #fff;
+      width: 100%;
+      height: auto;
+
+      & > .title {
+        text-align: center;
+        color: #FC981C;
+
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      & > .description {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.goal5r-timeplace {
+  // NOTE DISABLED
+  display: none;
+
+  .general-screen();
+  height: auto;
+  background-color: #fff;
+
+  overflow-y: auto;
+  padding-bottom: 3rem;
+
+  position: relative;
+  & > .info {
+    padding: 0 @description-padding 0 @description-padding;
+
+    .background-default;
+    width: 100%;
+    height: auto;
+
+    .title {
+      color: #FC981C;
+
+      padding-top: 3rem;
+      margin-bottom: 2rem;
+
+      text-align: center;
+      .media-md({
+        text-align: left;
+      });
+    }
+
+    .description {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+
+      width: auto;
+      .media-md({
+        width: 30vw;
+      });
+    }
+  }
+  .bg {
+
+    top: none;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+
+    position: relative;
+    height: 60vw;
+    .background-default;
+    .media-lg({
+      position: absolute;
+      height: 90%;
+      background-color: transparent;
+    });
+
+    background-image: url("/img/icon/icon_5r_figure01.svg");
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.goal5r-contentformat {
+  // NOTE DISABLED
+  display: none;
+
+  .general-screen();
+  height: auto;
+  background-color: #fff;
+
+  overflow-y: auto;
+  padding-bottom: 3rem;
+
+  position: relative;
+  & > .info {
+    padding: 0 @description-padding 0 @description-padding;
+
+    width: 100%;
+    height: auto;
+
+    .title {
+      color: #FC981C;
+
+      padding-top: 3rem;
+      margin-bottom: 2rem;
+
+      text-align: center;
+      .media-md({
+        text-align: left;
+      });
+    }
+
+    .description {
+      margin-bottom: 2rem;
+
+      width: auto;
+      .media-md({
+        width: 30vw;
+      });
+    }
+  }
+  .bg {
+
+    top: none;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    position: relative;
+    height: 90vw;
+    .media-lg({
+      position: absolute;
+      height: 90%;
+      background-color: transparent;
+      background-size: contain;
+    });
+
+    background-image: url("/img/icon/icon_5r_figure02.svg");
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
