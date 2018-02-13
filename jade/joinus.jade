@@ -44,8 +44,8 @@ block content
                 p
                   each desc in thejob.description
                     | !{desc} <br>
-                h5 #{joinus.job_requirement}
                 - if (thejob.requirement.length > 0) {
+                h5 #{joinus.job_requirement}
                 p
                   each req in thejob.requirement
                     | !{req} <br>

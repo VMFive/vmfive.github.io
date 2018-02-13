@@ -46,7 +46,7 @@ block content
             .itemgrid
               .pure-g
                 each item in adformatList
-                  .aditem.ripple.pure-u-1-3
+                  .theaditem.ripple.pure-u-1-3
                     img.pure-img(src="/img/adformat/btn-ad-#{item.img}-a.svg",@click="selectAd('#{item.id}')")
         - var adformatList = [];
         - adformatList.push({"id": "top","img":"1"});
@@ -84,7 +84,7 @@ block content
                       iframe(:src="getAd().url_demo")
                   +menu('desktop pure-u-2-5')
                   .pure-u-1-1.pure-u-md-3-5
-                    .adinfo
+                    .theadinfo
                       +adinfo()
                     .mask
               +menu('show mobile pure-u-1-1')

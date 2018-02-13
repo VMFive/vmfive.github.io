@@ -378,13 +378,13 @@ footer .sitemap > .container .item > a {
     height: 100%;
   }
 }
-.adformat-overlap .content .adinfo {
+.adformat-overlap .content .theadinfo {
   padding-left: 2rem;
   padding-right: 2rem;
   display: none;
 }
 @media screen and (min-width: 48em) {
-  .adformat-overlap .content .adinfo {
+  .adformat-overlap .content .theadinfo {
     display: block;
     margin-left: 20px;
   }
@@ -610,14 +610,14 @@ footer .sitemap > .container .item > a {
     margin-bottom: 3rem;
   }
 }
-.adformat-overlap .menu .aditem > img {
+.adformat-overlap .menu .theaditem > img {
   display: block;
   padding: 2px;
   margin: auto;
   height: 33.33333333vw;
 }
 @media screen and (min-width: 48em) {
-  .adformat-overlap .menu .aditem > img {
+  .adformat-overlap .menu .theaditem > img {
     height: calc((100vw - 350px) * 2 / 5 / 3);
   }
 }

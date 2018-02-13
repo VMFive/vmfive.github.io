@@ -28,7 +28,7 @@ mixin menu(currentPage)
         //-     a.dropdown-item(href='#') Another action
         //-     |           
         //-     a.dropdown-item(href='#') Something else here
-        each item in [{"id":"pmp", "url":"/"+lang+"/pmp.html", "text":menu.textPMP},{"id":"adplay", "url":"/"+lang+"/adplay.html", "text":menu.textAdplay},{"id":"about", "url":"/"+lang+"/about.html", "text":menu.textAbout},{"id":"joinus", "url":"/"+lang+"/joinus.html", "text":menu.textJoinUs}]
+        each item in [{"id":"pmp", "url":"/"+lang+"/pmp.html", "text":menu.textPMP},{"id":"adplay", "url":"/"+lang+"/theadplay.html", "text":menu.textAdplay},{"id":"about", "url":"/"+lang+"/about.html", "text":menu.textAbout},{"id":"joinus", "url":"/"+lang+"/joinus.html", "text":menu.textJoinUs}]
           li.nav-item
             a.nav-link(class="menu-#{item.id} #{currentPage == item.id ? 'active' : ''}",href="#{item.url}") #{item.text}
     
