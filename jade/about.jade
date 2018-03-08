@@ -20,14 +20,14 @@ block content
   
   div.about-overlap
     h1.title 關於我們
-    p.description 
+    p.description(itemprop="description") 
       //- | 文字文字文字文字文字文字文字文字文字 <br>
       //- | 文字文字文字文字文字文字文字 <br>
 
   div.about-feature
     .content
       h3.title Vision & Mission
-      p.description #{about.mission}
+      p.description(itemprop="description") #{about.mission}
       img.pure-img(src="/img/icon/icon_vision_mission.svg")
 
   div.about-milestone

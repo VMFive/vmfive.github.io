@@ -16,7 +16,7 @@ block content
   
   div.joinus-overlap
     h1.title 加入我們
-    p.description 
+    p.description(itemprop="description") 
       each item in joinus.joinus_description
         | #{item} <br>
 
