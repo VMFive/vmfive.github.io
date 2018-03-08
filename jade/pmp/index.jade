@@ -1,0 +1,16 @@
+//output:$1.html
+
+- var defaultPage = '';
+- if (lang == "en") {
+- defaultPage = 'theadplay';
+- } else {
+- defaultPage = 'pmp';
+- }
+
+html
+  - var href = "/" + lang + (defaultPage == 'pmp' ? '/index' : '/pmp') + ".html";
+  head
+    meta(http-equiv='refresh', content='0;url=#{href}')
+  body
+    | This page has moved to 
+    a(href='#{href}') #{href}
