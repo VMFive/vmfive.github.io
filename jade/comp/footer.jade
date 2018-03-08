@@ -1,4 +1,12 @@
 //output:$1.html
+
+- var defaultPage = '';
+- if (lang == "en") {
+- defaultPage = 'theadplay';
+- } else {
+- defaultPage = 'pmp';
+- }
+
 mixin footerGeneral(prefix)
   .footer-hr-container
     .footer-hr
@@ -14,7 +22,7 @@ mixin footerGeneral(prefix)
           .category.pure-u-1-3.pure-u-md-1-1
             .pure-g
               .title.pure-u-1-1.pure-u-md-1-4
-                div PMP
+                a(href="#{prefix}#{'pmp' == defaultPage ? 'index' : 'pmp'}.html") PMP
               .item.pure-u-1-1.pure-u-md-1-4
                 a(href="#{prefix}pmp/adformat.html") 廣告格式
               .item.pure-u-1-1.pure-u-md-1-4
@@ -24,7 +32,7 @@ mixin footerGeneral(prefix)
           .category.pure-u-1-3.pure-u-md-1-1
             .pure-g
               .title.pure-u-1-1.pure-u-md-1-4
-                div ADPlay
+                a(href="#{prefix}#{'theadplay' == defaultPage ? 'index' : 'theadplay'}.html") ADPlay
               .item.pure-u-1-1.pure-u-md-1-4
                 a &nbsp;
               .item.pure-u-1-1.pure-u-md-1-4
@@ -34,7 +42,7 @@ mixin footerGeneral(prefix)
           .category.pure-u-1-3.pure-u-md-1-1
             .pure-g
               .title.pure-u-1-1.pure-u-md-1-4
-                div About
+                a(href="#{prefix}about.html") About
               .item.pure-u-1-1.pure-u-md-1-4
                 a(href="#{prefix}about.html") 關於我們
               .item.pure-u-1-1.pure-u-md-1-4

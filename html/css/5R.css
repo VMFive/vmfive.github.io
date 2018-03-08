@@ -66,6 +66,9 @@ footer .sitemap > .container .title {
   color: #fb971b;
   font-size: 20;
 }
+footer .sitemap > .container .title > a {
+  color: #fb971b;
+}
 footer .sitemap > .container .item {
   display: flex;
   align-items: center;

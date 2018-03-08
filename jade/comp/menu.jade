@@ -1,4 +1,12 @@
 //output:$1.html
+
+- var defaultPage = '';
+- if (lang == "en") {
+- defaultPage = 'theadplay';
+- } else {
+- defaultPage = 'pmp';
+- }
+
 mixin menu(currentPage)
   nav#nav.navbar.navbar-expand-lg.navbar-light
     a.navbar-brand(href='/')
@@ -28,8 +36,9 @@ mixin menu(currentPage)
         //-     a.dropdown-item(href='#') Another action
         //-     |           
         //-     a.dropdown-item(href='#') Something else here
-        each item in [{"id":"pmp", "url":"/"+lang+"/pmp.html", "text":menu.textPMP},{"id":"adplay", "url":"/"+lang+"/theadplay.html", "text":menu.textAdplay},{"id":"about", "url":"/"+lang+"/about.html", "text":menu.textAbout},{"id":"joinus", "url":"/"+lang+"/joinus.html", "text":menu.textJoinUs}]
+        each item in [{"id":"pmp", "url":"/"+lang+"/pmp.html", "text":menu.textPMP},{"id":"theadplay", "url":"/"+lang+"/theadplay.html", "text":menu.textAdplay},{"id":"about", "url":"/"+lang+"/about.html", "text":menu.textAbout},{"id":"joinus", "url":"/"+lang+"/joinus.html", "text":menu.textJoinUs}]
           li.nav-item
-            a.nav-link(class="menu-#{item.id} #{currentPage == item.id ? 'active' : ''}",href="#{item.url}") #{item.text}
+            - var href = item.id == defaultPage ? "/"+lang+"/index.html" : item.url;
+            a.nav-link(class="menu-#{item.id} #{currentPage == item.id ? 'active' : ''}",href="#{href}") #{item.text}
     
     +langblock("desktop")
