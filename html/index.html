@@ -2,7 +2,7 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0; url=/en/">
+        <meta http-equiv="refresh" content="0;URL=/zh_tw/">
         <script type="text/javascript">
             function getParameterByName(name, url) {
             if (!url) url = window.location.href;
@@ -24,12 +24,14 @@
 
             var destination = "/zh_tw";
             var keys = Object.keys(appendee);
-            destination = destination + (keys.length > 0 ? '?' : '');
-            keys.forEach(function (key) {
-              destination = destination + "&" + key + "=" + appendee[key];
-            });
+            if (keys.length > 0) {
+              destination = destination + (keys.length > 0 ? '?' : '');
+              keys.forEach(function (key) {
+                destination = destination + "&" + key + "=" + appendee[key];
+              });
 
-            window.location.href = destination;
+              window.location.href = destination;
+            }
         </script>
         <title>Page Redirection</title>
     </head>

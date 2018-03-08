@@ -1,6 +1,18 @@
 //output:$1.html
+
+- var defaultPage = '';
 - if (lang == "en") {
-include theadplay
+//- include theadplay
+- defaultPage = 'theadplay';
 - } else {
-include pmp
+//- include pmp
+- defaultPage = 'pmp';
 - }
+
+html
+  head
+    
+    meta(http-equiv='refresh', content='0;url=#{defaultPage}.html')
+  body
+    | This page has moved to 
+    a(href='#{defaultPage}.html') #{defaultPage}.html
