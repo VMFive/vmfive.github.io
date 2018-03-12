@@ -24,11 +24,11 @@ mixin footerGeneral(prefix)
               .title.pure-u-1-1.pure-u-md-1-4
                 a(href="#{prefix}#{'pmp' == defaultPage ? 'index' : 'pmp'}.html") PMP
               .item.pure-u-1-1.pure-u-md-1-4
-                a(href="#{prefix}pmp/adformat.html") 廣告格式
+                a(href="#{prefix}pmp/adformat.html") #{menu.textAdformat}
               .item.pure-u-1-1.pure-u-md-1-4
-                a(href="#{prefix}pmp/5R.html") 精準觸及
+                a(href="#{prefix}pmp/5R.html") #{menu.text5R}
               .item.pure-u-1-1.pure-u-md-1-4
-                a 部落格
+                a #{menu.textBlog}
           .category.pure-u-1-3.pure-u-md-1-1
             .pure-g
               .title.pure-u-1-1.pure-u-md-1-4
@@ -44,8 +44,8 @@ mixin footerGeneral(prefix)
               .title.pure-u-1-1.pure-u-md-1-4
                 a(href="#{prefix}about.html") About
               .item.pure-u-1-1.pure-u-md-1-4
-                a(href="#{prefix}about.html") 關於我們
+                a(href="#{prefix}about.html") #{menu.textAbout}
               .item.pure-u-1-1.pure-u-md-1-4
-                a 新聞中心
+                a #{menu.textNews}
               .item.pure-u-1-1.pure-u-md-1-4
-                a(href="#{prefix}joinus.html") 加入我們
+                a(href="#{prefix}joinus.html") #{menu.textJoinUs}

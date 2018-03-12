@@ -86,6 +86,11 @@
     "job_requirement": "Requirement"
   },
   "menu":{
+    "textBlog":"Blog",
+    "textNews":"News",
+    "textAdformat":"Ad formats",
+    "text5R":"5R",
+
     "textPMP":"PMP",
     "textAdplay":"Adplay",
     "textAbout":"About us",

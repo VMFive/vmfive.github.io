@@ -87,6 +87,11 @@
     "job_requirement": "技能需求"
   },
   "menu":{
+    "textBlog":"部落格",
+    "textNews":"新聞中心",
+    "textAdformat":"廣告格式",
+    "text5R":"精準觸及",
+
     "textPMP":"影音 PMP",
     "textAdplay":"試玩廣告 Adplay",
     "textAbout":"關於我們",
