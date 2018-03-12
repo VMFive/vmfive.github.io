@@ -19,7 +19,7 @@ block content
       img.bg.desktop(src='/img/bg/bg_aboutus.png')
   
   div.about-overlap
-    h1.title 關於我們
+    h1.title #{about.aboutus}
     p.description(itemprop="description") 
       //- | 文字文字文字文字文字文字文字文字文字 <br>
       //- | 文字文字文字文字文字文字文字 <br>
@@ -40,7 +40,7 @@ block content
 
   div.about-member
     .content
-      h3.title 團隊介紹
+      h3.title #{about.team}
       - var vip = [];
       - vip.push({"name":"人名","position":"職位","url":"mock","description":"我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文",});
       - vip.push({"name":"人名","position":"職位","url":"mock","description":"我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文我是說明文",});
@@ -72,7 +72,7 @@ block content
     .bg
       //- img.pure-img(src="/img/bg/bg_about_partner.svg",alt="partner")
     .content
-      h3.title 投資人
+      h3.title #{about.investor}
       - var partner = [];
       - partner.push({"trend": {"img":"trend",},"cdif": {"img":"cdif",},"cherubic_ventures": {"img":"cherubic_ventures",},"gmobi": {"img":"gmobi",},});
       each page, page_index in partner

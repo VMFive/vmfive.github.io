@@ -11,6 +11,7 @@ html
   - var href = "/" + lang + (defaultPage == 'pmp' ? '/index' : '/pmp') + ".html";
   head
     meta(http-equiv='refresh', content='0;url=#{href}')
+    title Page Redirection
   body
     | This page has moved to 
     a(href='#{href}') #{href}

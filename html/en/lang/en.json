@@ -1,6 +1,7 @@
 {
   "adplay":{
     "scenario":{
+      "title":"Scenarios",
       "descriptoin":"Adplay is flexible for different scenarios.",
       "adnetwork":"Ad Network",
       "appstore":"App Store",
@@ -9,6 +10,9 @@
       "qrcode":"QRCode",
       "socialnetwork":"Social Network"
     },
+
+    "ourvalue": "Value",
+    "howitworks": "How it works",
 
     "gamepublisher_title":"Game Publisher",
     "gamepublisher_description":["Show the most attractive part of the game through playable ad.","Increase your ARPU through attracting excited gamers","Simply upload APK to generate playable link"],
@@ -33,36 +37,51 @@
     "differentiation_description": "AdPlay is the brand-new solution for mobile advertising featuring the game play experience. Its playability makes it different from the common ADs."
   },
   "pmp":{
+    "customer": {
+      "sports":"Sports",
+      "entertainment":"Entertainment",
+      "f_n_b":"F&B",
+      "tmt":"TMT",
+      "cosmetics":"Cosmetics",
+      "fmcg":"FMCG",
+      "car":"Car",
+      "others":"Others"
+    },
+
+    "partners":"Partners",
+    "advertisers":"Advertisers",
+
     "word": "word",
-    "pmp_title": "影音PMP",
-    "pmp_description": "VMFive影音PMP 透過創新吸睛的廣告格式抓住受眾目光，透過機器學習的演算法精準的找到理想客群，並透過優質的流量幫助您有效的傳達品牌故事",
-    "adformat_title": "廣告格式",
-    "adformat_description": "我們理解不同的廣告品牌在每一波的行銷活動有不同的目標。我們相信透過不同的廣告格式我們更可以協助您達到行銷目的。VMFive 的 ADK 實驗室透過科學地方式開發出創新、吸睛和有效的廣告格式。",
-    "nice_media_title": "優質媒體",
-    "nice_media_description": "VMFive 提供了最優質的媒體流量。我們除了提供每個媒體最好的版位外，也無時無刻檢測並阻擋非人為 (non-human) 與無效 (invalid) 流量。我們也同時兼顧品牌安全(brand safety) 和能見度 (viewability)，確保您的廣告出現的位子和頁面內容符合您的品牌形象",
-    "5r_title": "精準觸及",
-    "5r_description": "相較於傳統的投放優化演算法，VMFive 5R智能演算法引入了更多維度的數據。VMFive融合了從媒體端，廣告平台端到廣告主端的貫穿整個數位行銷週期的所有數據。并以此為基礎，通過機器學習的方式不斷分析訓練廣告投放演算法。"
+    "pmp_title": "Video PMP",
+    "pmp_description": "VMFive’s video PMP draws the audience attention with innovative and eye-catching ad formats, and through machine learning algorithm, it helps you target the ideal audience in our selected premium inventory to effectively tell your brand story.",
+    "adformat_title": "Ad Formats",
+    "adformat_description": "We understand that brands have different business goals in different ad campaigns. We believe we can help you achieve these goals through different ad formats. VMFive’s ADK (Advertisment Development Kit) Lab develops innovative, beautiful and effective ad formats through scientific methods and experiements.",
+    "nice_media_title": "Premium Inventory",
+    "nice_media_description": "VMFive’s video PMP provides the highest quality inventory. We make sure the placement of your ad is in the premium sector of the media. We insist all the impressions to be viewable, and we block out non-human and invalid traffic. On top of all that, we also ensure brand safety and take into accounts the surrounding contents of the page is align with you brand image.",
+    "5r_title": "Accurate Targeting",
+    "5r_description": "Comparing to traditional targeting algorithms, VMFive’s 5R smart algorithm introduces more dimensions of data. Five’s DMP (Data Management Platform) combines data from publishers, advertisers and ad platform and uses machine learning to continuously evolve and perfect targeting."
   },
   "adformat":{
     "format":{
       "interstitial_title": "Interstitial",
-      "interstitial_description": ["<h5>蓋版廣告營造的氣勢受到品牌廣告主的喜愛</h5><br>覆蓋於網頁上方，動態影音加上靜態banner的設計讓您可以更完整在手機畫面展演您的廣告訴求。超級大版面確保用戶絕對不會錯過您的廣告。<br><br>蓋版廣告適用於新品或是品牌造勢使用，用戶點擊右上方X鍵即可關閉廣告。"],
+      "interstitial_description": ["<h5>The Highest Impact Ad</h5><br>Interstitial Video ad provides the highest impact for the user while being immersive and engaging. It appears right before the content so users will not miss your ad.<br><br>This format is perfect for brands with new product or campaign launch."],
       "impressive_title": "Impressive",
-      "impressive_description": ["<h5>同時兼顧極佳的用戶體驗和吸睛的大版位</h5><br>廣告版位於內文中，隨著用戶滑動慢慢出現至全版，影音鑲於中間，上下為靜態banner，讓您可以更完整在手機畫面展演您的廣告訴求。<br><br><h5>優化影音設計，強化Viewability</h5><br>為使用戶更專注於影音，當用戶繼續滑動版位至影音位置要滑出螢幕範圍時，影音會維持在置頂位置，一直到看不見版位，特殊設計讓用戶絕對不會錯過您精彩的影音。<br><br>滾動式影音適合用於新品或是品牌造勢使用，廣告版位滑開及略過的特點可以同時兼顧用戶體驗與品牌造勢，是品牌影音不可錯過的優質版位。"],
+      "impressive_description": ["<h5>Great User Experience and High Impact</h5><br>Impressive ads are within the content. As user scroll over the content, the ad rolls out and covers the entire page. This beautifully designed ad format provides great user experience and the impact of full-page ad.<br><br><h5>Optimized for Viewability</h5><br>As the user scroll through the content, the ad appears and the video begins playing.<br><br>This ad format is designed to improve the viewability of traditional full-page ad."],
       "native_title": "Native Video",
-      "native_description": ["<h5>貼合網頁設計造就更好地觀看體驗與成效</h5><br>影音廣告位於文章段落中或文末，動態的影音置於靜態文章中，讓您的影音廣告更容易抓住用戶眼球。<br><br>原生的設計讓您的廣告更自然的融入在網頁中，因閱讀過程比較不會打擾用戶，所以觀看率 (VTR) 極高。適合廣告主全年度影音規劃或是SP活動觸及用戶。<br>"],
+      "native_description": ["<h5>Less is More</h5><br>Native video ads are placed between page contents. While users are browsing through the content they will see the video ad. The ad starts with the sounds off and the user can tap to unmute it. Advertisers are only charged vCPM.<br><br>This format is great for advertisers that want to drive unique reach and great viewability at efficient cost.<br>"],
       "dynamic_native_title": "Dynamic(In-Read)",
-      "dynamic_native_description": ["<h5>除了觀看影片，更多廣告互動</h5><br>動態廣告(文中) 格式一樣出現在內文中，用不打擾使用者的方式播放影片。影音廣告加上動態展示型廣告讓您的廣告更多用戶互動。<br><br><h5>資訊整合，多元行銷</h5><br>動態廣告格式在展示型版位使用 Rich Media，可整合多種資訊，如：天氣（溫度、濕度、PM2.5），時間，地理位置，讓您的訊息更容易抓住使用者的目光。<br><br>適合有實體店面或是多商品、多素材的廣告主。<br>"],
+      "dynamic_native_description": ["<h5>Engaging and Effective</h5><br>Dynamic (InRead) video ad format also appears between the page content. With the video on top and dynamic display at bottom, the ad format provides more user engagement.<br><br>Dynamic display ad uses Rich Media, it can display real time information such as Weather (Temperature, Humidity, UV, PM2.5), Time, Location information.<br><br>This ad format is perfect for advertisers that has retail locations, seasonal product or new product launch.<br>"],
       "dynamic_interstitial_title": "Dynamic(Interstitial))",
-      "dynamic_interstitial_description": ["<h5>除了觀看影片，更多廣告互動</h5><br>動態廣告蓋板格式一樣出現在內文上方，在文章載入前先顯示廣告。影音廣告加上動態展示型廣告讓您的廣告更多用戶互動。 <br><br><h5>資訊整合，多元行銷</h5><br>動態廣告格式在展示型版位使用 Rich Media，可整合多種資訊，如：天氣（溫度、濕度、PM2.5），時間，地理位置，讓您的訊息更容易抓住使用者的目光。<br><br>適合有實體店面或是多商品、多素材的廣告主。<br>"],
+      "dynamic_interstitial_description": ["<h5>Impactful and Engaging</h5><br>Dynamic (Interstitial) Ad appears before the content to cover the entire screen. <br><br>Dynamic display ad uses Rich Media, it can display real time information such as Weather (Temperature, Humidity, UV, PM2.5), Time, Location information.<br><br>This ad format is perfect for advertisers that has retail locations, seasonal product or new product launch.<br>"],
       "top_title": "Top View Video",
-      "top_description": ["<h5>行動第一屏，快速抓住用戶眼球</h5><br>影音廣告位於文章最上方，用戶在進到網頁時第一眼就看到您的廣告，動態的影音置於靜態文章中，讓您的影音廣告更容易抓住用戶眼球。<br>置頂廣告等於就是行動第一屏，若您想提供極佳的用戶體驗又確保用戶不會略過您的廣告，原生置頂是您最好的選擇<br><br>置頂影音位在網頁第一屏，適合廣告主全年度影音規劃或是SP活動觸及用戶。<br>"],
+      "top_description": ["<h5>Instant Display</h5><br>Top view video appears on the very top of the content. Before user dive into the content, they can enjoy your video ad first. Since it is on the very top, users will never miss the ad.<br><br>This ad format is great for advertisers with all-year media budget.<br>"],
       "vertical_title": "Vertical Video",
-      "vertical_description": ["<h5>為行動而生的直立式廣告更符合用戶觀看體驗</h5><br>廣告主提供的直立式影音內容可以蓋版形式覆蓋在網頁上，提供給用戶更精彩的視覺體驗。<br>用戶點擊右上方X鍵即可關閉廣告。<br><br>直立式影音適合擁有直立式影音素材廣告主作為行銷活動造勢使用，直立式的特殊設計可以更快吸引到用戶目光，完整利用手機全屏。<br>"]
+      "vertical_description": ["<h5>Built for Mobile</h5><br>Vertical Video ad is a mobile-only video ad format that fully utilizes the mobile screen size. <br><br>This format is perfect for advertisers with vertical video content and have complicated message that requires the whole screen to deliver.<br>"]
     }
   },
   "joinus":{
-    "joinus_description":["誠摯邀請對數位廣告產業充滿熱忱的你，一起加入VMFive團隊，與我們一同創造更多的可能。","如果您有興趣進一步了解以下職缺，請將簡歷 / LinkedIn / GitHub / 或作品資料寄至本公司招募信箱 job@vm5.com。"],
+    "title":"Join Us",
+    "joinus_description":["If you are passionate about digital advertising industry, come join us at VMFive.","If you are interested to know more about the openings, please send your resume, LinkedIn, GitHub or any other documents to job@vmfive.com"],
     "job_description": "Description",
     "job_requirement": "Requirement"
   },
@@ -88,24 +107,27 @@
     "miniplayer":"MiniPlayer"
   },
   "about" : {
-    "mission": "透過創新廣告格式、優質流量和數據科學來協助廣告主達到超乎預期的行銷目標"
+    "aboutus":"About us",
+    "team":"Team",
+    "investor":"Investor",
+    "mission": "Help advertisers to achieve beyond their business goals through innovative ad formats, premium inventory and data science."
   },
   "investor" : {
     "trend": {
-      "name":"趨勢科技",
-      "description":"作為全球資安領導廠商，趨勢科技致力開發創新的防護解決方案來保護企業和消費者所在的數位資訊交換世界。"
+      "name":"TrendMicro",
+      "description":"Trend Micro’s unwavering vision has been to make the world safe for exchanging digital information."
     },
     "cdif": {
-      "name":"開發國際",
-      "description":"中華開發金控旗下的私募股權投資公司，專責將集團的自有資本透過台灣以外的區域進行多元化的配置及運用。"
+      "name":"CDIB International",
+      "description":"CDIB Capital International Corporation and its subsidiaries (collectively “CDIB Capital”) was established as the private equity arm of CDF with the objective to deploy and diversify the Group’s proprietary capital outside of Taiwan"
     },
     "gmobi": {
       "name":"GMobi",
-      "description":"GMobi 擁有自行開發的完整移動服務平台，提供全球超過 100 家手機品牌商及電信商一站式優質的移動網路服務，橫跨眾多技術平台。"
+      "description":"General Mobile Corporation (GMobi) is a global provider of mobile Internet services and products. GMobi serves over 100 OEMs and supports more than 2000 Android models across different chipset platforms."
     },
     "cherubic_ventures": {
-      "name":"心元資本",
-      "description":"心元資本由連續創業者和天使投資人鄭博仁 (Matt) 所創立。心元資本豐富的經驗和實作的精神，能夠有效地幫助新創團隊渡過最辛苦的草創時期。"
+      "name":"Cherubic Ventures",
+      "description":"Cherubic Ventures was founded by Matt Cheng, a serial entrepreneur and angel investor. Cherubic’s abundant experience often makes them a key partner in helping startups getting over the initial hurdles."
     }
   },
 

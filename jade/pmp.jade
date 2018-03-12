@@ -1,5 +1,5 @@
 //output:$1.html
-//{"menu":{},"button":{},"format":{},"pmp":{},"lang":"en"}
+//{"menu":{},"button":{},"format":{},"pmp":{"customer":{}},"lang":"en"}
 
 extends comp/base
 
@@ -135,7 +135,7 @@ block content
     .bg
       //- img.pure-img(src="/img/bg/bg_partner.svg",alt="partner")
     .content
-      h3.title 合作夥伴
+      h3.title #{pmp.partners}
       - var partner = [];
       - partner.push({"amnet": "amnet","cymmetrics": "cymmetrics","gmobi": "gmobi","lndata": "lndata",});
       each page, page_index in partner
@@ -150,19 +150,17 @@ block content
     .bg
       //- img.pure-img(src="/img/bg/bg_customer.svg",alt="customer")
     .content
-      h3.title 配合客戶      
+      h3.title #{pmp.advertisers}      
         
       - var customer = [];
-      - customer.push({tag:"運動",data:{"adidas":"sport/adidas","converse":"sport/converse","nike":"sport/nike","puma":"sport/puma",}});
-      - customer.push({tag:"娛樂與遊戲",data:{"disney":"entertainment/disney","fox":"entertainment/fox","yahootv":"entertainment/yahootv","kkbox":"entertainment/kkbox","universal":"entertainment/universal","applause":"entertainment/applause","kktv":"entertainment/kktv","uip":"entertainment/uip","blizzard":"entertainment/blizzard","gamania":"entertainment/gamania","caichang":"entertainment/caichang","elsword":"entertainment/elsword","legendmainland":"entertainment/legendmainland",}});
-      - customer.push({tag:"食品和飲料",data:{"huada":"food/huada","mcdonalds":"food/mcdonalds","cocacola":"food/cocacola","xiaomei":"food/xiaomei","doritos":"food/doritos","fuze_tea":"food/fuze_tea","hichew":"food/hichew","85_C":"food/85_C","morinaga":"food/morinaga","mineshine":"food/mineshine","hsintungyang":"food/hsintungyang","nestle":"food/nestle","lays":"food/lays","unipresident":"food/unipresident","weidang":"food/weidang",}});
-      //- - customer.push({tag:"飲料",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
-      - customer.push({tag:"3C 與電信",data:{"tokuyo":"3c/tokuyo","samsung":"3c/samsung","taiwan_mobile":"3c/taiwan_mobile","purus":"3c/purus"}});
-      //- - customer.push({tag:"速食",data:{"disney":"disney","fox":"fox","yahootv":"yahootv","kkbox":"kkbox","universal":"universal","applause":"applause","kktv":"kktv","uip":"uip",}});
-      - customer.push({tag:"美妝與女性",data:{"decorte":"cosmetic/decorte","johnson":"cosmetic/johnson","uno":"cosmetic/uno","senka":"cosmetic/senka","neutrogena":"cosmetic/neutrogena","sofina":"cosmetic/sofina","sekkisei":"cosmetic/sekkisei","shiseido":"cosmetic/shiseido","wacoal":"cosmetic/wacoal","za":"cosmetic/za",}});
-      - customer.push({tag:"快速消費品",data:{"3m":"daily/3m","kao":"daily/kao","reckitt_benckiser":"daily/reckitt_benckiser","schick":"daily/schick","unicharm":"daily/unicharm",}});
-      - customer.push({tag:"汽機車",data:{"aeonmotor":"car/aeonmotor","infiniti":"car/infiniti","kymco":"car/kymco","luxgen":"car/luxgen","subaru":"car/subaru","suzuki":"car/suzuki","vespa":"car/vespa",}});
-      - customer.push({tag:"其他",data:{"12elementaryedu":"else/12elementaryedu","104":"else/104","formosa_watch":"else/formosa_watch","engoo":"else/engoo","marcobelli":"else/marcobelli","tutorabc":"else/tutorabc","cti":"else/cti","diageo":"else/diageo","kgi":"else/kgi","mastercard":"else/mastercard","pr":"else/pr",}});
+      - customer.push({tag:pmp.customer.sports,data:{"adidas":"sport/adidas","converse":"sport/converse","nike":"sport/nike","puma":"sport/puma",}});
+      - customer.push({tag:pmp.customer.entertainment,data:{"disney":"entertainment/disney","fox":"entertainment/fox","yahootv":"entertainment/yahootv","kkbox":"entertainment/kkbox","universal":"entertainment/universal","applause":"entertainment/applause","kktv":"entertainment/kktv","uip":"entertainment/uip","blizzard":"entertainment/blizzard","gamania":"entertainment/gamania","caichang":"entertainment/caichang","elsword":"entertainment/elsword","legendmainland":"entertainment/legendmainland",}});
+      - customer.push({tag:pmp.customer.f_n_b,data:{"huada":"food/huada","mcdonalds":"food/mcdonalds","cocacola":"food/cocacola","xiaomei":"food/xiaomei","doritos":"food/doritos","fuze_tea":"food/fuze_tea","hichew":"food/hichew","85_C":"food/85_C","morinaga":"food/morinaga","mineshine":"food/mineshine","hsintungyang":"food/hsintungyang","nestle":"food/nestle","lays":"food/lays","unipresident":"food/unipresident","weidang":"food/weidang",}});
+      - customer.push({tag:pmp.customer.tmt,data:{"tokuyo":"3c/tokuyo","samsung":"3c/samsung","taiwan_mobile":"3c/taiwan_mobile","purus":"3c/purus"}});
+      - customer.push({tag:pmp.customer.cosmetics,data:{"decorte":"cosmetic/decorte","johnson":"cosmetic/johnson","uno":"cosmetic/uno","senka":"cosmetic/senka","neutrogena":"cosmetic/neutrogena","sofina":"cosmetic/sofina","sekkisei":"cosmetic/sekkisei","shiseido":"cosmetic/shiseido","wacoal":"cosmetic/wacoal","za":"cosmetic/za",}});
+      - customer.push({tag:pmp.customer.fmcg,data:{"3m":"daily/3m","kao":"daily/kao","reckitt_benckiser":"daily/reckitt_benckiser","schick":"daily/schick","unicharm":"daily/unicharm",}});
+      - customer.push({tag:pmp.customer.car,data:{"aeonmotor":"car/aeonmotor","infiniti":"car/infiniti","kymco":"car/kymco","luxgen":"car/luxgen","subaru":"car/subaru","suzuki":"car/suzuki","vespa":"car/vespa",}});
+      - customer.push({tag:pmp.customer.others,data:{"12elementaryedu":"else/12elementaryedu","104":"else/104","formosa_watch":"else/formosa_watch","engoo":"else/engoo","marcobelli":"else/marcobelli","tutorabc":"else/tutorabc","cti":"else/cti","diageo":"else/diageo","kgi":"else/kgi","mastercard":"else/mastercard","pr":"else/pr",}});
       #customer.carousel.slide(data-ride='carousel')
         // Indicators
         ol.carousel-indicators.pure-g

@@ -44,7 +44,7 @@ block content
       
   div.adplay-mainflows
     .content
-      h3.title 廣告主流程
+      h3.title #{adplay.howitworks}
       //- img.pure-img.process(src="/img/icon/icon_ad_mainflows.png")
       //- img.pure-img.process-md(src="/img/icon/icon_ad_mainflows_md.png")
       .process-decorations
@@ -55,7 +55,7 @@ block content
     .bg
       img.pure-img(src="/img/bg/bg_adplay_ourvalue.svg",alt="ourvalue")
     .content
-      h3.title 價值      
+      h3.title #{adplay.ourvalue}
         
       - var ourvalue = [];
       - ourvalue.push({tag:adplay.gamepublisher_title,data:{"url":"gamepublisher","content":adplay.gamepublisher_description,}});
@@ -87,7 +87,7 @@ block content
 
   div.adplay-scenario
     .content
-      h3.title 使用情境
+      h3.title #{adplay.scenario.title}
       p.description #{adplay.scenario.description}
         
       - var scenario = [];
