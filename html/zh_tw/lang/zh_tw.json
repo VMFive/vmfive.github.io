@@ -63,6 +63,8 @@
 
   },
   "adformat":{
+    "title":"廣告格式",
+    "description":"VMFive 提供了多種廣告格式協助您更有效的達成您的行銷目標。<br>點擊下方圖示立即體驗我們創新與吸睛的廣告格式。",
     "format":{
       "interstitial_title": "蓋版廣告 Interstitial",
       "interstitial_description": ["<h5>蓋版廣告營造的氣勢受到品牌廣告主的喜愛</h5><br>覆蓋於網頁上方，動態影音加上靜態banner的設計讓您可以更完整在手機畫面展演您的廣告訴求。超級大版面確保用戶絕對不會錯過您的廣告。<br><br>蓋版廣告適用於新品或是品牌造勢使用，用戶點擊右上方X鍵即可關閉廣告。"],

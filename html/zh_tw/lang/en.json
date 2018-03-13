@@ -62,6 +62,8 @@
     "5r_description": "Comparing to traditional targeting algorithms, VMFive’s 5R smart algorithm introduces more dimensions of data. Five’s DMP (Data Management Platform) combines data from publishers, advertisers and ad platform and uses machine learning to continuously evolve and perfect targeting."
   },
   "adformat":{
+    "title":"Ad Formats",
+    "description":"VMFive provides various types of ad formats to help you achieve your marketing goals.<br>Click on the icons below to experience our innovative and beautiful ad formats.",
     "format":{
       "interstitial_title": "Interstitial",
       "interstitial_description": ["<h5>The Highest Impact Ad</h5><br>Interstitial Video ad provides the highest impact for the user while being immersive and engaging. It appears right before the content so users will not miss your ad.<br><br>This format is perfect for brands with new product or campaign launch."],
@@ -87,13 +89,13 @@
   },
   "menu":{
     "textBlog":"Blog",
-    "textNews":"News",
-    "textAdformat":"Ad formats",
-    "text5R":"5R",
+    "textNews":"News Center",
+    "textAdformat":"Ad format",
+    "text5R":"Accurate Targeting",
 
     "textPMP":"PMP",
     "textAdplay":"Adplay",
-    "textAbout":"About us",
+    "textAbout":"About Us",
     "textJoinUs":"Join Us"
   },
   "button":{

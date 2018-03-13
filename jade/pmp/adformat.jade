@@ -27,9 +27,9 @@ block content
     script(type="x-template",id="adformat-component")
       div
         .hint-format.show
-          h2 廣告格式
+          h2 #{adformat.title}
           br
-          h6(itemprop="description") VMFive 提供了多種廣告格式協助您更有效的達成您的行銷目標。<br>點擊下方圖示立即體驗我們創新與吸睛的廣告格式。
+          h6(itemprop="description") !{adformat.description}
         h2.name-format-hidden {{getAd().name}}
         img.back(@click="exitFullscreenAndShowMenu",src="/img/icon/icon_back.svg")
         mixin adinfo()
