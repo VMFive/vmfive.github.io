@@ -82,11 +82,39 @@
       "vertical_description": ["<h5>為行動而生的直立式廣告更符合用戶觀看體驗</h5><br>廣告主提供的直立式影音內容可以蓋版形式覆蓋在網頁上，提供給用戶更精彩的視覺體驗。<br>用戶點擊右上方X鍵即可關閉廣告。<br><br>直立式影音適合擁有直立式影音素材廣告主作為行銷活動造勢使用，直立式的特殊設計可以更快吸引到用戶目光，完整利用手機全屏。<br>"]
     }
   },
+  "the5r":{
+    "title":"精準觸及",
+    "whatis5r_title":"什麼是5R",
+    "whatis5r_description":"VMFive 5R智能演算法是基於數位行銷中五大維度的數據進行分析優化後得到的廣告投放演算法。",
+    "detail_title":"此五大維度分別為",
+    "detail_audience":"1. 受眾：基於用戶輪廓和興趣標籤的受眾分析",
+    "detail_format":"2. 格式：通過VMFive的創新型廣告格式搭配優質的媒體和版位所提供的曝光環境",
+    "detail_content":"3. 內容：素材本身也會經過數據的優化針對不同的受眾屬性和行銷階段進行調整",
+    "detail_time":"4. 時間：廣告展示的時段和投放頻率控制的組合分析",
+    "detail_place":"5. 地點：不僅基於用戶實時地理位置的分析，還包括廣告展示時用戶所處場景的分析推算。",
+    "detail_conclusion":"將此五大維度的數據與成效數據進行組合分析，通過機器學習的方式不斷訓練出最佳的投放組合，來優化廣告主的每一次曝光機會。",
+    "howitworks_title":"如何實現",
+    "howitworks_description":"VMFive 透過和媒體、廣告主的深入數據合作，包含分析媒體端用戶行為、自有廣告平台上的用戶對於廣告反饋數據，以及廣告主端蒐集之用戶最終成效數據，搭配 VMFive 收集的投放數據，並經由不同的組合試驗、lookalike 人群定位，retargeting 再行銷等方式，為廣告主帶來前所未有的廣告成效體驗。",
+    "features_title":"5R特色",
+    "features_description":"相較於傳統的投放優化演算法，VMFive 5R 智能演算法引入了更多維度的數據。VMFive 的數據管理平台 (DMP)，融合了從媒體端、廣告平台端至廣告主端的所有數據。並以此為基礎，通過機器學習的方式不斷分析訓練廣告投放演算法。",
+    "comment":""
+  },
   "joinus":{
     "title":"加入我們",
     "joinus_description":["誠摯邀請對數位廣告產業充滿熱忱的你，一起加入VMFive團隊，與我們一同創造更多的可能。","如果您有興趣進一步了解以下職缺，請將簡歷 / LinkedIn / GitHub / 或作品資料寄至本公司招募信箱 job@vm5.com。"],
     "job_description": "工作內容",
-    "job_requirement": "技能需求"
+    "job_requirement": "技能需求",
+    "wewantyou_title":"夥伴招募",
+    "wewantyou_job":[
+      {"position":"Front-end Engineer","url":"mock","description":["1. Design and develop Mobile Web SDK, AdFormat Layout and other innovative products","2. Work closely with PM, design team, backend team and business marketing team to create best solutions for customers"],"requirement":["【 Must have 】","1. 2+ years mobile web development experience","2. Strong proficiency with vanilla JavaScript","3. Familiar with HTTP, RESTful API","4. Familiar with the Git version control","5. Strong attention to detail and solid communication skills","","【 Good to have (Plus) 】","1. Experience with SDK development","2. Experience with JavaScript performance improvement"]},
+      {"position":"Front-end Engineer","url":"mock","description":["1. Design and develop Dashboard and other innovative products","2. Work closely with PM, design team, backend team and business marketing team to create best solutions for customer"],"requirement":["【 Must have 】","1. 2+ years mobile web development experience","2. Strong proficiency with React.js","3. Familiar with HTTP, RESTful API","4. Familiar with the Git version control","5. Strong attention to detail and solid communication skills","","【 Good to have (Plus) 】","1. Have experience with back-end development (Node.js)"]},
+      {"position":"UI 設計師","url":"mock","description":["1. 廣告產品視覺與互動設計","2. 與產品團隊溝通，共同執行專案與產品開發"],"requirement":["【 必備條件 】","1. 視覺設計相關科系畢業","2. 熟悉主流設計軟體（PhotoShop, Illustrator, Sketch）","3. 2年以上視覺設計相關經驗（1年以上行動裝置視覺設計相關經驗）","","【 加分條件 】","1. 使用者體驗設計，實驗與測試相關經驗","2. 廣告產業相關經驗"]},
+      {"position":"數位廣告操作專員","url":"mock","description":["1. 數位廣告投放設定及日常監控","2. 與媒體溝通採購廣告流量","3. 協助業務人員提供廣告投放分析報告"],"requirement":["【 必備條件 】","1. 具備良好的溝通技巧與協調能力","2. 具有責任感及耐心","","【 加分條件 】","1. 具備獨自思考能力，提出合適的優化投放策略者加分","2. 曾在廣告業任職、具有維持客戶關係相關的工作經驗會加分","3. 具備廣告數據分析經驗，且對於廣告產業趨勢具有敏感度者會加分"]},
+      {"position":"行銷企劃專員","url":"mock","description":["1. 協助業務團隊對外溝通 ","&nbsp;&nbsp;a. 製作與更新業務提案簡報和提供業務訓練 ","&nbsp;&nbsp;b. 規劃和製作銷售專案 ","&nbsp;&nbsp;c. 規劃和製作結案報告 ","2. 提供市場、競品資訊和 Business Intelligence 協助業務團隊 ","3. 維護行銷檔案和案例庫 ","4. 整理 PR 相關材料 ","5. 觀察網頁資訊和表現"],"requirement":[]},
+      {"position":"B2B 行銷經理","url":"mock","description":["1. 內容行銷 ","&nbsp;&nbsp;a. 規劃內容行銷策略 ","&nbsp;&nbsp;b. 與產品和業務部合作產出高質量內容 ","&nbsp;&nbsp;c. 透過不同的管道 (社群媒體，刊物，部落格等) 散播內容 ","2. 針對 B2B 行銷 Campaign 做持續的成效追蹤與報告 ","3. 主辦或參與產業活動 ","4. 收集市場資訊，分析產業和競爭對手動態 "],"requirement":["【 必備條件 】","1. 2年以上工作經驗 ","2. 充分了解數位廣告產業","","【 加分條件 】","1. 具備廣告代理商或媒體工作經驗者加分","2. 具備新創團隊工作經驗者加分"]},
+      {"position":"資深業務人員/業務經理","url":"mock","description":["1. 負責開發及維護既有媒體代理商客戶 ","2. 與廣告媒體代理商建立良好溝通管道及協助問題追蹤 ","3. 根據公司業務目標、產品特性，來發展和評估銷售或推廣策略  ","4. 具備數位(影音)廣告專業，提供專業的數位廣告策略與執行計畫 "],"requirement":["【 必備條件 】","1. 3年以上數位廣告、媒體公司之業務開發或客戶服務經驗 ","2. 具備中型以上媒體代理商開發經驗與人脈，熟悉廣告媒體代理商產業生態、預算規劃及執行流程","3. 具備客戶關係之維繫及危機處理能力 ","4. 具業務開發能力、善於維繫人際關係，有挑戰高薪的企圖心 ","5. 具備客戶服務精神，能清楚定義問題、解決問題 ","6. 良好的邏輯思維與思考能力，持續不斷學習新知的精神 ","7. 有強烈熱忱想投身於數位廣告科技產業","","【 加分條件 】","1. 具備汽車、金融、電信、手機、FMCG…等A級廣告客戶業界人脈加分"]}
+    ],
+    "comment":""
   },
   "menu":{
     "textBlog":"部落格",

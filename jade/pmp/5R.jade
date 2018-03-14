@@ -1,5 +1,5 @@
 //output:$1.html
-//{"menu":{},"button":{},"lang":"en"}
+//{"menu":{},"button":{},"the5r":{},"lang":"en"}
 extends ../comp/base
 
 block meta
@@ -21,44 +21,44 @@ block content
     .container
   
   div.goal5r-overlap
-    h1 精準觸及
-    h4 什麼是5R
+    h1 #{the5r.title}
+    h4 #{the5r.whatis5r_title}
     p.description(itemprop="description") 
-      | VMFive 5R智能演算法是基於數位行銷中五大維度的數據進行分析優化後得到的廣告投放演算法。
+      | #{the5r.whatis5r_description}
     img.figure-decoration.pure-img(src="/img/icon/icon_vision_mission.svg")
     .audience
       .figure
         //- img.mobile.pure-img(src="/img/icon/icon_5r_items.svg")
         //- img.desktop.pure-img(src="/img/icon/icon_5r_items_md.svg")
         
-        .goal5r-description 此五大維度分別為
+        .goal5r-description #{the5r.detail_title}
         .goal5r-description
           img(src="/img/5r/icon_5r_audience.svg")
-          .description 1. 受眾：基於用戶輪廓和興趣標籤的受眾分析
+          .description #{the5r.detail_audience}
         .goal5r-description
           img(src="/img/5r/icon_5r_format.svg")
-          .description 2. 格式：通過VMFive的創新型廣告格式搭配優質的媒體和版位所提供的曝光環境
+          .description #{the5r.detail_format}
         .goal5r-description
           img(src="/img/5r/icon_5r_content.svg")
-          .description 3. 內容：素材本身也會經過數據的優化針對不同的受眾屬性和行銷階段進行調整
+          .description #{the5r.detail_content}
         .goal5r-description
           img(src="/img/5r/icon_5r_time.svg")
-          .description 4. 時間：廣告展示的時段和投放頻率控制的組合分析
+          .description #{the5r.detail_time}
         .goal5r-description
           img(src="/img/5r/icon_5r_place.svg")
-          .description 5. 地點：不僅基於用戶實時地理位置的分析，還包括廣告展示時用戶所處場景的分析推算。
-        .goal5r-description 將此五大維度的數據與成效數據進行組合分析，通過機器學習的方式不斷訓練出最佳的投放組合，來優化廣告主的每一次曝光機會。
+          .description #{the5r.detail_place}
+        .goal5r-description #{the5r.detail_conclusion}
       .feature
         mixin howto(className)
           .howto(class="#{className}")
-            h1 如何實現
-            p VMFive 透過和媒體、廣告主的深入數據合作，包含分析媒體端用戶行為、自有廣告平台上的用戶對於廣告反饋數據，以及廣告主端蒐集之用戶最終成效數據，搭配 VMFive 收集的投放數據，並經由不同的組合試驗、lookalike 人群定位，retargeting 再行銷等方式，為廣告主帶來前所未有的廣告成效體驗。
+            h1 #{the5r.howitworks_title}
+            p #{the5r.howitworks_description}
             
         .pure-g
           .feature-left-side.pure-u-1-1.pure-u-lg-1-2
             div
-              h1 5R特色
-              p 相較於傳統的投放優化演算法，VMFive 5R 智能演算法引入了更多維度的數據。VMFive 的數據管理平台 (DMP)，融合了從媒體端、廣告平台端至廣告主端的所有數據。並以此為基礎，通過機器學習的方式不斷分析訓練廣告投放演算法。
+              h1 #{the5r.features_title}
+              p #{the5r.features_description}
             +howto("desktop")
           .feature-right-side.pure-u-1-1.pure-u-lg-1-2
             img.desktop.pure-img(src="/img/5r/icon_5r_howto_md.svg")
