@@ -1,5 +1,5 @@
 //output:$1.html
-//{"menu":{},"button":{},"joinus":{"joinus_description":[]},"lang":"en"}
+//{"menu":{},"button":{},"joinus":{"joinus_description":[],"wewantyou_job":[]},"lang":"en"}
 extends comp/base
 
 block meta
@@ -22,15 +22,8 @@ block content
 
   div.joinus-member
     .content
-      h2.title 夥伴招募
-      - var jobs = [];
-      - jobs.push({"position":"Front-end Engineer","url":"mock","description":["1. Design and develop Mobile Web SDK, AdFormat Layout and other innovative products","2. Work closely with PM, design team, backend team and business marketing team to create best solutions for customers"],"requirement":["【 Must have 】","1. 2+ years mobile web development experience","2. Strong proficiency with vanilla JavaScript","3. Familiar with HTTP, RESTful API","4. Familiar with the Git version control","5. Strong attention to detail and solid communication skills","","【 Good to have (Plus) 】","1. Experience with SDK development","2. Experience with JavaScript performance improvement"]});
-      - jobs.push({"position":"Front-end Engineer","url":"mock","description":["1. Design and develop Dashboard and other innovative products","2. Work closely with PM, design team, backend team and business marketing team to create best solutions for customer"],"requirement":["【 Must have 】","1. 2+ years mobile web development experience","2. Strong proficiency with React.js","3. Familiar with HTTP, RESTful API","4. Familiar with the Git version control","5. Strong attention to detail and solid communication skills","","【 Good to have (Plus) 】","1. Have experience with back-end development (Node.js)"]});
-      - jobs.push({"position":"UI 設計師","url":"mock","description":["1. 廣告產品視覺與互動設計","2. 與產品團隊溝通，共同執行專案與產品開發"],"requirement":["【 必備條件 】","1. 視覺設計相關科系畢業","2. 熟悉主流設計軟體（PhotoShop, Illustrator, Sketch）","3. 2年以上視覺設計相關經驗（1年以上行動裝置視覺設計相關經驗）","","【 加分條件 】","1. 使用者體驗設計，實驗與測試相關經驗","2. 廣告產業相關經驗"]});
-      - jobs.push({"position":"數位廣告操作專員","url":"mock","description":["1. 數位廣告投放設定及日常監控","2. 與媒體溝通採購廣告流量","3. 協助業務人員提供廣告投放分析報告"],"requirement":["【 必備條件 】","1. 具備良好的溝通技巧與協調能力","2. 具有責任感及耐心","","【 加分條件 】","1. 具備獨自思考能力，提出合適的優化投放策略者加分","2. 曾在廣告業任職、具有維持客戶關係相關的工作經驗會加分","3. 具備廣告數據分析經驗，且對於廣告產業趨勢具有敏感度者會加分"]});
-      - jobs.push({"position":"行銷企劃專員","url":"mock","description":["1. 協助業務團隊對外溝通 ","&nbsp;&nbsp;a. 製作與更新業務提案簡報和提供業務訓練 ","&nbsp;&nbsp;b. 規劃和製作銷售專案 ","&nbsp;&nbsp;c. 規劃和製作結案報告 ","2. 提供市場、競品資訊和 Business Intelligence 協助業務團隊 ","3. 維護行銷檔案和案例庫 ","4. 整理 PR 相關材料 ","5. 觀察網頁資訊和表現"],"requirement":[]});
-      - jobs.push({"position":"B2B 行銷經理","url":"mock","description":["1. 內容行銷 ","&nbsp;&nbsp;a. 規劃內容行銷策略 ","&nbsp;&nbsp;b. 與產品和業務部合作產出高質量內容 ","&nbsp;&nbsp;c. 透過不同的管道 (社群媒體，刊物，部落格等) 散播內容 ","2. 針對 B2B 行銷 Campaign 做持續的成效追蹤與報告 ","3. 主辦或參與產業活動 ","4. 收集市場資訊，分析產業和競爭對手動態 "],"requirement":["【 必備條件 】","1. 2年以上工作經驗 ","2. 充分了解數位廣告產業","","【 加分條件 】","1. 具備廣告代理商或媒體工作經驗者加分","2. 具備新創團隊工作經驗者加分"]});
-      - jobs.push({"position":"資深業務人員/業務經理","url":"mock","description":["1. 負責開發及維護既有媒體代理商客戶 ","2. 與廣告媒體代理商建立良好溝通管道及協助問題追蹤 ","3. 根據公司業務目標、產品特性，來發展和評估銷售或推廣策略  ","4. 具備數位(影音)廣告專業，提供專業的數位廣告策略與執行計畫 "],"requirement":["【 必備條件 】","1. 3年以上數位廣告、媒體公司之業務開發或客戶服務經驗 ","2. 具備中型以上媒體代理商開發經驗與人脈，熟悉廣告媒體代理商產業生態、預算規劃及執行流程","3. 具備客戶關係之維繫及危機處理能力 ","4. 具業務開發能力、善於維繫人際關係，有挑戰高薪的企圖心 ","5. 具備客戶服務精神，能清楚定義問題、解決問題 ","6. 良好的邏輯思維與思考能力，持續不斷學習新知的精神 ","7. 有強烈熱忱想投身於數位廣告科技產業","","【 加分條件 】","1. 具備汽車、金融、電信、手機、FMCG…等A級廣告客戶業界人脈加分"]});
+      h2.title #{joinus.wewantyou_title}
+      - var jobs = joinus.wewantyou_job
       .jobs
         each thejob, indexjob in jobs
           .thejob.pure-g(class="#{indexjob == jobs.length - 1 ? 'last' : ''}")

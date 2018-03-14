@@ -422,6 +422,22 @@ footer .sitemap > .container .item > a {
   padding-top: 60px;
   padding-bottom: 1rem;
 }
+.about-milestone .content .title.desktop {
+  display: none;
+}
+@media screen and (min-width: 48em) {
+  .about-milestone .content .title.desktop {
+    display: block;
+  }
+}
+.about-milestone .content .title.mobile {
+  display: block;
+}
+@media screen and (min-width: 48em) {
+  .about-milestone .content .title.mobile {
+    display: none;
+  }
+}
 .about-milestone .content .process-md {
   display: none;
   margin: auto;
