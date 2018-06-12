@@ -18,7 +18,7 @@ block script_after
   | function updateDisableButton() {
   |   disableButton.attr('disabled' , Cookies.get("vmfive-opt-out") === 'true');
   |   //setTimeout(function(){optOutModal.modal('hide');}, 1000);
-  |   disableButton.text('Already opt out');
+  |   if (Cookies.get("vmfive-opt-out") === 'true') {disableButton.text('Already opt out');}
   | }
   | disableButton.on('click', function(){
   |   Cookies.set("vmfive-opt-out", 'true');updateDisableButton();
@@ -74,9 +74,6 @@ block content
           strong Customer Choices
         br
         span If you would like VMFive to stop collecting cookie based personal information data and provide interest based advertising, press the VMFive opt out button on this page.
-        br
-        br
-        button.gdpr-disable-button(data-toggle="modal",data-target="#optOutModal") Opt out here
       br
       br
           
@@ -187,3 +184,7 @@ block content
         br
         br
         span Last updated: 2018/6/8
+        
+      br
+      br
+      button.gdpr-disable-button(data-toggle="modal",data-target="#optOutModal") Opt out here
