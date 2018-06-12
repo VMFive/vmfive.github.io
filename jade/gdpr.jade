@@ -3,16 +3,55 @@
 extends comp/base
 
 block meta
-  title #{menu.textAbout}
+  title #{menu.textGDPR}
+  script(src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js",async=true)
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js",async=true)
+  script(src="https://vawpro.vm5apis.com/man.js")
 
 block style
   link(rel="stylesheet", type="text/css", href="/css/gdpr.css")
 
 block script_after
   | 
+  | var disableButton = $('button.gdpr-disable-button');
+  | var optOutModal = $('#optOutModal');
+  | function updateDisableButton() {
+  |   disableButton.attr('disabled' , Cookies.get("vmfive-opt-out") === 'true');
+  |   setTimeout(function(){optOutModal.modal('hide');}, 1000);
+  |   
+  | }
+  | disableButton.on('click', function(){
+  |   Cookies.set("vmfive-opt-out", 'true');updateDisableButton();
+  |   optOutModal.modal('show');
+  |   var url = 'https://beta-pt0.vm5apis.com/api/v2/pixel?&provider=vm5&loggerName=vmfive-opt-out&loggerVer=20180612&inventoryCompany=VMFive&landingId=[landingId]&webBrowserId=[webBrowserId]&event=is_opt_out&eventSubtype=[eventSubtype]';
+  |   url = url.replace('[landingId]', window.VM5AD_BROWSER_ID+Date.now());
+  |   url = url.replace('[webBrowserId]', window.VM5AD_BROWSER_ID);
+  |   url = url.replace('[eventSubtype]', Cookies.get("vmfive-opt-out") === 'true' ? 'true' : 'false');
+  |   //console.log(url);
+  |   fetch(url);
+  | });
+  | updateDisableButton();
 
 block content
   +menu("about")
+  
+  // persistentID
+  iframe(src="//man.vm5apis.com/dist/persistentID.html", width="0.1px", height="0.1px") 
+  // Modal
+  #optOutModal.modal.fade(role='dialog')
+    .modal-dialog
+      // Modal content
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal') &times;
+        |         
+        .modal-body
+          p You have opted out of this network.
+        |         
+        .modal-footer
+          //- button.btn.btn-default(type='button', data-dismiss='modal') Close
+
+
   
   .gdpr-overlap
     .description
@@ -37,7 +76,7 @@ block content
         span If you would like VM5 to stop collecting device data interest based advertising, press the VM5 opt out button on this page.
         br
         br
-        button.gdpr-disable-button Opt out here
+        button.gdpr-disable-button(data-toggle="modal",data-target="#optOutModal") Opt out here
       br
       br
           
