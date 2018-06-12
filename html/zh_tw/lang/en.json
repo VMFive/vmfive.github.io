@@ -115,11 +115,15 @@
     ],
     "comment":""
   },
+  "gdpr": {
+  },
   "menu":{
     "textBlog":"Blog",
     "textNews":"News Center",
     "textAdformat":"Ad format",
     "text5R":"Accurate Targeting",
+
+    "textGDPR":"GDPR",
 
     "textPMP":"PMP",
     "textAdplay":"Adplay",

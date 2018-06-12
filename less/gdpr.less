@@ -1,0 +1,40 @@
+@import "common.less";
+
+#nav {
+  top: 0;
+  .background-menu-dark;
+}
+
+.gdpr-overlap {
+  .general-screen();
+  .background-default;
+  padding: @nav-height 0px 0px 0px;
+  height: auto;
+
+  & > .description {
+    .background-default;
+    padding: 0 @description-padding 0 @description-padding;
+    font-weight: 400;
+  }
+}
+
+.gdpr-disable-button {
+  .button-rounded();
+  width: 120px;
+  border-radius: 35px;
+  color: #fff;
+  background-color: #f68618;
+
+  &:hover {
+    color: #f68618;
+    background-color: #0009;
+  }
+  &:active {
+    color: #fff;
+    background-color: #f68618;
+  }
+  &:disabled {
+    color: #fff;
+    background-color: grey;
+  }
+}
