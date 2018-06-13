@@ -317,6 +317,11 @@ footer .sitemap > .container .item > a {
   padding: 68px 0px 0px 0px;
   height: auto;
 }
+@media (max-width: 364px) {
+  .gdpr-overlap {
+    padding: 136px 0px 0px 0px;
+  }
+}
 .gdpr-overlap > .description {
   padding: 0 15vw 0 15vw;
   font-weight: 400;

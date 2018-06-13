@@ -9,6 +9,9 @@
   .general-screen();
   .background-default;
   padding: @nav-height 0px 0px 0px;
+  @media (max-width: 364px){
+    padding: (@nav-height * 2) 0px 0px 0px;
+  }
   height: auto;
 
   & > .description {
