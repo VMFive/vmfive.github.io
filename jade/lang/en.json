@@ -115,7 +115,7 @@
     ],
     "comment":""
   },
-  "gdpr": {
+  "privacy": {
   },
   "menu":{
     "textBlog":"Blog",
@@ -123,7 +123,7 @@
     "textAdformat":"Ad format",
     "text5R":"Accurate Targeting",
 
-    "textGDPR":"GDPR",
+    "textPrivacy":"Privacy",
 
     "textPMP":"PMP",
     "textAdplay":"Adplay",

@@ -116,7 +116,7 @@
     ],
     "comment":""
   },
-  "gdpr": {
+  "privacy": {
   },
   "menu":{
     "textBlog":"部落格",
@@ -124,7 +124,7 @@
     "textAdformat":"廣告格式",
     "text5R":"精準觸及",
 
-    "textGDPR":"GDPR",
+    "textPrivacy":"Privacy Policy",
 
     "textPMP":"影音 PMP",
     "textAdplay":"試玩廣告 Adplay",

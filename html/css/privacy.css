@@ -310,7 +310,7 @@ footer .sitemap > .container .item > a {
   top: 0;
   background: #4A4A4A;
 }
-.gdpr-overlap {
+.privacy-overlap {
   width: 100%;
   height: 100vh;
   background: #f7f7f7;
@@ -318,15 +318,15 @@ footer .sitemap > .container .item > a {
   height: auto;
 }
 @media (max-width: 364px) {
-  .gdpr-overlap {
+  .privacy-overlap {
     padding: 136px 0px 0px 0px;
   }
 }
-.gdpr-overlap > .description {
+.privacy-overlap > .description {
   padding: 0 15vw 0 15vw;
   font-weight: 400;
 }
-.gdpr-disable-button {
+.privacy-disable-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,15 +337,15 @@ footer .sitemap > .container .item > a {
   color: #fff;
   background-color: #f68618;
 }
-.gdpr-disable-button:hover {
+.privacy-disable-button:hover {
   color: #f68618;
   background-color: #0009;
 }
-.gdpr-disable-button:active {
+.privacy-disable-button:active {
   color: #fff;
   background-color: #f68618;
 }
-.gdpr-disable-button:disabled {
+.privacy-disable-button:disabled {
   color: #fff;
   background-color: grey;
 }

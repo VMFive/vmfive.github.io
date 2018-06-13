@@ -1,19 +1,19 @@
 //output:$1.html
-//{"menu":{},"button":{},"about":{},"gdpr":{},"investor":{"trend": {},"cdif": {},"gmobi": {},"cherubic_ventures": {}},"lang":"en"}
+//{"menu":{},"button":{},"about":{},"privacy":{},"investor":{"trend": {},"cdif": {},"gmobi": {},"cherubic_ventures": {}},"lang":"en"}
 extends comp/base
 
 block meta
-  title #{menu.textGDPR}
+  title #{menu.textPrivacy}
   script(src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js",async=true)
   script(src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js",async=true)
   script(src="https://vawpro.vm5apis.com/man.js")
 
 block style
-  link(rel="stylesheet", type="text/css", href="/css/gdpr.css")
+  link(rel="stylesheet", type="text/css", href="/css/privacy.css")
 
 block script_after
   | 
-  | var disableButton = $('button.gdpr-disable-button');
+  | var disableButton = $('button.privacy-disable-button');
   | var optOutModal = $('#optOutModal');
   | function updateDisableButton() {
   |   disableButton.attr('disabled' , Cookies.get("vmfive-opt-out") === 'true');
@@ -53,7 +53,7 @@ block content
 
 
   
-  .gdpr-overlap
+  .privacy-overlap
     .description
       p
         h1
@@ -187,4 +187,4 @@ block content
         
       br
       br
-      button.gdpr-disable-button(data-toggle="modal",data-target="#optOutModal") Opt out here
+      button.privacy-disable-button(data-toggle="modal",data-target="#optOutModal") Opt out here
