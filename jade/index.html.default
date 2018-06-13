@@ -22,7 +22,7 @@
               appendee.utm_source = utm_source;
             }
 
-            var destination = "/zh_tw";
+            var destination = "/zh_tw/";
             var keys = Object.keys(appendee);
             if (keys.length > 0) {
               destination = destination + (keys.length > 0 ? '?' : '');
