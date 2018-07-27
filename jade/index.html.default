@@ -33,10 +33,8 @@
               window.location.href = destination;
             }
         </script>
-        <title>Page Redirection</title>
+        <title>VMFive</title>
     </head>
     <body>
-        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-        If you are not redirected automatically, follow this <a href='/zh_tw/'>link to homepage</a>.
     </body>
 </html>
