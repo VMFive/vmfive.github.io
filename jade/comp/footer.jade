@@ -54,4 +54,5 @@ mixin footerGeneral(prefix)
               .item.pure-u-1-1.pure-u-md-1-4
                 a #{menu.textNews}
               .item.pure-u-1-1.pure-u-md-1-4
-                a(href="#{prefix}joinus.html") #{menu.textJoinUs}
+                //- a(href="#{prefix}joinus.html") #{menu.textJoinUs}
+                a(href="#{joinus.externalUrl}",target="_blank") #{menu.textJoinUs}

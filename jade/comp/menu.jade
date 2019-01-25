@@ -36,9 +36,9 @@ mixin menu(currentPage)
         //-     a.dropdown-item(href='#') Another action
         //-     |           
         //-     a.dropdown-item(href='#') Something else here
-        each item in [{"id":"pmp", "url":"/"+lang+"/pmp.html", "text":menu.textPMP},{"id":"theadplay", "url":"/"+lang+"/theadplay.html", "text":menu.textAdplay},{"id":"about", "url":"/"+lang+"/about.html", "text":menu.textAbout},{"id":"joinus", "url":"/"+lang+"/joinus.html", "text":menu.textJoinUs}]
+        each item in [{"id":"pmp", "url":"/"+lang+"/pmp.html", "text":menu.textPMP},{"id":"theadplay", "url":"/"+lang+"/theadplay.html", "text":menu.textAdplay},{"id":"about", "url":"/"+lang+"/about.html", "text":menu.textAbout},{"id":"joinus", "url": joinus.externalUrl, "text":menu.textJoinUs, target: "_blank"}]
           li.nav-item
             - var href = item.id == defaultPage ? "/"+lang+"/index.html" : item.url;
-            a.nav-link(class="menu-#{item.id} #{currentPage == item.id ? 'active' : ''}",href="#{href}") #{item.text}
+            a.nav-link(class="menu-#{item.id} #{currentPage == item.id ? 'active' : ''}",href="#{href}",target="#{item.target ? item.target : '_self'}") #{item.text}
     
     +langblock("desktop")
