@@ -1,1 +1,1 @@
-npm install pug-cli -g
+npm install jade -g
