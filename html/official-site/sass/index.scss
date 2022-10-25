@@ -30,6 +30,10 @@
         font-family: $font-montserrat;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .kv-button {
         background-color: rgba(0, 0, 0, 0.7);
         border-radius: 50px;
@@ -273,14 +277,19 @@
             }
 
             .news-more {
-                font-size: 1rem;
-                font-family: $font-poppins;
-                font-weight: 400;
                 border-bottom: 1px solid $vm5-default;
                 align-self: flex-end;
                 margin-right: 5%;
                 cursor: pointer;
                 color: $vm5-default;
+
+                a {
+                    font-size: 1rem;
+                    font-family: $font-poppins;
+                    font-weight: 400;
+                    color: $vm5-default;
+                    text-decoration: none;
+                }
             }
 
             .news-image {

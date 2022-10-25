@@ -30,10 +30,12 @@
 				行銷雲科技解決方案
 			</div>
 			<div class="kv-sub-title mt-2">Next Generation Cross Border Martech Solution</div>
-			<button class="btn kv-button mt-5 d-inline-flex align-items-center">
-				<img src="./image/icon.svg" class="me-3">
-				<p class="m-auto">LEARN MORE</p>
-			</button>
+			<a href="./about.html">
+				<button class="btn kv-button mt-5 d-inline-flex align-items-center">
+					<img src="./image/icon.svg" class="me-3">
+					<p class="m-auto">LEARN MORE</p>
+				</button>
+			</a>
 		</div>
 		<div class="scroll-line d-lg-block d-none">
 			<img src="./image/scroll.svg">
@@ -241,6 +243,7 @@
 					let dateStr = `${date.getFullYear()}.${padLeft(date.getMonth() + 1, 2)}.${padLeft(date.getDate(), 2)}`;
 					let titleStr = news.title.rendered.replace(/\<br>/g, '');
 					let excerptStr = news.excerpt.rendered;
+					let nid = news.id;
 
 					let htmlcontent = `
 					<div class="col-3 col-news m-auto" data-aos="fade-up" data-aos-delay="${(index + 1) * 200}">
@@ -258,7 +261,7 @@
 								${excerptStr}
 							</div>
 							<div class="news-more mt-4 mt-lg-5">
-								Read more
+								<a href="./news.html?nid=${nid}">Read more</a>
 							</div>
 							<div>
 								<img class="matte-background" src="./image/matte.png">
