@@ -103,10 +103,12 @@
                 line-height: 2rem;
 
                 p {
-                    display: flex;
+                    display: inline-flex;
+                    flex-direction: column;
                     margin-bottom: 2rem;
 
                     img {
+                        align-self: center;
                         width: 100%;
                         height: auto;
                         margin: auto auto;
@@ -213,10 +215,17 @@
                     display: -webkit-box;
                     -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;
-                }
 
-                .read-more {
-                    display: none;
+                    p {
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+
+                    .read-more {
+                        display: none;
+                    }
                 }
 
                 .news-more {
@@ -308,7 +317,6 @@
                     line-height: 2rem;
 
                     p {
-                        display: flex;
                         margin-bottom: 2rem;
 
                         img {

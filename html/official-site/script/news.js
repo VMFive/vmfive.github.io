@@ -67,7 +67,7 @@ xhr.onload = function () {
                     let imgStr = news.jetpack_featured_media_url;
                     let dateStr = processDate(news.date_gmt);
                     let titleStr = news.title.rendered.replace(/\<br>/g, '');
-                    let excerptStr = news.excerpt.rendered;
+                    let excerptStr = news.excerpt.rendered.replace(/\<br>/g, '');
                     let nid = news.id;
 
                     let htmlcontent = `
