@@ -1,0 +1,173 @@
+@import './variable.scss';
+@import './nav.scss';
+@import './footer.scss';
+@import './general';
+
+.map {
+    .wrap {
+        width: 100%;
+
+        .session-logo {
+            width: 60%;
+        }
+
+        .map-gmap {
+            margin-top: 3%;
+
+            .info-card {
+                position: absolute;
+                box-shadow: 0px 4px 15px -1px rgba(30, 28, 26, 0.5);
+                background-color: rgba(255, 255, 255, 0.02);
+                backdrop-filter: blur(10px);
+                border-radius: 32px;
+                overflow: hidden;
+                z-index: 10;
+                transform: translateY(-30%);
+                right: 15%;
+                padding: 2% 2%;
+                border: 1px solid white;
+
+                .info-circle {
+                    width: 45px;
+                    height: 45px;
+                    cursor: pointer;
+                    transition: all 300ms;
+                }
+
+                .info-circle:hover {
+                    filter: invert(12%) sepia(14%) saturate(7468%);
+                }
+
+                .info-list {
+                    .info-item {
+                        margin-top: 13%;
+
+                        .info-title {
+                            font-family: $font-poppins;
+                            color: $vm5-default;
+                            font-size: 1.125rem;
+                            font-weight: 100;
+
+                            .info-icon {
+                                margin-right: 3%;
+                                filter: invert(12%) sepia(14%) saturate(7468%);
+                            }
+                        }
+
+                        .info-content {
+                            font-size: 1.2rem;
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+
+            .map {
+                height: 80vh;
+                filter: grayscale(100%) invert(92%) contrast(83%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .map {
+        .wrap {
+
+            .session-logo {
+                width: 80%;
+            }
+
+            .map-gmap {
+                margin-top: 3%;
+
+                .info-card {
+                    transform: translateY(-15%);
+                    right: 3%;
+                    padding: 2% 2%;
+
+                    .info-circle {
+                        width: 45px;
+                        height: 45px;
+                    }
+
+                    .info-list {
+                        .info-item {
+                            margin-top: 13%;
+
+                            .info-title {
+                                font-size: 1.125rem;
+
+                                .info-icon {
+                                    margin-right: 3%;
+                                }
+                            }
+
+                            .info-content {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+
+                .map {
+                    height: 50vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .map {
+        .wrap {
+
+            .session-logo {
+                width: 80%;
+            }
+
+            .map-gmap {
+                display: inline-flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                width: 100%;
+                margin-top: 5%;
+
+                .info-card {
+                    position: relative;
+                    transform: translateY(-30%);
+                    right: unset;
+                    padding: 5% 5%;
+                    width: 80%;
+
+                    .info-circle {
+                        width: 45px;
+                        height: 45px;
+                    }
+
+                    .info-list {
+                        .info-item {
+                            margin-top: 13%;
+
+                            .info-title {
+                                font-size: 1.125rem;
+
+                                .info-icon {
+                                    margin-right: 3%;
+                                }
+                            }
+
+                            .info-content {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+
+                .map {
+                    height: 50vh;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import './variable.scss';
+
+$container-max-widths: (
+    xl: 1440px,
+    xxl: 1440px
+);
+$font-size-root: 16px;
+$grid-gutter-width: 0;
+
+$navbar-dark-active-color: $vm5-default;
+$navbar-dark-color: $white;
+
+
+@import '../node_modules/bootstrap/scss/_functions.scss';
+@import '../node_modules/bootstrap/scss/_variables.scss';
+
+$custom-spacer: (
+    'body-top': $spacer * 2.5,
+    'body-bottom': $spacer * 8,
+    'nav-x': $spacer * 5.5,
+    'nav-e': $spacer * 7,
+    'vmfive-session': $spacer * 8,
+    'vmfive-session-large': $spacer * 12,
+    'vmfive-session-max': $spacer * 16,
+    'issue': $spacer * 7,
+    'brand-card':$spacer * 7,
+    'more-button':$spacer * 5
+);
+
+$spacers: map-merge($custom-spacer, $spacers);
+
+@for $i from 1 through 100 {
+    .w-#{$i} {
+        width: ($i+0)*1%;
+    }
+}
+
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
