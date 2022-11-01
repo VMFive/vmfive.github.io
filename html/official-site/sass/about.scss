@@ -121,7 +121,7 @@
         width: 150%;
 
         .swiper-slide {
-            height: 450px;
+            height: 30vw;
             opacity: 0.1;
             transition: opacity 0.5s;
 
@@ -130,7 +130,7 @@
                 flex-direction: column;
                 justify-content: center;
                 width: 100%;
-                height: 70%;
+                height: 75%;
                 box-shadow: 0px 4px 15px -1px rgba(30, 28, 26, 0.5);
                 background-color: rgba(255, 255, 255, 0.3);
                 backdrop-filter: blur(5px);
@@ -140,11 +140,12 @@
                 bottom: 0;
 
                 .team-content {
-                    padding: 0% 8%;
-                    width: 70%;
+                    padding: 0% 0% 0% 4%;
+                    width: 63%;
                     font-family: $font-worksans;
 
                     .team-name {
+                        line-height: 100%;
                         font-size: 3.66rem;
                         color: $vm5-default;
                         font-weight: 700;
@@ -152,12 +153,15 @@
                     }
 
                     .team-title {
+                        line-height: 100%;
+                        margin-top: 5%;
                         font-size: 1.8rem;
                         font-weight: 700;
                     }
 
                     .team-intro {
-                        margin-top: 3%;
+                        line-height: 150%;
+                        margin-top: 5%;
                         font-size: 1.125rem;
                         font-weight: 400;
                     }
@@ -166,10 +170,11 @@
 
             .team-pic {
                 position: absolute;
-                width: 32%;
+                width: 40%;
                 bottom: 0;
-                right: 0;
+                right: -4%;
                 height: 100%;
+                pointer-events: none;
 
                 img {
                     position: absolute;
@@ -270,7 +275,89 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
+    .kv {
+        .wrap {
+            .kv-image {
+                width: 40%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .kv-content {
+                width: 100%;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .vision {
+        .wrap {
+            .vision-text {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .slogan {
+        .wrap {
+            width: 90%;
+
+            .slogan-title {
+                font-size: 3.8rem;
+            }
+        }
+    }
+
+    .location {
+        .wrap {
+            width: 92%;
+        }
+
+        .location-illustrated {
+            width: 40%;
+        }
+    }
+
+    .team {
+        .wrap {
+            .swiper-slide {
+                height: 40vw;
+
+                .team-card {
+                    height: 90%;
+
+                    .team-content {
+                        padding-left: 5%;
+                    }
+                }
+            }
+        }
+    }
+
+    .investors {
+        .wrap {
+            .investors-card-container {
+                .investors-card {
+                    .investors-content {
+                        .investors-title {
+                            font-size: 2rem;
+                        }
+
+                        .investors-description {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
 
     .kv {
         position: relative;
@@ -362,13 +449,13 @@
             width: 90%;
 
             .kv-content {
-                font-size: 1rem;
-                line-height: 2rem;
+                font-size: 1.25rem;
+                line-height: 200%;
             }
 
             .kv-image {
                 margin: auto auto;
-                width: 80%;
+                width: 50%;
 
                 img {
                     width: 100%;
@@ -385,7 +472,7 @@
         .vision-content {
 
             .vision-text {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
         }
     }
@@ -393,14 +480,14 @@
     .slogan {
         .wrap {
             width: 90%;
-            text-align: start;
+            text-align: center;
 
             .slogan-title {
-                font-size: 2rem;
+                font-size: 2.8rem;
             }
 
             .slogan-subtitle {
-                font-size: 1.2rem;
+                font-size: 1.5rem;
             }
         }
     }
@@ -412,7 +499,7 @@
 
         .location-content {
             .session-logo {
-                width: 100%;
+                width: 53%;
 
                 img {
                     width: 100%;
@@ -450,17 +537,16 @@
                         .team-name {
                             font-size: 3rem;
                             line-height: 1;
-                            margin-top: 3%;
                         }
 
                         .team-title {
                             font-size: 1.5rem;
-                            margin-top: 3%;
+                            margin-top: 5%;
                         }
 
                         .team-intro {
                             font-size: 1rem;
-                            margin-top: 3%;
+                            margin-top: 5%;
                             max-height: 60%;
                             display: -webkit-box;
                             overflow: hidden;
@@ -489,11 +575,11 @@
 
     .investors {
         .wrap {
-            width: 90%;
+            width: 82%;
 
             .investors-card-container {
                 .investors-card {
-                    padding: 10% 0%;
+                    padding: 5% 0%;
 
                     .row {
                         flex-direction: column;
@@ -503,6 +589,7 @@
                         margin-left: 0;
                         margin-top: 5%;
                         text-align: center;
+                        width: 70%;
 
                         .investors-title {
                             font-size: 1.8rem;
@@ -513,6 +600,20 @@
                             font-size: 1rem;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .location {
+        .location-content {
+            .session-logo {
+                width: 95%;
+
+                img {
+                    width: 100%;
                 }
             }
         }

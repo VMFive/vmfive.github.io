@@ -44,7 +44,7 @@ xhr.onload = function () {
         promise.then(function () {
             loader.classList.add('hide');
             if (hasPost) {
-                postContainer.style.display = 'inline';
+                postContainer.style.visibility = 'visible';
                 let htmlcontent = `
 					<div class="post-kv" data-aos="fade-up" data-aos-delay="300">
                         <img src="${selected_post.jetpack_featured_media_url}">
@@ -62,7 +62,7 @@ xhr.onload = function () {
 					`;
                 postContainer.insertAdjacentHTML('afterbegin', htmlcontent);
             } else {
-                newsContainer.style.display = 'inline-flex';
+                newsContainer.style.visibility = 'visible';
                 newsList.forEach((news, index) => {
                     let imgStr = news.jetpack_featured_media_url;
                     let dateStr = processDate(news.date_gmt);
@@ -71,7 +71,7 @@ xhr.onload = function () {
                     let nid = news.id;
 
                     let htmlcontent = `
-					<div class="col-4 col-news mx-auto" data-aos="fade-up">
+					<div class="col-4 col-news">
 						<div class="news-card">
 							<div class="news-image">
 								<img src="${imgStr}">

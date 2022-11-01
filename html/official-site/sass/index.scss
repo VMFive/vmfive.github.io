@@ -13,7 +13,7 @@
     }
 
     .wrap {
-        width: 60%;
+        width: 70%;
     }
 
     .kv-title {
@@ -325,10 +325,28 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
+    .location {
+        .wrap {
+            width: 92%;
+        }
+
+        .location-illustrated {
+            width: 40%;
+        }
+    }
+
+    .news {
+        .wrap {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
     .kv {
         .wrap {
-            width: 72%;
+            width: 82%;
         }
     }
 
@@ -416,7 +434,7 @@
 @media screen and (max-width: 768px) {
     .kv {
         .wrap {
-            width: 92%;
+            width: 90%;
 
             .kv-title {
                 font-size: 3.5rem;
@@ -465,7 +483,7 @@
 
         .location-content {
             .session-logo {
-                width: 100%;
+                width: 50%;
 
                 img {
                     width: 100%;
@@ -489,14 +507,14 @@
 
     .brand {
         .wrap {
-            width: 90%;
+            width: 75%;
         }
 
         .brand-card {
-            padding: 10vw 8vw;
+            padding: 5vw 3vw;
 
             .brand-icon {
-                width: 80%;
+                width: 40%;
             }
 
             .brand-content {
@@ -507,6 +525,7 @@
                 }
 
                 .brand-text {
+                    width: 80%;
                     text-align: center;
                     font-size: 1.2rem;
                 }
@@ -539,10 +558,61 @@
 
     .news {
         .wrap {
-            width: 90%;
+            width: 75%;
+            text-align: center;
 
             .col-news {
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .kv {
+        .wrap {
+            .kv-title {
+                font-size: 2.3rem;
+            }
+
+            .kv-sub-title {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    .location {
+        .wrap {
+            .session-logo {
+                width: 90%;
+            }
+        }
+    }
+
+    .brand {
+        .wrap {
+            width: 90%;
+
+            .brand-card {
+                .brand-content {
+                    .brand-title {
+                        font-size: 1.3rem;
+                    }
+
+                    .brand-text {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    .news {
+        .wrap {
+            width: 90%;
+
+            .news-card {
+                padding: 10% 5%;
             }
         }
     }

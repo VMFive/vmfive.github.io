@@ -55,16 +55,16 @@ let footer = `<div class="wrap m-auto d-none d-md-flex justify-content-between">
     </button>
 </div>
 <div class="row w-100">
-    <div class="col-3 d-inline-flex justify-content-start footer-circle">
+    <div class="col-3 d-inline-flex justify-content-center footer-circle">
         <a href="https://www.facebook.com/vmfive/"><img src="./image/fb.svg"></a>
     </div>
-    <div class="col-3 d-inline-flex justify-content-start footer-circle">
+    <div class="col-3 d-inline-flex justify-content-center footer-circle">
         <a href="https://line.me/ti/p/~@947aekvd"><img src="./image/line.svg"></a>
     </div>
-    <div class="col-3 d-inline-flex justify-content-start footer-circle">
+    <div class="col-3 d-inline-flex justify-content-center footer-circle">
         <a href="https://www.instagram.com/adison_by_vmfive/"><img src="./image/ig.svg"></a>
     </div>
-    <div class="col-3 d-inline-flex justify-content-start footer-circle">
+    <div class="col-3 d-inline-flex justify-content-center footer-circle">
         <a href="https://www.linkedin.com/company/vmfive-international-limited/mycompany/"><img src="./image/linkedin.svg"></a>
     </div>
 </div>

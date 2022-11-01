@@ -70,7 +70,17 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
+    .map {
+        .wrap {
+            .session-logo {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
     .map {
         .wrap {
 
@@ -134,11 +144,10 @@
                 margin-top: 5%;
 
                 .info-card {
-                    position: relative;
-                    transform: translateY(-30%);
-                    right: unset;
+                    transform: translateY(30%);
+                    right: 5%;
                     padding: 5% 5%;
-                    width: 80%;
+                    width: 50%;
 
                     .info-circle {
                         width: 45px;
@@ -147,7 +156,61 @@
 
                     .info-list {
                         .info-item {
-                            margin-top: 13%;
+                            margin-top: 5%;
+
+                            .info-title {
+                                font-size: 1.125rem;
+
+                                .info-icon {
+                                    margin-right: 3%;
+                                }
+                            }
+
+                            .info-content {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+
+                .map {
+                    height: 70vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .map {
+        .wrap {
+
+            .session-logo {
+                width: 80%;
+            }
+
+            .map-gmap {
+                display: inline-flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                width: 100%;
+                margin-top: 5%;
+                margin-bottom: 35%;
+
+                .info-card {
+                    transform: translateY(35%);
+                    right: 3%;
+                    padding: 5% 5%;
+                    width: 85%;
+
+                    .info-circle {
+                        width: 45px;
+                        height: 45px;
+                    }
+
+                    .info-list {
+                        .info-item {
+                            margin-top: 5%;
 
                             .info-title {
                                 font-size: 1.125rem;

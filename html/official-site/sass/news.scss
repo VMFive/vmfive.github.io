@@ -56,10 +56,11 @@
 
         #news-container,
         #post-container {
-            display: none;
+            visibility: hidden;
         }
 
         #post-container {
+            display: inline;
             flex-direction: column;
 
             .post-kv {
@@ -165,6 +166,9 @@
         }
 
         #news-container {
+            display: inline-flex;
+            justify-content: space-around;
+
             .col-news {
                 width: 30%;
                 margin-top: 5%;
@@ -267,7 +271,9 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
     .news {
         .wrap {
             width: 95%;
@@ -278,11 +284,13 @@
 @media screen and (max-width: 768px) {
     .news {
         .wrap {
-            width: 95%;
+            width: 85%;
 
             #news-container {
+                justify-content: space-between;
+
                 .col-news {
-                    width: 90%;
+                    width: 48%;
                 }
             }
 
@@ -355,6 +363,22 @@
 
                     }
 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .news {
+        .wrap {
+            width: 90%;
+
+            #news-container {
+                justify-content: center;
+
+                .col-news {
+                    width: 80%;
                 }
             }
         }

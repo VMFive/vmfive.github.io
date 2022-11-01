@@ -18,17 +18,30 @@ lan_input.addEventListener('change', function () {
 });
 
 window.onscroll = function () { scrollFunction() };
+window.onresize = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (window.innerWidth > 991) return;
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+
+    function blurNav() {
         document.querySelector(".navbar").style.backgroundColor = '#00000090';
         document.querySelector(".navbar").style.backdropFilter = 'blur(10px)';
-    } else {
+    }
+    function unblurNav() {
         document.querySelector(".navbar").style.backgroundColor = "transparent";
         document.querySelector(".navbar").style.backdropFilter = 'blur(0px)';
     }
+    if (window.innerWidth > 991) {
+        unblurNav();
+        return;
+    }
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        blurNav();
+    } else {
+        unblurNav();
+    }
 }
 
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
+setTimeout(() => {
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
+}, 100);

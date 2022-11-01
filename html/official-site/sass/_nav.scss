@@ -216,7 +216,7 @@
                     text-decoration: none;
                 }
 
-                .li-label.active{
+                .li-label.active {
                     color: $vm5-default;
                     font-weight: 700;
                 }
@@ -254,7 +254,13 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 3% 5%;
+    }
+}
+
+@media screen and (max-width: 992px) {
     .navbar {
         position: fixed;
         padding: 5% 0%;

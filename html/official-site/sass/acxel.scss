@@ -34,6 +34,7 @@
 
         a {
             text-decoration: none;
+
             .kv-button {
                 background-color: rgba(0, 0, 0, 0.7);
                 border-radius: 50px;
@@ -145,6 +146,9 @@
     }
 }
 
+.read-more-button {
+    margin-top: 5%;
+}
 
 .showcase {
     .wrap {
@@ -219,10 +223,49 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
     .kv {
         .wrap {
             width: 90%;
+
+        }
+
+        .scroll-line {
+            position: absolute;
+            right: 5%;
+            bottom: -30%;
+        }
+    }
+
+    .description {
+        .wrap {
+            width: 90%;
+
+            .description-illustrated {
+                margin-left: 3%
+            }
+        }
+    }
+
+    .arrangement {
+        .wrap {
+            .arrangement-bar {
+                .arrangement-bg {
+                    width: 19%;
+                }
+            }
+        }
+    }
+
+    .read-more-button {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .kv {
+        .wrap {
+            width: 92%;
 
             .kv-title {
                 font-size: 4rem;
@@ -307,6 +350,8 @@
             width: 92%;
 
             .kv-logo {
+                width: 60%;
+
                 img {
                     width: 100%;
                 }
@@ -326,7 +371,7 @@
         .description-content {
 
             .description-text {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
     }
@@ -334,7 +379,7 @@
     .arrangement {
         .wrap {
             .session-logo {
-                width: 90%;
+                width: 60%;
 
                 img {
                     width: 100%;
@@ -345,15 +390,15 @@
                 .row {
                     .arrangement-item {
                         .arrangement-step {
-                            width: 50%;
+                            width: 100%;
                         }
 
                         .step-left {
-                            transform: translate(20%, 47%);
+                            transform: translate(10%, 47%);
                         }
 
                         .step-right {
-                            transform: translate(20%, 47%);
+                            transform: translate(10%, 47%);
                         }
                     }
                 }
@@ -377,6 +422,38 @@
 
             .col-showcase {
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .kv {
+        .wrap {
+            width: 92%;
+
+            .kv-logo {
+                width: 70%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .kv-title {
+                font-size: 2.3rem;
+            }
+        }
+    }
+
+    .arrangement {
+        .wrap {
+            .session-logo {
+                width: 80%;
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }

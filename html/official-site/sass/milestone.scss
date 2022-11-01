@@ -109,7 +109,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .milestone {
         margin-bottom: 30%;
     }
@@ -117,9 +117,24 @@
     .events {
         margin-bottom: 50%;
     }
+
+    .milestone,
+    .events {
+
+        .wrap {
+            width: 90%;
+
+            .milestone-container {
+
+                .milestone-years {
+                    width: 15%;
+                }
+            }
+        }
+    }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
 
     .events {
         margin-bottom: 50%;
@@ -152,25 +167,28 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .milestone {
-        margin-bottom: 180%;
+        margin-bottom: 80%;
 
-        .session-logo {
-            img {
-                width: 100%;
-            }
-        }
     }
 
     .events {
-        margin-bottom: 300%;
+        margin-bottom: 150%;
     }
 
     .milestone,
     .events {
         .wrap {
             width: 92%;
+
+            .session-logo {
+                width: 40%;
+
+                img {
+                    width: 100%;
+                }
+            }
 
             .milestone-container {
                 flex-direction: column;
@@ -186,12 +204,12 @@
 
                     .years-item {
                         font-weight: 700;
-                        font-size: 1.5rem;
+                        font-size: 1.8rem;
                         line-height: 2.75rem;
+                        width: 14%;
 
                         &:not(:first-child) {
                             margin-top: 0;
-                            margin-left: 5%;
                         }
                     }
                 }
@@ -200,6 +218,7 @@
                     position: relative;
                     width: 100%;
                     margin-left: 0%;
+                    margin-top: 5%;
 
                     .card-item {
                         position: absolute;
@@ -226,6 +245,39 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .milestone {
+        margin-bottom: 150%;
+
+    }
+
+    .events {
+        margin-bottom: 250%;
+    }
+
+    .milestone,
+    .events {
+        .wrap {
+            width: 92%;
+
+            .session-logo {
+                width: 60%;
+            }
+
+            .milestone-container {
+
+                .milestone-years {
+
+                    .years-item {
+                        width: 25%;
+                    }
+                }
+
             }
         }
     }
