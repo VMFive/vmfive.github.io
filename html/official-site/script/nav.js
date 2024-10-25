@@ -15,7 +15,7 @@ let nav = `<div class="container navbar">
                 <a class="nav-link nav-brand">Brand</a>
                 <ul class="sub-menu">
                     <li>
-                        <a href="#vmfive-adison">ADisOn</a>
+                        <a href="#vmfive-adison">ADiSOn</a>
                     </li>
                     <li>
                         <a href="./acxel.html">Acxel</a>
@@ -30,21 +30,6 @@ let nav = `<div class="container navbar">
             </li>
             <li class="nav-item mx-4">
                 <a class="nav-link nav-join" href="./join.html">Join</a>
-            </li>
-            <li class="nav-item mx-4">
-                <a class="nav-link nav-language">
-                    <img src="./image/language.svg">
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="#vmfive-english">English</a>
-                    </li>
-                    <li>
-                        <a href="#vmfive-simplified">簡體中文</a>
-                    </li>
-                    <li>
-                        <a href="#vmfive-traditional">繁體中文</a>
-                    </li>
             </li>
         </ul>
     </nav>
@@ -65,7 +50,7 @@ let nav = `<div class="container navbar">
                 </label>
                 <ul class="sub-menu">
                     <li>
-                        <a href="#vmfive-adison">ADisOn</a>
+                        <a href="#vmfive-adison">ADiSOn</a>
                     </li>
                     <li>
                         <a href="./acxel.html">Acxel</a>
@@ -81,27 +66,10 @@ let nav = `<div class="container navbar">
             <li class="nav-item">
                 <a class="nav-link nav-join" href="./join.html">Join</a>
             </li>
-            <li class="nav-item">
-                <input class="li-btn" type="checkbox" id="language-input" />
-                <label class="li-label nav-link nav-language" for="language-input">
-                    <img src="./image/language.svg">
-                </label>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="#vmfive-english">English</a>
-                    </li>
-                    <li>
-                        <a href="#vmfive-simplified">簡體中文</a>
-                    </li>
-                    <li>
-                        <a href="#vmfive-traditional">繁體中文</a>
-                    </li>
-                </ul>
-            </li>
         </ul>
     </nav>
 </div>
-</div>`
+</div>`;
 
 document.getElementById('nav-container').insertAdjacentHTML('afterbegin', nav);
 document.querySelectorAll(`.${document.getElementById('nav-container').dataset.name}`).forEach((el, index) => {
@@ -138,4 +106,4 @@ document.querySelectorAll(`.${document.getElementById('nav-container').dataset.n
             el.classList.add('active');
             break;
     }
-})
+});

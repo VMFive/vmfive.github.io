@@ -5,17 +5,17 @@ AOS.init({
     once: true
 });
 let brand_input = document.getElementById('brand-input');
-let lan_input = document.getElementById('language-input');
+// let lan_input = document.getElementById('language-input');
 brand_input.addEventListener('change', function () {
     if (this.checked) {
         lan_input.checked = false;
     }
 });
-lan_input.addEventListener('change', function () {
-    if (this.checked) {
-        brand_input.checked = false;
-    }
-});
+// lan_input.addEventListener('change', function () {
+//     if (this.checked) {
+//         brand_input.checked = false;
+//     }
+// });
 
 window.onscroll = function () { scrollFunction() };
 window.onresize = function () { scrollFunction() };
